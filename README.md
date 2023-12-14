@@ -11,6 +11,9 @@ https://mimneko.github.io/mimneko-note/second.html
 ## index.htmlの子階層にthird.htmlファイルを置いたとき
 https://mimneko.github.io/mimneko-note/area/third.html
 
+## inde.htmlの子階層にindex.htmlファイルを置いたとき
+https://mimneko.github.io/mimneko-note/area/
+
 # 目標
 https://mimneko-note.com
 
