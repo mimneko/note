@@ -14,7 +14,7 @@ p code {
 
 @font-face {
     font-family: 'Cica';
-	src: url(https://github.com/mimneko/mimneko-note-beta/blob/main/font/Cica-Regular.ttf);
+    src: url("https://github.com/mimneko/mimneko-note-beta/blob/main/font/Cica-Regular.ttf");
 }
 
 code {
