@@ -7,12 +7,12 @@
     <meta http-equiv="content-language" content="ja">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width,initial-scale=1">
-    <title>漢検準１級ランダム模試 | みむねこのーと</title>
+    <title>404 NOT FOUND | みむねこのーと</title>
     <meta name="description" content="漢検準１級の問題をランダムに出題します。">
     <!-- https://saruwakakun.com/html-css/reference/twitter-card -->
     <meta name="twitter:card" content="summary_large_image">
     <meta property="og:url" content="https://mimneko.github.io/Japan-Kanji-Aptitude-Test/">
-    <meta property="og:title" content="漢検準１級ランダム模試 | みむねこのーと">
+    <meta property="og:title" content="404 NOT FOUND | みむねこのーと">
     <meta property="og:description" content="漢検準１級の問題をランダムに出題します。">
     <meta property="og:image" content="./img/logo-white-700.png">
     <!-- https://emma.tools/magazine/what-favicon-is/ -->
@@ -43,25 +43,32 @@
 <body>
     <!-- header -->
     <header>
+        <a href="https://mimneko.github.io/Japan-Kanji-Aptitude-Test/">
+            みむねこのーと
+        </a>
+        <!--
         <div class="logo-space">
             <a href="https://mimneko.github.io/Japan-Kanji-Aptitude-Test/">
-                <!-- <img class="logo" src="./img/logo-white-700.png" alt="みむねこのーと"> -->
-                みむねこのーと
+                <img class="logo" src="./img/logo-white-700.png" alt="みむねこのーと">
             </a>
         </div>
+        -->
 
         <!-- ハンバーガーメニュー部分 -->
         <!-- https://web-camp.io/magazine/archives/88361 -->
-        <div class="hamburger-icon">
-
-            <!-- ハンバーガーメニューの表示・非表示を切り替えるチェックボックス -->
-            <input id="drawer_input" class="hamburger drawer_hidden navbtn" type="checkbox">
-
-            <!-- ハンバーガーアイコン -->
-            <label for="drawer_input" class="hamburger drawer_open navbtn"><span></span></label>
-
-            <!-- メニュー -->
-            <!-- 
+        <!--
+        <div class="hamburger-menu">
+            -->
+        <!-- ハンバーガーメニューの表示・非表示を切り替えるチェックボックス -->
+        <!-- 
+            <input id="drawer_input" class="hamburger drawer_hidden" type="checkbox">
+            -->
+        <!-- ハンバーガーアイコン -->
+        <!-- 
+            <label for="drawer_input" class="hamburger drawer_open"><span></span></label>
+            -->
+        <!-- メニュー -->
+        <!-- 
             <nav class="nav_content">
                 <ul class="nav_list">
                     <li class="nav_item"><a href="「高校数学」の記事一覧のURL">高校数学</a></li>
@@ -71,16 +78,16 @@
                     <li class="nav_item"><a href="「その他」の記事一覧のURL">その他</a></li>
                 </ul>
             </nav>
-            -->
-        </div>
 
+        </div>
+        -->
     </header>
 
 
     <!-- navigation -->
-    <nav class="top-navigation top-navigation-close">
+    <nav class="top-navigation">
         <div class="navi-items">
-            <ul class="header-nav collapse close">
+            <ul>
                 <li>
                     <a href="「高校数学」の記事一覧のURL">高校数学</a>
                 </li>
@@ -100,7 +107,7 @@
         </div>
     </nav>
 
-    
+
     <div id="mount">
         <div id="content">
             <!-- main -->
@@ -130,7 +137,7 @@
                         </li>
                     </ol>
 
-                    <nav class="attribute">
+                    <div class="attribute">
                         <ol class="tags">
                             <li>
                                 <a href="「漢字検定」の記事一覧のURL">
@@ -147,241 +154,17 @@
                             <span class="write">2023.12.24</span>
                             <span class="rewrite">2023.12.25</span>
                         </span>
-                    </nav>
+                    </div>
 
                     <!-- \begin{manuscript} -->
                     <div class="manuscript">
-                        <h1>高校数学でつくる漢検準１級</h1>
-                        <p>解答が複数存在する問題もありますが、そのうちの<mark>主要なもの１つのみ</mark>を表示しています。</p>
-                        <div class="center"><div class="btn reset">リセット</div></div>
-
-                        <h2>\(\LaTeX\)おためし</h2>
-                        <p>フーリエ変換は次のように定義されます．</p>
-                        <div class="math-scroll">
-                            \begin{align*}
-                            F(\omega) = \cfrac{1}{\sqrt{2\pi}}\int_{-\infty}^{+\infty}f(t)e^{i\omega t}dt
-                            \end{align*}
-                        </div>
-                        <!-- 1 -->
-                        <h2>一　次の傍線部分の読みをひらがなで記せ。</h2>
-                        <p class="annotation">(各1x30=30点) (登録問題数:<span id="cnt1">0</span>)</p>
-                        <ol>
-                            <li class="question">
-                                <span id="q1-1"></span>
-                                <span id="a1-1"><span class="answer-btn">解答</span></span>
-                            </li>
-                            <li class="question">
-                                <span id="q1-2"></span>
-                                <span id="a1-2"><span class="answer-btn">解答</span></span>
-                            </li>
-                            <li class="question">
-                                <span id="q1-3"></span>
-                                <span id="a1-3"><span class="answer-btn">解答</span></span>
-                            </li>
-                            <li class="question">
-                                <span id="q1-4"></span>
-                                <span id="a1-4"><span class="answer-btn">解答</span></span>
-                            </li>
-                            <li class="question">
-                                <span id="q1-5"></span>
-                                <span id="a1-5"><span class="answer-btn">解答</span></span>
-                            </li>
-                        </ol>
-
-                        <!-- 10 -->
-                        <h2>十　次の傍線(1~5)のカタカナを漢字に直し、波線(ア～コ)の漢字の読みをひらがなで記せ。</h2>
-                        <p class="annotation">(書き 各2x5=10点・読み 各1x10=10点) (登録問題数:<span id="cnt10">0</span>)</p>
-                        <p>文章題のため省略</p>
-                        <div class="center"><div class="btn reset">リセット</div></div>
-                        <h2>サンプルコード</h2>
-                        <p>冒頭は<code>printf(Hello, World);</code>と書く。</p>
-                        <pre data-label="main.tex">
-<code class="language-latex">\title{レポートタイトル}
-
-\author{学生番号XXX-XXXX アカリク太郎}
-\date{\today}
-\begin{document}
-    \maketitle
-    \section{Cloud LaTeXへようこそ}
-    
-    Cloud LaTeXは，\LaTeX を使った文書の作成・管理をクラウド上で行えるWebサービスです．
-    \LaTeX を使うと，複雑な数式
-    \begin{equation}
-    \frac{\pi}{2} =
-    \left( \int_{0}^{\infty} \frac{\sin x}{\sqrt{x}} dx \right)^2 =
-    \sum_{k=0}^{\infty} \frac{(2k)!}{2^{2k}(k!)^2} \frac{1}{2k+1} =
-    \prod_{k=1}^{\infty} \frac{4k^2}{4k^2 - 1}
-    \end{equation}
-    を含んだ読みやすくきれいな文書作成ができます．
-    
-\end{document}</code>
-                        </pre>
-                        <h2>ソースコード</h2>
-                        <pre data-label="index.html">
-<code class="language-vba">Sub ExportAsPNG()
-    '
-    ' スライド1~18の「西暦」テキストを変え、それぞれのスライドのオブジェクトを
-    ' PowerPointファイルと同階層に18個のpng画像として出力します。
-    '
-    ' マクロが信用できない場合、また上手く動作しない場合は使用しなくても構いません。
-    ' マクロを変更する際は、VBAをよく知っている方が行ってください。
-    '
-    
-    
-    Dim year As String
-    Dim filePath As String
-    Dim fileName As String
-    Dim category(5) As String
-    Dim shp As Shape
-    Dim i As Long
-    
-    
-    ' 西暦を指定
-    ' https://learn.microsoft.com/ja-jp/office/vba/api/excel.application.inputbox
-    year = InputBox("西暦を半角数字4ケタで入力してください。（例：1951）")
-    If Len(year) <> 4 Then
-        MsgBox "半角数字4ケタで入力してください。マクロを終了します。"
-        Exit Sub
-    End If
-    
-    
-    ' 各分野
-    category(0) = "Career_design"
-    category(1) = "Learning_support"
-    category(2) = "Sports"
-    category(3) = "Library"
-    category(4) = "Global"
-    category(5) = "Volunteer"
-    
-    
-    ' アクティブスライドのパスを取得
-    ' https://cafe-mickey.com/hobby/programming/powerpoint-vba-pic/
-    filePath = ActivePresentation.Path
-    
-        
-    ' アクティブスライドの選択を解除
-    ' https://okwave.jp/qa/q5585402.html
-    With ActiveWindow.Selection
-        If .Type <> ppSelectionNone Then
-            .Unselect
-        End If
-    End With ' ActiveWindow.Selection
-    
-    
-    For i = 1 To 18
-        ' 西暦部分を、入力したものに変更
-        ' https://qiita.com/taleau/items/47bf0c60a7ea593b74c5
-        For Each shp In ActivePresentation.Slides(i).Shapes
-            If shp.Name = "西暦" Then
-                shp.TextFrame.TextRange.Text = year
-            End If
-        Next
-        
-        
-        ' アクティブスライドの図形等をすべて選択
-        ' https://learn.microsoft.com/ja-jp/office/vba/api/powerpoint.shapes.selectall
-        'Dim myDocument
-        'Set myDocument = ActivePresentation.Slides(1)
-        'myDocument.Select
-        'myDocument.Shapes.SelectAll
-        With ActivePresentation.Slides(i)
-            .Select
-            .Shapes.SelectAll
-        End With
-        
-        
-        ' pngファイル名を決定
-        fileName = "Open_Badge_" & year & "_" & category((i - 2) / 3) & "_" & ((i + 2) Mod 3 + 1)
-        ' fileName = "sample"
-        
-        ' pngとして保存
-        ' https://www.relief.jp/docs/powerpoint-vba-shape-save-as-picture.html
-        ' https://my-tax-nology.com/powerpoint-vba-selected-shapes-saved-in-the-same-folder-as-current-file
-        ActiveWindow.Selection.ShapeRange.Export _
-            PathName:=filePath & "\" & fileName & ".png", _
-            Filter:=ppShapeFormatPNG
-    Next
-    
-End Sub</code>
-                        </pre>
-                        <section>
-                            <input type="checkbox" id="open-close" />
-                            <h2>
-                                参考文献
-                                <div><label class="btn-open-close" for="open-close"></label></div>
-                            </h2>
-                            <div id="bibliography" class="box">
-                                <ul>
-                                    <li class="book">
-                                        <a
-                                            href="https://www.takahashishoten.co.jp/book/41170.html">｜漢字検定準１級〔頻出度順〕問題集｜</a>
-                                    </li>
-                                    <li class="site">
-                                        <a
-                                            href="https://www.takahashishoten.co.jp/book/41170.html">｜漢字検定準１級〔頻出度順〕問題集｜</a>
-                                    </li>
-                                    <li class="paper">
-                                        <a
-                                            href="https://www.takahashishoten.co.jp/book/41170.html">｜漢字検定準１級〔頻出度順〕問題集｜</a>
-                                    </li>
-                                </ul>
-                                <ol>
-                                    <li class="book">
-                                        <a
-                                            href="https://www.takahashishoten.co.jp/book/41170.html">｜漢字検定準１級〔頻出度順〕問題集｜</a>
-                                    </li>
-                                    <li class="site">
-                                        <a
-                                            href="https://www.takahashishoten.co.jp/book/41170.html">｜漢字検定準１級〔頻出度順〕問題集｜</a>
-                                    </li>
-                                    <li class="paper">
-                                        <a
-                                            href="https://www.takahashishoten.co.jp/book/41170.html">｜漢字検定準１級〔頻出度順〕問題集｜</a>
-                                    </li>
-                                    <li class="book">
-                                        <a
-                                            href="https://www.takahashishoten.co.jp/book/41170.html">｜漢字検定準１級〔頻出度順〕問題集｜</a>
-                                    </li>
-                                    <li class="site">
-                                        <a
-                                            href="https://www.takahashishoten.co.jp/book/41170.html">｜漢字検定準１級〔頻出度順〕問題集｜</a>
-                                    </li>
-                                    <li class="paper">
-                                        <a
-                                            href="https://www.takahashishoten.co.jp/book/41170.html">｜漢字検定準１級〔頻出度順〕問題集｜</a>
-                                    </li>
-                                    <li class="book">
-                                        <a
-                                            href="https://www.takahashishoten.co.jp/book/41170.html">｜漢字検定準１級〔頻出度順〕問題集｜</a>
-                                    </li>
-                                    <li class="site">
-                                        <a
-                                            href="https://www.takahashishoten.co.jp/book/41170.html">｜漢字検定準１級〔頻出度順〕問題集｜</a>
-                                    </li>
-                                    <li class="paper">
-                                        <a
-                                            href="https://www.takahashishoten.co.jp/book/41170.html">｜漢字検定準１級〔頻出度順〕問題集｜</a>
-                                    </li>
-                                    <li class="book">
-                                        <a
-                                            href="https://www.takahashishoten.co.jp/book/41170.html">｜漢字検定準１級〔頻出度順〕問題集｜</a>
-                                    </li>
-                                    <li class="site">
-                                        <a
-                                            href="https://www.takahashishoten.co.jp/book/41170.html">｜漢字検定準１級〔頻出度順〕問題集｜</a>
-                                    </li>
-                                    <li class="paper">
-                                        <a
-                                            href="https://www.takahashishoten.co.jp/book/41170.html">｜漢字検定準１級〔頻出度順〕問題集｜</a>
-                                    </li>
-                                </ol>
-                            </div>
-                        </section>
-
+                        <h1>404 NOT FOUND</h1>
+                        <p>お探しのページは見つかりませんでした。ページは削除または移動されたか、URLが間違っている可能性があります。以下のページから目的のページをお探し下さい。</p>
+                    </div>
+                    <!-- \end{manuscript} -->
                     
                     <h2>他の記事</h2>
-                    <h3>前</h3>
-                    <nav class="other-articles">
+                    <div id="other-articles">
                         <a href="記事ＡのURL">
                             <article><img src="./img/phantom.png" alt="仮画像">
                                 <div>
@@ -390,9 +173,6 @@ End Sub</code>
                                 </div>
                             </article>
                         </a>
-                    </nav>
-                    <h3>後</h3>
-                    <nav class="other-articles">
                         <a href="記事ＢのURL">
                             <article><img src="./img/phantom.png" alt="仮画像">
                                 <div>
@@ -401,9 +181,6 @@ End Sub</code>
                                 </div>
                             </article>
                         </a>
-                    </nav>
-                    <h3>関連</h3>
-                    <nav class="other-articles">
                         <a href="記事ＣのURL">
                             <article><img src="./img/phantom.png" alt="仮画像">
                                 <div>
@@ -412,25 +189,7 @@ End Sub</code>
                                 </div>
                             </article>
                         </a>
-                        <a href="記事ＤのURL">
-                            <article><img src="./img/phantom.png" alt="仮画像">
-                                <div>
-                                    <h4 class="article-title">記事Ｄはこんな感じどすえ。タイトルは長すぎるのはよくないと思います。</h4>
-                                    <p>この記事は、おためし用の記事でございます。</p>
-                                </div>
-                            </article>
-                        </a>
-                        <a href="記事ＥのURL">
-                            <article><img src="./img/phantom.png" alt="仮画像">
-                                <div>
-                                    <h4 class="article-title">記事Ｅ</h4>
-                                    <p>この記事は、おためし用の記事でございます。</p>
-                                </div>
-                            </article>
-                        </a>
-                    </nav>
-                </div>
-                <!-- \end{manuscript} -->
+                    </div>
 
                     <ol class="breadcrumb" itemscope itemtype="https://schema.org/BreadcrumbList">
                         <li itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
@@ -455,7 +214,7 @@ End Sub</code>
                         </li>
                     </ol>
 
-                    <nav class="attribute">
+                    <div class="attribute">
                         <ol class="tags">
                             <li>
                                 <a href="「漢字検定」の記事一覧のURL">
@@ -472,14 +231,14 @@ End Sub</code>
                             <span class="write">2023.12.24</span>
                             <span class="rewrite">2023.12.25</span>
                         </span>
-                    </nav>
+                    </div>
 
 
                 </div>
             </main>
 
             <!-- sidebar -->
-            <nav id="sidebar">
+            <div id="sidebar">
                 <aside id="sidebar-category-list">
                     <h2 class="sidebar-title">カテゴリ</h2>
                     <ul class="parent-category-list">
@@ -632,7 +391,7 @@ End Sub</code>
                         </ol>
                     </div>
                 </aside>
-            </nav>
+            </div>
         </div>
     </div>
 
@@ -642,22 +401,22 @@ End Sub</code>
         <div>
             <ul id="footer-rinks">
                 <li>
-                    <a href="「ホーム」のURL">
+                    <a href="">
                         ホーム
                     </a>
                 </li>
                 <li>
-                    <a href="「カテゴリ一覧」のURL">
+                    <a href="">
                         カテゴリ一覧
                     </a>
                 </li>
                 <li>
-                    <a href="「タグ一覧」のURL">
+                    <a href="">
                         タグ一覧
                     </a>
                 </li>
                 <li>
-                    <a href="「サイト理念」のURL">
+                    <a href="">
                         サイト理念
                     </a>
                 </li>
@@ -673,9 +432,9 @@ End Sub</code>
     <!-- scripts -->
     <!--<script src="js/RandomizedQuestions.js"></script>
     <script src="js/buttonAction.js"></script>-->
-    <script src="js/hamburger.js"></script>
 
 
 </body>
 
 </html>
+
