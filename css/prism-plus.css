@@ -1,0 +1,22 @@
+/*
+https://prismjs.com/download.html#themes=prism-tomorrow&languages=markup+css+clike+javascript+c+css-extras+csv+java+json+markdown+markup-templating+php+python+visual-basic&plugins=line-highlight+line-numbers+show-language+inline-color+keep-markup+unescaped-markup+toolbar+copy-to-clipboard
+prism.cssを拡張
+*/
+p code {
+    font-family:Consolas,Monaco,'Andale Mono','Ubuntu Mono',monospace;
+    color:rgb(204,204,204);
+    font-size:.8em;
+    padding:0 .5em;
+    background:rgb(45,45,45);
+    border: 1px solid black;
+    border-radius: 5px;
+}
+
+@font-face {
+    font-family: 'Cica';
+	src: url(../font/Cica-Regular.ttf);
+}
+
+code {
+    font-family: Consolas,'Cica',Monaco,'Andale Mono','Ubuntu Mono',monospace!important;
+}

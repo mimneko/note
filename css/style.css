@@ -1,0 +1,828 @@
+:root {
+    /* 色 */
+    --navy: #1a3260;
+    --light-navy: #c2d1ee;
+    --orange: #ea5506;
+    --beige: #d8b888;
+    --white: #fafafa;
+    --gray-light: #cccdd2;
+    --gray: #e7e8ea;
+    --gray-deep: #747474;
+    --black: #2c2c2c;
+    --color-main-deep: var(--navy);
+    --color-main-gray: #a4acbb;
+    --color-main-light: var(--light-navy);
+    --color-accent: var(--orange);
+    --color-mount: var(--beige);
+
+    /* 定数 */
+    --font-size-tiny: 12px;
+    --font-size-small: 14px;
+    --font-size-normal: 18px;
+    --font-size-large: 20px;
+    --font-size-huge: 36px;
+    --main-padding-tb: 20px;
+    --main-padding-lr: 25px;
+    --sidebar-padding-tb: 10px;
+    --sidebar-padding-lr: 10px;
+    --screen-max-width: 768px;
+}
+
+@media screen and (width < 450px) {
+    :root {
+        /* 定数 */
+        --main-padding-lr: 15px;
+    }
+}
+
+/*
+768px
+1024px
+*/
+
+/* https://www.sejuku.net/blog/99964 */
+* {
+    float: none;
+    position: static;
+}
+
+img {
+    display: block;
+    /*vertical-align: bottom;*/
+    max-width: 100%;
+    height: auto;
+}
+
+#mount {
+    background-color: var(--color-mount);
+}
+
+#content {
+    /* https://nansystem.com/css-full-page-background-color/ */
+    width: 100%;
+    max-width: 1150px;
+    margin: 0px auto;
+    color: var(--black);
+    text-align: left;
+    padding: 40px 0px;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+/* https://note.com/ryotodo/n/n58c452d3660c */
+main {
+    width: calc(100% - var(--main-padding-lr) * 2);
+    max-width: calc(var(--screen-max-width) - var(--main-padding-lr) * 2);
+    background-color: var(--white);
+    padding: var(--main-padding-tb) var(--main-padding-lr);
+    border-radius: 15px;
+    margin: 0px 10px 0px 20px;
+    line-height: 1.5em;
+}
+
+#sidebar {
+    background-color: var(--white);
+    width: calc(300px - var(--sidebar-padding-lr) * 2);
+    background-color: var(--white);
+    padding: var(--sidebar-padding-tb) var(--sidebar-padding-lr);
+    border-radius: 15px;
+    margin: 0px 20px 0px 10px;
+    font-size: var(--font-size-normal);
+}
+
+@media screen and (width < 1024px) {
+    #content {
+        display: block;
+    }
+
+    main {
+        width: calc(100% - var(--main-padding-lr) * 2 - 10px);
+        margin: 0px auto;
+    }
+
+    #sidebar {
+        width: calc(100% - var(--main-padding-lr) * 2 - 10px);
+        max-width: calc(var(--screen-max-width) - var(--main-padding-lr) * 2);
+        margin: 40px auto 0px auto;
+        padding: var(--main-padding-tb) var(--main-padding-lr);
+    }
+}
+
+@media screen and (width <=850px) {
+
+    #content {
+        padding: 20px 0px;
+    }
+
+    main,
+    #sidebar {
+        border-radius: 5px;
+        margin: 0px auto 0px auto;
+    }
+
+    #sidebar {
+        margin-top: 20px;
+    }
+}
+
+header,
+footer {
+    background-color: var(--color-main-deep);
+    color: var(--white);
+    text-align: center;
+    vertical-align: middle;
+    margin: 0px;
+    padding: 20px;
+}
+
+header {
+    font-size: var(--font-size-huge);
+    padding: 0px;
+}
+
+footer {
+    font-size: var(--font-size-tiny);
+}
+
+body {
+    width: 100%;
+    margin: 0px;
+    font-size: var(--font-size-large);
+
+    /* https://saycon.co.jp/portal-for-newcomer/html-lesson/html-lesson2 */
+    font-family: "メイリオ", Meiryo, "ヒラギノ角ゴ ProN W3", Hiragino Kaku Gothic ProN, sans-serif;
+}
+
+h1 {
+    margin: 0px;
+    margin-bottom: 26px;
+    line-height: 1em;
+}
+
+/* https://saruwakakun.com/html-css/reference/list-style-type */
+h2 {
+    background: var(--gray);
+    border-left: solid var(--color-main-deep) 5px;
+    /* vertical-align調整 */
+    padding: 20px 12px 14px 12px;
+    border-bottom: solid 3px var(--gray-light);
+    clear: both;
+    line-height: 1em;
+}
+
+h3 {
+    border-left: solid var(--color-main-deep) 3px;
+    padding: 14px 12px;
+    clear: both;
+    font-size: var(--font-size-large);
+    line-height: 1em;
+}
+
+p {
+    text-indent: 1em;
+}
+
+mark {
+    font-weight: bold;
+    background: linear-gradient(transparent 80%, var(--color-accent) 60%);
+}
+
+ol {
+    margin-left: 10px;
+}
+
+ol li {
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 15px;
+}
+/*
+.logo {
+    text-align: center;
+    vertical-align: middle;
+    margin: 0px auto;
+}
+*/
+.logo-space {
+    font-family: 'Cherry Bomb One', sans-serif;
+    font-size: 100px;
+    padding: 0px;
+    padding-bottom: .15em;
+    text-align: center;
+}
+
+.logo-space a {
+    text-decoration: none;
+    color: var(--white);
+}
+
+.manuscript {
+    padding: 26px 0px;
+
+    /* 文字をコピー不可にする。https://www.aya-kikaku.work/3964/ */
+    /*
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    */
+}
+
+article {
+    position: relative;
+    line-height: 1em;
+}
+
+.article-title {
+    padding: 2px 0px;
+    padding-top: 4px;
+}
+/* https://guzlog.com/mathjax-scroll-1194 */
+.math-scroll {
+    overflow-x: auto;
+}
+
+/****************************************************
+
+パンくずリスト～
+
+****************************************************/
+/*
+.breadcrumb {
+    display: none;
+}
+
+@media screen and (768px <width) {
+*/
+.breadcrumb {
+    display: flex;
+    flex-direction: row;
+    margin: 0px;
+    margin-bottom: 10px;
+    padding: 0px;
+    list-style: none;
+    line-height: 1em;
+}
+
+.breadcrumb li {
+    font-size: var(--font-size-tiny);
+    color: var(--gray-deep);
+    padding: 0px 3px;
+}
+
+.breadcrumb li a {
+    text-decoration: none;
+    color: var(--gray-deep);
+}
+
+.breadcrumb li a:before {
+    font-family: FontAwesome;
+    content: '\f07b';
+    font-weight: 900;
+}
+
+.breadcrumb li:first-child a:before {
+    font-family: FontAwesome;
+    content: '\f015';
+    font-weight: 900;
+}
+
+.breadcrumb li::after {
+    font-family: FontAwesome;
+    font-weight: 900;
+    content: "\f054";
+}
+
+.breadcrumb li:last-child::after {
+    content: "";
+}
+
+/*
+}
+*/
+
+/****************************************************
+
+～パンくずリスト
+
+****************************************************/
+
+.attribute {
+    font-size: var(--font-size-tiny);
+    /* https://mamewaza.com/support/blog/howto-use-flex.html */
+    display: -webkit-flex;
+    display: flex;
+    -webkit-justify-content: space-between;
+    justify-content: space-between;
+    color: var(--color-main-deep);
+    margin-bottom: 3px;
+    line-height: 1em;
+}
+
+.attribute .tags {
+    display: flex;
+    flex-direction: row;
+    margin: 0px;
+    padding: 0px;
+    list-style: none;
+}
+
+.tagcloud .tags {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0px;
+    padding: 0px;
+    list-style: none;
+}
+
+.tags li {
+    font-size: var(--font-size-tiny);
+    color: var(--color-main-deep);
+    border: 1px solid var(--color-main-deep);
+    border-radius: 3px;
+    padding: 4px 4px 2px 4px;
+    margin-right: 3px;
+    margin-bottom: 3px;
+}
+
+.tags li a {
+    text-decoration: none;
+    color: var(--color-main-deep);
+}
+
+.tags li:hover {
+    background-color: var(--color-main-light);
+}
+
+.tags li a:before {
+    font-family: FontAwesome;
+    content: '\f02b';
+    font-weight: 900;
+}
+
+.schedule {
+    margin: 3px 0px;
+}
+
+.write::before {
+    font-family: FontAwesome;
+    font-weight: 900;
+    content: "\f303\00A0";
+}
+
+.rewrite {
+    margin-left: 3px;
+}
+
+.rewrite::before {
+    font-family: FontAwesome;
+    font-weight: 900;
+    content: "\f1da\00A0";
+}
+
+/****************************************************
+
+ナビゲーション～
+
+****************************************************/
+
+.top-navigation {
+    background-color: var(--color-main-deep);
+    text-align: center;
+    border-top: solid var(--gray-light) 1px;
+}
+
+.top-navigation ul {
+    margin: 0px;
+    padding: 0px;
+}
+
+.top-navigation ul li {
+    font-size: var(--font-size-normal);
+    list-style: none;
+    display: inline-block;
+}
+
+@media screen and (width <=600px) {
+    .top-navigation-close {
+        display: none;
+    }
+
+    .top-navigation ul li {
+        display: block;
+    }
+
+    .logo-space {
+        font-size: 45px;
+        text-align: left;
+        padding-left: .3em;
+    }
+}
+
+.top-navigation ul li a {
+    color: var(--white);
+    text-decoration: none;
+    display: block;
+    /* vertical-align調整 */
+    padding: 14px 0px 10px 0px;
+    min-width: 110px;
+}
+
+.top-navigation ul li a:hover {
+    color: var(--color-main-deep);
+    background: var(--color-main-gray);
+    font-weight: bold;
+}
+
+/****************************************************
+
+～ナビゲーション
+
+****************************************************/
+
+/****************************************************
+
+ハンバーガーメニュー（現在非表示）～
+
+****************************************************/
+
+/* https://web-camp.io/magazine/archives/88361 */
+/* ここから下がハンバーガーメニューに関するCSS */
+
+.hamburger {
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+@media screen and (600px < width) {
+    .hamburger-icon {
+        display: none;
+    }
+}
+
+@media screen and (width<=600px) {
+    header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+}
+
+/* チェックボックスを非表示にする */
+/*.drawer_hidden {
+    display: none;
+}
+*/
+/* ハンバーガーアイコンの設置スペース */
+.drawer_open {
+    display: flex;
+    height: 60px;
+    width: 60px;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    z-index: 100;
+    cursor: pointer;
+}
+
+/* ハンバーガーメニューのアイコン */
+.drawer_open span:before,
+.drawer_open span,
+.drawer_open span:after {
+    content: '';
+    display: block;
+    height: 3px;
+    width: 25px;
+    border-radius: 3px;
+    background-color: var(--white);
+    transition: 0.5s;
+    position: absolute;
+}
+
+/* 三本線の一番上の棒の位置調整 */
+.drawer_open span:before {
+    bottom: 8px;
+}
+
+/* 三本線の一番下の棒の位置調整 */
+.drawer_open span:after {
+    top: 8px;
+}
+
+/* アイコンがクリックされたら真ん中の線を透明にする */
+#drawer_input:checked~.drawer_open span {
+    background: rgba(255, 255, 255, 0);
+}
+
+/* アイコンがクリックされたらアイコンが×印になように上下の線を回転 */
+#drawer_input:checked~.drawer_open span::before {
+    bottom: 0;
+    transform: rotate(45deg);
+}
+
+#drawer_input:checked~.drawer_open span::after {
+    top: 0;
+    transform: rotate(-45deg);
+}
+
+/* メニューのデザイン*/
+/*
+.nav_content {
+    background-color: var(--color-main-deep);
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    left: 100%;
+}
+
+.nav_content ul {
+    list-style: none;
+    padding: 0px;
+    margin: 0px;
+}
+
+.nav_content ul li a {
+    color: var(--white);
+    font-size: var(--font-size-large);
+    text-decoration: none;
+    display: block;
+    padding: 23px 0px 19px 0px;
+    border: 2px solid var(--white);
+    border-style: none none dotted none;
+}
+*/
+/* アイコンがクリックされたらメニューを表示 */
+/*
+#drawer_input:checked~.nav_content {
+    left: 0;
+}
+*/
+
+/****************************************************
+
+～ハンバーガーメニュー（現在非表示）
+
+****************************************************/
+
+.sidebar-title {
+    margin-top: 15px;
+    margin-bottom: 5px;
+}
+
+/****************************************************
+
+サイドバー・カテゴリ一覧～
+
+****************************************************/
+
+.parent-category-list,
+.child-category-list {
+    list-style: none;
+    text-align: left;
+    padding: 0px;
+    margin: 0px;
+    font-size: var(--font-size-small);
+}
+
+.parent-category-list li,
+.child-category-list li {
+    margin: 0px;
+    padding: 0px;
+}
+
+.child-category-list li {
+    margin-left: 20px;
+}
+
+.parent-category-list li a,
+.child-category-list li a {
+    text-decoration: none;
+    color: var(--black);
+    display: block;
+    padding: 12px 0px 9px 0px;
+    border: 2px solid var(--color-main-deep);
+    border-style: none none dotted none;
+}
+
+.parent-category-list li a:hover,
+.child-category-list li a:hover {
+    background-color: var(--color-main-light);
+}
+
+.category-list-item {
+    display: flex;
+    justify-content: space-between;
+}
+
+.parent-category:before {
+    font-family: "Font Awesome 5 Free";
+    content: '\00A0\f07b\00A0';
+    font-weight: 900;
+}
+
+.child-category:before {
+    font-family: "Font Awesome 5 Free";
+    content: '\00A0\f07b\00A0';
+    font-weight: 400;
+}
+
+.post-count {
+    background-color: var(--color-main-light);
+    border-radius: 3px;
+    color: var(--color-main-deep);
+    padding: 3px 3px 2px 3px;
+    margin-right: 5px;
+    margin-top: -3px;
+}
+
+/****************************************************
+
+～サイドバー・カテゴリ一覧
+
+****************************************************/
+
+#sidebar-category-list {
+    margin-bottom: 25px;
+}
+
+#sidebar-tag-list {
+    margin-bottom: 10px;
+}
+
+.other-articles {
+    border-top: 1px solid var(--color-main-deep);
+    margin: 0px;
+}
+
+.other-articles a {
+    display: block;
+    padding: 1.5%;
+    border-bottom: 1px solid var(--color-main-deep);
+    text-decoration: none;
+    color: var(--black);
+}
+
+article {
+    display: flex;
+}
+
+article img {
+    max-width: 33%;
+    object-fit: cover;
+    margin-right: 10px;
+}
+
+article div h4 {
+    margin: 0px;
+    font-weight: bold;
+}
+
+article div p {
+    margin: 0px;
+}
+
+@media screen and (width<=425px) {
+    article div p {
+        display: none;
+    }
+}
+
+#footer-rinks {
+    list-style: none;
+    text-align: center;
+    padding: 0px;
+    margin: 0px;
+    margin-bottom: 20px;
+}
+
+#footer-rinks li {
+    margin: 0px;
+    padding: 0px;
+    display: inline-block;
+    font-size: var(--font-size-small);
+}
+
+#footer-rinks li a {
+    text-decoration: none;
+    padding: 5px;
+    color: var(--white);
+    display: block;
+}
+
+#footer-rinks li a:hover {
+    background-color: var(--color-main-gray);
+    color: var(--color-main-deep);
+}
+
+/****************************************************
+
+開閉ボタン～
+
+****************************************************/
+/* https://tadtadya.com/easily-create-switching-buttons-for-opening-and-closing-with-html-and-css-alone/#index-list-7 */
+
+section #open-close {
+    display: none;
+}
+
+.btn-open-close {
+    /* 文字をコピー不可にする。https://www.aya-kikaku.work/3964/ */
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+section #open-close~h2 div .btn-open-close::after {
+    font-family: "Font Awesome 5 Free";
+    content: '\00A0\f078\00A0';
+    font-weight: 900;
+}
+
+section #open-close~.box {
+    display: none;
+}
+
+section #open-close:checked~h2 div .btn-open-close::after {
+    font-family: "Font Awesome 5 Free";
+    content: '\00A0\f077\00A0';
+    font-weight: 900;
+}
+
+section #open-close:checked~.box {
+    display: block;
+}
+
+section h2 {
+    display: flex;
+    justify-content: space-between;
+}
+
+/****************************************************
+
+～開閉ボタン
+
+****************************************************/
+
+#bibliography ol,
+#bibliography ul {
+    text-align: left;
+    margin: 0px;
+}
+
+/* 画面幅が狭いとき、改行位置がおかしい */
+/*
+#bibliography ul {
+    padding-left: 15px;
+}
+
+#bibliography ul li {
+    list-style-type: none;
+}
+
+#bibliography ul li:before {
+    font-family: "Font Awesome 5 Free";
+    content: '\f111\00A0\00A0\00A0';
+    font-weight: 400;
+    font-size: 0.9em;
+    vertical-align: middle;
+}
+
+#bibliography ul li {
+    padding: 5px 0px 5px 0px;
+}
+*/
+
+#bibliography ul li {
+    padding: 5px 0px 5px 18px;
+}
+
+#bibliography ol li {
+    padding: 5px 0px 5px 18px;
+}
+
+.book:after {
+    font-family: "Font Awesome 5 Free";
+    content: '\00A0\f02d\00A0';
+    font-weight: 900;
+}
+
+.site:after {
+    font-family: "Font Awesome 5 Free";
+    content: '\00A0\f0ac\00A0';
+    font-weight: 900;
+}
+
+.paper:after {
+    font-family: "Font Awesome 5 Free";
+    content: '\00A0\f0c6\00A0';
+    font-weight: 900;
+}
+
+.center {
+    text-align: center;
+}
