@@ -1,4 +1,4 @@
-title: Mimneko Jekyll
+title: みむねこのーと
 description: >
   みむねこ用Jekyllです。
 baseurl: "/mimnekonote"
@@ -8,12 +8,15 @@ author:
   name: mimneko
   github: mimneko
 
-paginate: 10
+paginate: 3
 paginate_path: page:num
 
 sass:
-  style: expanded
+  style: compressed
 
 gems:
   - jekyll-paginate
   - jekyll-feed
+
+plugins:
+  - jekyll-paginate
