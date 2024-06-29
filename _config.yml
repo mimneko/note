@@ -1,0 +1,19 @@
+title: Mimneko Jekyll
+description: >
+  みむねこ用Jekyllです。
+baseurl: "/mimnekonote"
+url: "https://mimneko.github.io"
+
+author:
+  name: mimneko
+  github: mimneko
+
+paginate: 10
+paginate_path: page:num
+
+sass:
+  style: expanded
+
+gems:
+  - jekyll-paginate
+  - jekyll-feed
