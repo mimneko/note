@@ -1,0 +1,2 @@
+# mimnekonote
+みむねこのーとJekyll版。
