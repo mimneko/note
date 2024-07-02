@@ -1,0 +1,560 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+  <meta charset="UTF-8">
+  <title>マークダウン記法サンプル | みむねこのーと</title>
+  <meta name="description" content="見出し">
+  <meta name="viewport" content="width=device-width">
+  <link rel="canonical" href="http://localhost:4000/mimnekonote/uncategorized/%E3%83%9E%E3%83%BC%E3%82%AF%E3%83%80%E3%82%A6%E3%83%B3%E8%A8%98%E6%B3%95%E3%82%B5%E3%83%B3%E3%83%97%E3%83%AB/">
+  <!-- Normalize.css -->
+  <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+  <!-- Main CSS -->
+  <link rel="stylesheet" href="/mimnekonote/assets/css/style.css">
+  <!-- 数学用 -->
+  <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+</head>
+
+<body>
+
+<!-- サイト名とナビゲーション部分｡全ページ共通 -->
+<header class="header">
+  <div class="container">
+    <div class="site-title"><a href="/mimnekonote/">みむねこのーと</a></div>
+    <nav class="nav">
+      <ul class="nav__list">
+        <li class="nav__item"><a href="/mimnekonote/">ホーム</a></li>
+        <li class="nav__item"><a href="/mimnekonote/about/">みむねこのーとについて</a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
+
+
+
+<div class="contents page">
+  <div class="container">
+
+    <div class="page__header">
+      <h1 class="page__title">マークダウン記法サンプル</h1>
+      <p class="page__date">2024-06-30</p>
+      <div id="article-information">
+        <div id="write-date">2024-06-30</div>
+        <div id="author">みむねこ</div>
+      </div>
+    </div>
+
+    <div class="page__body">
+
+      
+
+      <h1 id="見出し">見出し</h1>
+
+<p><strong>書き方</strong></p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code># 見出し1
+## 見出し2
+### 見出し3
+</code></pre></div></div>
+
+<p><strong>表示</strong></p>
+
+<h1 id="見出し1">見出し1</h1>
+<h2 id="見出し2">見出し2</h2>
+<h3 id="見出し3">見出し3</h3>
+
+<h1 id="箇条書き">箇条書き</h1>
+
+<p><strong>書き方</strong></p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>- リスト1
+    - ネスト リスト1_i
+        - ネスト リスト1_i_a
+        - ネスト リスト1_i_b
+    - ネスト リスト1_ii
+- リスト2
+</code></pre></div></div>
+
+<p><strong>表示</strong></p>
+
+<ul>
+  <li>リスト1
+    <ul>
+      <li>ネスト リスト1_i
+        <ul>
+          <li>ネスト リスト1_i_a</li>
+          <li>ネスト リスト1_i_b</li>
+        </ul>
+      </li>
+      <li>ネスト リスト1_ii</li>
+    </ul>
+  </li>
+  <li>リスト2</li>
+</ul>
+
+<h1 id="番号付き箇条書き">番号付き箇条書き</h1>
+
+<p><strong>書き方</strong></p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>1. リスト1
+    1. ネスト リスト1_i
+        1. ネスト リスト1_i_a
+        1. ネスト リスト1_i_b
+    1. ネスト リスト1_ii
+1. リスト2
+</code></pre></div></div>
+
+<p><strong>表示</strong></p>
+
+<ol>
+  <li>リスト1
+    <ol>
+      <li>ネスト リスト1_i
+        <ol>
+          <li>ネスト リスト1_i_a</li>
+          <li>ネスト リスト1_i_b</li>
+        </ol>
+      </li>
+      <li>ネスト リスト1_ii</li>
+    </ol>
+  </li>
+  <li>リスト2</li>
+</ol>
+
+<h1 id="ソースコード">ソースコード</h1>
+
+<p><strong>書き方</strong></p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>```
+#include &lt;stdio.h&gt;
+
+int main(void){
+    printf("hello world!\n");
+    return 0;
+}
+```
+
+```c
+#include &lt;stdio.h&gt;
+
+int main(void){
+    printf("hello world!\n");
+    return 0;
+}
+```
+
+```java
+public class Main {
+    public static void main(String[] args) {
+        System.out.println("Hello,World!);
+    }
+}
+```
+</code></pre></div></div>
+
+<p><strong>表示</strong></p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>#include &lt;stdio.h&gt;
+
+int main(void){
+    printf("hello world!\n");
+    return 0;
+}
+</code></pre></div></div>
+
+<div class="language-c highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="cp">#include</span> <span class="cpf">&lt;stdio.h&gt;</span><span class="cp">
+</span>
+<span class="kt">int</span> <span class="nf">main</span><span class="p">(</span><span class="kt">void</span><span class="p">){</span>
+    <span class="n">printf</span><span class="p">(</span><span class="s">"hello world!</span><span class="se">\n</span><span class="s">"</span><span class="p">);</span>
+    <span class="k">return</span> <span class="mi">0</span><span class="p">;</span>
+<span class="p">}</span>
+</code></pre></div></div>
+
+<div class="language-java highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kd">public</span> <span class="kd">class</span> <span class="nc">Main</span> <span class="o">{</span>
+    <span class="kd">public</span> <span class="kd">static</span> <span class="kt">void</span> <span class="nf">main</span><span class="o">(</span><span class="nc">String</span><span class="o">[]</span> <span class="n">args</span><span class="o">)</span> <span class="o">{</span>
+        <span class="nc">System</span><span class="o">.</span><span class="na">out</span><span class="o">.</span><span class="na">println</span><span class="o">(</span><span class="err">"</span><span class="nc">Hello</span><span class="o">,</span><span class="nc">World</span><span class="o">!);</span>
+    <span class="o">}</span>
+<span class="o">}</span>
+</code></pre></div></div>
+
+<h1 id="太字ボールド">太字（ボールド）</h1>
+
+<p><strong>書き方</strong></p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>普通 **太字bold** normal
+</code></pre></div></div>
+
+<p><strong>表示</strong></p>
+
+<p>普通 <strong>太字bold</strong> normal</p>
+
+<h1 id="インラインコード">インラインコード</h1>
+
+<p><strong>書き方</strong></p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>printfを使うには `#include &lt;stdio.h&gt;` と書く。
+
+こうすれば`` `バッククォート` `` 、 ``` ``2連バッククォート`` ``` も書ける。
+</code></pre></div></div>
+
+<p><strong>表示</strong></p>
+
+<p>printfを使うには <code class="language-plaintext highlighter-rouge">#include &lt;stdio.h&gt;</code> と書く。</p>
+
+<p>こうすれば<code class="language-plaintext highlighter-rouge">`バッククォート`</code> 、 <code class="language-plaintext highlighter-rouge">``2連バッククォート``</code> も書ける。</p>
+
+<h1 id="リンク">リンク</h1>
+
+<p><strong>書き方</strong></p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>[参考文献](https://qiita.com/tbpgr/items/989c6badefff69377da7#github-flavored-markdowngfm)
+
+[こっちからgoogle][google]
+
+その他の文章
+
+[こっちからもgoogle][google]
+
+[google]: https://www.google.co.jp/
+
+https://www.google.co.jp/
+</code></pre></div></div>
+
+<p><strong>表示</strong></p>
+
+<p><a href="https://qiita.com/tbpgr/items/989c6badefff69377da7#github-flavored-markdowngfm">参考文献</a></p>
+
+<p><a href="https://www.google.co.jp/">こっちからgoogle</a></p>
+
+<p>その他の文章</p>
+
+<p><a href="https://www.google.co.jp/">こっちからもgoogle</a></p>
+
+<p>https://www.google.co.jp/</p>
+
+<h1 id="tex記法">TeX記法</h1>
+
+<p><strong>書き方</strong></p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>```math
+\left( \sum_{k=1}^n a_k b_k \right)^{\!\!2} \leq
+\left( \sum_{k=1}^n a_k^2 \right) \left( \sum_{k=1}^n b_k^2 \right)
+```
+</code></pre></div></div>
+
+<p><strong>表示</strong></p>
+
+<pre><code class="language-math">\left( \sum_{k=1}^n a_k b_k \right)^{\!\!2} \leq
+\left( \sum_{k=1}^n a_k^2 \right) \left( \sum_{k=1}^n b_k^2 \right)
+</code></pre>
+
+<h1 id="警告ボックス">警告ボックス</h1>
+
+<p><strong>書き方</strong></p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>&gt; [!NOTE]
+&gt; メモ
+
+&gt; [!TIP]
+&gt; ヒント
+
+&gt; [!IMPORTANT]
+&gt; 重要
+
+&gt; [!WARNING]
+&gt; 警告
+
+&gt; [!CAUTION]
+&gt; 注意
+</code></pre></div></div>
+
+<p><strong>表示</strong></p>
+
+<blockquote>
+  <p>[!NOTE]
+メモ</p>
+</blockquote>
+
+<blockquote>
+  <p>[!TIP]
+ヒント</p>
+</blockquote>
+
+<blockquote>
+  <p>[!IMPORTANT]
+重要</p>
+</blockquote>
+
+<blockquote>
+  <p>[!WARNING]
+警告</p>
+</blockquote>
+
+<blockquote>
+  <p>[!CAUTION]
+注意</p>
+</blockquote>
+
+<h1 id="表">表</h1>
+
+<p><strong>書き方</strong></p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>|列1|列2|列3|
+|:--|--:|:--:|
+|align left|align right|align center|
+|a|b|c|
+|あ|い|う|
+|い|ろ|は|
+</code></pre></div></div>
+
+<p><strong>表示</strong></p>
+
+<table>
+  <thead>
+    <tr>
+      <th style="text-align: left">列1</th>
+      <th style="text-align: right">列2</th>
+      <th style="text-align: center">列3</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td style="text-align: left">align left</td>
+      <td style="text-align: right">align right</td>
+      <td style="text-align: center">align center</td>
+    </tr>
+    <tr>
+      <td style="text-align: left">a</td>
+      <td style="text-align: right">b</td>
+      <td style="text-align: center">c</td>
+    </tr>
+    <tr>
+      <td style="text-align: left">あ</td>
+      <td style="text-align: right">い</td>
+      <td style="text-align: center">う</td>
+    </tr>
+    <tr>
+      <td style="text-align: left">い</td>
+      <td style="text-align: right">ろ</td>
+      <td style="text-align: center">は</td>
+    </tr>
+  </tbody>
+</table>
+
+<h1 id="画像">画像</h1>
+
+<p><strong>書き方</strong></p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>![ここには代替テキスト。右には画像URL](https://kaiunillust.com/wp-content/uploads/2018/07/turineko.jpg)
+</code></pre></div></div>
+
+<p><strong>表示</strong></p>
+
+<p><img src="https://kaiunillust.com/wp-content/uploads/2018/07/turineko.jpg" alt="ここには代替テキスト。右には画像URL" /></p>
+
+<h1 id="同じリポジトリ内のファイルへのリンク">同じリポジトリ内のファイルへのリンク</h1>
+
+<p><strong>書き方</strong></p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>[pdfファイル](sample.pdf)
+</code></pre></div></div>
+
+<p><strong>表示</strong></p>
+
+<p><a href="sample.pdf">pdfファイル</a></p>
+
+<h1 id="チェックボックス">チェックボックス</h1>
+
+<p><strong>書き方</strong></p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>- [ ] タスク1
+- [x] タスク2
+</code></pre></div></div>
+
+<p><strong>表示</strong></p>
+
+<ul class="task-list">
+  <li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" disabled="disabled" />タスク1</li>
+  <li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" disabled="disabled" checked="checked" />タスク2</li>
+</ul>
+
+<h1 id="引用">引用</h1>
+
+<p><strong>書き方</strong></p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>&gt; ここは引用文
+&gt; となる。
+&gt; &gt; 二重に引用
+&gt; &gt; 
+&gt; &gt; もできる。
+</code></pre></div></div>
+
+<p><strong>表示</strong></p>
+
+<blockquote>
+  <p>ここは引用文
+となる。</p>
+  <blockquote>
+    <p>二重に引用</p>
+
+    <p>もできる。</p>
+  </blockquote>
+</blockquote>
+
+<h1 id="取り消し線">取り消し線</h1>
+
+<p><strong>書き方</strong></p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>~~取り消し線~~
+</code></pre></div></div>
+
+<p><strong>表示</strong></p>
+
+<p><del>取り消し線</del></p>
+
+<h1 id="折り畳み">折り畳み</h1>
+
+<p><strong>書き方</strong></p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>&lt;details&gt;&lt;summary&gt;クリックで開ける&lt;/summary&gt;
+
+(上に空行が必要)
+
+中身を見ることができる
+&lt;/details&gt;
+</code></pre></div></div>
+
+<p><strong>表示</strong></p>
+
+<details><summary>クリックで開ける</summary>
+
+(上に空行が必要)
+
+中身を見ることができる
+</details>
+
+<h1 id="エスケープ">エスケープ</h1>
+
+<p><strong>書き方</strong></p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>本来ならば**太字**になるが、こうすると \**太字\** にならない。
+</code></pre></div></div>
+
+<p><strong>表示</strong></p>
+
+<p>本来ならば<strong>太字</strong>になるが、こうすると *<em>太字*</em> にならない。</p>
+
+<h1 id="脚注">脚注</h1>
+
+<p><strong>書き方</strong></p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>こうすると、文章の一番下に脚注[^1]がつく。
+
+二つ目[^2]です。
+
+[^1]: ここに脚注文を書く。
+[^2]: リンクも自動でつけてくれます。
+</code></pre></div></div>
+
+<p><strong>表示</strong></p>
+
+<p>こうすると、文章の一番下に脚注<sup id="fnref:1" role="doc-noteref"><a href="#fn:1" class="footnote" rel="footnote">1</a></sup>がつく。</p>
+
+<p>二つ目<sup id="fnref:2" role="doc-noteref"><a href="#fn:2" class="footnote" rel="footnote">2</a></sup>です。</p>
+
+<h1 id="斜体イタリック体">斜体（イタリック体）</h1>
+
+<p><strong>書き方</strong></p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>普通 *斜体italic* normalアルファベットのみ？
+</code></pre></div></div>
+
+<p><strong>表示</strong></p>
+
+<p>普通 <em>斜体italic</em> normalアルファベットのみ？</p>
+
+<h1 id="斜体と太字の両採用">斜体と太字の両採用</h1>
+
+<p><strong>書き方</strong></p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>普通 ***太字でitalic*** normal
+</code></pre></div></div>
+
+<p><strong>表示</strong></p>
+
+<p>普通 <strong><em>太字でitalic</em></strong> normal</p>
+
+<h1 id="水平線">水平線</h1>
+
+<p><strong>書き方</strong></p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>---
+</code></pre></div></div>
+
+<p><strong>表示</strong></p>
+
+<hr />
+
+<h1 id="参考文献">参考文献</h1>
+
+<p>https://qiita.com/tbpgr/items/989c6badefff69377da7#github-flavored-markdowngfm</p>
+
+<p>https://qiita.com/Qiita/items/c686397e4a0f4f11683d</p>
+
+<p>https://docs.github.com/ja/get-started/writing-on-github/getting-started-with-writing-and-formatting-on-github/basic-writing-and-formatting-syntax</p>
+<div class="footnotes" role="doc-endnotes">
+  <ol>
+    <li id="fn:1" role="doc-endnote">
+      <p>ここに脚注文を書く。 <a href="#fnref:1" class="reversefootnote" role="doc-backlink">&#8617;</a></p>
+    </li>
+    <li id="fn:2" role="doc-endnote">
+      <p>リンクも自動でつけてくれます。 <a href="#fnref:2" class="reversefootnote" role="doc-backlink">&#8617;</a></p>
+    </li>
+  </ol>
+</div>
+
+
+
+    </div><!--page__body-->
+
+    <!-- 前後のページへのリンクを表示したい -->
+    <div class="pager">
+
+      
+
+      
+        <p class="pager__item--prev">
+          <a href="/mimnekonote/uncategorized/sample/subsample/hello-world12/">最新 &gt;</a>
+        </p>
+      
+
+    </div><!--pager-->
+    
+  </div><!--container-->
+</div><!--page-->
+
+
+
+<!-- フッター｡全ページ共通 -->
+<footer class="footer">
+  <div class="container">
+    <div class="footer__container">
+      <!-- https://nandemo-nobiru.com/om-6265 -->
+      <p class="copyright"><small>Copyright &copy; 2023-2024 みむねこ All Rights Reserved.</small></p>
+
+      <div class="social-link">
+        
+          <p class="social-link__item">
+            <a href="https://github.com/mimneko"><i class="fa fa-github"></i></a>
+          </p>
+        
+        
+      </div>
+    </div><!--footer__container-->
+  </div><!--container-->
+</footer>
+
+</body>
+</html>

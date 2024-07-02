@@ -7,11 +7,21 @@ layout: default
 
     <div class="page__header">
       <h1 class="page__title">{{ page.title }}</h1>
-      <p class="page__date">{{ page.date | date: '%B %d, %Y' }}</p>
+      <p class="page__date">{{ page.date | date: '%Y-%m-%d' }}</p>
+      <div id="article-information">
+        <div id="write-date">{{ page.date | date: '%Y-%m-%d' }}</div>
+        <div id="author">{{ site.author.name }}</div>
+      </div>
     </div>
 
     <div class="page__body">
 
+      {% if page.toc %}
+        <div id="toc">
+          <p id="toc-title">目次</p>
+          {% toc %}
+        </div>
+      {% endif %}
 
       {{ content }}
 
