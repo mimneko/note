@@ -5,7 +5,6 @@
 @import 'mixins';
 @import 'extends';
 
-
 a{
   color: $font-color-a;
   &:hover{
@@ -82,7 +81,6 @@ p{
 .page{
 
   &__header{
-    border-bottom: $border;
     @include pad();
   }
 

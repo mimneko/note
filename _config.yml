@@ -20,19 +20,11 @@ gems:
 
 plugins:
   - jekyll-paginate
-  - jekyll-toc
 
 markdown: kramdown
 kramdown:
   input: GFM
   syntax_highlighter: rouge
-  toc_levels: 2..3
-
-toc:
-  min_level: 2
-  max_level: 3
-  list_id: toc-content
-  ordered_list: true
 
 permalink: /:categories/:title/
 future: true
@@ -41,6 +33,5 @@ defaults:
   - scope:
       path: ""
     values:
-      toc: true
       layout: "post"
       categories: "uncategorized"
