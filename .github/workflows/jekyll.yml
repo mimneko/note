@@ -15,8 +15,7 @@ jobs:
     - name: Checkout repository
       uses: actions/checkout@v3
       with:
-        fetch-depth: 0  # 完全なリポジトリをクローン
-        # トークンを明示的に指定
+        fetch-depth: 1  # 必要な最新のコミットのみクローン
         token: ${{ secrets.GH_TOKEN }}
 
     - name: Setup Ruby
