@@ -17,7 +17,7 @@ jobs:
       with:
         fetch-depth: 0  # 完全なリポジトリをクローン
         # トークンを明示的に指定
-        token: ${{ secrets.GITHUB_TOKEN }}
+        token: ${{ secrets.GH_TOKEN }}
 
     - name: Setup Ruby
       uses: ruby/setup-ruby@v1
