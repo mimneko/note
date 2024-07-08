@@ -204,3 +204,44 @@ p{
     color: white;
   }
 }
+
+/* -----------------------------------------
+    コードスニペット
+----------------------------------------- */
+/* pre要素のスタイル */
+pre {
+    background-color: #f8f8f8; /* やや薄い灰色の背景色 */
+    color: #000;              /* 黒の文字色 */
+    padding: 1em;             /* 余白を追加 */
+    border: 1px solid #ddd;   /* 薄い灰色の枠線 */
+    border-radius: 5px;       /* 角を丸める */
+    overflow-x: auto;         /* 横スクロールを許可 */
+    white-space: pre-wrap;    /* 長い行を折り返さない */
+    font-family: monospace;   /* 等幅フォントを使用 */
+}
+
+/* pre要素内のcode要素のスタイル */
+pre code {
+    background: none; /* 親要素の背景色を引き継ぐ */
+    color: inherit;   /* 親要素の文字色を引き継ぐ */
+    padding: 0;      /* 追加の余白をなしにする */
+}
+
+/* pre要素の中ではないcode要素のスタイル */
+:not(pre) > code {
+    background-color: #f0f0f0; /* 灰色の背景色 */
+    color: #000;              /* 黒の文字色 */
+    padding: 0.2em 0.4em;     /* 少し余白を追加 */
+    border-radius: 3px;       /* 角を少し丸める */
+    font-family: monospace;   /* 等幅フォントを使用 */
+}
+
+blockquote {
+    background-color: #f9f9f9; /* 背景色を薄い灰色に */
+    color: #555;               /* 文字色を暗い灰色に */
+    border-left: 5px solid #ccc; /* 左側に灰色の縁取りを追加 */
+    margin: 1em 0;             /* 上下に余白を追加 */
+    padding: 0.5em 1em;        /* 内側の余白を追加 */
+    font-style: italic;        /* 文字を斜体に */
+    quotes: "“" "”" "‘" "’";  /* 引用符を定義 */
+}
