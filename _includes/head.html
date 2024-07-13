@@ -68,7 +68,7 @@
                 "@type": "ListItem",
                 "position": 4,
                 "name": "現在のページ",
-                "item": "https://example.com/current-page"
+                "item": "{{ page.url | replace:'index.html','' | absolute_url }}"
             }
             ]
         }
