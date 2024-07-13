@@ -34,7 +34,7 @@
         {% if post.last_modified_at %}
         "dateModified": "{{ page.last_modified_at | date: "%Y-%m-%d" }}",
         {% endif %}
-        "url": "https://example.com/current-page",
+        "url": "{{ '/' | relative_url }}",
         "publisher": {
             "@type": "Organization",
             "name": "{{ site.title }}",
