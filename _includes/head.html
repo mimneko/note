@@ -30,7 +30,7 @@
         "@type": "WebPage",
         "headline": "{% if page.title %}{{ page.title }} - {% endif %}{{ site.title }}",
         "description": "{{ page.description | default: site.description }}",
-        "datePublished": "2024-06-07",
+        "datePublished": "{{ page.date | date: "%Y-%m-%d" }}",
         {% if post.last_modified_at %}
         "dateModified": "{{ page.last_modified_at | date: "%Y-%m-%d" }}",
         {% endif %}
