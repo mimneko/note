@@ -1,15 +1,7 @@
 ---
 layout: default
 ---
-
-<nav class="breadcrumb" aria-label="パンくずリスト">
-    <ol>
-        <li class="breadcrumb-item"><a href="/"><i class="fas fa-home"></i>ホーム</a></li>
-        <li class="breadcrumb-item"><a href="/カテゴリ"><i class="fas fa-folder"></i>カテゴリ</a></li>
-        <li class="breadcrumb-item"><a href="/サブカテゴリ"><i class="fas fa-folder"></i>サブカテゴリ</a></li>
-        <li class="breadcrumb-item active" aria-current="page"><a href="https://example.com/current-page"><i class="fas fa-file"></i>現在のページ</a></li>
-    </ol>
-</nav>
+{% include breadcrumb.html %}
 
 <article>
     <div class="article-header">
