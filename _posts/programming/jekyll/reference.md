@@ -10,3 +10,4 @@ tags: [jekyll]
 - [サイト内検索](https://zenn.dev/tenax66/articles/4f4c568ee2ad41)
 - [ページメニュー](https://leico.github.io/TechnicalNote/Jekyll/page-menu)
 - [サイトマップ](https://tools.bigwave.biz/notes/blog/posts/jekyll_sitemap)
+- [パンくずリスト](https://carefree-se.hatenablog.com/entry/2020/07/21/110000)
