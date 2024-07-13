@@ -1,65 +1,22 @@
 <!DOCTYPE html>
-<html lang="ja">
+<html lang="{{ site.lang | default: "ja" }}">
 
-<head>
-  <meta charset="UTF-8">
-  <title>{% if page.title %}{{ page.title }} | {{ site.title }}{% else %}{{ site.title }} | {{ site.description}}{% endif %}</title>
-  <meta name="description" content="{% if page.excerpt %}{{ page.excerpt | strip_html | strip_newlines | truncate: 160 }}{% else %}{{ site.description }}{% endif %}">
-  <meta name="viewport" content="width=device-width">
-  <link rel="canonical" href="{{ page.url | replace:'index.html','' | absolute_url }}">
-  <!-- Normalize.css -->
-  <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
-  <!-- Font Awesome -->
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer">
-  <!-- Main CSS -->
-  <link rel="stylesheet" href="{{ '/assets/css/style.css' | relative_url }}">
-  <!-- 数学用 -->
-  <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
-</head>
+{% include head.html %}
 
 <body>
+    <div class="page-container">
+        {% include header.html %}
 
-<!-- サイト名とナビゲーション部分｡全ページ共通 -->
-<header class="header">
-  <div class="container">
-    <div class="site-title"><a href="{{ '/' | relative_url }}">{{ site.title }}</a></div>
-    <nav class="nav">
-      <ul class="nav__list">
-        <li class="nav__item"><a href="{{ '/' | relative_url }}">ホーム</a></li>
-        <li class="nav__item"><a href="{{ '/about/' | relative_url }}">みむねこのーとについて</a></li>
-      </ul>
-    </nav>
-  </div>
-</header>
+        <main>
+            <div class="main-content">
+                {{ content }}
+            </div>
 
+            {% include sidebar.html %}
+            
+        </main>
 
-
-{{ content }}
-
-
-
-<!-- フッター｡全ページ共通 -->
-<footer class="footer">
-  <div class="container">
-    <div class="footer__container">
-      <!-- https://nandemo-nobiru.com/om-6265 -->
-      <p class="copyright"><small>Copyright &copy; 2023-2024 {{ site.author.name }} All Rights Reserved.</small></p>
-
-      <div class="social-link">
-        {% if site.author.github %}
-          <p class="social-link__item">
-            <a href="https://github.com/{{ site.author.github }}"><i class="fa fa-github"></i></a>
-          </p>
-        {% endif %}
-        {% if site.author.twitter %}
-          <p class="social-link__item">
-            <a href="https://twitter.com/{{ site.author.twitter }}"><i class="fa fa-twitter"></i></a>
-          </p>
-        {% endif %}
-      </div>
-    </div><!--footer__container-->
-  </div><!--container-->
-</footer>
-
+        {% include footer.html %}
+    </div>
 </body>
 </html>

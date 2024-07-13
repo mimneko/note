@@ -2,48 +2,55 @@
 layout: default
 ---
 
-<div class="contents page">
-  <div class="container">
+<nav class="breadcrumb" aria-label="パンくずリスト">
+    <ol>
+        <li class="breadcrumb-item"><a href="/"><i class="fas fa-home"></i>ホーム</a></li>
+        <li class="breadcrumb-item"><a href="/カテゴリ"><i class="fas fa-folder"></i>カテゴリ</a></li>
+        <li class="breadcrumb-item"><a href="/サブカテゴリ"><i class="fas fa-folder"></i>サブカテゴリ</a></li>
+        <li class="breadcrumb-item active" aria-current="page"><a href="https://example.com/current-page"><i class="fas fa-file"></i>現在のページ</a></li>
+    </ol>
+</nav>
 
-    <div class="page__header">
-      <h1 class="page__title">{{ page.title }}</h1>
-      <p class="page__date">{{ page.date | date: '%Y-%m-%d' }}</p>
-      <div id="article-information">
-        <div id="write-date">{{ page.date | date: '%Y-%m-%d' }}</div>
-        <div id="author">{{ site.author.name }}</div>
-      </div>
+<article>
+    <div class="article-header">
+        <h1 id="article-title">{{ page.title }}</h1>
+        <div id="article-meta">
+            <span id="written-date"><i class="fas fa-pen"></i><span>{{ page.date | date: "%Y-%m-%d" }}</span></span>
+            {% if page.last_modified_at %}
+            <span id="updated-date"><i class="fas fa-sync-alt fa-flip-horizontal"></i><span>{{ page.last_modified_at | date: "%Y-%m-%d" }}</span></span>
+            {% endif %}
+            <span id="article-author"><i class="fas fa-user"></i><span>{{ page.author }}</span></span>
+        </div>
     </div>
 
-    <div class="page__body">
-
-      {% if page.toc %}
+    <div class="article-body">
+        {% if page.toc %}
         <div id="toc">
-          <p id="toc-title">目次</p>
-          {% toc %}
+            <p id="toc-title">目次</p>
+            {% toc %}
         </div>
-      {% endif %}
+        {% endif %}
+        
+        {{ content }}
+    </div>
 
-      {{ content }}
+    <div class="article-footer">
+        <div class="article-categories-tags">
+            {% for tag in page.tags %}
+            <div class="article-tags">
+                <a class="tag-link" href="{{ site.baseurl }}/tags#{{ tag | slugify }}"><span class="fa fa-tag"></span>{{ tag }}</a>
+            </div>
+            {% endfor %}
+        </div>
+    </div>
 
+</article>
 
-    </div><!--page__body-->
-
-    <!-- 前後のページへのリンクを表示したい -->
-    <div class="pager">
-
-      {% if page.next %}
-        <p class="pager__item--next">
-          <a href="{{ page.next.url | relative_url }}">&lt; {{ page.next.title }}</a>
-        </p>
-      {% endif %}
-
-      {% if page.previous %}
-        <p class="pager__item--prev">
-          <a href="{{ page.previous.url | relative_url }}">{{ page.previous.title }} &gt;</a>
-        </p>
-      {% endif %}
-
-    </div><!--pager-->
-    
-  </div><!--container-->
-</div><!--page-->
+<nav class="pager">
+    {% if page.previous.url %}
+    <a class="prev-article" href="{{page.previous.url}}"><i class="fas fa-chevron-left"></i>{{ page.previous.title }}</a>
+    {% endif %}
+    {% if page.next.url %}
+    <a class="next-article" href="{{page.next.url}}">{{ page.next.title }}<i class="fas fa-chevron-right"></i></a>
+    {% endif %}
+</nav>
