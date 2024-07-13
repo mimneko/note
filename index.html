@@ -5,11 +5,11 @@ layout: default
 
 <!-- 記事一覧 -->
 {% for post in paginator.posts %}
-  <article class="archive">
-    <h3 class="archive__title"><a href="{{ post.url | relative_url }}">{{ post.title }}</a></h3>
-    <p class="archive__date"><time>{{ post.date | date: '%B %d, %Y' }}</time></p>
-    <div class="archive__excerpt">{{ post.excerpt }}</div>
-  </article>
+  <div class="post-archive">
+    <div class="archive-title"><a href="{{ post.url | relative_url }}">{{ post.title }}</a></div>
+    <p class="archive-date"><time>{{ post.date | date: '%B %d, %Y' }}</time></p>
+    <div class="archive-excerpt">{{ post.excerpt }}</div>
+  </div>
 {% endfor %}
 
 <!-- ページネーション -->
