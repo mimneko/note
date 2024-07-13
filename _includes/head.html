@@ -6,7 +6,7 @@
     <meta property="og:title" content="{% if page.title %}{{ page.title }} - {% endif %}{{ site.title }}">
     <meta property="og:description" content="{{ page.description | default: site.description }}">
     <meta property="og:image" content="https://example.com/og-image.jpg">
-    <meta property="og:url" content="https://example.com/current-page">
+    <meta property="og:url" content="{{ page.url | replace:'index.html','' | absolute_url }}">
     <meta property="og:type" content="article">
     <meta name="twitter:card" content="summary_large_image">
     <title>{% if page.title %}{{ page.title }} - {% endif %}{{ site.title }}</title>
