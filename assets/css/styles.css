@@ -239,6 +239,7 @@ main {
     max-width: 844px;
     margin: 1rem auto;
     padding: 0;
+    flex: 1;
 }
 
 .main-content {
