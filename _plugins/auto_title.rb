@@ -1,21 +1,25 @@
-require 'jekyll'
+# _plugins/auto_title.rb
 
 module Jekyll
-  class AutoTitleGenerator < Generator
+  class MarkdownTitleGenerator < Generator
     def generate(site)
       site.pages.each do |page|
-        # `site.pages` は HTML ファイルなどの他のページを含むため、Markdown ファイルのみに限定します。
-        if page.extname == ".md" || page.extname == ".markdown"
+        if page.extname.downcase == '.md' || page.extname.downcase == '.markdown'
           unless page.data['title']
-            if page.content =~ /^#\s+(.+)$/
-              title = page.content.match(/^#\s+(.+)$/)[1]
-              page.data['title'] = title
-            else
-              page.data['title'] = '無題'
-            end
+            title = extract_title(page.content)
+            page.data['title'] = title || '無題'
           end
         end
       end
+    end
+
+    private
+
+    def extract_title(content)
+      if content =~ /^#\s+(.+)$/
+        return content.match(/^#\s+(.+)$/)[1]
+      end
+      nil
     end
   end
 end
