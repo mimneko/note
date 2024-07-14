@@ -39,6 +39,9 @@ layout: default
 </article>
 
 <nav class="pager">
+    <p>{{ page.previous.url | relative_url }}</p>
+    <p>{{ page.next.url | relative_url }}</p>
+    <p>___</p>
     {% if page.previous %}
       {% assign previous_url_parts = page.previous.url | split: '/' %}
       {% assign full_previous_url = site.url | append: site.baseurl %}
