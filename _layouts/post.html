@@ -39,6 +39,7 @@ layout: default
 </article>
 
 <nav class="pager">
+    
     <p class="prev-article">
     {% if page.previous %}
         {% assign previous_url_relative = page.previous.url | relative_url %}
@@ -46,6 +47,7 @@ layout: default
         <a href="{{ previous_url_full }}"><i class="fas fa-chevron-left"></i>{{ page.previous.title }}</a>
     {% endif %}
     </p>
+    
     <p class="next-article">
     {% if page.next %}
         {% assign next_url_relative = page.next.url | relative_url %}
@@ -53,30 +55,5 @@ layout: default
         <a href="{{ next_url_full }}">{{ page.next.title }}<i class="fas fa-chevron-right"></i></a>
     {% endif %}
     </p>
-    <!--
-    <p>{{ page.previous.url | relative_url }}</p>
-    <p>{{ page.next.url | relative_url }}</p>
-    <p>___</p>
-    {% if page.previous %}
-      {% assign previous_url_parts = page.previous.url | split: '/' %}
-      {% assign full_previous_url = site.url | append: site.baseurl %}
-      
-      {% for part in previous_url_parts %}
-        {% assign full_previous_url = full_previous_url | append: part | append: '/' %}
-      {% endfor %}
-      
-      <p class="prev-article"><a href="{{ full_previous_url }}"><i class="fas fa-chevron-left"></i>{{ page.previous.title }}</a></p>
-    {% endif %}
-
-    {% if page.next %}
-      {% assign next_url_parts = page.next.url | split: '/' %}
-      {% assign full_next_url = site.url | append: site.baseurl %}
-      
-      {% for part in next_url_parts %}
-        {% assign full_next_url = full_next_url | append: part | append: '/' %}
-      {% endfor %}
-      
-      <p class="next-article"><a href="{{ full_next_url }}">{{ page.next.title }}<i class="fas fa-chevron-right"></i></a></p>
-    {% endif %}
-    -->
+    
 </nav>
