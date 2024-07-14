@@ -16,18 +16,14 @@ layout: default
     </div>
 
     <div class="article-body">
-        {% toc %}
-        <p>-----------------------------------------------------</p>
-        {% assign toc_present = page.content contains "<h2" %}
-        {% if toc_present %}
+
         <div id="toc">
             <p id="toc-title">目次</p>
             {% toc %}
         </div>
-        {% endif %}
-
         
-        {{ content | toc }}
+        {{ content }}
+        
     </div>
 
     <div class="article-footer">
