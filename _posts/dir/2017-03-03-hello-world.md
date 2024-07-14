@@ -2,8 +2,7 @@
 title: Hello World!
 categories: sample
 date: 2023-06-30
-tags:
-- jekyll, website
+tags: [jekyll, website]
 ---
 
 First Post.
