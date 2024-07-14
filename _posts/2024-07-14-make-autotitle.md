@@ -4,7 +4,7 @@ tags: [jekyll]
 
 # タイトルをjekyllのtitleにできるようにした（できていない）
 
-`_plugins/auto_title.rb`に作成。
+`_plugins/auto_title.rb`に作成したが、上手く動かず。
 ```ruby
 require 'jekyll'
 
