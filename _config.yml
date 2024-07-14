@@ -25,7 +25,6 @@ plugins:
   - jekyll-toc
   - jekyll-sitemap
   - jekyll-seo-tag
-  - jekyll-last-modified-at
 
 last-modified-at: # 日付のフォーマットを変更する
     date-format: '%d-%b-%y'
