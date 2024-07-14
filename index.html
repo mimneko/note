@@ -2,11 +2,13 @@
 layout: default
 ---
 
+記事一覧
+
 <!-- 記事一覧 -->
 {% for post in paginator.posts %}
   <div class="post-archive">
     <div class="archive-title"><a href="{{ post.url | relative_url }}">{{ post.title }}</a></div>
-    <p class="archive-date"><time>{{ page.date | date: "%Y-%m-%d" }}</time></p>
+    <p class="archive-date"><time>{{ post.date | date: "%Y-%m-%d" }}</time></p>
     <div class="archive-excerpt">{{ post.description }}</div>
   </div>
 {% endfor %}
