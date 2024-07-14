@@ -283,7 +283,7 @@ aside {
         padding: 0;
     }
 
-    article {
+    .main-wrap {
         padding: 0 10px;
     }
 }
