@@ -46,7 +46,7 @@ layout: default
         {% assign url_parts = page.previous.url | split: '/' %}
         {% assign new_url = url_parts[0] | append: site.base_url | append: '/' | append: url_parts[1] %}
         <a class="prev-article" href="{{ new_url }}">Previous Page</a>
-    {% endif %}
+    {% endif %}<!--
     {% if page.previous %}
       {% assign url_parts = page.previous.url | split: '/' %}
       <ul>
@@ -54,7 +54,17 @@ layout: default
           <li>{{ part }}</li>
         {% endfor %}
       </ul>
-    {% endif %}
+    {% endif %}-->
+    {% if page.previous %}
+  {% assign previous_url_parts = page.previous.url | split: '/' %}
+  {% assign full_previous_url = site.url | append: site.base_url | append: '/' | append: previous_url_parts[0] | append: '/' | append: previous_url_parts[1] %}
+  <p>Full Previous URL: <a href="{{ full_previous_url }}">{{ full_previous_url }}</a></p>
+{% endif %}
+    {% if page.next %}
+  {% assign next_url_parts = next.previous.url | split: '/' %}
+  {% assign full_next = site.url | append: site.base_url | append: '/' | append: next_url_parts[0] | append: '/' | append: next_url_parts[1] %}
+  <p>Full Previous URL: <a href="{{ full_next_url }}">{{ full_next_url }}</a></p>
+{% endif %}
     {% if page.next.url %}
     <a class="next-article" href="{{page.next.url}}">{{ page.next.title }}<i class="fas fa-chevron-right"></i></a>
     {% endif %}
