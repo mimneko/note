@@ -27,7 +27,7 @@ plugins:
 markdown: kramdown
 kramdown:
   input: GFM
-  syntax_highlighter: coderay
+  syntax_highlighter: rouge
   toc_levels: 2..3
 
 toc:
