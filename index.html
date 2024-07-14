@@ -18,7 +18,7 @@ layout: default
   <div class="pagination">
 
     {% if paginator.previous_page %}
-      <a class="pagination__item" href="{{ paginator.previous_page_path | relative_url }}">&lt; 前のページ</a>
+      <a class="pagination__item" href="{{ paginator.previous_page_path | relative_url }}"><i class="fas fa-chevron-left"></i></a>
     {% endif %}
 
     {% for page in (1..paginator.total_pages) %}
@@ -32,7 +32,7 @@ layout: default
     {% endfor %}
 
     {% if paginator.next_page %}
-      <a class="pagination__item" href="{{ paginator.next_page_path | relative_url }}">次のページ &gt;</a>
+      <a class="pagination__item" href="{{ paginator.next_page_path | relative_url }}"><i class="fas fa-chevron-right"></i></a>
     {% endif %}
 
   </div><!--pagination-->
