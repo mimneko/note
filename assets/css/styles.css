@@ -58,13 +58,13 @@
     --code-text-color: var(--color-black);
     --table-border-color: var(--color-black);
 }
-
+/*
 @media (prefers-color-scheme: dark) {
     :root {
         background-color: var(--color-black);
     }
 }
-
+*/
 /* -----------------------------------------
     基本スタイル
 ----------------------------------------- */
