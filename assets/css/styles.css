@@ -248,7 +248,7 @@ main {
     border-radius: .5rem;
 }
 
-article {
+.main-wrap {
     background-color: var(--article-bg-color);
     padding: 0px;
     border-radius: 5px;
