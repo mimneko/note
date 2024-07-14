@@ -39,16 +39,20 @@ layout: default
 </article>
 
 <nav class="pager">
+    <p class="prev-article">
     {% if page.previous %}
-      {% assign previous_url_relative = page.previous.url | relative_url %}
-      {% assign previous_url_full = site.url | append: previous_url_relative %}
-      <p class="prev-article"><a href="{{ previous_url_full }}"><i class="fas fa-chevron-left"></i>{{ page.previous.title }}</a></p>
+        {% assign previous_url_relative = page.previous.url | relative_url %}
+        {% assign previous_url_full = site.url | append: previous_url_relative %}
+        <a href="{{ previous_url_full }}"><i class="fas fa-chevron-left"></i>{{ page.previous.title }}</a>
     {% endif %}
+    </p>
+    <p class="next-article">
     {% if page.next %}
-      {% assign next_url_relative = page.next.url | relative_url %}
-      {% assign next_url_full = site.url | append: next_url_relative %}
-      <p class="next-article"><a href="{{ next_url_full }}">{{ page.next.title }}<i class="fas fa-chevron-right"></i></a></p>
+        {% assign next_url_relative = page.next.url | relative_url %}
+        {% assign next_url_full = site.url | append: next_url_relative %}
+        <a href="{{ next_url_full }}">{{ page.next.title }}<i class="fas fa-chevron-right"></i></a>
     {% endif %}
+    </p>
     <!--
     <p>{{ page.previous.url | relative_url }}</p>
     <p>{{ page.next.url | relative_url }}</p>
