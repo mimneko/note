@@ -668,6 +668,10 @@ article #toc-content li ol{
     padding-inline-start: .5em;
 }
 
+article #toc:has(li) {
+    display: none;
+}
+
 /* -----------------------------------------
     注釈
 ----------------------------------------- */
