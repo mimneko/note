@@ -844,6 +844,7 @@ strong {
     display: block;
     padding: 7px 16px;
     border: 1px solid #ccc;
+    color: var(--color-black);
 }
 
 .pagination .current {
