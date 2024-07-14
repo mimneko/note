@@ -7,7 +7,9 @@ layout: default
     <div class="article-header">
         <h1 id="article-title">{{ page.title }}</h1>
         <div id="article-meta">
+            {% if page.date %}
             <span id="written-date"><i class="fas fa-pen"></i><span>{{ page.date | date: "%Y-%m-%d" }}</span></span>
+            {% endif %}
             {% if page.last_modified_at %}
             <span id="updated-date"><i class="fas fa-sync-alt fa-flip-horizontal"></i><span>{{ page.last_modified_at | date: "%Y-%m-%d" }}</span></span>
             {% endif %}
