@@ -668,7 +668,7 @@ article #toc-content li ol{
     padding-inline-start: .5em;
 }
 
-article #toc:has(li) {
+article #toc:not(:has(li)) {
     display: none;
 }
 
