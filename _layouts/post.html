@@ -58,24 +58,24 @@ layout: default
     
     {% if page.previous %}
       {% assign previous_url_parts = page.previous.url | split: '/' %}
-      {% assign full_previous_url = site.url | append: site.baseurl | append: '/' %}
+      {% assign full_previous_url = site.url | append: site.baseurl %}
       
       {% for part in previous_url_parts %}
         {% assign full_previous_url = full_previous_url | append: part | append: '/' %}
       {% endfor %}
       
-      <p>Full Previous URL: <a href="{{ full_previous_url }}">{{ full_previous_url }}</a></p>
+      <p><a href="{{ full_previous_url }}">{{ full_previous_url }}</a></p>
     {% endif %}
 
     {% if page.next %}
       {% assign next_url_parts = page.next.url | split: '/' %}
-      {% assign full_next_url = site.url | append: site.baseurl | append: '/' %}
+      {% assign full_next_url = site.url | append: site.baseurl %}
       
       {% for part in next_url_parts %}
         {% assign full_next_url = full_next_url | append: part | append: '/' %}
       {% endfor %}
       
-      <p>Full Next URL: <a href="{{ full_next_url }}">{{ full_next_url }}</a></p>
+      <p><a href="{{ full_next_url }}">{{ full_next_url }}</a></p>
     {% endif %}
     
     {% if page.next.url %}
