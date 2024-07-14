@@ -546,6 +546,11 @@ article h6 {
 /* -----------------------------------------
     カテゴリ・タグ
 ----------------------------------------- */
+.article-categories-tags {
+    display: flex;
+    gap: 10px;
+}
+
 .article-categories-tags a {
     text-decoration: none;
     color: var(--text-sub-color);
