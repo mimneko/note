@@ -39,6 +39,9 @@ toc:
   list_id: toc-content
   ordered_list: true
 
+titles_from_headings:
+  strip_title: true
+  
 permalink: /:categories/:title/
 future: true
 
