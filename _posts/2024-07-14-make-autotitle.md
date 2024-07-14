@@ -4,7 +4,7 @@ tags: [jekyll]
 
 # タイトルをjekyllのtitleにできるようにした（できていない）
 
-`_plugins/auto_title.rb`に作成したが、上手く動かず。
+`_plugins/auto_title.rb`に作成したが、上手く動かず。GitHub Pagesだと.rbは動かせないのでしょうか。
 ```ruby
 require 'jekyll'
 
