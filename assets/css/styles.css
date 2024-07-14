@@ -817,4 +817,36 @@ article blockquote::after {
     padding: 20px; /* 内側の余白を指定 */
     box-shadow: 0 4px 8px rgba(0,0,0,0.1); /* ボックスシャドウを追加（任意） */
     margin: 10px 0;
+
+}
+
+/* -----------------------------------------
+    強調
+----------------------------------------- */
+strong {
+  font-weight: bold;
+  background: linear-gradient(transparent 60%, #f9c270 0%);
+}
+
+/* -----------------------------------------
+    ページネーション
+----------------------------------------- */
+.pagination {
+    padding: 4% 0;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.pagination__item {
+    margin-right: 4px;
+    text-decoration: none;
+    display: block;
+    padding: 7px 16px;
+    border: 1px solid #ccc;
+}
+
+.pagination .current {
+    background: #0099ce;
+    border-color: #0099ce;
+    color: white;
 }
