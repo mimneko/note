@@ -2,7 +2,7 @@
 tags: [jekyll]
 ---
 
-# タイトルをjekyllのtitleにできるようにした
+# タイトルをjekyllのtitleにできるようにした（できていない）
 
 `_plugins/auto_title.rb`に作成。
 ```ruby
