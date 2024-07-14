@@ -10,3 +10,6 @@ gem "jekyll-watch"
 gem 'jekyll-toc'
 gem "csv"
 gem "base64"
+gem "jekyll-sitemap"
+gem "jekyll-seo-tag"
+gem "jekyll-last-modified-at"
