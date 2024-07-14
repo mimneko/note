@@ -12,4 +12,4 @@ gem "csv"
 gem "base64"
 gem "jekyll-sitemap"
 gem "jekyll-seo-tag"
-gem 'jekyll-titles-from-headings'
+gem 'jekyll-relative-links'
