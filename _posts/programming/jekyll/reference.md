@@ -11,5 +11,5 @@ tags: [jekyll]
 - [ページメニュー](https://leico.github.io/TechnicalNote/Jekyll/page-menu)
 - [サイトマップ](https://tools.bigwave.biz/notes/blog/posts/jekyll_sitemap)
 - [パンくずリスト](https://carefree-se.hatenablog.com/entry/2020/07/21/110000)
-- [プラグイン諸々]([https://carefree-se.hatenablog.com/entry/2020/07/20/110000](https://qiita.com/noraworld/items/f0da9ecb608476fe3a02))
+- [プラグイン諸々](https://qiita.com/noraworld/items/f0da9ecb608476fe3a02)
 - 
