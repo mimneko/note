@@ -39,6 +39,17 @@ layout: default
 </article>
 
 <nav class="pager">
+    {% if page.previous %}
+      {% assign previous_url_relative = page.previous.url | relative_url %}
+      {% assign previous_url_full = site.url | append: previous_url_relative %}
+      <p class="prev-article"><a href="{{ previous_url_full }}"><i class="fas fa-chevron-left"></i>{{ page.previous.title }}</a></p>
+    {% endif %}
+    {% if page.next %}
+      {% assign next_url_relative = page.next.url | relative_url %}
+      {% assign next_url_full = site.url | append: next_url_relative %}
+      <p class="next-article"><a href="{{ next_url_full }}">{{ page.next.title }}<i class="fas fa-chevron-right"></i></a></p>
+    {% endif %}
+    <!--
     <p>{{ page.previous.url | relative_url }}</p>
     <p>{{ page.next.url | relative_url }}</p>
     <p>___</p>
@@ -63,4 +74,5 @@ layout: default
       
       <p class="next-article"><a href="{{ full_next_url }}">{{ page.next.title }}<i class="fas fa-chevron-right"></i></a></p>
     {% endif %}
+    -->
 </nav>
