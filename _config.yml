@@ -27,9 +27,6 @@ plugins:
   - jekyll-seo-tag
   - jekyll-titles-from-headings
 
-last-modified-at: # 日付のフォーマットを変更する
-    date-format: '%d-%b-%y'
-
 markdown: kramdown
 kramdown:
   input: GFM
@@ -52,4 +49,3 @@ defaults:
       toc: true
       layout: "post"
       categories: "uncategorized"
-      title: "無題"
