@@ -25,7 +25,6 @@ plugins:
   - jekyll-toc
   - jekyll-sitemap
   - jekyll-seo-tag
-  - jekyll-titles-from-headings
 
 markdown: kramdown
 kramdown:
