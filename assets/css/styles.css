@@ -851,4 +851,13 @@ strong {
     background: #0099ce;
     border-color: #0099ce;
     color: white;
+
+}
+
+/* -----------------------------------------
+    リスト
+----------------------------------------- */
+ul,
+ol {
+    padding-inline-start: 30px;
 }
