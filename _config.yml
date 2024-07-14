@@ -18,6 +18,8 @@ gems:
   - jekyll-paginate
   - jekyll-feed
 
+timezone: Asia/Tokyo
+
 plugins:
   - jekyll-paginate
   - jekyll-toc
@@ -25,7 +27,7 @@ plugins:
 markdown: kramdown
 kramdown:
   input: GFM
-  syntax_highlighter: rouge
+  syntax_highlighter: coderay
   toc_levels: 2..3
 
 toc:
