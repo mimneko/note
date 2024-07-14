@@ -99,7 +99,7 @@ body {
 header {
     background-color: var(--header-bg-color);
     color: var(--text-color);
-    padding: 1rem;
+    padding: 1rem 1.5rem;
     width: 100%;
     box-sizing: border-box;
     box-shadow: 0 2px 4px rgba(0, 0, 0, .1);
