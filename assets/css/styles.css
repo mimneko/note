@@ -16,7 +16,7 @@
     --color-transparentgray: rgba(199, 199, 199, 0.5);
 
     /* フォント */
-    --font-family-gothic: "Helvetica Neue", Arial, "Hiragino Kaku Gothic ProN", "Hiragino Sans", Meiryo, sans-serif;
+    --font-family-gothic: "Yu Gothic Medium", "Noto Sans Japanese", "Hiragino Kaku Gothic ProN", "Hiragino Sans", "Meiryo", "Helvetica Neue", Arial, sans-serif;/*"Helvetica Neue", Arial, "Hiragino Kaku Gothic ProN", "Hiragino Sans", Meiryo, sans-serif;*/
     --font-family-monospace: monospace;
     --font-family-awesome: "Font Awesome 5 Free";
     --font-size-huge: 32px;
@@ -824,8 +824,10 @@ article blockquote::after {
     強調
 ----------------------------------------- */
 strong {
-  font-weight: bold;
-  background: linear-gradient(transparent 60%, #f9c270 0%);
+  /*font-weight: bold;
+  background: linear-gradient(transparent 60%, #f9c270 0%);*/
+  font-weight: normal;
+  color: var(--color-orange);
 }
 
 /* -----------------------------------------
