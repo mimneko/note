@@ -125,6 +125,10 @@ header {
         flex-direction: column;
         text-align: center;
     }
+    
+    .header-content nav {
+        display: none;
+    }
 }
 
 .site-icon {
