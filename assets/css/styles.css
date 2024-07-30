@@ -39,7 +39,7 @@
     --h1-border-color: var(--color-black);
     --base-color: var(--color-skyblue);
     --base-pale-color: var(--color-paleblue);
-    --dominant-color: var(--color-orange);
+    --accent-color: var(--color-orange);
     --header-bg-color: var(--color-white);
     --header-border-color: var(--color-iron);
     --article-bg-color: var(--color-white);
