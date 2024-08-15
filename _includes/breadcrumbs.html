@@ -1,0 +1,35 @@
+{% assign url_parts = page.url | split: '/' %}
+{% assign breadcrumbs = "" %}
+<nav class="breadcrumb" aria-label="パンくずリスト">
+    <ol>
+        <li class="breadcrumb-item">
+            <a href="{{ site.baseurl }}/">
+                <i class="fas fa-home"></i>ホーム
+            </a>
+        </li>
+        {% for part in url_parts %}
+            {% if part != "" and part != url_parts.last %}
+                {% assign breadcrumbs = breadcrumbs | append: "/" | append: part %}
+                {% assign tag = site.data.tags[part] %}
+                <li class="breadcrumb-item">
+                    <a href="{{ site.baseurl }}{{ breadcrumbs }}/">
+                        <i class="fas fa-folder"></i>{{ tag.name | default: part }}
+                    </a>
+                </li>
+            {% elsif part == url_parts.last %}
+                {% assign breadcrumbs = breadcrumbs | append: "/" | append: part %}
+                {% if page.layout == "list" %}
+                    <li class="breadcrumb-item">
+                        <a href="{{ site.baseurl }}{{ breadcrumbs }}/">
+                            <i class="fas fa-folder"></i>{{ site.data.tags[page.category].name }}の記事一覧
+                        </a>
+                    </li>
+                {% else %}
+                    <li class="breadcrumb-item active" aria-current="page">
+                        <i class="fas fa-file"></i>{{ page.title }}
+                    </li>
+                {% endif %}
+            {% endif %}
+        {% endfor %}
+    </ol>
+</nav>
