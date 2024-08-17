@@ -875,3 +875,106 @@ ol {
 summary {
     cursor: pointer;
 }
+
+/* -----------------------------------------
+    フォルダツリー
+----------------------------------------- */
+/* <!-- https://pote-chil.com/css-stock/ja/list --> */
+.folder-tree {
+    padding: 0 .5em 0 1.5em;
+}
+
+.folder-tree ul {
+    padding-inline-start: .5em;
+}
+
+.folder-tree ul li {
+    position: relative;
+    padding: .3em .3em .3em 1em;
+    margin-bottom: 0;
+    list-style-type: none;
+    color: #333333;
+}
+
+.folder-tree ul li::before,
+.folder-tree ul li::after {
+    position: absolute;
+    left: 0;
+    background-color: #333333;
+    content: '';
+}
+
+.folder-tree ul li::before {
+    top: 1em;
+    width: 10px;
+    height: 1px;
+}
+
+.folder-tree ul li::after {
+    top: 0;
+    width: 1px;
+    height: 100%;
+}
+
+.folder-tree ul li:last-child::after {
+    height: 1em;
+}
+
+.folder-tree summary {
+    display: block;
+    cursor: pointer;
+    padding-left: 1.3em;
+}
+
+.folder-tree summary::-webkit-details-marker {
+    display: none;
+}
+
+.folder-tree summary:hover {
+    background-color: #f5f5f5;
+    border-radius: 5px;
+}
+
+.folder-tree summary,
+.folder-tree ul li span,
+.folder-tree ul li a {
+    display: inline-block;
+    vertical-align: middle;
+    position: relative;
+}
+
+.folder-tree details > summary::before,
+.folder-tree ul li span::before,
+.folder-tree ul li a::before {
+    position: absolute;
+    left: 0;
+    top: 0;
+    content: '';
+    display: inline-block;
+    width: 1.5em;
+    height: 1.5em;
+}
+
+/* アイコン入手元：https://icons8.jp/icon/set/popular-icons/sf-regular */
+
+.folder-tree details > summary::before {
+    margin: 0 0.1em -0.4em -0.2em;
+    background-image: url("../icons/folder-close.svg");
+}
+
+.folder-tree details[open] > summary::before {
+    background-image: url("../icons/folder-open.svg");
+}
+
+.folder-tree ul li > span,
+.folder-tree ul li > a {
+    padding-left: 1.2em;
+}
+
+.folder-tree ul li > span::before,
+.folder-tree ul li > a::before {
+    margin: 0 0.1em 0 -0.3em;
+    vertical-align: middle;
+    background-image: url("../icons/file.svg");
+}
+
