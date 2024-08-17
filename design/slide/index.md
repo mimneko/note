@@ -1,4 +1,4 @@
 ---
-layout: list
+layout: category_list
 category: slide
 ---

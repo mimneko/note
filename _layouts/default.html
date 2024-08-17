@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="ja">
+<html lang="{{ site.lang | default: 'ja' }}">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,53 +7,44 @@
         {% if page.title %}
             {{ page.title }} - {{ site.title }}
         {% elsif page.category %}
-            {{ site.data.tags[page.category].name }}の記事一覧 - {{ site.title }}
+            {{ site.data.slugs[page.category].name }}の記事一覧 - {{ site.title }}
+        {% elsif page.tag %}
+            {{ site.data.slugs[page.tag].name }}の記事一覧 - {{ site.title }}
         {% else %}
             {{ site.title }}
         {% endif %}
     </title>
-    <link rel="apple-touch-icon" sizes="180x180" href="https://mimneko.github.io//mimnekonote/assets/icons/apple-touch-icon.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="https://mimneko.github.io//mimnekonote/assets/icons/favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="https://mimneko.github.io//mimnekonote/assets/icons/favicon-16x16.png">
+    <!-- ファビコン -->
+    <link rel="apple-touch-icon" sizes="180x180" href="{{ '/assets/icons/apple-touch-icon.png' | relative_url }}">
+    <link rel="icon" type="image/png" sizes="32x32" href="{{ '/assets/icons/favicon-32x32.png' | relative_url }}">
+    <link rel="icon" type="image/png" sizes="16x16" href="{{ '/assets/icons/favicon-16x16.png' | relative_url }}">
+    <link rel="manifest" href="{{ '/assets/icons/manifest.json' | relative_url }}">
+    <link rel="mask-icon" href="{{ '/assets/icons/safari-pinned-tab.svg' | relative_url }}" color="#3498db">
+    <meta name="msapplication-TileColor" content="#3498db">
+    <meta name="theme-color" content="#3498db">
+    <!-- css & js -->
+    <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
+    <link rel="preload" href="{{ '/assets/css/styles.css' | relative_url }}" as="style">
     <link rel="stylesheet" href="{{ '/assets/css/styles.css' | relative_url }}">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer">
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
 </head>
 <body>
     <div class="page-container">
-        <header>
-            <div class="header-content">
-                <div class="logo">
-                    <a href="https://mimneko.github.io/mimnekonote/">
-                        <img src="https://mimneko.github.io/mimnekonote/assets/icons/mimneko-note-icon.png" alt="サイトアイコン" class="site-icon">
-                        <span class="site-name">{{ site.title }}</span>
-                    </a>
+
+        {% include header.html %}
+
+        <main>
+            <div class="main-content">
+                <div class="main-wrap">
+        
+                    {{ content }}
+        
                 </div>
-                <nav>
-                    <ul>
-                        <li><a href="https://mimneko.github.io/mimnekonote/">ホーム</a></li>
-                        <li><a href="https://mimneko.github.io/mimnekonote/mission/">教育理念</a></li>
-                        <li><a href="https://mimneko.github.io/mimnekonote/categories/">カテゴリ一覧</a></li>
-                        <li><a href="https://mimneko.github.io/mimnekonote/tags/">タグ一覧</a></li>
-                    </ul>
-                </nav>
             </div>
-        </header>
+        </main>
 
-        {{ content }}
-
-        <footer>
-            <div class="footer-content">
-                <nav>
-                    <ul>
-                        <li><a href="https://mimneko.github.io/mimnekonote/">ホーム</a></li>
-                        <li><a href="https://mimneko.github.io/mimnekonote/mission/">教育理念</a></li>
-                        <li><a href="https://mimneko.github.io/mimnekonote/categories/">カテゴリ一覧</a></li>
-                        <li><a href="https://mimneko.github.io/mimnekonote/tags/">タグ一覧</a></li>
-                    </ul>
-                </nav>
-                <p class="copyright">Copyright &copy; 2023-{{ "now" | date: "%Y" }} {{ site.title }}. All rights reserved.</p>
-            </div>
-        </footer>
+        {% include footer.html %}
     </div>
 </body>
 </html>

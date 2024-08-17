@@ -1,74 +1,54 @@
 ---
 layout: default
+title: ホーム
 ---
 
-<main>
-    <div class="main-content">
-        <div class="main-wrap">
-            <article>
-                
-                <div class="article-body">
-					
-                    <p>This is the home page.</p>
-					
-					<ul>
-						{% for item in site.nav %}
-							<li>
-								<a href="{{ site.baseurl }}{{ item.url }}">{{ item.name }}</a>
-								{% if item.children %}
-								<ul>
-									{% for child in item.children %}
-									<li><a href="{{ site.baseurl }}{{ child.url }}">{{ child.name }}</a></li>
-									{% endfor %}
-								</ul>
-								{% endif %}
-							</li>
-						{% endfor %}
-					</ul>
+<article>
+	
+	<div class="article-body">
+		
+		<p>This is the home page.</p>
 
-					<table>
-						<caption>
-							Front-end web developer course 2021
-						</caption>
-						<thead>
-							<tr>
-							<th scope="col">Person</th>
-							<th scope="col">Most interest in</th>
-							<th scope="col">Age</th>
-							</tr>
-						</thead>
-						<tbody>
-							<tr>
-							<th scope="row">Chris</th>
-							<td>HTML tables</td>
-							<td>22</td>
-							</tr>
-							<tr>
-							<th scope="row">Dennis</th>
-							<td>Web accessibility</td>
-							<td>45</td>
-							</tr>
-							<tr>
-							<th scope="row">Sarah</th>
-							<td>JavaScript frameworks</td>
-							<td>29</td>
-							</tr>
-							<tr>
-							<th scope="row">Karen</th>
-							<td>Web performance</td>
-							<td>36</td>
-							</tr>
-						</tbody>
-						<tfoot>
-							<tr>
-							<th scope="row" colspan="2">Average age</th>
-							<td>33</td>
-							</tr>
-						</tfoot>
-					</table>
+		<table>
+			<caption>
+				Front-end web developer course 2021
+			</caption>
+			<thead>
+				<tr>
+				<th scope="col">Person</th>
+				<th scope="col">Most interest in</th>
+				<th scope="col">Age</th>
+				</tr>
+			</thead>
+			<tbody>
+				<tr>
+				<th scope="row">Chris</th>
+				<td>HTML tables</td>
+				<td>22</td>
+				</tr>
+				<tr>
+				<th scope="row">Dennis</th>
+				<td>Web accessibility</td>
+				<td>45</td>
+				</tr>
+				<tr>
+				<th scope="row">Sarah</th>
+				<td>JavaScript frameworks</td>
+				<td>29</td>
+				</tr>
+				<tr>
+				<th scope="row">Karen</th>
+				<td>Web performance</td>
+				<td>36</td>
+				</tr>
+			</tbody>
+			<tfoot>
+				<tr>
+				<th scope="row" colspan="2">Average age</th>
+				<td>33</td>
+				</tr>
+			</tfoot>
+		</table>
 
-                </div>
-            </article>
-        </div>
-    </div>
-</main>
+	</div>
+</article>

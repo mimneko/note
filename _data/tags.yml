@@ -6,3 +6,7 @@ design:
   name: デザイン
 slide:
   name: スライドデザイン
+web:
+  name: webデザイン
+equation:
+  name: 公式

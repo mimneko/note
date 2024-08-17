@@ -1,6 +1,7 @@
 ---
 title: 代数学の公式2
 date: 2024-07-13
+tags: [math-1, algebra, equation]
 ---
 
 ## あ

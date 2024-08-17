@@ -1,0 +1,58 @@
+---
+layout: default
+---
+
+{% include breadcrumbs.html %}
+
+<article>
+    
+    <div class="article-header">
+        <h1 id="article-title">{{ site.data.tags[page.category].name }}の記事一覧</h1>
+    </div>
+    
+    <div class="article-body">
+
+        <details open>
+            <summary>サブカテゴリ</summary>
+            <ul>
+                {% assign category_path = page.category %}
+                {% assign list_pages = site.pages | where_exp:"page", "page.path contains category_path" | where_exp:"page", "page.path != category_path" | where:"layout", "list" | sort: "date" | reverse %}
+                
+                {% for post in list_pages %}
+                    {% unless page.url == post.url %}
+                    <li>
+                        <a href="{{ site.baseurl }}{{ post.url }}">{{ site.data.tags[post.category].name }}の記事一覧</a>
+                    </li>
+                    {% endunless %}
+                {% else %}
+                    <li>該当するカテゴリはありません。</li>
+                {% endfor %}
+            </ul>
+        </details>
+        
+        <details open>
+            {% assign category_path = page.category %}
+            {% assign non_list_pages = site.pages | where_exp:"page", "page.path contains category_path" | where_exp:"page", "page.path != category_path" | where_exp: "page", "page.layout != 'list'" %}
+            
+            {% assign article_count = non_list_pages | size %}
+            
+            <summary>記事<span class="article-count">{{ article_count }}</span>件</summary>
+            <ul>
+                {% assign non_list_pages = non_list_pages | sort: "date" | reverse %}
+                
+                {% for post in non_list_pages %}
+                    <li>
+                        <a href="{{ site.baseurl }}{{ post.url }}">{{ post.title | default: post.name }}</a>
+                        {% if post.date %}
+                            - <span>{{ post.date | date: "%Y-%m-%d" }}</span>
+                        {% endif %}
+                    </li>
+                {% else %}
+                    <li>該当する記事はありません。</li>
+                {% endfor %}
+            </ul>
+        </details>
+        
+        
+    </div>
+</article>
