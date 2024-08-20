@@ -9,7 +9,7 @@ author:
 plugins:
   - jekyll-toc
 
-#timezone: Asia/Tokyo
+timezone: Asia/Tokyo
 
 markdown: kramdown
 kramdown:
