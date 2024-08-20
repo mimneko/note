@@ -1,0 +1,18 @@
+math:
+  name: 数学
+math-1:
+  name: 数学Ⅰ
+algebra:
+  name: 代数学
+geometry:
+  name: 幾何学
+design:
+  name: デザイン
+slide:
+  name: スライドデザイン
+web:
+  name: webデザイン
+equation:
+  name: 公式
+education:
+  name: 教育

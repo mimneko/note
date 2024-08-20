@@ -1,0 +1,27 @@
+---
+layout: default
+title: ページが見つかりません
+permalink: /404.html
+---
+
+<article>
+    
+    <div class="article-header">
+        <h1 id="article-title">{{ page.title }}</h1>
+    </div>
+	
+	<div class="article-body">
+		
+		<p>以下からお求めのページをお探しください</p>
+
+		<h2>カテゴリ一覧</h2>
+		{% include list-category.html %}
+
+		<h2>タグ一覧</h2>
+		{% include list-tag.html %}
+
+		<h2>記事一覧</h2>
+		{% include list-page.html %}
+
+	</div>
+</article>
