@@ -208,6 +208,10 @@ footer {
     .footer-content > *:last-child {
         margin-bottom: 0;
     }
+
+    .copyright .copyright-break {
+        display: none;
+    }
 }
 
 .social-links ul {
@@ -833,10 +837,10 @@ article blockquote::after {
     強調
 ----------------------------------------- */
 strong {
-  /*font-weight: bold;
-  background: linear-gradient(transparent 60%, #f9c270 0%);*/
-  font-weight: normal;
-  color: var(--color-orange);
+    /*font-weight: bold;
+    background: linear-gradient(transparent 60%, #f9c270 0%);*/
+    font-weight: normal;
+    color: var(--color-orange);
 }
 
 /* -----------------------------------------
