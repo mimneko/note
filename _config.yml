@@ -1,0 +1,60 @@
+title: みむねこのーと
+description: みむねこ用Jekyllです。
+baseurl: "/mimnekonote"
+url: "https://mimneko.github.io" # サイトのURL。
+author:
+  name: みむねこ
+  github: mimneko
+
+plugins:
+  - jekyll-toc
+  - jekyll-sitemap
+  - jekyll-seo-tag
+  - jekyll-feed
+  - jekyll-minifier
+  - jekyll-remote-theme
+
+remote_theme: mimneko/Kiss-Jekyll
+
+#timezone: Asia/Tokyo
+
+markdown: kramdown
+kramdown:
+  input: GFM
+  syntax_highlighter: rouge
+  toc_levels: 2..3
+toc:
+  min_level: 2
+  max_level: 3
+  list_id: toc-content
+  ordered_list: true
+
+permalink: /:path/
+
+defaults:
+  - scope:
+      path: ""
+    values:
+      author: "みむねこ"
+      layout: post
+      toc: true
+      image: /assets/img/sample-card.png
+
+locale: "ja_JP"
+
+image:
+  path: /assets/img/sample-card.png
+  height: 628
+  width: 1200
+  alt: サンプル画像
+
+jekyll_seo_tag:
+  twitter:
+    card: "summary_large_image"
+    # site: "@YourTwitterHandle"   # Twitterアカウント
+    image: "/assets/img/sample-card.png"
+
+# jekyll-algolia, https://github.com/algolia/jekyll-algolia, ライセンス認証が必要っぽい
+# jekyll-compress-html, https://github.com/penibelst/jekyll-compress-html, 実感が湧かなかった
+# jekyll-paginate-v2, https://github.com/sverrirs/jekyll-paginate-v2, 採用を検討中
+# jekyll-archives, https://github.com/jekyll/jekyll-archives, 採用を検討中
