@@ -1,7 +1,7 @@
 ---
 date: 2024-07-30
 toc: false
-tags: [math-1, algebra, equation]
+tags: [math-1]
 ---
 
 ここに数式のコンテンツを書きます。

@@ -1,6 +1,6 @@
 ---
 title: 幾何学模様
-tags: [math-1, equation]
+tags: [math-1]
 ---
 
 コンブチャ

@@ -1,7 +1,7 @@
 ---
 title: 代数学の公式2
 date: 2024-07-13
-tags: [math-1, algebra, equation]
+tags: [math-1]
 ---
 
 ## あ
@@ -9,9 +9,9 @@ tags: [math-1, algebra, equation]
 #### A
 
 ここに数式のコンテンツを書きます。
-例えば、二次方程式 ax² + bx + c = 0 の解の公式は以下のとおりです：
+例えば、二次方程式 $ ax^2 + bx + c = 0 $ の解の公式は以下のとおりです：
 
-x = (-b ± √(b² - 4ac)) / (2a)
+$$ x = \frac{-b \pm \sqrt{b² - 4ac}}{2a} $$
 
 ### b
 
