@@ -1,3 +1,4 @@
+    
 <!DOCTYPE html>
 <html lang="ja">
 <head>
@@ -21,6 +22,13 @@
     <link rel="preload" href="/mimnekonote/assets/css/styles.css" as="style">
     <link rel="stylesheet" href="/mimnekonote/assets/css/styles.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer">
+    <script>
+        MathJax = {
+            tex: {
+                inlineMath: [['$', '$'], ['\\(', '\\)']]
+            }
+        };
+    </script>
     <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
     <!-- Begin Jekyll SEO tag v2.8.0 -->
 <title>ページが見つかりません | みむねこのーと</title>
@@ -43,25 +51,41 @@
 <!-- End Jekyll SEO tag -->
 
 </head>
+
+
 <body>
     <div class="page-container">
 
         <header>
     <div class="header-content">
+        <!-- ヘッダーロゴ -->
         <div class="logo">
             <a href="/mimnekonote/">
                 <img src="/mimnekonote/assets/icons/mimneko-note-icon.png" alt="サイトアイコン" class="site-icon">
                 <span class="site-name">みむねこのーと</span>
             </a>
         </div>
-        <!-- _includes/navigation.html -->
-<nav>
-    <ul>
-        <li><a href="/mimnekonote/">ホーム</a></li>
-        <li><a href="/mimnekonote/about/">このサイトについて</a></li>
-        <li><a href="/mimnekonote/tags/">カテゴリ＆タグ</a></li>
+        
+        <!-- ハンバーガーメニュー部分 -->
+        <div class="hamburger-menu">
+        
+            <!-- ハンバーガーメニューの表示・非表示を切り替えるチェックボックス -->
+            <input id="drawer-input" class="drawer-hidden" type="checkbox">
+        
+            <!-- ハンバーガーアイコン -->
+            <label for="drawer-input" class="drawer-open"><span></span></label>
+        
+            <!-- メニュー -->
+            <!-- _includes/navigation.html -->
+<nav class="nav-content">
+    <ul class="nav-list">
+        <li class="nav-item"><a href="/mimnekonote/">ホーム</a></li>
+        <li class="nav-item"><a href="/mimnekonote/about/">このサイトについて</a></li>
+        <li class="nav-item"><a href="/mimnekonote/tags/">カテゴリ＆タグ</a></li>
     </ul>
 </nav>
+    
+        </div>
     </div>
 </header>
 
@@ -69,7 +93,7 @@
         <main>
             <div class="main-content">
                 <div class="main-wrap">
-        
+                    
                     <article>
     
     <div class="article-header">
@@ -165,6 +189,15 @@
                             
                         
                     
+                        
+                        
+                    
+                        
+                        
+                            
+                            
+                        
+                    
                     </ul>
                 </details>
             </li>
@@ -227,6 +260,15 @@
                             
                         
                     
+                        
+                        
+                    
+                        
+                        
+                            
+                            
+                        
+                    
                     </ul>
                 </details>
             </li>
@@ -246,7 +288,7 @@
                     <summary>
                         <a href="/mimnekonote/math/">
                             数学 (math) 
-                        </a> <span class="article-count">5</span>件
+                        </a> <span class="article-count">6</span>件
                     </summary>
                     <ul>
                     
@@ -304,6 +346,100 @@
                                         <summary>
                                             <a href="/mimnekonote/math/geometry/">
                                                 幾何学 (geometry)
+                                            </a> <span class="article-count">2</span>件
+                                        </summary>
+                                    </details>
+                                </li>
+                            
+                        
+                    
+                        
+                        
+                    
+                        
+                        
+                            
+                            
+                        
+                    
+                    </ul>
+                </details>
+            </li>
+        
+    
+        
+        
+    
+        
+        
+    
+        
+        
+            <li>
+                <details open>
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    <summary>
+                        <a href="/mimnekonote/programming/">
+                            プログラミング (programming) 
+                        </a> <span class="article-count">1</span>件
+                    </summary>
+                    <ul>
+                    
+                        
+                        
+                    
+                        
+                        
+                            
+                            
+                        
+                    
+                        
+                        
+                            
+                            
+                        
+                    
+                        
+                        
+                    
+                        
+                        
+                    
+                        
+                        
+                            
+                            
+                        
+                    
+                        
+                        
+                            
+                            
+                        
+                    
+                        
+                        
+                    
+                        
+                        
+                            
+                            
+                                <li>
+                                    <details open>
+                                        
+                                        
+                                        
+
+                                        <summary>
+                                            <a href="/mimnekonote/programming/markdown/">
+                                                マークダウン (markdown)
                                             </a> <span class="article-count">1</span>件
                                         </summary>
                                     </details>
@@ -314,9 +450,6 @@
                     </ul>
                 </details>
             </li>
-        
-    
-        
         
     
         
@@ -422,12 +555,6 @@
         
         
         
-        <li>
-            <a href="/mimnekonote/tags/algebra">
-                代数学
-            </a> <span class="article-count">3</span>件
-        </li>
-        
     
         
         
@@ -483,11 +610,27 @@
         
         
         
-        <li>
-            <a href="/mimnekonote/tags/equation">
-                公式
-            </a> <span class="article-count">4</span>件
-        </li>
+    
+        
+        
+        
+        <!-- 該当タグの記事をフィルタリング -->
+        
+        
+        <!-- 該当タグの記事数をカウント -->
+        
+        
+        
+    
+        
+        
+        
+        <!-- 該当タグの記事をフィルタリング -->
+        
+        
+        <!-- 該当タグの記事数をカウント -->
+        
+        
         
     
         
@@ -626,6 +769,30 @@
                                                 
                                                     
                                                     
+                                                        
+                                                        
+                                                    
+                                                
+                                                    
+                                                    
+                                                
+                                                    
+                                                    
+                                                
+                                                    
+                                                    
+                                                        
+                                                        
+                                                    
+                                                
+                                                    
+                                                    
+                                                
+                                                    
+                                                    
+                                                
+                                                    
+                                                    
                                                 
                                                     
                                                     
@@ -700,6 +867,30 @@
                                                 
                                                     
                                                     
+                                                        
+                                                        
+                                                    
+                                                
+                                                    
+                                                    
+                                                
+                                                    
+                                                    
+                                                
+                                                    
+                                                    
+                                                        
+                                                        
+                                                    
+                                                
+                                                    
+                                                    
+                                                
+                                                    
+                                                    
+                                                
+                                                    
+                                                    
                                                 
                                                     
                                                     
@@ -760,6 +951,33 @@
                             
                         
                             
+                            
+                        
+                            
+                            
+                        
+                            
+                            
+                                
+                                
+                            
+                        
+                            
+                            
+                        
+                            
+                            
+                        
+                            
+                            
+                                
+                                
+                            
+                        
+                            
+                            
+                                
+                                
                             
                         
                             
@@ -865,6 +1083,33 @@
                             
                         
                             
+                            
+                        
+                            
+                            
+                        
+                            
+                            
+                                
+                                
+                            
+                        
+                            
+                            
+                        
+                            
+                            
+                        
+                            
+                            
+                                
+                                
+                            
+                        
+                            
+                            
+                                
+                                
                             
                         
                             
@@ -990,6 +1235,30 @@
                                                 
                                                     
                                                     
+                                                        
+                                                        
+                                                    
+                                                
+                                                    
+                                                    
+                                                
+                                                    
+                                                    
+                                                
+                                                    
+                                                    
+                                                        
+                                                        
+                                                    
+                                                
+                                                    
+                                                    
+                                                
+                                                    
+                                                    
+                                                
+                                                    
+                                                    
                                                 
                                                     
                                                     
@@ -1110,6 +1379,34 @@
                                                 
                                                     
                                                     
+                                                        
+                                                        
+                                                            <li>
+                                                                <a href="/mimnekonote/math/geometry/test1/">幾何学前期</a>
+                                                            </li>
+                                                        
+                                                    
+                                                
+                                                    
+                                                    
+                                                
+                                                    
+                                                    
+                                                
+                                                    
+                                                    
+                                                        
+                                                        
+                                                    
+                                                
+                                                    
+                                                    
+                                                
+                                                    
+                                                    
+                                                
+                                                    
+                                                    
                                                 
                                                     
                                                     
@@ -1125,6 +1422,33 @@
                             
                         
                             
+                            
+                        
+                            
+                            
+                        
+                            
+                            
+                                
+                                
+                            
+                        
+                            
+                            
+                        
+                            
+                            
+                        
+                            
+                            
+                                
+                                
+                            
+                        
+                            
+                            
+                                
+                                
                             
                         
                             
@@ -1162,6 +1486,230 @@
     
         
         
+    
+        
+        
+            <li>
+                
+                
+                    <details open>
+                        <summary>
+                            <a href="/mimnekonote/programming/">プログラミング (programming)</a>
+                        </summary>
+                        <ul>
+                        
+                            
+                            
+                        
+                            
+                            
+                        
+                            
+                            
+                                
+                                
+                            
+                        
+                            
+                            
+                                
+                                
+                            
+                        
+                            
+                            
+                        
+                            
+                            
+                                
+                                
+                            
+                        
+                            
+                            
+                        
+                            
+                            
+                                
+                                
+                            
+                        
+                            
+                            
+                        
+                            
+                            
+                                
+                                
+                            
+                        
+                            
+                            
+                                
+                                
+                            
+                        
+                            
+                            
+                                
+                                
+                            
+                        
+                            
+                            
+                                
+                                
+                            
+                        
+                            
+                            
+                        
+                            
+                            
+                        
+                            
+                            
+                        
+                            
+                            
+                                
+                                
+                                    <li>
+                                        
+                                        
+                                            <details open>
+                                                <summary>
+                                                    <a href="/mimnekonote/programming/markdown/">マークダウン (markdown)</a>
+                                                </summary>
+                                                <ul>
+                                                
+                                                    
+                                                    
+                                                
+                                                    
+                                                    
+                                                
+                                                    
+                                                    
+                                                
+                                                    
+                                                    
+                                                
+                                                    
+                                                    
+                                                
+                                                    
+                                                    
+                                                
+                                                    
+                                                    
+                                                
+                                                    
+                                                    
+                                                
+                                                    
+                                                    
+                                                        
+                                                        
+                                                    
+                                                
+                                                    
+                                                    
+                                                
+                                                    
+                                                    
+                                                
+                                                    
+                                                    
+                                                
+                                                    
+                                                    
+                                                
+                                                    
+                                                    
+                                                        
+                                                        
+                                                    
+                                                
+                                                    
+                                                    
+                                                        
+                                                        
+                                                    
+                                                
+                                                    
+                                                    
+                                                
+                                                    
+                                                    
+                                                
+                                                    
+                                                    
+                                                        
+                                                        
+                                                            <li>
+                                                                <a href="/mimnekonote/programming/markdown/sample/">マークダウン記法サンプル</a>
+                                                            </li>
+                                                        
+                                                    
+                                                
+                                                    
+                                                    
+                                                
+                                                    
+                                                    
+                                                
+                                                    
+                                                    
+                                                
+                                                    
+                                                    
+                                                
+                                                </ul>
+                                            </details>
+                                        
+                                    </li>
+                                
+                            
+                        
+                            
+                            
+                        
+                            
+                            
+                        
+                            
+                            
+                                
+                                
+                            
+                        
+                            
+                            
+                                
+                                
+                            
+                        
+                            
+                            
+                                
+                                
+                            
+                        
+                        </ul>
+                    </details>
+                
+            </li>
+        
+    
+        
+        
+    
+        
+        
+    
+        
+        
             <li>
                 
                 
@@ -1173,13 +1721,19 @@
         
         
     
+        
+        
+    
+        
+        
+    
     </ul>
 </div>
 
 	</div>
 </article>
 
-        
+                    
                 </div>
             </div>
         </main>
@@ -1195,11 +1749,11 @@
 </div>
 -->
         <!-- _includes/navigation.html -->
-<nav>
-    <ul>
-        <li><a href="/mimnekonote/">ホーム</a></li>
-        <li><a href="/mimnekonote/about/">このサイトについて</a></li>
-        <li><a href="/mimnekonote/tags/">カテゴリ＆タグ</a></li>
+<nav class="nav-content">
+    <ul class="nav-list">
+        <li class="nav-item"><a href="/mimnekonote/">ホーム</a></li>
+        <li class="nav-item"><a href="/mimnekonote/about/">このサイトについて</a></li>
+        <li class="nav-item"><a href="/mimnekonote/tags/">カテゴリ＆タグ</a></li>
     </ul>
 </nav>
         <p class="copyright">Copyright &copy; 2023 - 2024 みむねこのーと.<br class="copyright-break"> All rights reserved.</p>

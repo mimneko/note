@@ -16,7 +16,7 @@
     --color-transparentgray: rgba(199, 199, 199, 0.5);
 
     /* フォント */
-    --font-family-gothic: "Yu Gothic Medium", "Noto Sans Japanese", "Hiragino Kaku Gothic ProN", "Hiragino Sans", "Meiryo", "Helvetica Neue", Arial, sans-serif;/*"Helvetica Neue", Arial, "Hiragino Kaku Gothic ProN", "Hiragino Sans", Meiryo, sans-serif;*/
+    --font-family-gothic: "Yu Gothic Medium", "Noto Sans Japanese", "Hiragino Kaku Gothic ProN", "Hiragino Sans", "Meiryo", "Helvetica Neue", Arial, sans-serif;
     --font-family-monospace: monospace;
     --font-family-awesome: "Font Awesome 5 Free";
     --font-size-huge: 32px;
@@ -28,12 +28,15 @@
     /* レイアウト */
     --max-width-phone: 768px;
     --max-width-tablet: 1024px;
+
+    --header-icon-size: 40px;
 }
 
 :root {
     /* テーマ色 */
     --page-bg-color: var(--color-white);
     --text-color: var(--color-black);
+    --hamburger-color: var(--color-black);
     --text-sub-color: var(--color-gray);
     --text-hover-color: var(--color-skyblue);
     --h1-border-color: var(--color-black);
@@ -77,6 +80,9 @@ html, body {
     line-height: 1.6;
     color: var(--text-color);
     background-color: var(--page-bg-color);
+    word-wrap: break-word;
+    word-break: break-all;
+    overflow-wrap: break-word;
 }
 
 body {
@@ -120,20 +126,9 @@ header {
     width: 100%;
 }
 
-@media (width <= 768px) {
-    .header-content {
-        flex-direction: column;
-        text-align: center;
-    }
-    
-    .header-content nav {
-        display: none;
-    }
-}
-
 .site-icon {
-    width: 40px;
-    height: 40px;
+    width: var(--header-icon-size);
+    height: var(--header-icon-size);
     margin-right: 10px;
     transition: opacity 0.3s ease;
 }
@@ -162,6 +157,178 @@ header {
 
 .logo a:hover .site-icon {
     opacity: 0.7;
+}
+
+/* -----------------------------------------
+    ナビゲーション
+----------------------------------------- */
+.nav-content .nav-list {
+    list-style-type: none;
+    padding: 0;
+    display: flex;
+    margin: 0;
+}
+
+.nav-content .nav-list li {
+    margin-left: 20px;
+}
+
+.nav-content .nav-list li a {
+    color: var(--article-bg-color);
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.nav-content .nav-list li a:hover {
+    color: var(--text-hover-color);
+}
+
+header .nav-content .nav-list li a {
+    color: var(--text-color);
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+footer .nav-content .nav-list {
+    justify-content: center;
+    display: flex;
+}
+
+footer .nav-content .nav-list li {
+    position: relative;
+    margin: 0 10px;
+}
+
+footer .nav-content .nav-list li:not(:last-child)::after {
+    content: '';
+    position: absolute;
+    right: -10px;
+    top: 50%;
+    transform: translateY(-50%);
+    height: 12px;
+    width: 1px;
+    background-color: var(--footer-nav-separator-color);
+}
+
+@media (width <= 768px) {
+
+    footer .nav-content .nav-list {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    footer .nav-content .nav-list li {
+        margin: 0.5rem 0;
+    }
+
+    footer .nav-content .nav-list li:not(:last-child)::after {
+        display: none;
+    }
+}
+
+/* -----------------------------------------
+    ハンバーガーメニュー
+----------------------------------------- */
+/* https://web-camp.io/magazine/archives/88361 */
+
+/* チェックボックスを非表示にする */
+header .drawer-hidden {
+    display: none;
+}
+
+@media (width <= 768px) {
+
+    /* ハンバーガーアイコンの設置スペース */
+    header .drawer-open {
+        display: flex;
+        height: var(--header-icon-size);
+        width: var(--header-icon-size);
+        justify-content: center;
+        align-items: center;
+        position: relative;
+        z-index: 100;
+        cursor: pointer;
+        /* 選択できない（縦線が表示されない）ようにする */
+        -webkit-user-select: none; /* Safari */
+        -moz-user-select: none;    /* Firefox */
+        -ms-user-select: none;     /* Internet Explorer/Edge */
+        user-select: none;         /* Non-prefixed version, currently supported by Chrome, Edge, Opera, and Firefox */
+    }
+    
+    .logo {
+        z-index: 100;
+    }
+
+    /* ハンバーガーメニューのアイコン */
+    header .drawer-open span,
+    header .drawer-open span:before,
+    header .drawer-open span:after {
+        content: '';
+        display: block;
+        height: 3px;
+        width: 25px;
+        border-radius: 3px;
+        background: var(--hamburger-color);
+        transition: 0.5s;
+        position: absolute;
+    }
+    
+    /* 三本線の一番上の棒の位置調整 */
+    header .drawer-open span:before {
+        bottom: 8px;
+    }
+    
+    /* 三本線の一番下の棒の位置調整 */
+    header .drawer-open span:after {
+        top: 8px;
+    }
+    
+    /* アイコンがクリックされたら真ん中の線を透明にする */
+    #drawer-input:checked ~ .drawer-open span {
+        background: rgba(255, 255, 255, 0);
+    }
+    
+    /* アイコンがクリックされたらアイコンが×印になように上下の線を回転 */
+    #drawer-input:checked ~ .drawer-open span::before {
+        bottom: 0;
+        transform: rotate(45deg);
+    }
+    
+    #drawer-input:checked ~ .drawer-open span::after {
+        top: 0;
+        transform: rotate(-45deg);
+    }
+    
+    header .header-content {
+        z-index: 100;
+    }
+
+    /* メニューのデザイン*/
+    header .nav-content {
+        width: 100%;
+        height: calc(100% - 80px); /* ヘッダー分の高さを引く */
+        position: fixed;
+        top: -100%; /* メニューを画面の外（下）に飛ばす */
+        left: 0;
+        z-index: 99;
+        background: var(--header-bg-color);
+        transition: top 0.5s ease; /* 上から下へのスクロールをスムーズに */
+    }
+
+    header .nav-content .nav-list {
+        display: block;
+        margin: 10px 30px;
+    }
+
+    header .nav-content .nav-list .nav-item {
+        font-size: var(--font-size-large);
+        margin-bottom: 10px;
+    }
+
+    /* アイコンがクリックされたらメニューを表示 */
+    #drawer-input:checked ~ .nav-content {
+        top: 80px;
+    }
 }
 
 /* -----------------------------------------
@@ -213,7 +380,7 @@ footer {
         display: none;
     }
 }
-
+/*
 .social-links ul {
     list-style-type: none;
     padding: 0;
@@ -239,7 +406,7 @@ footer {
 .social-links ul li a:hover {
     color: var(--text-hover-color);
 }
-
+*/
 /* -----------------------------------------
     メイン
 ----------------------------------------- */
@@ -264,7 +431,7 @@ main {
     padding: 0 30px;
     box-shadow: 0 2px 5px none;
 }
-
+/*
 aside {
     flex: 1;
     background-color: var(--article-bg-color);
@@ -278,7 +445,7 @@ aside {
         display: none;
     }
 }
-
+*/
 .article-body {
     margin: 24px 0 32px;
 }
@@ -294,80 +461,6 @@ aside {
 
     .main-wrap {
         padding: 0 10px;
-    }
-}
-
-/* -----------------------------------------
-    ナビゲーション
------------------------------------------ */
-nav ul {
-    list-style-type: none;
-    padding: 0;
-    display: flex;
-    margin: 0;
-}
-
-nav ul li {
-    margin-left: 20px;
-}
-
-nav ul li a {
-    color: var(--article-bg-color);
-    text-decoration: none;
-    transition: color 0.3s ease;
-}
-
-nav ul li a:hover {
-    color: var(--text-hover-color);
-}
-
-header nav ul li a {
-    color: var(--text-color);
-    text-decoration: none;
-    transition: color 0.3s ease;
-}
-
-footer nav ul {
-    justify-content: center;
-    display: flex;
-}
-
-footer nav ul li {
-    position: relative;
-    margin: 0 10px;
-}
-
-footer nav ul li:not(:last-child)::after {
-    content: '';
-    position: absolute;
-    right: -10px;
-    top: 50%;
-    transform: translateY(-50%);
-    height: 12px;
-    width: 1px;
-    background-color: var(--footer-nav-separator-color);
-}
-
-@media (width <= 768px) {
-    header nav ul {
-        margin-top: 10px;
-    }
-
-    header nav ul li {
-        margin: 0 10px;
-    }
-
-    footer nav ul {
-        flex-direction: column;
-        align-items: center;
-    }
-
-    footer nav ul li {
-        margin: 0.5rem 0;
-    }
-
-    footer nav ul li:not(:last-child)::after {
-        display: none;
     }
 }
 
@@ -446,7 +539,7 @@ article h1 {
 article h2 {
     position: relative;
     padding: .75rem 1rem .6rem 1rem;
-    margin: 1.5rem 0;
+    margin: 2rem 0 1.5rem 0;
     border-top: 2px solid var(--article-bg-color);
     border-bottom: 2px solid var(--article-bg-color);
     background-color: var(--base-color);
@@ -520,7 +613,7 @@ article h6 {
 /* -----------------------------------------
     パンくずリスト
 ----------------------------------------- */
-.breadcrumb ol {
+.breadcrumb .breadcrumb-list {
     font-size: var(--font-size-small);
     list-style: none;
     padding: 10px 16px;
@@ -570,7 +663,7 @@ article h6 {
 }
 
 .article-categories-tags span {
-    margin-right: 5px;
+    margin-right: 2px;
 }
 
 .article-tags ul {
@@ -597,31 +690,8 @@ article h6 {
     color: var(--tag-text-color);
 }
 
-/* -----------------------------------------
-    ページャー
------------------------------------------ */
-.pager {
-    display: flex;
-    justify-content: space-between;
-    padding: 20px 16px;
-}
-
-.pager .prev-article i {
-    margin-right: .5rem;
-}
-
-.pager .next-article i {
-    margin-left: .5rem;
-}
-
-.pager a {
-    color: var(--text-color);
-    text-decoration: none;
-    transition: color 0.3s ease;
-}
-
-.pager a:hover {
-    color: var(--text-hover-color);
+.article-tags .tag-link i {
+    margin-right: 5px;
 }
 
 /* -----------------------------------------
@@ -658,6 +728,10 @@ article #toc-title {
     margin: 0;
     margin-bottom: 1rem;
     font-size: 1.2em;
+}
+
+article #toc-title i {
+    padding-right: .5rem;
 }
 
 article #toc-content {
@@ -718,10 +792,20 @@ article .reversefootnote::before {
     画像
 ----------------------------------------- */
 img {
-    width: 90%;
+    max-width: 500px;
+    max-height: 500px;
+    width: auto;
     height: auto;
+    object-fit: contain;
     display: block;
     margin: 0 auto;
+}
+
+@media (max-width: 500px) {
+    img {
+        width: 80%;
+        max-width: none;
+    }
 }
 
 /* -----------------------------------------
@@ -761,6 +845,16 @@ article mjx-container {
 
 article mjx-container[jax="CHTML"][display="true"] {
     padding: .7em 0;
+}
+
+/* -----------------------------------------
+    強調
+----------------------------------------- */
+strong {
+    /*font-weight: bold;
+    background: linear-gradient(transparent 60%, #f9c270 0%);*/
+    font-weight: normal;
+    color: var(--color-orange);
 }
 
 /* -----------------------------------------
@@ -822,54 +916,6 @@ article blockquote::after {
 }
 
 /* -----------------------------------------
-    記事一覧
------------------------------------------ */
-.post-archive {
-    border: 1px solid #ccc; /* ボーダーを指定 */
-    border-radius: 15px; /* 角を丸くする */
-    padding: 20px; /* 内側の余白を指定 */
-    box-shadow: 0 4px 8px rgba(0,0,0,0.1); /* ボックスシャドウを追加（任意） */
-    margin: 10px 0;
-
-}
-
-/* -----------------------------------------
-    強調
------------------------------------------ */
-strong {
-    /*font-weight: bold;
-    background: linear-gradient(transparent 60%, #f9c270 0%);*/
-    font-weight: normal;
-    color: var(--color-orange);
-}
-
-/* -----------------------------------------
-    ページネーション
------------------------------------------ */
-.pagination {
-    padding: 4% 0;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-}
-
-.pagination__item {
-    margin-right: 4px;
-    text-decoration: none;
-    display: block;
-    padding: 7px 16px;
-    border: 1px solid #ccc;
-    color: var(--color-black);
-}
-
-.pagination .current {
-    background: #0099ce;
-    border-color: #0099ce;
-    color: white;
-
-}
-
-/* -----------------------------------------
     リスト
 ----------------------------------------- */
 ul,
@@ -878,7 +924,7 @@ ol {
 }
 
 /* -----------------------------------------
-    他
+    アコーディオンメニュー
 ----------------------------------------- */
 summary {
     cursor: pointer;
@@ -986,3 +1032,174 @@ summary {
     background-image: url("../icons/file.svg");
 }
 
+/* -----------------------------------------
+    ボタン
+----------------------------------------- */
+.download-section button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    min-width: 250px;
+    margin: 0 auto;
+    padding: 1em 2em .9em 2em;
+    text-decoration: none;
+    background: var(--color-white);
+    color: var(--base-color);
+    border: solid 2px var(--base-color);
+    border-radius: 5px;
+    transition: .4s;
+    font-weight: bold;
+}
+
+.download-section button:hover {
+    background: var(--base-color);
+    color: var(--color-white);
+}
+
+.download-section a {
+    text-decoration: none;
+}
+
+/* -----------------------------------------
+    ページャー
+----------------------------------------- */
+.pager {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 16px;
+}
+
+.pager .prev-article i {
+    margin-right: .5rem;
+}
+
+.pager .next-article i {
+    margin-left: .5rem;
+}
+
+.pager a {
+    color: var(--text-color);
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.pager a:hover {
+    color: var(--text-hover-color);
+}
+
+/* -----------------------------------------
+    記事一覧
+----------------------------------------- */
+.post-archive {
+    border: 1px solid #ccc; /* ボーダーを指定 */
+    border-radius: 15px; /* 角を丸くする */
+    padding: 20px; /* 内側の余白を指定 */
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1); /* ボックスシャドウを追加（任意） */
+    margin: 10px 0;
+
+}
+
+/* -----------------------------------------
+    ページネーション
+----------------------------------------- */
+.pagination {
+    padding: 4% 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.pagination__item {
+    margin-right: 4px;
+    text-decoration: none;
+    display: block;
+    padding: 7px 16px;
+    border: 1px solid #ccc;
+    color: var(--color-black);
+}
+
+.pagination .current {
+    background: #0099ce;
+    border-color: #0099ce;
+    color: #fff;
+}
+
+/* -----------------------------------------
+    内部記事カード
+----------------------------------------- */
+:root {
+    --color-mystic: #e2e8f0;
+    --color-catskill: #f1f5f9;
+    --card-border-color: var(--color-mystic);
+}
+
+.internal-blogcard {
+    border-radius: 5px;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+    padding: 1.5rem;
+    margin: 0 40px 1rem 40px;
+    border: 1px solid var(--card-border-color);
+}
+
+/*
+.internal-blogcard::after {
+    content: '続きを読む \00bb';
+    background-color: red;
+    position: absolute;
+    bottom: .5rem;
+    right: 1rem;
+    font-size: 70%;
+    padding: .4em 3em;
+    font-weight: 700;
+    color: #222;
+    border-radius: 2px;
+}
+*/
+
+.internal-blogcard {
+    position: relative;
+    /* 他の既存のスタイル */
+}
+
+.internal-blogcard a {
+    display: block;
+    padding: 10px;
+    /* 他の既存のスタイル */
+}
+
+
+.internal-blogcard .internal-blogcard-readmore i {
+    margin-left: .2rem;
+}
+
+.internal-blogcard-readmore {
+    position: absolute;
+    bottom: .9em;
+    right: 1em;
+    margin: 0;
+}
+
+.internal-blogcard:hover {
+    background-color: var(--tag-bg-hover-color);
+    color: var(--tag-text-color);
+}
+
+.internal-blogcard a {
+    text-decoration: none;
+    color: #222;
+}
+
+.internal-blogcard a:hover {
+    color: var(--text-hover-color);
+}
+
+.internal-blogcard-title {
+    font-weight: bold;
+    font-size: var(--font-size-large);
+    margin: 0;
+}
+
+.internal-blogcard-description {
+    font-size: var(--font-size-small);
+}

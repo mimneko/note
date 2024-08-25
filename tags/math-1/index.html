@@ -1,3 +1,4 @@
+    
 <!DOCTYPE html>
 <html lang="ja">
 <head>
@@ -21,6 +22,13 @@
     <link rel="preload" href="/mimnekonote/assets/css/styles.css" as="style">
     <link rel="stylesheet" href="/mimnekonote/assets/css/styles.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer">
+    <script>
+        MathJax = {
+            tex: {
+                inlineMath: [['$', '$'], ['\\(', '\\)']]
+            }
+        };
+    </script>
     <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
     <!-- Begin Jekyll SEO tag v2.8.0 -->
 <title>みむねこのーと | みむねこ用Jekyllです。</title>
@@ -43,25 +51,41 @@
 <!-- End Jekyll SEO tag -->
 
 </head>
+
+
 <body>
     <div class="page-container">
 
         <header>
     <div class="header-content">
+        <!-- ヘッダーロゴ -->
         <div class="logo">
             <a href="/mimnekonote/">
                 <img src="/mimnekonote/assets/icons/mimneko-note-icon.png" alt="サイトアイコン" class="site-icon">
                 <span class="site-name">みむねこのーと</span>
             </a>
         </div>
-        <!-- _includes/navigation.html -->
-<nav>
-    <ul>
-        <li><a href="/mimnekonote/">ホーム</a></li>
-        <li><a href="/mimnekonote/about/">このサイトについて</a></li>
-        <li><a href="/mimnekonote/tags/">カテゴリ＆タグ</a></li>
+        
+        <!-- ハンバーガーメニュー部分 -->
+        <div class="hamburger-menu">
+        
+            <!-- ハンバーガーメニューの表示・非表示を切り替えるチェックボックス -->
+            <input id="drawer-input" class="drawer-hidden" type="checkbox">
+        
+            <!-- ハンバーガーアイコン -->
+            <label for="drawer-input" class="drawer-open"><span></span></label>
+        
+            <!-- メニュー -->
+            <!-- _includes/navigation.html -->
+<nav class="nav-content">
+    <ul class="nav-list">
+        <li class="nav-item"><a href="/mimnekonote/">ホーム</a></li>
+        <li class="nav-item"><a href="/mimnekonote/about/">このサイトについて</a></li>
+        <li class="nav-item"><a href="/mimnekonote/tags/">カテゴリ＆タグ</a></li>
     </ul>
 </nav>
+    
+        </div>
     </div>
 </header>
 
@@ -69,7 +93,7 @@
         <main>
             <div class="main-content">
                 <div class="main-wrap">
-        
+                    
                     <article>
 
     <div class="article-header">
@@ -81,31 +105,98 @@
         
         
         
+        
         <h2>記事<span class="article-count">4</span>件</h2>
-        <ul>
+        
             
-                <li>
-                    <a href="/mimnekonote/math/equation/">代数学の公式1</a> - <span>2024-08-15</span>
-                </li>
+                <nav class="internal-blogcard">
+    <a href="/mimnekonote/math/equation/">
+        <p class="internal-blogcard-title">代数学の公式1</p>
+        <!-- <p class="internal-blogcard-date">2024-08-10</p> -->
+        <p class="internal-blogcard-description">
             
-                <li>
-                    <a href="/mimnekonote/math/equation3/">無題</a> - <span>2024-07-30</span>
-                </li>
+            時は元弘三年（1333年）鎌倉。世を治める鎌倉幕府執権の跡継ぎ・北条時行は、武士の子ながらも争いを好まぬ、心優しき少年であった。戦いと死こそが武士の名誉といわれる時代にありながら、$ ax^2 + bx + c = 0 $武芸の稽古を嫌い、臆病者と囁かれ、逃げることと隠れることばかりが得意な時行。あ
+        </p>
+        <p class="internal-blogcard-readmore">
+            <span class="internal-blogcard-readmore-title">続きを読む</span>
+            <i class="fa-solid fa-angles-right"></i>
+        </p>
+    </a>
+</nav>
             
-                <li>
-                    <a href="/mimnekonote/math/equation2/">代数学の公式2</a> - <span>2024-07-13</span>
-                </li>
+                <nav class="internal-blogcard">
+    <a href="/mimnekonote/math/equation3/">
+        <p class="internal-blogcard-title">無題</p>
+        <!-- <p class="internal-blogcard-date">2024-07-30</p> -->
+        <p class="internal-blogcard-description">
             
-                <li>
-                    <a href="/mimnekonote/math/geometry/math/">幾何学模様</a> - <span></span>
-                </li>
+            ここに数式のコンテンツを書きます。
+例えば、二次方程式 ax² + bx + c = 0 の解の公式は以下のとおりです：
+
+x = (-b ± √(b² - 4ac)) / (2a)
+
+あ
+a
+A
+
+ここに数式のコンテンツを書きます。
+例えば、二次方程式 ax² + bx + c = 0 の解の公式
+        </p>
+        <p class="internal-blogcard-readmore">
+            <span class="internal-blogcard-readmore-title">続きを読む</span>
+            <i class="fa-solid fa-angles-right"></i>
+        </p>
+    </a>
+</nav>
             
-        </ul>
+                <nav class="internal-blogcard">
+    <a href="/mimnekonote/math/equation2/">
+        <p class="internal-blogcard-title">代数学の公式2</p>
+        <!-- <p class="internal-blogcard-date">2024-07-13</p> -->
+        <p class="internal-blogcard-description">
+            
+            あ
+a
+A
+
+ここに数式のコンテンツを書きます。
+例えば、二次方程式 $ ax^2 + bx + c = 0 $ の解の公式は以下のとおりです：
+
+\[x = \frac{-b \pm \sqrt{b² - 4ac}}{2a}\]
+
+b
+
+ここに数式のコンテンツを書きます。
+例えば、二次方程式 ax
+        </p>
+        <p class="internal-blogcard-readmore">
+            <span class="internal-blogcard-readmore-title">続きを読む</span>
+            <i class="fa-solid fa-angles-right"></i>
+        </p>
+    </a>
+</nav>
+            
+                <nav class="internal-blogcard">
+    <a href="/mimnekonote/math/geometry/math/">
+        <p class="internal-blogcard-title">幾何学模様</p>
+        <!-- <p class="internal-blogcard-date"></p> -->
+        <p class="internal-blogcard-description">
+            
+            コンブチャ
+        </p>
+        <p class="internal-blogcard-readmore">
+            <span class="internal-blogcard-readmore-title">続きを読む</span>
+            <i class="fa-solid fa-angles-right"></i>
+        </p>
+    </a>
+</nav>
+            
+        
         
     </div>
 </article>
 
-        
+                    
                 </div>
             </div>
         </main>
@@ -121,11 +212,11 @@
 </div>
 -->
         <!-- _includes/navigation.html -->
-<nav>
-    <ul>
-        <li><a href="/mimnekonote/">ホーム</a></li>
-        <li><a href="/mimnekonote/about/">このサイトについて</a></li>
-        <li><a href="/mimnekonote/tags/">カテゴリ＆タグ</a></li>
+<nav class="nav-content">
+    <ul class="nav-list">
+        <li class="nav-item"><a href="/mimnekonote/">ホーム</a></li>
+        <li class="nav-item"><a href="/mimnekonote/about/">このサイトについて</a></li>
+        <li class="nav-item"><a href="/mimnekonote/tags/">カテゴリ＆タグ</a></li>
     </ul>
 </nav>
         <p class="copyright">Copyright &copy; 2023 - 2024 みむねこのーと.<br class="copyright-break"> All rights reserved.</p>

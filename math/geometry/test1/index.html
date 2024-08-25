@@ -1,0 +1,443 @@
+    
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>
+        
+            幾何学前期 - みむねこのーと
+        
+    </title>
+    <!-- ファビコン -->
+    <link rel="apple-touch-icon" sizes="180x180" href="/mimnekonote/assets/icons/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/mimnekonote/assets/icons/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/mimnekonote/assets/icons/favicon-16x16.png">
+    <link rel="manifest" href="/mimnekonote/assets/icons/manifest.json">
+    <link rel="mask-icon" href="/mimnekonote/assets/icons/safari-pinned-tab.svg" color="#3498db">
+    <meta name="msapplication-TileColor" content="#3498db">
+    <meta name="theme-color" content="#3498db">
+    <!-- css & js -->
+    <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
+    <link rel="preload" href="/mimnekonote/assets/css/styles.css" as="style">
+    <link rel="stylesheet" href="/mimnekonote/assets/css/styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer">
+    <script>
+        MathJax = {
+            tex: {
+                inlineMath: [['$', '$'], ['\\(', '\\)']]
+            }
+        };
+    </script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <!-- Begin Jekyll SEO tag v2.8.0 -->
+<title>幾何学前期 | みむねこのーと</title>
+<meta name="generator" content="Jekyll v4.3.3" />
+<meta property="og:title" content="幾何学前期" />
+<meta name="author" content="みむねこ" />
+<meta property="og:locale" content="ja_JP" />
+<meta name="description" content="みむねこ用Jekyllです。" />
+<meta property="og:description" content="みむねこ用Jekyllです。" />
+<link rel="canonical" href="https://mimneko.github.io/mimnekonote/math/geometry/test1/" />
+<meta property="og:url" content="https://mimneko.github.io/mimnekonote/math/geometry/test1/" />
+<meta property="og:site_name" content="みむねこのーと" />
+<meta property="og:image" content="https://mimneko.github.io/mimnekonote/assets/img/sample-card.png" />
+<meta property="og:type" content="website" />
+<meta name="twitter:card" content="summary_large_image" />
+<meta property="twitter:image" content="https://mimneko.github.io/mimnekonote/assets/img/sample-card.png" />
+<meta property="twitter:title" content="幾何学前期" />
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"WebPage","author":{"@type":"Person","name":"みむねこ"},"description":"みむねこ用Jekyllです。","headline":"幾何学前期","image":"https://mimneko.github.io/mimnekonote/assets/img/sample-card.png","url":"https://mimneko.github.io/mimnekonote/math/geometry/test1/"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+
+<body>
+    <div class="page-container">
+
+        <header>
+    <div class="header-content">
+        <!-- ヘッダーロゴ -->
+        <div class="logo">
+            <a href="/mimnekonote/">
+                <img src="/mimnekonote/assets/icons/mimneko-note-icon.png" alt="サイトアイコン" class="site-icon">
+                <span class="site-name">みむねこのーと</span>
+            </a>
+        </div>
+        
+        <!-- ハンバーガーメニュー部分 -->
+        <div class="hamburger-menu">
+        
+            <!-- ハンバーガーメニューの表示・非表示を切り替えるチェックボックス -->
+            <input id="drawer-input" class="drawer-hidden" type="checkbox">
+        
+            <!-- ハンバーガーアイコン -->
+            <label for="drawer-input" class="drawer-open"><span></span></label>
+        
+            <!-- メニュー -->
+            <!-- _includes/navigation.html -->
+<nav class="nav-content">
+    <ul class="nav-list">
+        <li class="nav-item"><a href="/mimnekonote/">ホーム</a></li>
+        <li class="nav-item"><a href="/mimnekonote/about/">このサイトについて</a></li>
+        <li class="nav-item"><a href="/mimnekonote/tags/">カテゴリ＆タグ</a></li>
+    </ul>
+</nav>
+    
+        </div>
+    </div>
+</header>
+
+
+        <main>
+            <div class="main-content">
+                <div class="main-wrap">
+                    
+                    
+
+
+
+
+<nav class="breadcrumb" aria-label="パンくずリスト">
+    <ol class="breadcrumb-list" itemscope itemtype="https://schema.org/BreadcrumbList">
+        <li class="breadcrumb-item" itemprop="itemListElement" itemscope
+        itemtype="https://schema.org/ListItem">
+            <a itemprop="item" href="/mimnekonote/">
+                <i class="fas fa-home"></i>
+                <span itemprop="name">ホーム</span>
+            </a>
+            <meta itemprop="position" content="1" />
+        </li>
+        
+            
+            
+            
+
+            
+                <li class="breadcrumb-item" itemprop="itemListElement" itemscope
+                itemtype="https://schema.org/ListItem">
+                    <a itemprop="item" href="/mimnekonote/math/">
+                        <i class="fas fa-folder"></i>
+                        <span itemprop="name">数学</span>
+                    </a>
+                    <meta itemprop="position" content="2" />
+                </li>
+            
+        
+            
+            
+            
+
+            
+                <li class="breadcrumb-item" itemprop="itemListElement" itemscope
+                itemtype="https://schema.org/ListItem">
+                    <a itemprop="item" href="/mimnekonote/math/geometry/">
+                        <i class="fas fa-folder"></i>
+                        <span itemprop="name">幾何学</span>
+                    </a>
+                    <meta itemprop="position" content="3" />
+                </li>
+            
+        
+            
+            
+            
+
+            
+                <li class="breadcrumb-item active" aria-current="page" itemprop="itemListElement" itemscope
+                itemtype="https://schema.org/ListItem">
+                    <a itemprop="item" href="/mimnekonote/math/geometry/test1/">
+                        
+                            <i class="fas fa-file"></i>
+                            <span itemprop="name">幾何学前期</span>
+                        
+                    </a>
+                    <meta itemprop="position" content="4" />
+                </li>
+            
+        
+    </ol>
+</nav>
+
+
+<article>
+
+    <div class="article-header">
+        <h1 id="article-title">幾何学前期</h1>
+        <div id="article-meta">
+            
+            
+            <span id="article-author"><i class="fas fa-user"></i><span>みむねこ</span></span>
+        </div>
+    </div>
+
+    <div class="article-body">
+        
+        
+        <div id="toc">
+            <p id="toc-title"><i class="fa-solid fa-list-ul fa-fw"></i>目次</p>
+            <ol id="toc-content" class="section-nav">
+<li class="toc-entry toc-h2"><a href="#位相同形同相の定義定義41">位相同形（同相）の定義[定義4.1]</a></li>
+<li class="toc-entry toc-h2"><a href="#２次元円板の定義7">２次元円板の定義[7]</a></li>
+<li class="toc-entry toc-h2"><a href="#２次元球面の定義10">２次元球面の定義[10]</a></li>
+<li class="toc-entry toc-h2"><a href="#トーラス-t-の定義10">トーラス $T$ の定義[10]</a></li>
+<li class="toc-entry toc-h2"><a href="#クラインの壺-k-の定義11">クラインの壺 $K$ の定義[11]</a></li>
+<li class="toc-entry toc-h2"><a href="#メービウスの帯-m-の定義11">メービウスの帯 $M$ の定義[11]</a></li>
+<li class="toc-entry toc-h2"><a href="#射影平面-p-の定義11">射影平面 $P$ の定義[11]</a></li>
+<li class="toc-entry toc-h2"><a href="#曲面のオイラー標数の定義12">曲面のオイラー標数の定義[12]</a></li>
+<li class="toc-entry toc-h2"><a href="#曲面の連結和の定義10">曲面の連結和の定義[10]</a></li>
+<li class="toc-entry toc-h2"><a href="#球面のオイラー標数の計算12">球面のオイラー標数の計算[12]</a></li>
+<li class="toc-entry toc-h2"><a href="#トーラス-t-のオイラー標数の計算12">トーラス $T$ のオイラー標数の計算[12]</a></li>
+<li class="toc-entry toc-h2"><a href="#chis_1--s_2-chis_1--chis_2-2-の証明定理122">$\chi(S_1 ＃ S_2)= \chi(S_1) + \chi(S_2)-2$ の証明[定理12.2]</a></li>
+<li class="toc-entry toc-h2"><a href="#chif_g-2-2g-の証明定理123">$\chi(F_g)= 2-2g$ の証明[定理12.3]</a></li>
+<li class="toc-entry toc-h2"><a href="#１次元多様体の分類定理定理81証明不要">１次元多様体の分類定理[定理8.1]（証明不要）</a></li>
+<li class="toc-entry toc-h2"><a href="#２次元多様体の分類定理定理102-114証明不要">２次元多様体の分類定理[定理10.2, 11.4]（証明不要）</a></li>
+<li class="toc-entry toc-h2"><a href="#閉曲面の文字列表示">閉曲面の文字列表示</a>
+<ol>
+<li class="toc-entry toc-h3"><a href="#一覧">一覧</a></li>
+<li class="toc-entry toc-h3"><a href="#1-sigmaabca-1c-1b-1">(1) $\Sigma=abca^{-1}c^{-1}b^{-1}$</a></li>
+<li class="toc-entry toc-h3"><a href="#2-sigmaabcb-1a-1c">(2) $\Sigma=abcb^{-1}a^{-1}c$</a></li>
+<li class="toc-entry toc-h3"><a href="#3-sigmaabacb-1c">(3) $\Sigma=abacb^{-1}c$</a></li>
+<li class="toc-entry toc-h3"><a href="#4-sigmaabca-1b-1c-1">(4) $\Sigma=abca^{-1}b^{-1}c^{-1}$</a></li>
+<li class="toc-entry toc-h3"><a href="#5-sigmaz-1xzwx-1w-1">(5) $\Sigma=z^{-1}xzwx^{-1}w^{-1}$</a></li>
+<li class="toc-entry toc-h3"><a href="#6-sigmaaxya-1y-1x-1czwc-1w-1z-1">(6) $\Sigma=axya^{-1}y^{-1}x^{-1}czwc^{-1}w^{-1}z^{-1}$</a></li>
+</ol>
+</li>
+</ol>
+        </div>
+        
+        
+        <h2 id="位相同形同相の定義定義41">
+<a class="anchor" href="#%E4%BD%8D%E7%9B%B8%E5%90%8C%E5%BD%A2%E5%90%8C%E7%9B%B8%E3%81%AE%E5%AE%9A%E7%BE%A9%E5%AE%9A%E7%BE%A941" aria-hidden="true"><span class="octicon octicon-link"></span></a>位相同形（同相）の定義[定義4.1]</h2>
+<p>$X$ から $Y$ への１対１かつ上への連続写像 $f:X\rightarrow Y$ で逆写像 $f^{-1}:Y\rightarrow X$ も連続なものがあるとき、 $X$ と $Y$ は同相という。</p>
+
+<h2 id="２次元円板の定義7">
+<a class="anchor" href="#%EF%BC%92%E6%AC%A1%E5%85%83%E5%86%86%E6%9D%BF%E3%81%AE%E5%AE%9A%E7%BE%A97" aria-hidden="true"><span class="octicon octicon-link"></span></a>２次元円板の定義[7]</h2>
+<p>$B^2=\{(x_1,x_2)\in \mathbb{R}^2|{x_1}^2+{x_2}^2\leqq1\}$ を満たす $B^2$ を２次元円板という。</p>
+
+<h2 id="２次元球面の定義10">
+<a class="anchor" href="#%EF%BC%92%E6%AC%A1%E5%85%83%E7%90%83%E9%9D%A2%E3%81%AE%E5%AE%9A%E7%BE%A910" aria-hidden="true"><span class="octicon octicon-link"></span></a>２次元球面の定義[10]</h2>
+<p>$S^2=\{(x_1,x_2,x_3)\in \mathbb{R}^3|{x_1}^2+{x_2}^2+{x_3}^2=1\}$ を満たす $S^2$ を２次元球面という。</p>
+
+<h2 id="トーラス-t-の定義10">
+<a class="anchor" href="#%E3%83%88%E3%83%BC%E3%83%A9%E3%82%B9-t-%E3%81%AE%E5%AE%9A%E7%BE%A910" aria-hidden="true"><span class="octicon octicon-link"></span></a>トーラス $T$ の定義[10]</h2>
+<p>１次元円周 $S^1$ を２つかけあわせた曲面をトーラスという。</p>
+
+<h2 id="クラインの壺-k-の定義11">
+<a class="anchor" href="#%E3%82%AF%E3%83%A9%E3%82%A4%E3%83%B3%E3%81%AE%E5%A3%BA-k-%E3%81%AE%E5%AE%9A%E7%BE%A911" aria-hidden="true"><span class="octicon octicon-link"></span></a>クラインの壺 $K$ の定義[11]</h2>
+<p>図のような正方形 $ABCD$ において $AB$ と $CD$ 、 $AD$ と $BC$ を矢印に沿って貼り合わせてできた曲面をクラインの壺という。</p>
+
+<p><img src="Klein.jpeg" alt="クラインの壺" width="200"></p>
+
+<h2 id="メービウスの帯-m-の定義11">
+<a class="anchor" href="#%E3%83%A1%E3%83%BC%E3%83%93%E3%82%A6%E3%82%B9%E3%81%AE%E5%B8%AF-m-%E3%81%AE%E5%AE%9A%E7%BE%A911" aria-hidden="true"><span class="octicon octicon-link"></span></a>メービウスの帯 $M$ の定義[11]</h2>
+<p>図のような長方形 $ABCD$ において $AD$ と $BC$ を矢印に沿って貼り合わせてできた曲面をメービウスの帯という。</p>
+
+<p><img src="Moebius.jpeg" alt="メービウスの帯" width="200"></p>
+
+<h2 id="射影平面-p-の定義11">
+<a class="anchor" href="#%E5%B0%84%E5%BD%B1%E5%B9%B3%E9%9D%A2-p-%E3%81%AE%E5%AE%9A%E7%BE%A911" aria-hidden="true"><span class="octicon octicon-link"></span></a>射影平面 $P$ の定義[11]</h2>
+<p>図のような２次元円板において、円周上に２点 $A$ 、 $B$ を取り、弧 $AB$ と弧 $BA$ を矢印に沿って貼り合わせてできた曲面を射影平面という。</p>
+
+<p><img src="projective.jpeg" alt="射影平面" width="200"></p>
+
+<h2 id="曲面のオイラー標数の定義12">
+<a class="anchor" href="#%E6%9B%B2%E9%9D%A2%E3%81%AE%E3%82%AA%E3%82%A4%E3%83%A9%E3%83%BC%E6%A8%99%E6%95%B0%E3%81%AE%E5%AE%9A%E7%BE%A912" aria-hidden="true"><span class="octicon octicon-link"></span></a>曲面のオイラー標数の定義[12]</h2>
+<p>$K$ を $n$ 次元のコンパクトな単体的複体とし、 $i=0,1,2,\cdots,n$ に対して、 $\alpha_i$ を $K$ の $i$ 次元単体の個数とする。このとき、次の値を $K$ のオイラー標数という。</p>
+
+\[\chi(K) = \alpha_0 - \alpha_1 + \alpha_2 - \alpha_3 + \cdots + (-1)^n\alpha_n\]
+
+<h2 id="曲面の連結和の定義10">
+<a class="anchor" href="#%E6%9B%B2%E9%9D%A2%E3%81%AE%E9%80%A3%E7%B5%90%E5%92%8C%E3%81%AE%E5%AE%9A%E7%BE%A910" aria-hidden="true"><span class="octicon octicon-link"></span></a>曲面の連結和の定義[10]</h2>
+<p>２つのトーラス $T_1$ , $T_2$ に穴をあけて繋げた曲面を連結和という。</p>
+
+<h2 id="球面のオイラー標数の計算12">
+<a class="anchor" href="#%E7%90%83%E9%9D%A2%E3%81%AE%E3%82%AA%E3%82%A4%E3%83%A9%E3%83%BC%E6%A8%99%E6%95%B0%E3%81%AE%E8%A8%88%E7%AE%9712" aria-hidden="true"><span class="octicon octicon-link"></span></a>球面のオイラー標数の計算[12]</h2>
+<p>球 $S$ は正四面体に同相なので、</p>
+
+\[\begin{aligned}
+\chi(S)
+&amp;= 4-6+4 \\
+&amp;= 2
+\end{aligned}\]
+
+<p>また正六面体にも同相なので、</p>
+
+\[\begin{aligned}
+\chi(S)
+&amp;= 8-12+6 \\
+&amp;= 2
+\end{aligned}\]
+
+<h2 id="トーラス-t-のオイラー標数の計算12">
+<a class="anchor" href="#%E3%83%88%E3%83%BC%E3%83%A9%E3%82%B9-t-%E3%81%AE%E3%82%AA%E3%82%A4%E3%83%A9%E3%83%BC%E6%A8%99%E6%95%B0%E3%81%AE%E8%A8%88%E7%AE%9712" aria-hidden="true"><span class="octicon octicon-link"></span></a>トーラス $T$ のオイラー標数の計算[12]</h2>
+<p>トーラス $T$ は四角形からなるドーナツ状の立体に同相なので、</p>
+
+\[\begin{aligned}
+\chi(T)
+&amp;= 16-32+16 \\
+&amp;= 0
+\end{aligned}\]
+
+<h2 id="chis_1--s_2-chis_1--chis_2-2-の証明定理122">
+<a class="anchor" href="#chis_1--s_2-chis_1--chis_2-2-%E3%81%AE%E8%A8%BC%E6%98%8E%E5%AE%9A%E7%90%86122" aria-hidden="true"><span class="octicon octicon-link"></span></a>$\chi(S_1 ＃ S_2)= \chi(S_1) + \chi(S_2)-2$ の証明[定理12.2]</h2>
+<p>$S_1$ 、 $S_2$ に穴をあけることを、三角形を１つずつ取り除くと考える。 $S_1 ＃ S_2$ の頂点の数 $V$ 、辺の数 $E$ 、面の数 $F$ を考える。</p>
+
+<p>そのために、 $S_1$ の $V_1$ 、 $E_1$ 、 $F_1$ 、 $S_2$ の $V_2$ 、 $E_2$ 、 $F_2$ を考える。このとき、次が成り立つ。</p>
+
+\[V = V_1+V_2-3, E = E_1+E_2-3, F = F_1+F_2-2\]
+
+<p>よって、</p>
+
+\[\begin{aligned}
+\chi(S_1 ＃ S_2) 
+&amp;= (V_1+V_2-3)-(E_1+E_2-3)+(F_1+F_2-2) \\
+&amp;= (V_1-E_1+F_1)+(V_2-E_2+F_2)-2 \\
+&amp;= \chi(S_1) + \chi(S_2) -2
+\end{aligned}\]
+
+<p>となり、等式は示された。</p>
+
+<h2 id="chif_g-2-2g-の証明定理123">
+<a class="anchor" href="#chif_g-2-2g-%E3%81%AE%E8%A8%BC%E6%98%8E%E5%AE%9A%E7%90%86123" aria-hidden="true"><span class="octicon octicon-link"></span></a>$\chi(F_g)= 2-2g$ の証明[定理12.3]</h2>
+<p>(I) $g=0$ のとき、</p>
+
+\[\begin{aligned}
+(\text{左辺}) &amp;= \chi(F_0)= \chi(S^2)=2 \\
+(\text{右辺}) &amp;= 2-2\cdot 0=2
+\end{aligned}\]
+
+<p>$\therefore$ 等式が成り立つ。</p>
+
+<p>(II) $g=k$ のとき、等式が成り立つと仮定すると、 $\chi(F_k)=2-2k$</p>
+
+<p>$g=k+1$ のとき、</p>
+
+\[\begin{aligned}
+\chi(F_{k+1}) 
+&amp;= \chi(F_k ＃ F_1) \\
+&amp;= \chi(F_k) + \chi(F_1) -2 \\
+&amp;= 2-2k+0-2 \\
+&amp;= 2-2(k+1)
+\end{aligned}\]
+
+<p>$\therefore$ 数学的帰納法により、すべての $g$ について $\chi(F_g)= 2-2g$ が成り立つ。</p>
+
+<h2 id="１次元多様体の分類定理定理81証明不要">
+<a class="anchor" href="#%EF%BC%91%E6%AC%A1%E5%85%83%E5%A4%9A%E6%A7%98%E4%BD%93%E3%81%AE%E5%88%86%E9%A1%9E%E5%AE%9A%E7%90%86%E5%AE%9A%E7%90%8681%E8%A8%BC%E6%98%8E%E4%B8%8D%E8%A6%81" aria-hidden="true"><span class="octicon octicon-link"></span></a>１次元多様体の分類定理[定理8.1]（証明不要）</h2>
+<p>$M$ をコンパクトな１次元多様体とすると、 $M$ は単位円周 $S^1=\{(x_1,x_2)\in \mathbb{R}^2|{x_1}^2+{x_2}^2=1\}$ または単位区間 $I=[0,1]$ に同相である。</p>
+
+<h2 id="２次元多様体の分類定理定理102-114証明不要">
+<a class="anchor" href="#%EF%BC%92%E6%AC%A1%E5%85%83%E5%A4%9A%E6%A7%98%E4%BD%93%E3%81%AE%E5%88%86%E9%A1%9E%E5%AE%9A%E7%90%86%E5%AE%9A%E7%90%86102-114%E8%A8%BC%E6%98%8E%E4%B8%8D%E8%A6%81" aria-hidden="true"><span class="octicon octicon-link"></span></a>２次元多様体の分類定理[定理10.2, 11.4]（証明不要）</h2>
+<p>任意の向き付け可能閉曲面は、ある $F_g (g\geqq 0)$ に同相であり、任意の向き付け不可能閉曲面は、ある $N_g (g&gt;0)$ に同相である。</p>
+
+<h2 id="閉曲面の文字列表示">
+<a class="anchor" href="#%E9%96%89%E6%9B%B2%E9%9D%A2%E3%81%AE%E6%96%87%E5%AD%97%E5%88%97%E8%A1%A8%E7%A4%BA" aria-hidden="true"><span class="octicon octicon-link"></span></a>閉曲面の文字列表示</h2>
+<h3 id="一覧">
+<a class="anchor" href="#%E4%B8%80%E8%A6%A7" aria-hidden="true"><span class="octicon octicon-link"></span></a>一覧</h3>
+<h4 id="トーラス-tf_1">トーラス $T=F_1$</h4>
+<p>\(\Sigma=aba^{-1}b^{-1}\)</p>
+
+<h4 id="クラインの壺-kn_2">クラインの壺 $K=N_2$</h4>
+<p>\(\begin{aligned}
+\Sigma
+&amp;= aba^{-1}b \\
+&amp;= aabb
+\end{aligned}\)</p>
+
+<h4 id="f_2-t--t">$F_2= T ＃ T$</h4>
+<p>\(\Sigma=aba^{-1}b^{-1}cdc^{-1}d^{-1}\)</p>
+
+<h4 id="球面-s2f_0">球面 $S^2=F_0$</h4>
+<p>\(\Sigma=aa^{-1}\)</p>
+
+<h4 id="射影平面-pn_1">射影平面 $P=N_1$</h4>
+<p>\(\Sigma=aa\)</p>
+
+<h3 id="1-sigmaabca-1c-1b-1">
+<a class="anchor" href="#1-sigmaabca-1c-1b-1" aria-hidden="true"><span class="octicon octicon-link"></span></a>(1) $\Sigma=abca^{-1}c^{-1}b^{-1}$</h3>
+<p>$x=bc$ とおくと、 $x^{-1}=c^{-1}b^{-1}$ なので、</p>
+
+<p>$\Sigma=axa^{-1}x^{-1}$ より、 $\Sigma$ はトーラス。</p>
+
+<h3 id="2-sigmaabcb-1a-1c">
+<a class="anchor" href="#2-sigmaabcb-1a-1c" aria-hidden="true"><span class="octicon octicon-link"></span></a>(2) $\Sigma=abcb^{-1}a^{-1}c$</h3>
+<p>$x=ab$ とおくと、 $x^{-1}=b^{-1}a^{-1}$ なので、</p>
+
+<p>$\Sigma=xcx^{-1}c$ より、 $\Sigma$ はクラインの壺。</p>
+
+<h3 id="3-sigmaabacb-1c">
+<a class="anchor" href="#3-sigmaabacb-1c" aria-hidden="true"><span class="octicon octicon-link"></span></a>(3) $\Sigma=abacb^{-1}c$</h3>
+<p>$x=ab$ とおくと、 $x^{-1}=b^{-1}a^{-1}, x^{-1}a=b^{-1}$ なので、 $\Sigma=xacx^{-1}ac$</p>
+
+<p>$y=ac$ とおくと、 $\Sigma=xyx^{-1}y$ より、 $\Sigma$ はクラインの壺。</p>
+
+<h3 id="4-sigmaabca-1b-1c-1">
+<a class="anchor" href="#4-sigmaabca-1b-1c-1" aria-hidden="true"><span class="octicon octicon-link"></span></a>(4) $\Sigma=abca^{-1}b^{-1}c^{-1}$</h3>
+<p>$x=ab$ とおくと、 $x^{-1}=b^{-1}a^{-1}, x^{-1}a=b^{-1}$ なので、 $\Sigma=xca^{-1}x^{-1}ac^{-1}$</p>
+
+<p>$y=ca^{-1}$ とおくと、 $y^{-1}=ac^{-1}$ なので、</p>
+
+<p>$\Sigma=xyx^{-1}y^{-1}$ より、 $\Sigma$ はトーラス。</p>
+
+<h3 id="5-sigmaz-1xzwx-1w-1">
+<a class="anchor" href="#5-sigmaz-1xzwx-1w-1" aria-hidden="true"><span class="octicon octicon-link"></span></a>(5) $\Sigma=z^{-1}xzwx^{-1}w^{-1}$</h3>
+<p>$\Sigma\sim w^{-1}z^{-1}xzwx^{-1}$</p>
+
+<p>$a=w^{-1}z^{-1}$ とおくと、 $a^{-1}=zw$ なので、</p>
+
+<p>$\Sigma=axa^{-1}x^{-1}$ より、 $\Sigma$ はトーラス。</p>
+
+<h3 id="6-sigmaaxya-1y-1x-1czwc-1w-1z-1">
+<a class="anchor" href="#6-sigmaaxya-1y-1x-1czwc-1w-1z-1" aria-hidden="true"><span class="octicon octicon-link"></span></a>(6) $\Sigma=axya^{-1}y^{-1}x^{-1}czwc^{-1}w^{-1}z^{-1}$</h3>
+<p>$b=xy, d=zw$ とおくと、 $b^{-1}=y^{-1}x^{-1}, d^{-1}=w^{-1}z^{-1}$ なので、</p>
+
+<p>$\Sigma=aba^{-1}b^{-1}cdc^{-1}d^{-1}$ より、 $\Sigma$ は $F_2$ 。</p>
+
+
+        
+    </div>
+    
+    <div class="article-footer">
+        <div class="article-categories-tags">
+            <div class="article-tags">
+                <ul>
+                
+                </ul>
+            </div>
+        </div>
+    </div>
+
+</article>
+
+                    
+                </div>
+            </div>
+        </main>
+
+        <footer>
+    <div class="footer-content">
+        <!--
+<div class="social-links">
+    <ul>
+        <li><a href="https://github.com/" target="_blank" rel="noopener noreferrer"><i class="fab fa-github"></i>GitHub</a></li>
+        <li><a href="https://www.youtube.com/" target="_blank" rel="noopener noreferrer"><i class="fab fa-youtube"></i>YouTube</a></li>
+    </ul>
+</div>
+-->
+        <!-- _includes/navigation.html -->
+<nav class="nav-content">
+    <ul class="nav-list">
+        <li class="nav-item"><a href="/mimnekonote/">ホーム</a></li>
+        <li class="nav-item"><a href="/mimnekonote/about/">このサイトについて</a></li>
+        <li class="nav-item"><a href="/mimnekonote/tags/">カテゴリ＆タグ</a></li>
+    </ul>
+</nav>
+        <p class="copyright">Copyright &copy; 2023 - 2024 みむねこのーと.<br class="copyright-break"> All rights reserved.</p>
+    </div>
+</footer>
+
+    </div>
+</body>
+</html>
