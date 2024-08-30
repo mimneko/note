@@ -1,6 +1,6 @@
 title: みむねこのーと
 description: みむねこ用Jekyllです。
-baseurl: "/mimnekonote"
+baseurl: "/note"
 url: "https://mimneko.github.io" # サイトのURL。
 author:
   name: みむねこ
