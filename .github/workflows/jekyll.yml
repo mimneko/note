@@ -1,6 +1,6 @@
 # .github/workflows/jekyll.yml
 
-name: GitHub Pages
+name: 更新したファイルをwebページに反映
 
 on:
   push:
