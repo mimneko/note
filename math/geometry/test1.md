@@ -17,17 +17,17 @@ title: 幾何学前期
 ## クラインの壺 $K$ の定義[11]
 図のような正方形 $ABCD$ において $AB$ と $CD$ 、 $AD$ と $BC$ を矢印に沿って貼り合わせてできた曲面をクラインの壺という。
 
-<img src="Klein.jpeg" alt="クラインの壺" width="200">
+<img src="Klein.jpeg" alt="代替テキスト" width="200">
 
 ## メービウスの帯 $M$ の定義[11]
 図のような長方形 $ABCD$ において $AD$ と $BC$ を矢印に沿って貼り合わせてできた曲面をメービウスの帯という。
 
-<img src="Moebius.jpeg" alt="メービウスの帯" width="200">
+<img src="Moebius.jpeg" alt="代替テキスト" width="200">
 
 ## 射影平面 $P$ の定義[11]
 図のような２次元円板において、円周上に２点 $A$ 、 $B$ を取り、弧 $AB$ と弧 $BA$ を矢印に沿って貼り合わせてできた曲面を射影平面という。
 
-<img src="projective.jpeg" alt="射影平面" width="200">
+<img src="projective.jpeg" alt="代替テキスト" width="200">
 
 ## 曲面のオイラー標数の定義[12]
  $K$ を $n$ 次元のコンパクトな単体的複体とし、 $i=0,1,2,\cdots,n$ に対して、 $\alpha_i$ を $K$ の $i$ 次元単体の個数とする。このとき、次の値を $K$ のオイラー標数という。
