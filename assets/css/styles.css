@@ -105,7 +105,6 @@ body {
 header {
     background-color: var(--header-bg-color);
     color: var(--text-color);
-    padding: 1rem 1.5rem;
     width: 100%;
     box-sizing: border-box;
     box-shadow: 0 2px 4px rgba(0, 0, 0, .1);
@@ -123,7 +122,7 @@ header {
     align-items: center;
     max-width: 1200px;
     margin: 0 auto;
-    width: 100%;
+    padding: 1rem 1.5rem;
 }
 
 .site-icon {
@@ -254,11 +253,11 @@ header .drawer-hidden {
         -ms-user-select: none;     /* Internet Explorer/Edge */
         user-select: none;         /* Non-prefixed version, currently supported by Chrome, Edge, Opera, and Firefox */
     }
-    
+    /*
     .logo {
         z-index: 100;
     }
-
+    */
     /* ハンバーガーメニューのアイコン */
     header .drawer-open span,
     header .drawer-open span:before,
@@ -298,37 +297,52 @@ header .drawer-hidden {
         top: 0;
         transform: rotate(-45deg);
     }
-    
+    /*
     header .header-content {
         z-index: 100;
     }
+    */
+/* メニューのデザイン */
+header .nav-content {
+    margin-top: 80px;/*2rem;*/
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0; /* 上部に固定 */
+    bottom: 0; /* 下部に固定 */
+    overflow: hidden;
+    max-height: 0;
+    opacity: 0;
+    flex-direction: column;
+    transition: max-height 1.0s ease-out, opacity 0.5s ease-out;
+    background: var(--page-bg-color);
+    z-index: 100;
+}
 
-    /* メニューのデザイン*/
-    header .nav-content {
-        width: 100%;
-        height: calc(100% - 80px); /* ヘッダー分の高さを引く */
-        position: fixed;
-        top: -100%; /* メニューを画面の外（下）に飛ばす */
-        left: 0;
-        z-index: 99;
-        background: var(--header-bg-color);
-        transition: top 0.5s ease; /* 上から下へのスクロールをスムーズに */
-    }
+header .nav-content .nav-list {
+    display: block;
+    margin: 10px 30px;
+}
 
-    header .nav-content .nav-list {
-        display: block;
-        margin: 10px 30px;
-    }
+header .nav-content .nav-list .nav-item {
+    font-size: var(--font-size-large);
+    margin-bottom: 10px;
+}
 
-    header .nav-content .nav-list .nav-item {
-        font-size: var(--font-size-large);
-        margin-bottom: 10px;
-    }
+/* アイコンがクリックされたらメニューを表示 */
+#drawer-input:checked ~ .nav-content {
+    max-height: 100vh; /* 画面全体に展開 */
+    min-height: 100vh; /* 高さを画面いっぱいにする */
+    opacity: 1;
+}
 
-    /* アイコンがクリックされたらメニューを表示 */
-    #drawer-input:checked ~ .nav-content {
-        top: 80px;
-    }
+/* メニューが閉じる際も滑らかに消えるようにする */
+#drawer-input:not(:checked) ~ .nav-content {
+    max-height: 0; /* 高さをゼロに */
+    min-height: 0; /* 高さをゼロに */
+    opacity: 0;
+}
+
 }
 
 /* -----------------------------------------
@@ -464,6 +478,11 @@ aside {
     }
 }
 
+.article-body > :not(h1):not(h2):not(h3):not(h4):not(h5):not(h6) {
+    margin-left: 1rem;
+    margin-right: 1rem;
+}
+
 /* -----------------------------------------
     サイドバー
 ----------------------------------------- */
@@ -537,6 +556,12 @@ article h1 {
 }
 
 article h2 {
+    padding: 1rem 2rem .9rem 2rem;
+    border-top: 6px double var(--base-color);
+    border-bottom: 6px double var(--base-color);
+}
+/*
+article h2 {
     position: relative;
     padding: .75rem 1rem .6rem 1rem;
     margin: 2rem 0 1.5rem 0;
@@ -556,6 +581,7 @@ article h2:before {
     border-top: 2px solid var(--base-color);
     border-bottom: 2px solid var(--base-color);
 }
+*/
 
 article h3 {
     border-bottom: solid 3px var(--base-pale-color);
