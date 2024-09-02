@@ -556,7 +556,7 @@ article h1 {
 }
 
 article h2 {
-    padding: 1rem 2rem .9rem 2rem;
+    padding: 1rem 1rem .9rem 1rem;
     border-top: 6px double var(--base-color);
     border-bottom: 6px double var(--base-color);
 }
