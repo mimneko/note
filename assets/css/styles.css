@@ -478,7 +478,7 @@ aside {
     }
 }
 
-.article-body > :not(h1):not():not(h3):not(h4):not(h5):not(h6) {
+.article-body > :not(h1):not(h2):not(h3):not(h4):not(h5):not(h6) {
     margin-left: 1rem;
     margin-right: 1rem;
 }
