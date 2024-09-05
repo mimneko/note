@@ -150,16 +150,16 @@ public class Main {
 #### 書き方
 
 ```
-printfを使うには `#include <stdio.h>` と書く。
+printfを使うには`#include <stdio.h>`と書く。
 
-こうすれば`` バッククォート(`) `` も書ける。
+こうすれば`` バッククォート(`) ``も書ける。
 ```
 
 #### 表示
 
-printf を使うには `#include <stdio.h>` と書く。
+printf を使うには`#include <stdio.h>`と書く。
 
-こうすれば`` バッククォート(`) `` も書ける。
+こうすれば`` バッククォート(`) ``も書ける。
 
 ## リンク
 
