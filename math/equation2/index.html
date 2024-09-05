@@ -62,7 +62,7 @@
         <header>
     <div class="header-content">
         <!-- ヘッダーロゴ -->
-        <div class="logo">
+        <div class="site-logo">
             <a href="/note/">
                 <img src="/note/assets/icons/mimneko-note-icon.png" alt="サイトアイコン" class="site-icon">
                 <span class="site-name">みむねこのーと</span>
@@ -70,23 +70,23 @@
         </div>
         
         <!-- ハンバーガーメニュー部分 -->
-        <div class="hamburger-menu">
+        <div class="navigation-menu-container">
         
             <!-- ハンバーガーメニューの表示・非表示を切り替えるチェックボックス -->
-            <input id="drawer-input" class="drawer-hidden" type="checkbox">
+            <input id="menu-toggle" class="menu-toggle-input" type="checkbox">
         
             <!-- ハンバーガーアイコン -->
-            <label for="drawer-input" class="drawer-open"><span></span></label>
+            <label for="menu-toggle" class="hamburger-icon"><span></span></label>
         
             <!-- メニュー -->
-            <!-- _includes/navigation.html -->
-<nav class="nav-content">
-    <ul class="nav-list">
-        <li class="nav-item"><a href="/note/">ホーム</a></li>
-        <li class="nav-item"><a href="/note/about/">このサイトについて</a></li>
-        <li class="nav-item"><a href="/note/tags/">カテゴリ＆タグ</a></li>
-    </ul>
-</nav>
+            <nav id="hamburger-menu" class="navigation-content">
+                <!-- _includes/navigation.html -->
+<ul class="navigation-list">
+    <li class="navigation-item"><a href="/note/">ホーム</a></li>
+    <li class="navigation-item"><a href="/note/about/">このサイトについて</a></li>
+    <li class="navigation-item"><a href="/note/tags/">カテゴリ＆タグ</a></li>
+</ul>
+            </nav>
     
         </div>
     </div>
@@ -265,18 +265,24 @@
     </ul>
 </div>
 -->
-        <!-- _includes/navigation.html -->
-<nav class="nav-content">
-    <ul class="nav-list">
-        <li class="nav-item"><a href="/note/">ホーム</a></li>
-        <li class="nav-item"><a href="/note/about/">このサイトについて</a></li>
-        <li class="nav-item"><a href="/note/tags/">カテゴリ＆タグ</a></li>
-    </ul>
-</nav>
+
+        <nav id="footer-menu" class="navigation-content">
+            <!-- _includes/navigation.html -->
+<ul class="navigation-list">
+    <li class="navigation-item"><a href="/note/">ホーム</a></li>
+    <li class="navigation-item"><a href="/note/about/">このサイトについて</a></li>
+    <li class="navigation-item"><a href="/note/tags/">カテゴリ＆タグ</a></li>
+</ul>
+        </nav>
+        
         <p class="copyright">Copyright &copy; 2023 - 2024 みむねこのーと.<br class="copyright-break"> All rights reserved.</p>
     </div>
 </footer>
 
     </div>
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script src="/note/assets/js/navigation-menu.js"></script>
+
 </body>
 </html>
