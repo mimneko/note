@@ -8,6 +8,7 @@ math-c: 数学Ｃ
 algebra: 代数学
 geometry: 幾何学
 design: デザイン
+color: 配色
 slide: スライドデザイン
 web: webデザイン
 equation: 公式
@@ -15,4 +16,4 @@ education: 教育
 kanji: 漢字
 kanken: 漢字検定
 programming: プログラミング
-markdown: マークダウン
+markdown: Markdown
