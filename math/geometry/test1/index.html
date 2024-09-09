@@ -75,15 +75,15 @@
             <input id="menu-toggle" class="menu-toggle-input" type="checkbox">
         
             <!-- ハンバーガーアイコン -->
-            <label for="menu-toggle" class="hamburger-icon"><span></span></label>
+            <label for="menu-toggle" id="hamburger-icon"><span></span></label>
         
             <!-- メニュー -->
-            <nav id="hamburger-menu" class="navigation-content">
+            <nav id="header-menu" class="navigation-content">
                 <!-- _includes/navigation.html -->
 <ul class="navigation-list">
-    <li class="navigation-item"><a href="/note/">ホーム</a></li>
-    <li class="navigation-item"><a href="/note/about/">このサイトについて</a></li>
-    <li class="navigation-item"><a href="/note/tags/">カテゴリ＆タグ</a></li>
+    <li><a href="/note/">ホーム</a></li>
+    <li><a href="/note/about/">このサイトについて</a></li>
+    <li><a href="/note/tags/">カテゴリ＆タグ</a></li>
 </ul>
             </nav>
     
@@ -150,10 +150,10 @@
                 <li class="breadcrumb-item active" aria-current="page" itemprop="itemListElement" itemscope
                 itemtype="https://schema.org/ListItem">
                     <a itemprop="item" href="/note/math/geometry/test1/">
-                        
-                            <i class="fas fa-file"></i>
-                            <span itemprop="name">幾何学前期</span>
-                        
+                    
+                        <i class="fas fa-file"></i>
+                        <span itemprop="name">幾何学前期</span>
+                    
                     </a>
                     <meta itemprop="position" content="4" />
                 </li>
@@ -403,15 +403,53 @@
     
     <div class="article-footer">
         <div class="article-categories-tags">
-            <div class="article-tags">
-                <ul>
+            <!-- カテゴリ -->
+            <div class="article-categories">
                 
-                </ul>
+                
+                
+                
+                
+                <ol class="category-list link-list">
+                    
+                        
+                        
+                
+                        
+                            <li class="breadcrumb-item">
+                                <a href="/note/math/">
+                                    <i class="fas fa-folder"></i>数学
+                                </a>
+                            </li>
+                        
+                    
+                        
+                        
+                
+                        
+                            <li class="breadcrumb-item">
+                                <a href="/note/math/geometry/">
+                                    <i class="fas fa-folder"></i>幾何学
+                                </a>
+                            </li>
+                        
+                    
+                        
+                        
+                
+                        
+                    
+                </ol>
             </div>
+            
         </div>
     </div>
 
 </article>
+
+
+
+
 
                     
                 </div>
@@ -432,13 +470,13 @@
         <nav id="footer-menu" class="navigation-content">
             <!-- _includes/navigation.html -->
 <ul class="navigation-list">
-    <li class="navigation-item"><a href="/note/">ホーム</a></li>
-    <li class="navigation-item"><a href="/note/about/">このサイトについて</a></li>
-    <li class="navigation-item"><a href="/note/tags/">カテゴリ＆タグ</a></li>
+    <li><a href="/note/">ホーム</a></li>
+    <li><a href="/note/about/">このサイトについて</a></li>
+    <li><a href="/note/tags/">カテゴリ＆タグ</a></li>
 </ul>
         </nav>
         
-        <p class="copyright">Copyright &copy; 2023 - 2024 みむねこのーと.<br class="copyright-break"> All rights reserved.</p>
+        <p class="copyright">Copyright &copy; 2023 - 2024 <br class="copyright-break">みむねこのーと All rights reserved.</p>
     </div>
 </footer>
 
@@ -446,6 +484,6 @@
 
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 <script src="/note/assets/js/navigation-menu.js"></script>
-
+<script src="/note/assets/js/copy-code.js"></script>
 </body>
 </html>

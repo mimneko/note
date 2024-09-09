@@ -75,15 +75,15 @@
             <input id="menu-toggle" class="menu-toggle-input" type="checkbox">
         
             <!-- ハンバーガーアイコン -->
-            <label for="menu-toggle" class="hamburger-icon"><span></span></label>
+            <label for="menu-toggle" id="hamburger-icon"><span></span></label>
         
             <!-- メニュー -->
-            <nav id="hamburger-menu" class="navigation-content">
+            <nav id="header-menu" class="navigation-content">
                 <!-- _includes/navigation.html -->
 <ul class="navigation-list">
-    <li class="navigation-item"><a href="/note/">ホーム</a></li>
-    <li class="navigation-item"><a href="/note/about/">このサイトについて</a></li>
-    <li class="navigation-item"><a href="/note/tags/">カテゴリ＆タグ</a></li>
+    <li><a href="/note/">ホーム</a></li>
+    <li><a href="/note/about/">このサイトについて</a></li>
+    <li><a href="/note/tags/">カテゴリ＆タグ</a></li>
 </ul>
             </nav>
     
@@ -135,10 +135,10 @@
                 <li class="breadcrumb-item active" aria-current="page" itemprop="itemListElement" itemscope
                 itemtype="https://schema.org/ListItem">
                     <a itemprop="item" href="/note/design/web/">
-                        
-                            <i class="fas fa-folder"></i>
-                            <span itemprop="name">webデザイン</span>
-                        
+                    
+                        <i class="fas fa-folder"></i>
+                        <span itemprop="name">webデザイン</span>
+                    
                     </a>
                     <meta itemprop="position" content="3" />
                 </li>
@@ -205,13 +205,13 @@
         <nav id="footer-menu" class="navigation-content">
             <!-- _includes/navigation.html -->
 <ul class="navigation-list">
-    <li class="navigation-item"><a href="/note/">ホーム</a></li>
-    <li class="navigation-item"><a href="/note/about/">このサイトについて</a></li>
-    <li class="navigation-item"><a href="/note/tags/">カテゴリ＆タグ</a></li>
+    <li><a href="/note/">ホーム</a></li>
+    <li><a href="/note/about/">このサイトについて</a></li>
+    <li><a href="/note/tags/">カテゴリ＆タグ</a></li>
 </ul>
         </nav>
         
-        <p class="copyright">Copyright &copy; 2023 - 2024 みむねこのーと.<br class="copyright-break"> All rights reserved.</p>
+        <p class="copyright">Copyright &copy; 2023 - 2024 <br class="copyright-break">みむねこのーと All rights reserved.</p>
     </div>
 </footer>
 
@@ -219,6 +219,6 @@
 
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 <script src="/note/assets/js/navigation-menu.js"></script>
-
+<script src="/note/assets/js/copy-code.js"></script>
 </body>
 </html>

@@ -3,10 +3,10 @@ $(function() {
     $('#menu-toggle').on('change', function() {
         if ($(this).is(':checked')) {
             // チェックが入れられたとき
-            $('#hamburger-menu').stop().slideDown(); // メニューを表示
+            $('#header-menu').stop().slideDown(); // メニューを表示
         } else {
             // チェックが外されたとき
-            $('#hamburger-menu').stop().slideUp(); // メニューを非表示
+            $('#header-menu').stop().slideUp(); // メニューを非表示
         }
     });
 
@@ -15,10 +15,10 @@ $(function() {
         var windowWidth = $(window).width();
 
         if (windowWidth > 768) {
-            $('#hamburger-menu').stop(true, true).show(); // 幅が768pxを超えるとメニューを表示（高さをリセット）
+            $('#header-menu').stop(true, true).show(); // 幅が768pxを超えるとメニューを表示（高さをリセット）
         } else {
             if (!$('#menu-toggle').is(':checked')) {
-                $('#hamburger-menu').stop(true, true).slideUp(); // 幅が768px以下でメニューが開いていなければ非表示
+                $('#header-menu').stop(true, true).slideUp(); // 幅が768px以下でメニューが開いていなければ非表示
             }
         }
         
