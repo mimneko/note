@@ -486,6 +486,10 @@ header .menu-toggle-input {
     color: var(--text-hover-color);
 }
 
+#footer-menu .navigation-list li a:active {
+    background-color: var(--footer-bg-color);
+}
+
 #footer-menu .navigation-list li:not(:last-child)::after {
     content: '';
     position: absolute;
