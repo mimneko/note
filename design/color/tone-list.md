@@ -270,8 +270,7 @@ title: トーン一覧
 </div>
 
 ## 参考
-### 色調
-使用例も載っているのでおすすめ。
+使用例も載っているのでおすすめ。本ページでは、以下のページを修正したものを掲載している。
 
 <ul class="reference-list">
   <li><a href="https://321web.link/color-tone/" target="_blank">【デザインに役立つ】カラートーンの種類と特徴【色調基準の配色】</a>, 参照<time datetime="2024-04-25">2024-04-25</time></li>
