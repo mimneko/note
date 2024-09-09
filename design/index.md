@@ -1,4 +1,4 @@
 ---
 layout: category_list
-category: design
+category: color
 ---
