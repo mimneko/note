@@ -488,6 +488,7 @@ header .menu-toggle-input {
 
 #footer-menu .navigation-list li a:active {
     background-color: var(--footer-bg-color);
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0); /* iOSでのハイライトを無効化 */
 }
 
 #footer-menu .navigation-list li:not(:last-child)::after {
