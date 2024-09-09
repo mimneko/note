@@ -480,15 +480,12 @@ header .menu-toggle-input {
 
 #footer-menu .navigation-list li  a {
     color: var(--text-footer-color);
+    -webkit-tap-highlight-color: rgba(0,0,0,0); /* タップ時のハイライトを透明に */
+    -webkit-touch-callout: none; /* 長押しのメニューを無効化 */
 }
 
 #footer-menu .navigation-list li a:hover {
     color: var(--text-hover-color);
-}
-
-#footer-menu .navigation-list li a:active {
-    background-color: var(--footer-bg-color);
-    -webkit-tap-highlight-color: rgba(0, 0, 0, 0); /* iOSでのハイライトを無効化 */
 }
 
 #footer-menu .navigation-list li:not(:last-child)::after {
