@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>
     
-        Markdownの記事一覧 - みむねこのーと
+        色相環 - みむねこのーと
     
 </title>
 <!-- ファビコン -->
@@ -34,23 +34,23 @@
 <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
 
     <!-- Begin Jekyll SEO tag v2.8.0 -->
-<title>みむねこのーと | みむねこが書きたいことを書くブログ</title>
+<title>色相環 | みむねこのーと</title>
 <meta name="generator" content="Jekyll v4.3.3" />
-<meta property="og:title" content="みむねこのーと" />
+<meta property="og:title" content="色相環" />
 <meta name="author" content="みむねこ" />
 <meta property="og:locale" content="ja_JP" />
 <meta name="description" content="みむねこが書きたいことを書くブログ" />
 <meta property="og:description" content="みむねこが書きたいことを書くブログ" />
-<link rel="canonical" href="https://mimneko.github.io/note/programming/markdown/" />
-<meta property="og:url" content="https://mimneko.github.io/note/programming/markdown/" />
+<link rel="canonical" href="https://mimneko.github.io/note/design/color/color-wheel/" />
+<meta property="og:url" content="https://mimneko.github.io/note/design/color/color-wheel/" />
 <meta property="og:site_name" content="みむねこのーと" />
 <meta property="og:image" content="https://mimneko.github.io/note/assets/img/sample-card.png" />
 <meta property="og:type" content="website" />
 <meta name="twitter:card" content="summary_large_image" />
 <meta property="twitter:image" content="https://mimneko.github.io/note/assets/img/sample-card.png" />
-<meta property="twitter:title" content="みむねこのーと" />
+<meta property="twitter:title" content="色相環" />
 <script type="application/ld+json">
-{"@context":"https://schema.org","@type":"WebPage","author":{"@type":"Person","name":"みむねこ"},"description":"みむねこが書きたいことを書くブログ","headline":"みむねこのーと","image":"https://mimneko.github.io/note/assets/img/sample-card.png","url":"https://mimneko.github.io/note/programming/markdown/"}</script>
+{"@context":"https://schema.org","@type":"WebPage","author":{"@type":"Person","name":"みむねこ"},"description":"みむねこが書きたいことを書くブログ","headline":"色相環","image":"https://mimneko.github.io/note/assets/img/sample-card.png","url":"https://mimneko.github.io/note/design/color/color-wheel/"}</script>
 <!-- End Jekyll SEO tag -->
 
 </head>
@@ -119,9 +119,9 @@
             
                 <li class="breadcrumb-item" itemprop="itemListElement" itemscope
                 itemtype="https://schema.org/ListItem">
-                    <a itemprop="item" href="/note/programming/">
+                    <a itemprop="item" href="/note/design/">
                         <i class="fas fa-folder"></i>
-                        <span itemprop="name">プログラミング</span>
+                        <span itemprop="name">デザイン</span>
                     </a>
                     <meta itemprop="position" content="2" />
                 </li>
@@ -132,15 +132,30 @@
             
 
             
-                <li class="breadcrumb-item active" aria-current="page" itemprop="itemListElement" itemscope
+                <li class="breadcrumb-item" itemprop="itemListElement" itemscope
                 itemtype="https://schema.org/ListItem">
-                    <a itemprop="item" href="/note/programming/markdown/">
-                    
+                    <a itemprop="item" href="/note/design/color/">
                         <i class="fas fa-folder"></i>
-                        <span itemprop="name">Markdown</span>
-                    
+                        <span itemprop="name">配色</span>
                     </a>
                     <meta itemprop="position" content="3" />
+                </li>
+            
+        
+            
+            
+            
+
+            
+                <li class="breadcrumb-item active" aria-current="page" itemprop="itemListElement" itemscope
+                itemtype="https://schema.org/ListItem">
+                    <a itemprop="item" href="/note/design/color/color-wheel/">
+                    
+                        <i class="fas fa-file"></i>
+                        <span itemprop="name">色相環</span>
+                    
+                    </a>
+                    <meta itemprop="position" content="4" />
                 </li>
             
         
@@ -149,133 +164,126 @@
 
 
 <article>
-    
+
     <div class="article-header">
-        <h1 id="article-title">Markdownの記事一覧</h1>
+        <h1 id="article-title">色相環</h1>
+        <div id="article-meta">
+            
+            
+            <span id="article-author"><i class="fas fa-user"></i><span>みむねこ</span></span>
+        </div>
+    </div>
+
+    <div class="article-body">
+        
+        
+        <div id="toc">
+            <p id="toc-title"><i class="fa-solid fa-list-ul fa-fw"></i>目次</p>
+            <ol id="toc-content" class="section-nav">
+</ol>
+        </div>
+        
+        
+        <style>
+  .color-wheel {
+    width: 470px;
+    height: 470px;
+    position: relative;
+    margin-right: 70px;
+    margin-bottom: 70px;
+  }
+
+  .color-circle {
+    width: 70px;
+    height: 70px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 50%;
+  }
+
+  .color0 { transform: rotate(0deg) translate(175px) rotate(-0deg); }
+  .color1 { transform: rotate(30deg) translate(175px) rotate(-30deg); }
+  .color2 { transform: rotate(60deg) translate(175px) rotate(-60deg); }
+  .color3 { transform: rotate(90deg) translate(175px) rotate(-90deg); }
+  .color4 { transform: rotate(120deg) translate(175px) rotate(-120deg); }
+  .color5 { transform: rotate(150deg) translate(175px) rotate(-150deg); }
+  .color6 { transform: rotate(180deg) translate(175px) rotate(-180deg); }
+  .color7 { transform: rotate(210deg) translate(175px) rotate(-210deg); }
+  .color8 { transform: rotate(240deg) translate(175px) rotate(-240deg); }
+  .color9 { transform: rotate(270deg) translate(175px) rotate(-270deg); }
+  .color10 { transform: rotate(300deg) translate(175px) rotate(-300deg); }
+  .color11 { transform: rotate(330deg) translate(175px) rotate(-330deg); }
+</style>
+
+<div class="color-wheel">
+  <div class="color-circle color0" style="background-color: #009e96;"></div>
+  <div class="color-circle color1" style="background-color: #00a0e9;"></div>
+  <div class="color-circle color2" style="background-color: #0068b7;"></div>
+  <div class="color-circle color3" style="background-color: #1d2088;"></div>
+  <div class="color-circle color4" style="background-color: #920783;"></div>
+  <div class="color-circle color5" style="background-color: #e4007f;"></div>
+  <div class="color-circle color6" style="background-color: #e5004f;"></div>
+  <div class="color-circle color7" style="background-color: #e60012;"></div>
+  <div class="color-circle color8" style="background-color: #f39800;"></div>
+  <div class="color-circle color9" style="background-color: #fff100;"></div>
+  <div class="color-circle color10" style="background-color: #8fc31f;"></div>
+  <div class="color-circle color11" style="background-color: #009944;"></div>
+</div>
+
+        
     </div>
     
-    <div class="article-body">
-
-        <!-- サブカテゴリ -->
-        
-        
-
-        
+    <div class="article-footer">
+        <div class="article-categories-tags">
+            <!-- カテゴリ -->
+            <div class="article-categories">
+                
+                
+                
+                
+                
+                <ol class="category-list link-list">
+                    
+                        
+                        
+                
+                        
+                            <li class="breadcrumb-item">
+                                <a href="/note/design/">
+                                    <i class="fas fa-folder"></i>デザイン
+                                </a>
+                            </li>
+                        
+                    
+                        
+                        
+                
+                        
+                            <li class="breadcrumb-item">
+                                <a href="/note/design/color/">
+                                    <i class="fas fa-folder"></i>配色
+                                </a>
+                            </li>
+                        
+                    
+                        
+                        
+                
+                        
+                    
+                </ol>
+            </div>
             
-            
-        
-        
-        
-        <!-- 記事 -->
-        
-        
-        
-        
-
-        
-
-        
-
-        <details open>
-            <summary>記事<span class="article-count">1</span>件</summary>
-            
-                
-                    
-                    
-                
-                    
-                    
-                
-                    
-                    
-                
-                    
-                    
-                
-                    
-                    
-                
-                    
-                    
-                
-                    
-                    
-                
-                    
-                    
-                
-                    
-                    
-                
-                    
-                    
-                
-                    
-                    
-                        <nav class="internal-blogcard">
-    <a href="/note/programming/markdown/sample/">
-        <p class="internal-blogcard-title">マークダウン記法サンプル</p>
-        <!-- <p class="internal-blogcard-date"></p> -->
-        <p class="internal-blogcard-description">
-            
-            ## 見出し
-
-#### 書き方
-
-```
-# 見出し1
-## 見出し2
-### 見出し3
-#### 見出し4
-##### 見出し5
-###### 見出し6
-```
-
-#### 表示
-
-# 見出し 1
-
-## 見出し 2
-
-### 見出し 3
-
-#### 見出し 4
-
-##### 見出し 5
-
-##
-        </p>
-        <p class="internal-blogcard-readmore">
-            <span class="internal-blogcard-readmore-title">続きを読む</span>
-            <i class="fa-solid fa-angles-right"></i>
-        </p>
-    </a>
-</nav>
-                    
-                
-                    
-                    
-                
-                    
-                    
-                
-                    
-                    
-                
-                    
-                    
-                
-                    
-                    
-                
-                    
-                    
-                
-            
-        </details>
-
+        </div>
     </div>
+
 </article>
+
+
+
+
 
                     
                 </div>
