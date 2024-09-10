@@ -28,7 +28,7 @@ date: 2024-06-07
 - [Google Colaboratory](https://colab.research.google.com/?hl=ja)
 - [Cloud LaTeX](https://cloudlatex.io/ja)
 - [AIメーカー](https://aimaker.io/)
-- [ディープラーニングで文章を自動生成したい！ | Aidemy | 10秒で始めるAIプログラミング学習サービスAidemy［アイデミー］](https://aidemy.net/magazine/714/)
+- [Aidemy](https://aidemy.net/magazine/714/)
 
 
 ## デザイン
