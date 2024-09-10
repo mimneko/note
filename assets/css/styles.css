@@ -617,7 +617,7 @@ article h5:not(h4 + *) {
 }
 
 article h6 {
-    font-size: var(--font-size-normal);
+    font-size: 22px;
 }
 
 article h6:not(h5 + *) {
