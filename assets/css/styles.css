@@ -570,7 +570,6 @@ article h2 {
     padding: 1rem 1rem .9rem 1rem;
     border-top: 6px double var(--main-color);
     border-bottom: 6px double var(--main-color);
-    background-color: var(--main-pale-color);
 }
 
 article h2:not(h1 + *) {
