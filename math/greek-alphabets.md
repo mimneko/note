@@ -1,6 +1,7 @@
 ---
 title: ギリシャ文字一覧
 date: 2024-09-12
+toc: false
 ---
 
 <style>
