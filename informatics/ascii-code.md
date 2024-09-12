@@ -4,9 +4,6 @@ tags: [info-1]
 ---
 
 <style>
-    h1 {
-        text-align: center;
-    }
     table {
         margin: 0 auto;
         border-collapse: collapse;
