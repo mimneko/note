@@ -49,7 +49,7 @@ title: ギリシャ文字一覧
             <td data-label="名称">アルファ</td>
             <td data-label="小文字" class="significant"> $\alpha$ </td>
             <td data-label="LaTeX">\alpha</td>
-            <td data-label="使用例"></td>
+            <td data-label="使用例">変数</td>
             <td data-label="大文字"> $A$ </td>
             <td data-label="LaTeX">A</td>
             <td data-label="使用例"></td>
@@ -58,7 +58,7 @@ title: ギリシャ文字一覧
             <td data-label="名称">ベータ</td>
             <td data-label="小文字" class="significant"> $\beta$ </td>
             <td data-label="LaTeX">\beta</td>
-            <td data-label="使用例"></td>
+            <td data-label="使用例">変数</td>
             <td data-label="大文字"> $B$ </td>
             <td data-label="LaTeX">B</td>
             <td data-label="使用例"></td>
@@ -67,7 +67,7 @@ title: ギリシャ文字一覧
             <td data-label="名称">ガンマ</td>
             <td data-label="小文字" class="significant"> $\gamma$ </td>
             <td data-label="LaTeX">\gamma</td>
-            <td data-label="使用例"></td>
+            <td data-label="使用例">変数</td>
             <td data-label="大文字"> $\varGamma$ </td>
             <td data-label="LaTeX">\varGamma</td>
             <td data-label="使用例"></td>
@@ -76,7 +76,7 @@ title: ギリシャ文字一覧
             <td data-label="名称">デルタ</td>
             <td data-label="小文字" class="significant"> $\delta$ </td>
             <td data-label="LaTeX">\delta</td>
-            <td data-label="使用例"></td>
+            <td data-label="使用例">変数</td>
             <td data-label="大文字"> $\varDelta$ </td>
             <td data-label="LaTeX">\varDelta</td>
             <td data-label="使用例"></td>
