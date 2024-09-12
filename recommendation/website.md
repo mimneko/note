@@ -38,10 +38,8 @@ date: 2024-06-07
 - [動くWebデザインアイディア帳](https://coco-factory.jp/ugokuweb/)
 - [ぽんひろ.com](https://ponhiro.com/)
 - [JAJAAAN](https://jajaaan.co.jp/css/)
-- [【コピペOK】CSSだけで実装できるおしゃれテーブルデザイン10つ｜webliker（ウェブライカー）](https://webliker.info/css/75964/)
-- [【レスポンシブ対応】シンプルなCSSのテーブルデザイン13選！｜SEOタイムズ](https://find-a.jp/seotimes/responsive-css-table-design/)
+- [テーブルデザイン10つ](https://webliker.info/css/75964/)
 - [マネるデザイン研究所](https://maneru-design-lab.net/)
-- [【2022年へ向けて】Webデザイン参考サイトまとめ【Web/LP/バナー/SNS広告】](https://b-risk.jp/blog/2021/12/web-gallery2022/)
 - [WordPressテーマ「SWELL」](https://swell-theme.com/)
 - [WordPressテーマ「Cocoon」](https://wp-cocoon.com/)
 
