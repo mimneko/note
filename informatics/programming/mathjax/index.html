@@ -1,0 +1,1771 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    
+
+    <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>
+    
+        高校数学用MathJaxサンプル - みむねこのーと
+    
+</title>
+<!-- ファビコン -->
+<link rel="apple-touch-icon" sizes="180x180" href="/note/assets/icons/apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="/note/assets/icons/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="/note/assets/icons/favicon-16x16.png">
+<link rel="manifest" href="/note/assets/icons/manifest.json">
+<link rel="mask-icon" href="/note/assets/icons/safari-pinned-tab.svg" color="#3498db">
+<meta name="msapplication-TileColor" content="#3498db">
+<meta name="theme-color" content="#3498db">
+<!-- css & js -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
+<link rel="preload" href="/note/assets/css/styles.css" as="style">
+<link rel="stylesheet" href="/note/assets/css/styles.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer">
+
+    <script>
+    MathJax = {
+        tex: {
+            inlineMath: [['$', '$'], ['\\(', '\\)']]
+        }
+    };
+</script>
+<script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+<link rel="preload" href="/note/assets/css/math-highschool.css" as="style">
+<link rel="stylesheet" href="/note/assets/css/math-highschool.css">
+
+    <!-- Begin Jekyll SEO tag v2.8.0 -->
+<title>高校数学用MathJaxサンプル | みむねこのーと</title>
+<meta name="generator" content="Jekyll v4.3.3" />
+<meta property="og:title" content="高校数学用MathJaxサンプル" />
+<meta name="author" content="みむねこ" />
+<meta property="og:locale" content="ja_JP" />
+<meta name="description" content="みむねこが書きたいことを書くブログ" />
+<meta property="og:description" content="みむねこが書きたいことを書くブログ" />
+<link rel="canonical" href="https://mimneko.github.io/note/informatics/programming/mathjax/" />
+<meta property="og:url" content="https://mimneko.github.io/note/informatics/programming/mathjax/" />
+<meta property="og:site_name" content="みむねこのーと" />
+<meta property="og:image" content="https://mimneko.github.io/note/assets/img/sample-card.png" />
+<meta property="og:type" content="article" />
+<meta property="article:published_time" content="2024-04-29T00:00:00+00:00" />
+<meta name="twitter:card" content="summary_large_image" />
+<meta property="twitter:image" content="https://mimneko.github.io/note/assets/img/sample-card.png" />
+<meta property="twitter:title" content="高校数学用MathJaxサンプル" />
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"BlogPosting","author":{"@type":"Person","name":"みむねこ"},"dateModified":"2024-04-29T00:00:00+00:00","datePublished":"2024-04-29T00:00:00+00:00","description":"みむねこが書きたいことを書くブログ","headline":"高校数学用MathJaxサンプル","image":"https://mimneko.github.io/note/assets/img/sample-card.png","mainEntityOfPage":{"@type":"WebPage","@id":"https://mimneko.github.io/note/informatics/programming/mathjax/"},"url":"https://mimneko.github.io/note/informatics/programming/mathjax/"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+    <div class="page-container">
+
+        <header>
+    <div class="header-content">
+        <!-- ヘッダーロゴ -->
+        <div class="site-logo">
+            <a href="/note/">
+                <img src="/note/assets/icons/mimneko-note-icon.png" alt="サイトアイコン" class="site-icon">
+                <span class="site-name">みむねこのーと</span>
+            </a>
+        </div>
+        
+        <!-- ハンバーガーメニュー部分 -->
+        <div class="navigation-menu-container">
+        
+            <!-- ハンバーガーメニューの表示・非表示を切り替えるチェックボックス -->
+            <input id="menu-toggle" class="menu-toggle-input" type="checkbox">
+        
+            <!-- ハンバーガーアイコン -->
+            <label for="menu-toggle" id="hamburger-icon"><span></span></label>
+        
+            <!-- メニュー -->
+            <nav id="header-menu" class="navigation-content">
+                <!-- _includes/navigation.html -->
+<ul class="navigation-list">
+    <li><a href="/note/">ホーム</a></li>
+    <li><a href="/note/about/">このサイトについて</a></li>
+    <li><a href="/note/tags/">カテゴリ＆タグ</a></li>
+</ul>
+            </nav>
+    
+        </div>
+    </div>
+</header>
+
+
+        <main>
+            <div class="main-content">
+                <div class="main-wrap">
+                    
+                    
+
+
+
+
+<nav class="breadcrumb" aria-label="パンくずリスト">
+    <ol class="breadcrumb-list" itemscope itemtype="https://schema.org/BreadcrumbList">
+        <li class="breadcrumb-item" itemprop="itemListElement" itemscope
+        itemtype="https://schema.org/ListItem">
+            <a itemprop="item" href="/note/">
+                <i class="fas fa-home"></i>
+                <span itemprop="name">ホーム</span>
+            </a>
+            <meta itemprop="position" content="1" />
+        </li>
+        
+            
+            
+            
+
+            
+                <li class="breadcrumb-item" itemprop="itemListElement" itemscope
+                itemtype="https://schema.org/ListItem">
+                    <a itemprop="item" href="/note/informatics/">
+                        <i class="fas fa-folder"></i>
+                        <span itemprop="name">情報</span>
+                    </a>
+                    <meta itemprop="position" content="2" />
+                </li>
+            
+        
+            
+            
+            
+
+            
+                <li class="breadcrumb-item" itemprop="itemListElement" itemscope
+                itemtype="https://schema.org/ListItem">
+                    <a itemprop="item" href="/note/informatics/programming/">
+                        <i class="fas fa-folder"></i>
+                        <span itemprop="name">プログラミング</span>
+                    </a>
+                    <meta itemprop="position" content="3" />
+                </li>
+            
+        
+            
+            
+            
+
+            
+                <li class="breadcrumb-item active" aria-current="page" itemprop="itemListElement" itemscope
+                itemtype="https://schema.org/ListItem">
+                    <a itemprop="item" href="/note/informatics/programming/mathjax/">
+                    
+                        <i class="fas fa-file"></i>
+                        <span itemprop="name">高校数学用MathJaxサンプル</span>
+                    
+                    </a>
+                    <meta itemprop="position" content="4" />
+                </li>
+            
+        
+    </ol>
+</nav>
+
+
+<article>
+
+    <div class="article-header">
+        <h1 id="article-title">高校数学用MathJaxサンプル</h1>
+        <div id="article-meta">
+            
+            <span id="written-date"><i class="fas fa-pen"></i><span>2024-04-29</span></span>
+            
+            
+            <span id="article-author"><i class="fas fa-user"></i><span>みむねこ</span></span>
+        </div>
+    </div>
+
+    <div class="article-body">
+        
+        
+        <div id="toc">
+            <p id="toc-title"><i class="fa-solid fa-list-ul fa-fw"></i>目次</p>
+            <ol id="toc-content" class="section-nav">
+<li class="toc-entry toc-h2"><a href="#%E6%BA%96%E5%82%99">準備</a></li>
+<li class="toc-entry toc-h2"><a href="#%E6%95%B0">数</a>
+<ol>
+<li class="toc-entry toc-h3"><a href="#%E5%88%86%E6%95%B0">分数</a></li>
+<li class="toc-entry toc-h3"><a href="#%E5%B0%8F%E6%95%B0">小数</a></li>
+<li class="toc-entry toc-h3"><a href="#%E7%84%A1%E9%99%90%E5%A4%A7">無限大</a></li>
+<li class="toc-entry toc-h3"><a href="#%E7%B5%B6%E5%AF%BE%E5%80%A4">絶対値</a></li>
+<li class="toc-entry toc-h3"><a href="#%E5%88%86%E6%95%B0%E3%81%A8%E7%B5%B6%E5%AF%BE%E5%80%A4">分数と絶対値</a></li>
+<li class="toc-entry toc-h3"><a href="#%E3%82%AC%E3%82%A6%E3%82%B9%E8%A8%98%E5%8F%B7">ガウス記号</a></li>
+</ol>
+</li>
+<li class="toc-entry toc-h2"><a href="#%E5%9B%9B%E5%89%87%E6%BC%94%E7%AE%97">四則演算</a>
+<ol>
+<li class="toc-entry toc-h3"><a href="#%E8%B6%B3%E3%81%99">足す</a></li>
+<li class="toc-entry toc-h3"><a href="#%E5%BC%95%E3%81%8F">引く</a></li>
+<li class="toc-entry toc-h3"><a href="#%E6%8E%9B%E3%81%91%E3%82%8B">掛ける</a></li>
+<li class="toc-entry toc-h3"><a href="#%E5%89%B2%E3%82%8B">割る</a></li>
+<li class="toc-entry toc-h3"><a href="#%E3%83%97%E3%83%A9%E3%82%B9%E3%83%9E%E3%82%A4%E3%83%8A%E3%82%B9">プラスマイナス</a></li>
+<li class="toc-entry toc-h3"><a href="#%E3%83%9E%E3%82%A4%E3%83%8A%E3%82%B9%E3%83%97%E3%83%A9%E3%82%B9">マイナスプラス</a></li>
+<li class="toc-entry toc-h3"><a href="#%E7%AD%86%E7%AE%97">筆算</a></li>
+<li class="toc-entry toc-h3"><a href="#%E5%90%88%E5%90%8C%E5%BC%8F">合同式</a></li>
+<li class="toc-entry toc-h3"><a href="#%E6%AF%94%E4%BE%8B">比例</a></li>
+</ol>
+</li>
+<li class="toc-entry toc-h2"><a href="#%E5%A4%A7%E5%B0%8F">大小</a>
+<ol>
+<li class="toc-entry toc-h3"><a href="#%E5%A4%A7%E3%81%AA%E3%82%8A">大なり</a></li>
+<li class="toc-entry toc-h3"><a href="#%E5%A4%A7%E3%81%AA%E3%82%8A%E3%82%A4%E3%82%B3%E3%83%BC%E3%83%AB">大なりイコール</a></li>
+<li class="toc-entry toc-h3"><a href="#%E5%B0%8F%E3%81%AA%E3%82%8A">小なり</a></li>
+<li class="toc-entry toc-h3"><a href="#%E5%B0%8F%E3%81%AA%E3%82%8A%E3%82%A4%E3%82%B3%E3%83%BC%E3%83%AB">小なりイコール</a></li>
+<li class="toc-entry toc-h3"><a href="#%E3%82%A4%E3%82%B3%E3%83%BC%E3%83%AB">イコール</a></li>
+<li class="toc-entry toc-h3"><a href="#%E3%83%8E%E3%83%83%E3%83%88%E3%82%A4%E3%82%B3%E3%83%BC%E3%83%AB">ノットイコール</a></li>
+<li class="toc-entry toc-h3"><a href="#%E3%83%8B%E3%82%A2%E3%83%AA%E3%83%BC%E3%82%A4%E3%82%B3%E3%83%BC%E3%83%AB">ニアリーイコール</a></li>
+<li class="toc-entry toc-h3"><a href="#%E5%8D%81%E5%88%86%E5%A4%A7%E3%81%8D%E3%81%84">十分大きい</a></li>
+<li class="toc-entry toc-h3"><a href="#%E5%8D%81%E5%88%86%E5%B0%8F%E3%81%95%E3%81%84">十分小さい</a></li>
+</ol>
+</li>
+<li class="toc-entry toc-h2"><a href="#%E8%A4%87%E6%95%B0%E8%A1%8C%E6%95%B0%E5%BC%8F">複数行数式</a>
+<ol>
+<li class="toc-entry toc-h3"><a href="#%E3%82%A4%E3%82%B3%E3%83%BC%E3%83%AB%E3%81%A7%E7%B8%A6%E3%81%AB%E6%8F%83%E3%81%88%E3%82%8B">イコールで縦に揃える</a></li>
+<li class="toc-entry toc-h3"><a href="#%E9%80%A3%E7%AB%8B%E6%96%B9%E7%A8%8B%E5%BC%8F">連立方程式</a></li>
+<li class="toc-entry toc-h3"><a href="#%E5%A0%B4%E5%90%88%E5%88%86%E3%81%91">場合分け</a></li>
+</ol>
+</li>
+<li class="toc-entry toc-h2"><a href="#%E9%9B%86%E5%90%88">集合</a>
+<ol>
+<li class="toc-entry toc-h3"><a href="#%E5%B1%9E%E3%81%99%E3%82%8B">属する</a></li>
+<li class="toc-entry toc-h3"><a href="#%E5%B1%9E%E3%81%97%E3%81%A6%E3%81%84%E3%81%AA%E3%81%84">属していない</a></li>
+<li class="toc-entry toc-h3"><a href="#%E9%83%A8%E5%88%86%E9%9B%86%E5%90%88">部分集合</a></li>
+<li class="toc-entry toc-h3"><a href="#%E9%83%A8%E5%88%86%E9%9B%86%E5%90%88%E3%81%A7%E3%81%AA%E3%81%84">部分集合でない</a></li>
+<li class="toc-entry toc-h3"><a href="#%E5%85%B1%E9%80%9A%E9%83%A8%E5%88%86">共通部分</a></li>
+<li class="toc-entry toc-h3"><a href="#%E5%92%8C%E9%9B%86%E5%90%88">和集合</a></li>
+<li class="toc-entry toc-h3"><a href="#%E7%A9%BA%E9%9B%86%E5%90%88">空集合</a></li>
+<li class="toc-entry toc-h3"><a href="#%E8%A3%9C%E9%9B%86%E5%90%88">補集合</a></li>
+<li class="toc-entry toc-h3"><a href="#%E3%83%89%E3%83%A2%E3%83%AB%E3%82%AC%E3%83%B3%E3%81%AE%E6%B3%95%E5%89%87">ド・モルガンの法則</a></li>
+<li class="toc-entry toc-h3"><a href="#%E8%87%AA%E7%84%B6%E6%95%B0%E5%85%A8%E4%BD%93%E3%81%AE%E9%9B%86%E5%90%88">自然数全体の集合</a></li>
+<li class="toc-entry toc-h3"><a href="#%E6%95%B4%E6%95%B0%E5%85%A8%E4%BD%93%E3%81%AE%E9%9B%86%E5%90%88">整数全体の集合</a></li>
+<li class="toc-entry toc-h3"><a href="#%E6%9C%89%E7%90%86%E6%95%B0%E5%85%A8%E4%BD%93%E3%81%AE%E9%9B%86%E5%90%88">有理数全体の集合</a></li>
+<li class="toc-entry toc-h3"><a href="#%E5%AE%9F%E6%95%B0%E5%85%A8%E4%BD%93%E3%81%AE%E9%9B%86%E5%90%88">実数全体の集合</a></li>
+</ol>
+</li>
+<li class="toc-entry toc-h2"><a href="#%E8%AB%96%E7%90%86">論理</a>
+<ol>
+<li class="toc-entry toc-h3"><a href="#%E3%81%AA%E3%82%89%E3%81%B0">ならば</a></li>
+<li class="toc-entry toc-h3"><a href="#%E5%90%8C%E5%80%A4">同値</a></li>
+<li class="toc-entry toc-h3"><a href="#%E3%82%88%E3%81%A3%E3%81%A6%E3%82%86%E3%81%88%E3%81%AB">よって、ゆえに</a></li>
+<li class="toc-entry toc-h3"><a href="#%E3%81%AA%E3%81%9C%E3%81%AA%E3%82%89%E3%81%B0">なぜならば</a></li>
+<li class="toc-entry toc-h3"><a href="#%E5%90%A6%E5%AE%9A">否定</a></li>
+</ol>
+</li>
+<li class="toc-entry toc-h2"><a href="#%E9%A0%86%E5%88%97%E3%81%A8%E7%B5%84%E3%81%BF%E5%90%88%E3%82%8F%E3%81%9B">順列と組み合わせ</a>
+<ol>
+<li class="toc-entry toc-h3"><a href="#%E9%A0%86%E5%88%97">順列</a></li>
+<li class="toc-entry toc-h3"><a href="#%E7%B5%84%E3%81%BF%E5%90%88%E3%82%8F%E3%81%9B">組み合わせ</a></li>
+<li class="toc-entry toc-h3"><a href="#%E9%9A%8E%E4%B9%97">階乗</a></li>
+<li class="toc-entry toc-h3"><a href="#%E7%B5%84%E3%81%BF%E5%90%88%E3%82%8F%E3%81%9B%E3%81%AE%E5%85%AC%E5%BC%8F">組み合わせの公式</a></li>
+<li class="toc-entry toc-h3"><a href="#%E9%A0%86%E5%88%97%E3%81%AE%E5%85%AC%E5%BC%8F">順列の公式</a></li>
+</ol>
+</li>
+<li class="toc-entry toc-h2"><a href="#%E7%B7%8F%E5%92%8C%E7%B7%8F%E4%B9%97">総和・総乗</a>
+<ol>
+<li class="toc-entry toc-h3"><a href="#%E7%B7%8F%E5%92%8C">総和</a></li>
+<li class="toc-entry toc-h3"><a href="#%E7%B7%8F%E5%92%8C%E3%81%AE%E3%82%A4%E3%83%A1%E3%83%BC%E3%82%B8">総和のイメージ</a></li>
+</ol>
+</li>
+<li class="toc-entry toc-h2"><a href="#%E6%8C%87%E6%95%B0%E5%AF%BE%E6%95%B0">指数・対数</a>
+<ol>
+<li class="toc-entry toc-h3"><a href="#%E3%81%B9%E3%81%8D%E4%B9%97">べき乗</a></li>
+<li class="toc-entry toc-h3"><a href="#%E5%B9%B3%E6%96%B9%E6%A0%B9">平方根</a></li>
+<li class="toc-entry toc-h3"><a href="#3%E4%B9%97%E6%A0%B9">3乗根</a></li>
+<li class="toc-entry toc-h3"><a href="#%E5%AF%BE%E6%95%B0">対数</a></li>
+</ol>
+</li>
+<li class="toc-entry toc-h2"><a href="#%E5%9B%B3%E5%BD%A2">図形</a>
+<ol>
+<li class="toc-entry toc-h3"><a href="#%E8%A7%92%E5%BA%A6">角度</a></li>
+<li class="toc-entry toc-h3"><a href="#%E8%A7%92%E8%A8%98%E5%8F%B7">角記号</a></li>
+<li class="toc-entry toc-h3"><a href="#%E5%B9%B3%E8%A1%8C">平行</a></li>
+<li class="toc-entry toc-h3"><a href="#%E5%9E%82%E7%9B%B4">垂直</a></li>
+<li class="toc-entry toc-h3"><a href="#%E4%B8%89%E8%A7%92%E5%BD%A2">三角形</a></li>
+<li class="toc-entry toc-h3"><a href="#%E5%BC%A7">弧</a></li>
+<li class="toc-entry toc-h3"><a href="#%E5%90%88%E5%90%8C">合同</a></li>
+<li class="toc-entry toc-h3"><a href="#%E7%9B%B8%E4%BC%BC">相似</a></li>
+</ol>
+</li>
+<li class="toc-entry toc-h2"><a href="#%E4%B8%89%E8%A7%92%E9%96%A2%E6%95%B0">三角関数</a>
+<ol>
+<li class="toc-entry toc-h3"><a href="#%E3%82%B5%E3%82%A4%E3%83%B3">サイン</a></li>
+<li class="toc-entry toc-h3"><a href="#%E3%82%B3%E3%82%B5%E3%82%A4%E3%83%B3">コサイン</a></li>
+<li class="toc-entry toc-h3"><a href="#%E3%82%BF%E3%83%B3%E3%82%B8%E3%82%A7%E3%83%B3%E3%83%88">タンジェント</a></li>
+<li class="toc-entry toc-h3"><a href="#%E3%82%B5%E3%82%A4%E3%83%B3%E5%A4%89%E6%8F%9B">サイン変換</a></li>
+<li class="toc-entry toc-h3"><a href="#%E3%82%B3%E3%82%B5%E3%82%A4%E3%83%B3%E5%A4%89%E6%8F%9B">コサイン変換</a></li>
+<li class="toc-entry toc-h3"><a href="#%E3%82%BF%E3%83%B3%E3%82%B8%E3%82%A7%E3%83%B3%E3%83%88%E5%A4%89%E6%8F%9B">タンジェント変換</a></li>
+</ol>
+</li>
+<li class="toc-entry toc-h2"><a href="#%E8%A4%87%E7%B4%A0%E6%95%B0">複素数</a>
+<ol>
+<li class="toc-entry toc-h3"><a href="#%E8%A4%87%E7%B4%A0%E6%95%B0-1">複素数</a></li>
+<li class="toc-entry toc-h3"><a href="#%E5%85%B1%E5%BD%B9%E8%A4%87%E7%B4%A0%E6%95%B0">共役複素数</a></li>
+<li class="toc-entry toc-h3"><a href="#%E5%81%8F%E8%A7%92">偏角</a></li>
+<li class="toc-entry toc-h3"><a href="#1%E3%81%AE3%E4%B9%97%E6%A0%B9">1の3乗根</a></li>
+<li class="toc-entry toc-h3"><a href="#%E8%A4%87%E7%B4%A0%E6%95%B0%E3%81%AE%E7%B5%B6%E5%AF%BE%E5%80%A4">複素数の絶対値</a></li>
+</ol>
+</li>
+<li class="toc-entry toc-h2"><a href="#%E6%A5%B5%E9%99%90">極限</a>
+<ol>
+<li class="toc-entry toc-h3"><a href="#%E6%A5%B5%E9%99%90-1">極限</a></li>
+</ol>
+</li>
+<li class="toc-entry toc-h2"><a href="#%E5%BE%AE%E5%88%86%E7%A9%8D%E5%88%86">微分・積分</a>
+<ol>
+<li class="toc-entry toc-h3"><a href="#%E5%BE%AE%E5%88%86">微分</a></li>
+<li class="toc-entry toc-h3"><a href="#2%E9%9A%8E%E5%BE%AE%E5%88%86">2階微分</a></li>
+<li class="toc-entry toc-h3"><a href="#%E5%B0%8E%E9%96%A2%E6%95%B0%E3%81%AE%E5%AE%9A%E7%BE%A9">導関数の定義</a></li>
+<li class="toc-entry toc-h3"><a href="#%E5%A2%97%E6%B8%9B%E8%A1%A8">増減表</a></li>
+<li class="toc-entry toc-h3"><a href="#%E7%A9%8D%E5%88%86">積分</a></li>
+<li class="toc-entry toc-h3"><a href="#%E3%82%B5%E3%83%B3%E3%83%97%E3%83%AB">サンプル</a></li>
+</ol>
+</li>
+<li class="toc-entry toc-h2"><a href="#%E3%83%99%E3%82%AF%E3%83%88%E3%83%AB">ベクトル</a>
+<ol>
+<li class="toc-entry toc-h3"><a href="#%E3%83%99%E3%82%AF%E3%83%88%E3%83%AB-1">ベクトル</a></li>
+<li class="toc-entry toc-h3"><a href="#%E6%A8%AA%E3%83%99%E3%82%AF%E3%83%88%E3%83%AB">横ベクトル</a></li>
+<li class="toc-entry toc-h3"><a href="#%E7%B8%A6%E3%83%99%E3%82%AF%E3%83%88%E3%83%AB">縦ベクトル</a></li>
+<li class="toc-entry toc-h3"><a href="#%E5%86%85%E7%A9%8D">内積</a></li>
+</ol>
+</li>
+<li class="toc-entry toc-h2"><a href="#%E8%A1%A8">表</a>
+<ol>
+<li class="toc-entry toc-h3"><a href="#%E8%A1%A8-1">表</a></li>
+<li class="toc-entry toc-h3"><a href="#%E8%A1%A8%E7%B8%A6%E7%B7%9A%E4%BB%98">表（縦線付）</a></li>
+<li class="toc-entry toc-h3"><a href="#%E8%A1%A8%E6%A8%AA%E7%B7%9A%E4%BB%98">表（横線付）</a></li>
+<li class="toc-entry toc-h3"><a href="#%E5%A2%97%E6%B8%9B%E8%A1%A8-1">増減表</a></li>
+</ol>
+</li>
+<li class="toc-entry toc-h2"><a href="#%E7%B7%9A">線</a>
+<ol>
+<li class="toc-entry toc-h3"><a href="#%E7%B8%A6%E7%B7%9A">縦線</a></li>
+<li class="toc-entry toc-h3"><a href="#%E4%B8%8A%E7%B7%9A">上線</a></li>
+<li class="toc-entry toc-h3"><a href="#%E3%82%B9%E3%83%A9%E3%83%83%E3%82%B7%E3%83%A5">スラッシュ</a></li>
+<li class="toc-entry toc-h3"><a href="#%E3%83%90%E3%83%83%E3%82%AF%E3%82%B9%E3%83%A9%E3%83%83%E3%82%B7%E3%83%A5">バックスラッシュ</a></li>
+<li class="toc-entry toc-h3"><a href="#%E6%96%9C%E7%B7%9A%E4%B8%8B">斜線(下)</a></li>
+<li class="toc-entry toc-h3"><a href="#%E6%96%9C%E7%B7%9A%E4%B8%8A">斜線（上）</a></li>
+<li class="toc-entry toc-h3"><a href="#%E3%82%AD%E3%83%A3%E3%83%B3%E3%82%BB%E3%83%AB">キャンセル</a></li>
+<li class="toc-entry toc-h3"><a href="#%E3%82%AD%E3%83%A3%E3%83%B3%E3%82%BB%E3%83%AB%E3%81%A8%E7%9F%A2%E5%8D%B0">キャンセルと矢印</a></li>
+<li class="toc-entry toc-h3"><a href="#%E3%82%B5%E3%83%B3%E3%83%97%E3%83%AB-1">サンプル</a></li>
+</ol>
+</li>
+<li class="toc-entry toc-h2"><a href="#%E7%9F%A2%E5%8D%B0">矢印</a>
+<ol>
+<li class="toc-entry toc-h3"><a href="#%E5%B7%A6%E7%9F%A2%E5%8D%B0">左矢印</a></li>
+<li class="toc-entry toc-h3"><a href="#%E5%8F%B3%E7%9F%A2%E5%8D%B0">右矢印</a></li>
+<li class="toc-entry toc-h3"><a href="#%E4%B8%8A%E7%9F%A2%E5%8D%B0">上矢印</a></li>
+<li class="toc-entry toc-h3"><a href="#%E4%B8%8B%E7%9F%A2%E5%8D%B0">下矢印</a></li>
+<li class="toc-entry toc-h3"><a href="#%E5%B7%A6%E5%8F%B3%E7%9F%A2%E5%8D%B0">左右矢印</a></li>
+<li class="toc-entry toc-h3"><a href="#%E4%B8%8A%E4%B8%8B%E7%9F%A2%E5%8D%B0">上下矢印</a></li>
+<li class="toc-entry toc-h3"><a href="#2%E9%87%8D%E5%B7%A6%E7%9F%A2%E5%8D%B0">2重左矢印</a></li>
+<li class="toc-entry toc-h3"><a href="#2%E9%87%8D%E5%8F%B3%E7%9F%A2%E5%8D%B0">2重右矢印</a></li>
+<li class="toc-entry toc-h3"><a href="#2%E9%87%8D%E4%B8%8A%E7%9F%A2%E5%8D%B0">2重上矢印</a></li>
+<li class="toc-entry toc-h3"><a href="#2%E9%87%8D%E4%B8%8B%E7%9F%A2%E5%8D%B0">2重下矢印</a></li>
+<li class="toc-entry toc-h3"><a href="#2%E9%87%8D%E5%B7%A6%E5%8F%B3%E7%9F%A2%E5%8D%B0">2重左右矢印</a></li>
+<li class="toc-entry toc-h3"><a href="#2%E9%87%8D%E4%B8%8A%E4%B8%8B%E7%9F%A2%E5%8D%B0">2重上下矢印</a></li>
+<li class="toc-entry toc-h3"><a href="#%E5%8F%B3%E4%B8%8A%E7%9F%A2%E5%8D%B0">右上矢印</a></li>
+<li class="toc-entry toc-h3"><a href="#%E5%8F%B3%E4%B8%8B%E7%9F%A2%E5%8D%B0">右下矢印</a></li>
+<li class="toc-entry toc-h3"><a href="#%E5%B7%A6%E4%B8%8A%E7%9F%A2%E5%8D%B0">左上矢印</a></li>
+<li class="toc-entry toc-h3"><a href="#%E5%B7%A6%E4%B8%8B%E7%9F%A2%E5%8D%B0">左下矢印</a></li>
+<li class="toc-entry toc-h3"><a href="#%E9%A0%AD%E3%81%AB%E7%9F%A2%E5%8D%B0">頭に矢印</a></li>
+</ol>
+</li>
+<li class="toc-entry toc-h2"><a href="#%E6%8B%AC%E5%BC%A7">括弧</a>
+<ol>
+<li class="toc-entry toc-h3"><a href="#%E4%B8%B8%E6%8B%AC%E5%BC%A7">丸括弧</a></li>
+<li class="toc-entry toc-h3"><a href="#%E8%A7%92%E6%8B%AC%E5%BC%A7">角括弧</a></li>
+<li class="toc-entry toc-h3"><a href="#%E6%B3%A2%E6%8B%AC%E5%BC%A7">波括弧</a></li>
+<li class="toc-entry toc-h3"><a href="#%E5%A4%A7%E3%81%8D%E3%81%84%E6%8B%AC%E5%BC%A7">大きい括弧</a></li>
+<li class="toc-entry toc-h3"><a href="#%E4%B8%8A%E6%8B%AC%E5%BC%A7">上括弧</a></li>
+<li class="toc-entry toc-h3"><a href="#%E4%B8%8B%E6%8B%AC%E5%BC%A7">下括弧</a></li>
+</ol>
+</li>
+<li class="toc-entry toc-h2"><a href="#%E7%82%B9">点</a>
+<ol>
+<li class="toc-entry toc-h3"><a href="#%E7%82%B9%E4%B8%AD%E5%A4%AE">点（中央）</a></li>
+<li class="toc-entry toc-h3"><a href="#%E8%A4%87%E6%95%B0%E3%81%AE%E7%82%B9%E4%B8%AD%E5%A4%AE%E6%A8%AA%E5%90%91%E3%81%8D">複数の点（中央横向き）</a></li>
+<li class="toc-entry toc-h3"><a href="#%E8%A4%87%E6%95%B0%E3%81%AE%E7%82%B9%E4%B8%8B%E5%81%B4%E6%A8%AA%E5%90%91%E3%81%8D">複数の点（下側横向き）</a></li>
+<li class="toc-entry toc-h3"><a href="#%E9%A0%AD%E3%81%AB%E7%82%B9">頭に点</a></li>
+</ol>
+</li>
+<li class="toc-entry toc-h2"><a href="#%E4%B8%89%E8%A7%92%E5%BD%A2-1">三角形</a>
+<ol>
+<li class="toc-entry toc-h3"><a href="#%E4%B8%89%E8%A7%92%E5%BD%A2-2">三角形</a></li>
+</ol>
+</li>
+<li class="toc-entry toc-h2"><a href="#%E7%A9%BA%E7%99%BD">空白</a>
+<ol>
+<li class="toc-entry toc-h3"><a href="#%E7%A9%BA%E7%99%BD-1">空白</a></li>
+<li class="toc-entry toc-h3"><a href="#%E7%A9%BA%E7%99%BD%E3%82%92%E3%81%AA%E3%81%8F%E3%81%99">空白をなくす</a></li>
+<li class="toc-entry toc-h3"><a href="#%E6%94%B9%E8%A1%8C">改行</a></li>
+<li class="toc-entry toc-h3"><a href="#%E3%82%B5%E3%83%B3%E3%83%97%E3%83%AB-2">サンプル</a></li>
+</ol>
+</li>
+<li class="toc-entry toc-h2"><a href="#%E6%96%87%E5%AD%97%E3%82%B5%E3%82%A4%E3%82%BA">文字サイズ</a>
+<ol>
+<li class="toc-entry toc-h3"><a href="#%E6%A5%B5%E5%B0%8F%E3%82%B5%E3%82%A4%E3%82%BA">極小サイズ</a></li>
+<li class="toc-entry toc-h3"><a href="#%E5%B0%8F%E3%81%95%E3%81%84%E3%82%B5%E3%82%A4%E3%82%BA">小さいサイズ</a></li>
+<li class="toc-entry toc-h3"><a href="#%E5%B0%91%E3%81%97%E5%B0%8F%E3%81%95%E3%81%84%E3%82%B5%E3%82%A4%E3%82%BA">少し小さいサイズ</a></li>
+<li class="toc-entry toc-h3"><a href="#%E3%83%8E%E3%83%BC%E3%83%9E%E3%83%AB%E3%82%B5%E3%82%A4%E3%82%BA">ノーマルサイズ</a></li>
+<li class="toc-entry toc-h3"><a href="#%E5%A4%A7%E3%81%8D%E3%81%84%E3%82%B5%E3%82%A4%E3%82%BA">大きいサイズ</a></li>
+<li class="toc-entry toc-h3"><a href="#%E3%81%95%E3%82%89%E3%81%AB%E5%A4%A7%E3%81%8D%E3%81%84%E3%82%B5%E3%82%A4%E3%82%BA">さらに大きいサイズ</a></li>
+<li class="toc-entry toc-h3"><a href="#%E3%82%82%E3%81%A3%E3%81%A8%E5%A4%A7%E3%81%8D%E3%81%84%E3%82%B5%E3%82%A4%E3%82%BA">もっと大きいサイズ</a></li>
+<li class="toc-entry toc-h3"><a href="#%E7%89%B9%E5%A4%A7%E3%82%B5%E3%82%A4%E3%82%BA">特大サイズ</a></li>
+<li class="toc-entry toc-h3"><a href="#%E6%A5%B5%E5%A4%A7%E3%82%B5%E3%82%A4%E3%82%BA">極大サイズ</a></li>
+</ol>
+</li>
+<li class="toc-entry toc-h2"><a href="#%E3%83%95%E3%82%A9%E3%83%B3%E3%83%88">フォント</a>
+<ol>
+<li class="toc-entry toc-h3"><a href="#%E3%83%AD%E3%83%BC%E3%83%9E%E3%83%B3%E4%BD%93">ローマン体</a></li>
+<li class="toc-entry toc-h3"><a href="#%E3%82%BF%E3%82%A4%E3%83%97%E3%83%A9%E3%82%A4%E3%82%BF%E3%83%BC%E3%83%95%E3%82%A9%E3%83%B3%E3%83%88">タイプライターフォント</a></li>
+<li class="toc-entry toc-h3"><a href="#%E3%82%B5%E3%83%B3%E3%82%BB%E3%83%AA%E3%83%95">サンセリフ</a></li>
+<li class="toc-entry toc-h3"><a href="#%E3%82%AB%E3%83%AA%E3%82%B0%E3%83%A9%E3%83%95%E3%82%A3%E3%83%BC%E3%83%95%E3%82%A9%E3%83%B3%E3%83%88">カリグラフィーフォント</a></li>
+<li class="toc-entry toc-h3"><a href="#%E5%A4%AA%E6%96%87%E5%AD%97">太文字</a></li>
+<li class="toc-entry toc-h3"><a href="#%E3%82%A4%E3%82%BF%E3%83%AA%E3%83%83%E3%82%AF">イタリック</a></li>
+<li class="toc-entry toc-h3"><a href="#%E4%B8%AD%E6%8A%9C%E3%81%8D%E6%96%87%E5%AD%97">中抜き文字</a></li>
+<li class="toc-entry toc-h3"><a href="#%E3%82%B9%E3%82%AF%E3%83%AA%E3%83%97%E3%83%88%E3%83%95%E3%82%A9%E3%83%B3%E3%83%88">スクリプトフォント</a></li>
+<li class="toc-entry toc-h3"><a href="#%E3%83%95%E3%83%A9%E3%82%AF%E3%83%88%E3%82%A5%E3%83%BC%E3%83%AB">フラクトゥール</a></li>
+</ol>
+</li>
+<li class="toc-entry toc-h2"><a href="#%E4%B8%8A%E4%BB%98%E3%81%8D%E4%B8%8B%E4%BB%98%E3%81%8D">上付き・下付き</a>
+<ol>
+<li class="toc-entry toc-h3"><a href="#%E4%B8%8A%E4%BB%98%E3%81%8D%E6%96%87%E5%AD%97">上付き文字</a></li>
+<li class="toc-entry toc-h3"><a href="#%E4%B8%8A%E4%BB%98%E3%81%8D%E6%96%87%E5%AD%97%E5%B7%A6">上付き文字（左）</a></li>
+<li class="toc-entry toc-h3"><a href="#%E4%B8%8B%E4%BB%98%E3%81%8D%E6%96%87%E5%AD%97">下付き文字</a></li>
+<li class="toc-entry toc-h3"><a href="#%E4%B8%8B%E4%BB%98%E3%81%8D%E6%96%87%E5%AD%97%E5%B7%A6">下付き文字（左）</a></li>
+<li class="toc-entry toc-h3"><a href="#%E4%B8%8B%E4%BB%98%E3%81%8D%E3%82%B5%E3%83%B3%E3%83%97%E3%83%AB">下付きサンプル</a></li>
+</ol>
+</li>
+<li class="toc-entry toc-h2"><a href="#%E3%82%AE%E3%83%AA%E3%82%B7%E3%83%A3%E6%96%87%E5%AD%97">ギリシャ文字</a>
+<ol>
+<li class="toc-entry toc-h3"><a href="#%E3%82%A2%E3%83%AB%E3%83%95%E3%82%A1">アルファ</a></li>
+<li class="toc-entry toc-h3"><a href="#%E3%83%99%E3%83%BC%E3%82%BF">ベータ</a></li>
+<li class="toc-entry toc-h3"><a href="#%E3%82%AC%E3%83%B3%E3%83%9E">ガンマ</a></li>
+<li class="toc-entry toc-h3"><a href="#%E3%83%87%E3%83%AB%E3%82%BF">デルタ</a></li>
+<li class="toc-entry toc-h3"><a href="#%E3%83%91%E3%82%A4">パイ</a></li>
+</ol>
+</li>
+<li class="toc-entry toc-h2"><a href="#%E7%89%B9%E6%AE%8A%E6%96%87%E5%AD%97">特殊文字</a>
+<ol>
+<li class="toc-entry toc-h3"><a href="#%E3%83%A6%E3%83%8B%E3%82%B3%E3%83%BC%E3%83%89">ユニコード</a></li>
+<li class="toc-entry toc-h3"><a href="#%E3%82%BB%E3%82%AF%E3%82%B7%E3%83%A7%E3%83%B3">セクション</a></li>
+<li class="toc-entry toc-h3"><a href="#tex%E3%83%AD%E3%82%B4">$\TeX$ロゴ</a></li>
+</ol>
+</li>
+<li class="toc-entry toc-h2"><a href="#%E4%BD%BF%E7%94%A8%E4%BE%8B">使用例</a>
+<ol>
+<li class="toc-entry toc-h3"><a href="#2%E6%AC%A1%E6%96%B9%E7%A8%8B%E5%BC%8F%E3%81%AE%E8%A7%A3%E3%81%AE%E5%85%AC%E5%BC%8F">2次方程式の解の公式</a></li>
+<li class="toc-entry toc-h3"><a href="#%E5%A2%97%E6%B8%9B%E8%A1%A8-2">増減表</a></li>
+<li class="toc-entry toc-h3"><a href="#%E4%BB%96">他</a></li>
+</ol>
+</li>
+<li class="toc-entry toc-h2"><a href="#%E5%8F%82%E8%80%83">参考</a>
+<ol>
+<li class="toc-entry toc-h3"><a href="#mathjax">MathJax</a></li>
+</ol>
+</li>
+</ol>
+        </div>
+        
+        
+        <style>
+  /* -----------------------------------------
+    増減表
+  ----------------------------------------- */
+  .derivative-test-chart {
+    border-collapse: collapse;
+    margin: 0 auto;
+  }
+
+  .derivative-test-chart td {
+    border: 1px solid black;
+    padding: 5px;
+    text-align: center;
+    min-width: 30px;
+  }
+</style>
+
+<h1 id="article-title">高校数学用MathJax例</h1>
+<div id="article-information">
+  <div id="renewal-date" datetime="2024-04-29">2024-04-29</div>
+  <div id="author">みむねこ</div>
+</div>
+
+<div id="toc">
+  <p id="toc-title">目次</p>
+  <ol id="toc-content">
+      <li><a href="#h2-1">数式</a></li>
+  </ol>
+</div>
+
+<h2>
+<a class="anchor" href="#%E6%BA%96%E5%82%99" aria-hidden="true"><span class="octicon octicon-link"></span></a>準備</h2>
+<p>headタグ内に、以下のように書く。</p>
+<pre><code data-copy="">&lt;script&gt;
+MathJax = {
+  tex: {
+    inlineMath: [['$', '$'], ['\\(', '\\)']]
+  }
+};
+&lt;/script&gt;
+&lt;script id="MathJax-script" async 
+  src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"&gt;
+&lt;/script&gt;
+</code></pre>
+
+<p>ドルマーク2つだと、 $$ 3 + 4 = 7 $$ ディスプレイ形式に。</p>
+<pre><code>&lt;p&gt;ドルマーク2つだと、 $$ 3 + 4 = 7 $$ ディスプレイ形式に。&lt;/p&gt;</code></pre>
+<p>ドルマーク1つだと、 $ 3 + 4 = 7 $ インライン形式に。</p>
+<pre><code>&lt;p&gt;ドルマーク1つだと、 $ 3 + 4 = 7 $ インライン形式に。&lt;/p&gt;</code></pre>
+
+<h2>
+<a class="anchor" href="#%E6%95%B0" aria-hidden="true"><span class="octicon octicon-link"></span></a>数</h2>
+<h3>
+<a class="anchor" href="#%E5%88%86%E6%95%B0" aria-hidden="true"><span class="octicon octicon-link"></span></a>分数</h3>
+<h4>分数(小)</h4>
+<p>$\frac{1}{2}$</p>
+<pre><code>\frac{1}{2}</code></pre>
+<h4>分数(大)</h4>
+<p>$\dfrac{1}{2}$</p>
+<pre><code>\dfrac{1}{2}</code></pre>
+<pre><code>\displaystylefrac{1}{2}</code></pre>
+<h4>分数と括弧</h4>
+<p>$\left( -\frac{1}{2} \right)^2$</p>
+<pre><code>\left( -\frac{1}{2} \right)^2</code></pre>
+<h4>連分数</h4>
+<p>$\frac{a+b}{c+\frac{d}{e}}$</p>
+<pre><code>\frac{a+b}{c+\frac{d}{e}}</code></pre>
+<p>$\cfrac{a+b}{c+\cfrac{d}{e}}$</p>
+<pre><code>\cfrac{a+b}{c+\cfrac{d}{e}}</code></pre>
+<h4>無限連分数</h4>
+<p>$\begin{eqnarray}
+  1+\frac{1}{1+\frac{1}{1+\frac{1}{1+\ddots}}}
+  = \frac{1}{2} \left( 1+\sqrt{5} \right)
+  \end{eqnarray}$</p>
+<pre><code>\begin{eqnarray}
+  1+\frac{1}{1+\frac{1}{1+\frac{1}{1+\ddots}}}
+  = \frac{1}{2} \left( 1+\sqrt{5} \right)
+\end{eqnarray}</code></pre>
+<h3>
+<a class="anchor" href="#%E5%B0%8F%E6%95%B0" aria-hidden="true"><span class="octicon octicon-link"></span></a>小数</h3>
+<h4>小数</h4>
+<p>$0.123$</p>
+<pre><code>0.123</code></pre>
+<h4>循環小数</h4>
+<p>$\frac{1}{11} = 0.\dot{0}\dot{9}$</p>
+<pre><code>\frac{1}{11} = 0.\dot{0}\dot{9}</code></pre>
+<h4>無限小数</h4>
+<p>$\sqrt{2} = 1.4142 \cdots$</p>
+<pre><code>\sqrt{2} = 1.4142 \cdots</code></pre>
+<h3>
+<a class="anchor" href="#%E7%84%A1%E9%99%90%E5%A4%A7" aria-hidden="true"><span class="octicon octicon-link"></span></a>無限大</h3>
+<p>$\infty$</p>
+<pre><code>\infty</code></pre>
+<h3>
+<a class="anchor" href="#%E7%B5%B6%E5%AF%BE%E5%80%A4" aria-hidden="true"><span class="octicon octicon-link"></span></a>絶対値</h3>
+<p>$|x|$</p>
+<pre><code>|x|</code></pre>
+<pre><code>\vert x \vert</code></pre>
+<h3>
+<a class="anchor" href="#%E5%88%86%E6%95%B0%E3%81%A8%E7%B5%B6%E5%AF%BE%E5%80%A4" aria-hidden="true"><span class="octicon octicon-link"></span></a>分数と絶対値</h3>
+<p>$\left| \dfrac{x}{2} \right|$</p>
+<pre><code>\left| \dfrac{x}{2} \right|</code></pre>
+<h3>
+<a class="anchor" href="#%E3%82%AC%E3%82%A6%E3%82%B9%E8%A8%98%E5%8F%B7" aria-hidden="true"><span class="octicon octicon-link"></span></a>ガウス記号</h3>
+<p>$[x]$</p>
+<pre><code>[x]</code></pre>
+<pre><code>\lbrack x \rbrack</code></pre>
+
+<h2>
+<a class="anchor" href="#%E5%9B%9B%E5%89%87%E6%BC%94%E7%AE%97" aria-hidden="true"><span class="octicon octicon-link"></span></a>四則演算</h2>
+<h3>
+<a class="anchor" href="#%E8%B6%B3%E3%81%99" aria-hidden="true"><span class="octicon octicon-link"></span></a>足す</h3>
+<p>$1 + 2$</p>
+<pre><code>1 + 2</code></pre>
+<h3>
+<a class="anchor" href="#%E5%BC%95%E3%81%8F" aria-hidden="true"><span class="octicon octicon-link"></span></a>引く</h3>
+<p>$3 - 1$</p>
+<pre><code>3 - 1</code></pre>
+<h3>
+<a class="anchor" href="#%E6%8E%9B%E3%81%91%E3%82%8B" aria-hidden="true"><span class="octicon octicon-link"></span></a>掛ける</h3>
+<p>$2 \times 3$</p>
+<pre><code>2 \times 3</code></pre>
+<p>$a \cdot b = ab$</p>
+<pre><code>a \cdot b = ab</code></pre>
+<h3>
+<a class="anchor" href="#%E5%89%B2%E3%82%8B" aria-hidden="true"><span class="octicon octicon-link"></span></a>割る</h3>
+<p>$6 \div 3$</p>
+<pre><code>6 \div 3</code></pre>
+<h3>
+<a class="anchor" href="#%E3%83%97%E3%83%A9%E3%82%B9%E3%83%9E%E3%82%A4%E3%83%8A%E3%82%B9" aria-hidden="true"><span class="octicon octicon-link"></span></a>プラスマイナス</h3>
+<p>$\pm 1$</p>
+<pre><code>\pm 1</code></pre>
+<h3>
+<a class="anchor" href="#%E3%83%9E%E3%82%A4%E3%83%8A%E3%82%B9%E3%83%97%E3%83%A9%E3%82%B9" aria-hidden="true"><span class="octicon octicon-link"></span></a>マイナスプラス</h3>
+<p>$\mp 1$</p>
+<pre><code>\mp 1</code></pre>
+<h3>
+<a class="anchor" href="#%E7%AD%86%E7%AE%97" aria-hidden="true"><span class="octicon octicon-link"></span></a>筆算</h3>
+<h4>掛け算</h4>
+<p>$\begin{array}{r}
+  67 \\[-3pt]
+  \underline{\times\phantom{0}63}\\[-3pt]
+  201 \\[-3pt]
+  \underline{\phantom{0}402\phantom{0}} \\[-3pt]
+  4221
+  \end{array}$</p>
+<pre><code>\begin{array}{r}
+67 \\[-3pt]
+\underline{\times\phantom{0}63}\\[-3pt]
+201 \\[-3pt]
+\underline{\phantom{0}402\phantom{0}} \\[-3pt]
+4221
+\end{array}</code></pre>
+<h4>割り算</h4>
+<p>$\begin{array}{r}
+  7.6 \\[-3pt]
+25\enclose{longdiv}{190\phantom{0}} \\[-3pt]
+  \underline{175\phantom{.0}} \\[-3pt]
+  15\phantom{.}0 \\[-3pt]
+  \underline{15\phantom{.}0} \\[-3pt]
+  \phantom{000}0
+\end{array}$</p>
+<pre><code>\begin{array}{r}
+  7.6 \\[-3pt]
+25\enclose{longdiv}{190\phantom{0}} \\[-3pt]
+  \underline{175\phantom{.0}} \\[-3pt]
+  15\phantom{.}0 \\[-3pt]
+  \underline{15\phantom{.}0} \\[-3pt]
+  \phantom{000}0
+\end{array}</code></pre>
+<h3>
+<a class="anchor" href="#%E5%90%88%E5%90%8C%E5%BC%8F" aria-hidden="true"><span class="octicon octicon-link"></span></a>合同式</h3>
+<p>$a \equiv b \mod n$</p>
+<pre><code>a \equiv b \mod n</code></pre>
+<p>$a \equiv b \pmod n$</p>
+<pre><code>a \equiv b \pmod n</code></pre>
+<h3>
+<a class="anchor" href="#%E6%AF%94%E4%BE%8B" aria-hidden="true"><span class="octicon octicon-link"></span></a>比例</h3>
+<p>$x \propto y$</p>
+<pre><code>x \propto y</code></pre>
+
+<h2>
+<a class="anchor" href="#%E5%A4%A7%E5%B0%8F" aria-hidden="true"><span class="octicon octicon-link"></span></a>大小</h2>
+<h3>
+<a class="anchor" href="#%E5%A4%A7%E3%81%AA%E3%82%8A" aria-hidden="true"><span class="octicon octicon-link"></span></a>大なり</h3>
+<p>$a \gt b$</p>
+<pre><code>a \gt b</code></pre>
+<h3>
+<a class="anchor" href="#%E5%A4%A7%E3%81%AA%E3%82%8A%E3%82%A4%E3%82%B3%E3%83%BC%E3%83%AB" aria-hidden="true"><span class="octicon octicon-link"></span></a>大なりイコール</h3>
+<p>$a \geqq b$</p>
+<pre><code>a \geqq b</code></pre>
+<h3>
+<a class="anchor" href="#%E5%B0%8F%E3%81%AA%E3%82%8A" aria-hidden="true"><span class="octicon octicon-link"></span></a>小なり</h3>
+<p>$a \lt b$</p>
+<pre><code>a \lt b</code></pre>
+<h3>
+<a class="anchor" href="#%E5%B0%8F%E3%81%AA%E3%82%8A%E3%82%A4%E3%82%B3%E3%83%BC%E3%83%AB" aria-hidden="true"><span class="octicon octicon-link"></span></a>小なりイコール</h3>
+<p>$a \leqq b$</p>
+<pre><code>a \leqq b</code></pre>
+<h3>
+<a class="anchor" href="#%E3%82%A4%E3%82%B3%E3%83%BC%E3%83%AB" aria-hidden="true"><span class="octicon octicon-link"></span></a>イコール</h3>
+<p>$a = b$</p>
+<pre><code>a = b</code></pre>
+<h3>
+<a class="anchor" href="#%E3%83%8E%E3%83%83%E3%83%88%E3%82%A4%E3%82%B3%E3%83%BC%E3%83%AB" aria-hidden="true"><span class="octicon octicon-link"></span></a>ノットイコール</h3>
+<p>$a \neq b$</p>
+<pre><code>a \neq b</code></pre>
+<h3>
+<a class="anchor" href="#%E3%83%8B%E3%82%A2%E3%83%AA%E3%83%BC%E3%82%A4%E3%82%B3%E3%83%BC%E3%83%AB" aria-hidden="true"><span class="octicon octicon-link"></span></a>ニアリーイコール</h3>
+<p>$a \fallingdotseq b$</p>
+<pre><code>a \fallingdotseq b</code></pre>
+<h3>
+<a class="anchor" href="#%E5%8D%81%E5%88%86%E5%A4%A7%E3%81%8D%E3%81%84" aria-hidden="true"><span class="octicon octicon-link"></span></a>十分大きい</h3>
+<p>$a \gg b$</p>
+<pre><code>a \gg b</code></pre>
+<h3>
+<a class="anchor" href="#%E5%8D%81%E5%88%86%E5%B0%8F%E3%81%95%E3%81%84" aria-hidden="true"><span class="octicon octicon-link"></span></a>十分小さい</h3>
+<p>$a \ll b$</p>
+<pre><code>a \ll b</code></pre>
+
+<h2>
+<a class="anchor" href="#%E8%A4%87%E6%95%B0%E8%A1%8C%E6%95%B0%E5%BC%8F" aria-hidden="true"><span class="octicon octicon-link"></span></a>複数行数式</h2>
+<h3>
+<a class="anchor" href="#%E3%82%A4%E3%82%B3%E3%83%BC%E3%83%AB%E3%81%A7%E7%B8%A6%E3%81%AB%E6%8F%83%E3%81%88%E3%82%8B" aria-hidden="true"><span class="octicon octicon-link"></span></a>イコールで縦に揃える</h3>
+<p>$\begin{eqnarray}
+  x + 2x &amp;=&amp; 3 \\
+  x &amp;=&amp; 1
+\end{eqnarray}$</p>
+<pre><code>\begin{eqnarray}
+  x + 2x &amp;=&amp; 3 \\
+  x &amp;=&amp; 1
+\end{eqnarray}</code></pre>
+<h3>
+<a class="anchor" href="#%E9%80%A3%E7%AB%8B%E6%96%B9%E7%A8%8B%E5%BC%8F" aria-hidden="true"><span class="octicon octicon-link"></span></a>連立方程式</h3>
+<p>$\begin{eqnarray}
+  \left\{
+    \begin{array}{l}
+      x + y = 10 \\
+      2x + 4y = 32
+    \end{array}
+  \right.
+\end{eqnarray}$</p>
+<pre><code>\begin{eqnarray}
+  \left\{
+    \begin{array}{l}
+      x + y = 10 \\
+      2x + 4y = 32
+    \end{array}
+  \right.
+\end{eqnarray}</code></pre>
+<h3>
+<a class="anchor" href="#%E5%A0%B4%E5%90%88%E5%88%86%E3%81%91" aria-hidden="true"><span class="octicon octicon-link"></span></a>場合分け</h3>
+<p>$\begin{eqnarray}
+  |x|
+    =
+    \begin{cases}
+      x &amp; ( x \geqq 0 ) \\
+      -x &amp; ( x \lt 0 )
+    \end{cases}
+  \end{eqnarray}$</p>
+<pre><code>\begin{eqnarray}
+|x|
+  =
+  \begin{cases}
+    x &amp; ( x \geqq 0 ) \\
+    -x &amp; ( x \lt 0 )
+  \end{cases}
+\end{eqnarray}</code></pre>
+
+<h2>
+<a class="anchor" href="#%E9%9B%86%E5%90%88" aria-hidden="true"><span class="octicon octicon-link"></span></a>集合</h2>
+<h3>
+<a class="anchor" href="#%E5%B1%9E%E3%81%99%E3%82%8B" aria-hidden="true"><span class="octicon octicon-link"></span></a>属する</h3>
+<p>$x \in A$</p>
+<pre><code>x \in A</code></pre>
+<p>$A \ni x$</p>
+<pre><code>A \ni x</code></pre>
+<h3>
+<a class="anchor" href="#%E5%B1%9E%E3%81%97%E3%81%A6%E3%81%84%E3%81%AA%E3%81%84" aria-hidden="true"><span class="octicon octicon-link"></span></a>属していない</h3>
+<p>$x \notin A$</p>
+<pre><code>x \notin A</code></pre>
+<h3>
+<a class="anchor" href="#%E9%83%A8%E5%88%86%E9%9B%86%E5%90%88" aria-hidden="true"><span class="octicon octicon-link"></span></a>部分集合</h3>
+<p>$A \subset B$</p>
+<pre><code>A \subset B</code></pre>
+<p>$A \supset B$</p>
+<pre><code>A \supset B</code></pre>
+<h3>
+<a class="anchor" href="#%E9%83%A8%E5%88%86%E9%9B%86%E5%90%88%E3%81%A7%E3%81%AA%E3%81%84" aria-hidden="true"><span class="octicon octicon-link"></span></a>部分集合でない</h3>
+<p>$A \not \subset B$</p>
+<pre><code>A \not \subset B</code></pre>
+<h3>
+<a class="anchor" href="#%E5%85%B1%E9%80%9A%E9%83%A8%E5%88%86" aria-hidden="true"><span class="octicon octicon-link"></span></a>共通部分</h3>
+<p>$A \cap B$</p>
+<pre><code>A \cap B</code></pre>
+<h3>
+<a class="anchor" href="#%E5%92%8C%E9%9B%86%E5%90%88" aria-hidden="true"><span class="octicon octicon-link"></span></a>和集合</h3>
+<p>$A \cup B$</p>
+<pre><code>A \cup B</code></pre>
+<h3>
+<a class="anchor" href="#%E7%A9%BA%E9%9B%86%E5%90%88" aria-hidden="true"><span class="octicon octicon-link"></span></a>空集合</h3>
+<p>$\varnothing$</p>
+<pre><code>\varnothing</code></pre>
+<p>$\emptyset$</p>
+<pre><code>\emptyset</code></pre>
+<h3>
+<a class="anchor" href="#%E8%A3%9C%E9%9B%86%E5%90%88" aria-hidden="true"><span class="octicon octicon-link"></span></a>補集合</h3>
+<p>$\overline{ A }$</p>
+<pre><code>\overline{ A }</code></pre>
+<h3>
+<a class="anchor" href="#%E3%83%89%E3%83%A2%E3%83%AB%E3%82%AC%E3%83%B3%E3%81%AE%E6%B3%95%E5%89%87" aria-hidden="true"><span class="octicon octicon-link"></span></a>ド・モルガンの法則</h3>
+<p>$\overline{ (A\cap B) } = \overline{ A } \cup \overline{ B }$</p>
+<pre><code>\overline{ (A\cap B) } = \overline{ A } \cup \overline{ B }</code></pre>
+<h3>
+<a class="anchor" href="#%E8%87%AA%E7%84%B6%E6%95%B0%E5%85%A8%E4%BD%93%E3%81%AE%E9%9B%86%E5%90%88" aria-hidden="true"><span class="octicon octicon-link"></span></a>自然数全体の集合</h3>
+<p>$\mathbb{ N }$</p>
+<pre><code>\mathbb{ N }</code></pre>
+<h3>
+<a class="anchor" href="#%E6%95%B4%E6%95%B0%E5%85%A8%E4%BD%93%E3%81%AE%E9%9B%86%E5%90%88" aria-hidden="true"><span class="octicon octicon-link"></span></a>整数全体の集合</h3>
+<p>$\mathbb{ Z }$</p>
+<pre><code>\mathbb{ Z }</code></pre>
+<h3>
+<a class="anchor" href="#%E6%9C%89%E7%90%86%E6%95%B0%E5%85%A8%E4%BD%93%E3%81%AE%E9%9B%86%E5%90%88" aria-hidden="true"><span class="octicon octicon-link"></span></a>有理数全体の集合</h3>
+<p>$\mathbb{ Q }$</p>
+<pre><code>\mathbb{ Q }</code></pre>
+<h3>
+<a class="anchor" href="#%E5%AE%9F%E6%95%B0%E5%85%A8%E4%BD%93%E3%81%AE%E9%9B%86%E5%90%88" aria-hidden="true"><span class="octicon octicon-link"></span></a>実数全体の集合</h3>
+<p>$\mathbb{ R }$</p>
+<pre><code>\mathbb{ R }</code></pre>
+
+<h2>
+<a class="anchor" href="#%E8%AB%96%E7%90%86" aria-hidden="true"><span class="octicon octicon-link"></span></a>論理</h2>
+<h3>
+<a class="anchor" href="#%E3%81%AA%E3%82%89%E3%81%B0" aria-hidden="true"><span class="octicon octicon-link"></span></a>ならば</h3>
+<p>$P \Rightarrow Q$</p>
+<pre><code>P \Rightarrow Q</code></pre>
+<p>$P \Leftarrow  Q$</p>
+<pre><code>P \Leftarrow  Q</code></pre>
+<h3>
+<a class="anchor" href="#%E5%90%8C%E5%80%A4" aria-hidden="true"><span class="octicon octicon-link"></span></a>同値</h3>
+<p>$P \iff Q$</p>
+<pre><code>P \iff Q</code></pre>
+<p>$P \Leftrightarrow Q$</p>
+<pre><code>P \Leftrightarrow Q</code></pre>
+<h3>
+<a class="anchor" href="#%E3%82%88%E3%81%A3%E3%81%A6%E3%82%86%E3%81%88%E3%81%AB" aria-hidden="true"><span class="octicon octicon-link"></span></a>よって、ゆえに</h3>
+<p>$\therefore$</p>
+<pre><code>\therefore</code></pre>
+<h3>
+<a class="anchor" href="#%E3%81%AA%E3%81%9C%E3%81%AA%E3%82%89%E3%81%B0" aria-hidden="true"><span class="octicon octicon-link"></span></a>なぜならば</h3>
+<p>$\because$</p>
+<pre><code>\because</code></pre>
+<h3>
+<a class="anchor" href="#%E5%90%A6%E5%AE%9A" aria-hidden="true"><span class="octicon octicon-link"></span></a>否定</h3>
+<p>$\overline{ P }$</p>
+<pre><code>\overline{ P }</code></pre>
+
+<h2>
+<a class="anchor" href="#%E9%A0%86%E5%88%97%E3%81%A8%E7%B5%84%E3%81%BF%E5%90%88%E3%82%8F%E3%81%9B" aria-hidden="true"><span class="octicon octicon-link"></span></a>順列と組み合わせ</h2>
+<h3>
+<a class="anchor" href="#%E9%A0%86%E5%88%97" aria-hidden="true"><span class="octicon octicon-link"></span></a>順列</h3>
+<p>${}_n \mathrm{ P }_k$</p>
+<pre><code>{}_n \mathrm{ P }_k</code></pre>
+<h3>
+<a class="anchor" href="#%E7%B5%84%E3%81%BF%E5%90%88%E3%82%8F%E3%81%9B" aria-hidden="true"><span class="octicon octicon-link"></span></a>組み合わせ</h3>
+<p>${}_n \mathrm{ C }_k$</p>
+<pre><code>{}_n \mathrm{ C }_k</code></pre>
+<h3>
+<a class="anchor" href="#%E9%9A%8E%E4%B9%97" aria-hidden="true"><span class="octicon octicon-link"></span></a>階乗</h3>
+<p>$n!$</p>
+<pre><code>n!</code></pre>
+<h3>
+<a class="anchor" href="#%E7%B5%84%E3%81%BF%E5%90%88%E3%82%8F%E3%81%9B%E3%81%AE%E5%85%AC%E5%BC%8F" aria-hidden="true"><span class="octicon octicon-link"></span></a>組み合わせの公式</h3>
+<p>$\begin{eqnarray}
+  {}_n \mathrm{ C }_k
+    = \frac{ n! }{ k! ( n - k )! }
+  \end{eqnarray}$</p>
+<pre><code>\begin{eqnarray}
+{}_n \mathrm{ C }_k
+  = \frac{ n! }{ k! ( n - k )! }
+\end{eqnarray}</code></pre>
+<h3>
+<a class="anchor" href="#%E9%A0%86%E5%88%97%E3%81%AE%E5%85%AC%E5%BC%8F" aria-hidden="true"><span class="octicon octicon-link"></span></a>順列の公式</h3>
+<p>$\begin{eqnarray}
+  {}_n \mathrm{ P }_k
+    = n \cdot ( n - 1 ) \cdots ( n - k + 1 )
+    = \frac{ n! }{ ( n - k )! }
+  \end{eqnarray}$</p>
+<pre><code>\begin{eqnarray}
+{}_n \mathrm{ P }_k
+  = n \cdot ( n - 1 ) \cdots ( n - k + 1 )
+  = \frac{ n! }{ ( n - k )! }
+\end{eqnarray}</code></pre>
+
+<h2>
+<a class="anchor" href="#%E7%B7%8F%E5%92%8C%E7%B7%8F%E4%B9%97" aria-hidden="true"><span class="octicon octicon-link"></span></a>総和・総乗</h2>
+<h3>
+<a class="anchor" href="#%E7%B7%8F%E5%92%8C" aria-hidden="true"><span class="octicon octicon-link"></span></a>総和</h3>
+<p>$\sum_{i=1}^{n} a_i$</p>
+<pre><code>\sum_{i=1}^{n} a_i</code></pre>
+<p>$\displaystyle \sum_{i=1}^n a_i$</p>
+<pre><code>\displaystyle \sum_{i=1}^n a_i</code></pre>
+<h3>
+<a class="anchor" href="#%E7%B7%8F%E5%92%8C%E3%81%AE%E3%82%A4%E3%83%A1%E3%83%BC%E3%82%B8" aria-hidden="true"><span class="octicon octicon-link"></span></a>総和のイメージ</h3>
+<p>$\begin{eqnarray}
+  \sum_{ k = 1 }^{ n } k^2
+    = \overbrace{ 1^2 + 2^2 + \cdots + n^2 }^{ n }
+    = \frac{ 1 }{ 6 } n ( n + 1 ) ( 2n + 1 )
+  \end{eqnarray}$</p>
+<pre><code>\begin{eqnarray}
+\sum_{ k = 1 }^{ n } k^2
+  = \overbrace{ 1^2 + 2^2 + \cdots + n^2 }^{ n }
+  = \frac{ 1 }{ 6 } n ( n + 1 ) ( 2n + 1 )
+\end{eqnarray}</code></pre>
+
+<h2>
+<a class="anchor" href="#%E6%8C%87%E6%95%B0%E5%AF%BE%E6%95%B0" aria-hidden="true"><span class="octicon octicon-link"></span></a>指数・対数</h2>
+<h3>
+<a class="anchor" href="#%E3%81%B9%E3%81%8D%E4%B9%97" aria-hidden="true"><span class="octicon octicon-link"></span></a>べき乗</h3>
+<p>$2^3$</p>
+<pre><code>2^3</code></pre>
+<p>$e^{ i \pi }$</p>
+<pre><code>e^{ i \pi }</code></pre>
+<h3>
+<a class="anchor" href="#%E5%B9%B3%E6%96%B9%E6%A0%B9" aria-hidden="true"><span class="octicon octicon-link"></span></a>平方根</h3>
+<p>$\sqrt{ 2 }$</p>
+<pre><code>\sqrt{ 2 }</code></pre>
+<p>$\sqrt{ \mathstrut a } + \sqrt{ \mathstrut b }$</p>
+<pre><code>\sqrt{ \mathstrut a } + \sqrt{ \mathstrut b }</code></pre>
+<h3>
+<a class="anchor" href="#3%E4%B9%97%E6%A0%B9" aria-hidden="true"><span class="octicon octicon-link"></span></a>3乗根</h3>
+<p>$\sqrt[ 3 ]{ x }$</p>
+<pre><code>\sqrt[ 3 ]{ x }</code></pre>
+<h3>
+<a class="anchor" href="#%E5%AF%BE%E6%95%B0" aria-hidden="true"><span class="octicon octicon-link"></span></a>対数</h3>
+<h4>自然対数</h4>
+<p>$\log x$</p>
+<pre><code>\log x</code></pre>
+<h4>常用対数</h4>
+<p>$\log_{ 10 } x$</p>
+<pre><code>\log_{ 10 } x</code></pre>
+
+<h2>
+<a class="anchor" href="#%E5%9B%B3%E5%BD%A2" aria-hidden="true"><span class="octicon octicon-link"></span></a>図形</h2>
+<h3>
+<a class="anchor" href="#%E8%A7%92%E5%BA%A6" aria-hidden="true"><span class="octicon octicon-link"></span></a>角度</h3>
+<p>$90^{ \circ }$</p>
+<pre><code>90^{ \circ }</code></pre>
+<p>$\frac{ \pi }{ 2 }$</p>
+<pre><code>\frac{ \pi }{ 2 }</code></pre>
+<h3>
+<a class="anchor" href="#%E8%A7%92%E8%A8%98%E5%8F%B7" aria-hidden="true"><span class="octicon octicon-link"></span></a>角記号</h3>
+<p>$\angle A$</p>
+<pre><code>\angle A</code></pre>
+<h3>
+<a class="anchor" href="#%E5%B9%B3%E8%A1%8C" aria-hidden="true"><span class="octicon octicon-link"></span></a>平行</h3>
+<p>$AB /\!/ CD$</p>
+<pre><code>AB /\!/ CD</code></pre>
+<h3>
+<a class="anchor" href="#%E5%9E%82%E7%9B%B4" aria-hidden="true"><span class="octicon octicon-link"></span></a>垂直</h3>
+<p>$AB \perp CD$</p>
+<pre><code>AB \perp CD</code></pre>
+<h3>
+<a class="anchor" href="#%E4%B8%89%E8%A7%92%E5%BD%A2" aria-hidden="true"><span class="octicon octicon-link"></span></a>三角形</h3>
+<p>$\triangle ABC$</p>
+<pre><code>\triangle ABC</code></pre>
+<h3>
+<a class="anchor" href="#%E5%BC%A7" aria-hidden="true"><span class="octicon octicon-link"></span></a>弧</h3>
+<p>$\stackrel{\huge\frown}{AB}$</p>
+<pre><code>\stackrel{\huge\frown}{AB}</code></pre>
+<p>$\overparen{AB}$</p>
+<pre><code>\overparen{AB}</code></pre>
+<h3>
+<a class="anchor" href="#%E5%90%88%E5%90%8C" aria-hidden="true"><span class="octicon octicon-link"></span></a>合同</h3>
+<p>$\triangle ABC \equiv \triangle DEF$</p>
+<pre><code>\triangle ABC \equiv \triangle DEF</code></pre>
+<h3>
+<a class="anchor" href="#%E7%9B%B8%E4%BC%BC" aria-hidden="true"><span class="octicon octicon-link"></span></a>相似</h3>
+<p>$\triangle ABC \backsim \triangle DEF$</p>
+<pre><code>\triangle ABC \backsim \triangle DEF</code></pre>
+
+<h2>
+<a class="anchor" href="#%E4%B8%89%E8%A7%92%E9%96%A2%E6%95%B0" aria-hidden="true"><span class="octicon octicon-link"></span></a>三角関数</h2>
+<h3>
+<a class="anchor" href="#%E3%82%B5%E3%82%A4%E3%83%B3" aria-hidden="true"><span class="octicon octicon-link"></span></a>サイン</h3>
+<p>$\sin x$</p>
+<pre><code>\sin x</code></pre>
+<h3>
+<a class="anchor" href="#%E3%82%B3%E3%82%B5%E3%82%A4%E3%83%B3" aria-hidden="true"><span class="octicon octicon-link"></span></a>コサイン</h3>
+<p>$\cos x$</p>
+<pre><code>\cos x</code></pre>
+<h3>
+<a class="anchor" href="#%E3%82%BF%E3%83%B3%E3%82%B8%E3%82%A7%E3%83%B3%E3%83%88" aria-hidden="true"><span class="octicon octicon-link"></span></a>タンジェント</h3>
+<p>$\tan x$</p>
+<pre><code>\tan x</code></pre>
+<h3>
+<a class="anchor" href="#%E3%82%B5%E3%82%A4%E3%83%B3%E5%A4%89%E6%8F%9B" aria-hidden="true"><span class="octicon octicon-link"></span></a>サイン変換</h3>
+<p>$\begin{eqnarray}
+  \sin 45^\circ
+    = \frac{ \sqrt{2} }{ 2 }
+  \end{eqnarray}$</p>
+<pre><code>\begin{eqnarray}
+\sin 45^\circ
+  = \frac{ \sqrt{2} }{ 2 }
+\end{eqnarray}</code></pre>
+<h3>
+<a class="anchor" href="#%E3%82%B3%E3%82%B5%E3%82%A4%E3%83%B3%E5%A4%89%E6%8F%9B" aria-hidden="true"><span class="octicon octicon-link"></span></a>コサイン変換</h3>
+<p>$\begin{eqnarray}
+  \cos \frac{ \pi }{ 3 }
+    = \frac{ 1 }{ 2 }
+  \end{eqnarray}$</p>
+<pre><code>\begin{eqnarray}
+\cos \frac{ \pi }{ 3 }
+  = \frac{ 1 }{ 2 }
+\end{eqnarray}</code></pre>
+<h3>
+<a class="anchor" href="#%E3%82%BF%E3%83%B3%E3%82%B8%E3%82%A7%E3%83%B3%E3%83%88%E5%A4%89%E6%8F%9B" aria-hidden="true"><span class="octicon octicon-link"></span></a>タンジェント変換</h3>
+<p>$\begin{eqnarray}
+  \tan \theta
+    = \frac{ \sin \theta }{ \cos \theta }
+  \end{eqnarray}$</p>
+<pre><code>\begin{eqnarray}
+\tan \theta
+  = \frac{ \sin \theta }{ \cos \theta }
+\end{eqnarray}</code></pre>
+
+<h2>
+<a class="anchor" href="#%E8%A4%87%E7%B4%A0%E6%95%B0" aria-hidden="true"><span class="octicon octicon-link"></span></a>複素数</h2>
+<h3>
+<a class="anchor" href="#%E8%A4%87%E7%B4%A0%E6%95%B0-1" aria-hidden="true"><span class="octicon octicon-link"></span></a>複素数</h3>
+<p>$a+bi$</p>
+<pre><code>a+bi</code></pre>
+<h3>
+<a class="anchor" href="#%E5%85%B1%E5%BD%B9%E8%A4%87%E7%B4%A0%E6%95%B0" aria-hidden="true"><span class="octicon octicon-link"></span></a>共役複素数</h3>
+<p>$\bar{z}$</p>
+<pre><code>\bar{z}</code></pre>
+<h3>
+<a class="anchor" href="#%E5%81%8F%E8%A7%92" aria-hidden="true"><span class="octicon octicon-link"></span></a>偏角</h3>
+<p>$\arg (z)$</p>
+<pre><code>\arg (z)</code></pre>
+<h3>
+<a class="anchor" href="#1%E3%81%AE3%E4%B9%97%E6%A0%B9" aria-hidden="true"><span class="octicon octicon-link"></span></a>1の3乗根</h3>
+<p>$\omega$</p>
+<pre><code>\omega</code></pre>
+<h3>
+<a class="anchor" href="#%E8%A4%87%E7%B4%A0%E6%95%B0%E3%81%AE%E7%B5%B6%E5%AF%BE%E5%80%A4" aria-hidden="true"><span class="octicon octicon-link"></span></a>複素数の絶対値</h3>
+<p>$\begin{eqnarray}
+  z\bar{z} = |z|^2
+  \end{eqnarray}$</p>
+<pre><code>\begin{eqnarray}
+z\bar{z} = |z|^2
+\end{eqnarray}</code></pre>
+
+<h2>
+<a class="anchor" href="#%E6%A5%B5%E9%99%90" aria-hidden="true"><span class="octicon octicon-link"></span></a>極限</h2>
+<h3>
+<a class="anchor" href="#%E6%A5%B5%E9%99%90-1" aria-hidden="true"><span class="octicon octicon-link"></span></a>極限</h3>
+<p>$\lim_{ x \to +0 } \frac{1}{x} = \infty$</p>
+<pre><code>\lim_{ x \to +0 } \frac{1}{x} = \infty</code></pre>
+<p>$\displaystyle \lim_{ n \to \infty } f_n(x) = f(x)$</p>
+<pre><code>\displaystyle \lim_{ n \to \infty } f_n(x) = f(x)</code></pre>
+
+<h2>
+<a class="anchor" href="#%E5%BE%AE%E5%88%86%E7%A9%8D%E5%88%86" aria-hidden="true"><span class="octicon octicon-link"></span></a>微分・積分</h2>
+<h3>
+<a class="anchor" href="#%E5%BE%AE%E5%88%86" aria-hidden="true"><span class="octicon octicon-link"></span></a>微分</h3>
+<p>$\frac{ dy }{ dx }$</p>
+<pre><code>\frac{ dy }{ dx }</code></pre>
+<p>$\frac{ \mathrm{ d } y }{ \mathrm{ d } x }$</p>
+<pre><code>\frac{ \mathrm{ d } y }{ \mathrm{ d } x }</code></pre>
+<p>$f'$</p>
+<pre><code>f'</code></pre>
+<h3>
+<a class="anchor" href="#2%E9%9A%8E%E5%BE%AE%E5%88%86" aria-hidden="true"><span class="octicon octicon-link"></span></a>2階微分</h3>
+<p>$\frac{ d^2 y }{ dx^2 }$</p>
+<pre><code>\frac{ d^2 y }{ dx^2 }</code></pre>
+<p>$f^{\prime\prime}$</p>
+<pre><code>f^{\prime\prime}</code></pre>
+<p>$f^{ ( 2 ) }$</p>
+<pre><code>f^{ ( 2 ) }</code></pre>
+<h3>
+<a class="anchor" href="#%E5%B0%8E%E9%96%A2%E6%95%B0%E3%81%AE%E5%AE%9A%E7%BE%A9" aria-hidden="true"><span class="octicon octicon-link"></span></a>導関数の定義</h3>
+<p>$\begin{eqnarray}
+  f'(x)
+    = \frac{ df }{ dx }
+    = \lim_{ \Delta x \to 0 } \frac{ f(x + \Delta x) - f(x) }{ \Delta x }
+  \end{eqnarray}$</p>
+<pre><code>\begin{eqnarray}
+f'(x)
+  = \frac{ df }{ dx }
+  = \lim_{ \Delta x \to 0 } \frac{ f(x + \Delta x) - f(x) }{ \Delta x }
+\end{eqnarray}</code></pre>
+<h3>
+<a class="anchor" href="#%E5%A2%97%E6%B8%9B%E8%A1%A8" aria-hidden="true"><span class="octicon octicon-link"></span></a>増減表</h3>
+<p>$\begin{array}{c|ccccc}
+  x     &amp; \cdots &amp; -1 &amp; \cdots &amp; 1 &amp; \cdots \\ 
+  \hline
+  f’(x) &amp; + &amp; 0 &amp; – &amp; 0 &amp; + \\ 
+  \hline
+  f(x)  &amp; \nearrow &amp; e &amp; \searrow &amp; -e &amp; \nearrow
+\end{array}$</p>
+<pre><code>\begin{array}{c|ccccc}
+  x     &amp; \cdots &amp; -1 &amp; \cdots &amp; 1 &amp; \cdots \\ 
+  \hline
+  f’(x) &amp; + &amp; 0 &amp; – &amp; 0 &amp; + \\ 
+  \hline
+  f(x)  &amp; \nearrow &amp; e &amp; \searrow &amp; -e &amp; \nearrow
+\end{array}</code></pre>
+<h3>
+<a class="anchor" href="#%E7%A9%8D%E5%88%86" aria-hidden="true"><span class="octicon octicon-link"></span></a>積分</h3>
+<p>$\int_0^1 f(x) dx$</p>
+<pre><code>\int_0^1 f(x) dx</code></pre>
+<p>$\displaystyle \int_{-\infty}^{ \infty } f(x) dx$</p>
+<pre><code>\displaystyle \int_{-\infty}^{ \infty } f(x) dx</code></pre>
+<h3>
+<a class="anchor" href="#%E3%82%B5%E3%83%B3%E3%83%97%E3%83%AB" aria-hidden="true"><span class="octicon octicon-link"></span></a>サンプル</h3>
+<p>$\begin{eqnarray}
+  \int_0^1 x dx
+  = \left[ \frac{x^2}{2} \right]_0^1
+  = \frac{1}{2}
+  \end{eqnarray}$</p>
+<pre><code>\begin{eqnarray}
+\int_0^1 x dx
+= \left[ \frac{x^2}{2} \right]_0^1
+= \frac{1}{2}
+\end{eqnarray}</code></pre>
+
+<h2>
+<a class="anchor" href="#%E3%83%99%E3%82%AF%E3%83%88%E3%83%AB" aria-hidden="true"><span class="octicon octicon-link"></span></a>ベクトル</h2>
+<h3>
+<a class="anchor" href="#%E3%83%99%E3%82%AF%E3%83%88%E3%83%AB-1" aria-hidden="true"><span class="octicon octicon-link"></span></a>ベクトル</h3>
+<p>$\vec{ a }$</p>
+<pre><code>\vec{ a }</code></pre>
+<p>$\overrightarrow{ AB }$</p>
+<pre><code>\overrightarrow{ AB }</code></pre>
+<h3>
+<a class="anchor" href="#%E6%A8%AA%E3%83%99%E3%82%AF%E3%83%88%E3%83%AB" aria-hidden="true"><span class="octicon octicon-link"></span></a>横ベクトル</h3>
+<p>$( a_1, a_2, \ldots, a_n )$</p>
+<pre><code>( a_1, a_2, \ldots, a_n )</code></pre>
+<h3>
+<a class="anchor" href="#%E7%B8%A6%E3%83%99%E3%82%AF%E3%83%88%E3%83%AB" aria-hidden="true"><span class="octicon octicon-link"></span></a>縦ベクトル</h3>
+<p>$\left(
+  \begin{array}{c}
+    a_1 \\
+    a_2 \\
+    \vdots \\
+    a_n
+  \end{array}
+\right)$</p>
+<pre><code>\left(
+  \begin{array}{c}
+    a_1 \\
+    a_2 \\
+    \vdots \\
+    a_n
+  \end{array}
+\right)</code></pre>
+<h3>
+<a class="anchor" href="#%E5%86%85%E7%A9%8D" aria-hidden="true"><span class="octicon octicon-link"></span></a>内積</h3>
+<p>$\vec{ a } \cdot \vec{ b }$</p>
+<pre><code>\vec{ a } \cdot \vec{ b }</code></pre>
+
+<h2>
+<a class="anchor" href="#%E8%A1%A8" aria-hidden="true"><span class="octicon octicon-link"></span></a>表</h2>
+<h3>
+<a class="anchor" href="#%E8%A1%A8-1" aria-hidden="true"><span class="octicon octicon-link"></span></a>表</h3>
+<p>$\begin{array}{ccc}
+  xxx &amp; yyy &amp; zzz \\
+  1   &amp; 2   &amp; 3
+\end{array}$</p>
+<pre><code>\begin{array}{ccc}
+  xxx &amp; yyy &amp; zzz \\
+  1   &amp; 2   &amp; 3
+\end{array}</code></pre>
+<h3>
+<a class="anchor" href="#%E8%A1%A8%E7%B8%A6%E7%B7%9A%E4%BB%98" aria-hidden="true"><span class="octicon octicon-link"></span></a>表（縦線付）</h3>
+<p>$\begin{array}{|c|c|c|}
+  xxx &amp; yyy &amp; zzz \\
+  1   &amp; 2   &amp; 3 \\
+\end{array}$</p>
+<pre><code>\begin{array}{|c|c|c|}
+  xxx &amp; yyy &amp; zzz \\
+  1   &amp; 2   &amp; 3 \\
+\end{array}</code></pre>
+<h3>
+<a class="anchor" href="#%E8%A1%A8%E6%A8%AA%E7%B7%9A%E4%BB%98" aria-hidden="true"><span class="octicon octicon-link"></span></a>表（横線付）</h3>
+<p>$\begin{array}{ccc}
+  \hline
+  xxx &amp; yyy &amp; zzz \\
+  \hline
+  1   &amp; 2   &amp; 3 \\
+  \hline
+\end{array}$</p>
+<pre><code>\begin{array}{ccc}
+  \hline
+  xxx &amp; yyy &amp; zzz \\
+  \hline
+  1   &amp; 2   &amp; 3 \\
+  \hline
+\end{array}</code></pre>
+<h3>
+<a class="anchor" href="#%E5%A2%97%E6%B8%9B%E8%A1%A8-1" aria-hidden="true"><span class="octicon octicon-link"></span></a>増減表</h3>
+<p>$\begin{array}{c|ccccc}
+  x     &amp; \cdots &amp; -1 &amp; \cdots &amp; 1 &amp; \cdots \\ 
+  \hline
+  f’(x) &amp; + &amp; 0 &amp; – &amp; 0 &amp; + \\ 
+  \hline
+  f(x)  &amp; \nearrow &amp; e &amp; \searrow &amp; -e &amp; \nearrow
+\end{array}$</p>
+<pre><code>\begin{array}{c|ccccc}
+  x     &amp; \cdots &amp; -1 &amp; \cdots &amp; 1 &amp; \cdots \\ 
+  \hline
+  f’(x) &amp; + &amp; 0 &amp; – &amp; 0 &amp; + \\ 
+  \hline
+  f(x)  &amp; \nearrow &amp; e &amp; \searrow &amp; -e &amp; \nearrow
+\end{array}</code></pre>
+
+<h2>
+<a class="anchor" href="#%E7%B7%9A" aria-hidden="true"><span class="octicon octicon-link"></span></a>線</h2>
+<h3>
+<a class="anchor" href="#%E7%B8%A6%E7%B7%9A" aria-hidden="true"><span class="octicon octicon-link"></span></a>縦線</h3>
+<p>$| x |$</p>
+<pre><code>| x |</code></pre>
+<p>$\vert x \vert$</p>
+<pre><code>\vert x \vert</code></pre>
+<p>$\{ x \mid x \in A \}$</p>
+<pre><code>\{ x \mid x \in A \}</code></pre>
+<h3>
+<a class="anchor" href="#%E4%B8%8A%E7%B7%9A" aria-hidden="true"><span class="octicon octicon-link"></span></a>上線</h3>
+<p>$\overline{ A }$</p>
+<pre><code>\overline{ A }</code></pre>
+<p>$\bar{ A }$</p>
+<pre><code>\bar{ A }</code></pre>
+<h3>
+<a class="anchor" href="#%E3%82%B9%E3%83%A9%E3%83%83%E3%82%B7%E3%83%A5" aria-hidden="true"><span class="octicon octicon-link"></span></a>スラッシュ</h3>
+<p>$/$</p>
+<pre><code>/</code></pre>
+<h3>
+<a class="anchor" href="#%E3%83%90%E3%83%83%E3%82%AF%E3%82%B9%E3%83%A9%E3%83%83%E3%82%B7%E3%83%A5" aria-hidden="true"><span class="octicon octicon-link"></span></a>バックスラッシュ</h3>
+<p>$\backslash$</p>
+<pre><code>\backslash</code></pre>
+<h3>
+<a class="anchor" href="#%E6%96%9C%E7%B7%9A%E4%B8%8B" aria-hidden="true"><span class="octicon octicon-link"></span></a>斜線(下)</h3>
+<p>$\diagdown$</p>
+<pre><code>\diagdown</code></pre>
+<h3>
+<a class="anchor" href="#%E6%96%9C%E7%B7%9A%E4%B8%8A" aria-hidden="true"><span class="octicon octicon-link"></span></a>斜線（上）</h3>
+<p>$\diagup$</p>
+<pre><code>\diagup</code></pre>
+<h3>
+<a class="anchor" href="#%E3%82%AD%E3%83%A3%E3%83%B3%E3%82%BB%E3%83%AB" aria-hidden="true"><span class="octicon octicon-link"></span></a>キャンセル</h3>
+<p>$\cancel{a}$</p>
+<pre><code>\cancel{a}</code></pre>
+<p>$\bcancel{a}$</p>
+<pre><code>\bcancel{a}</code></pre>
+<p>$\xcancel{a}$</p>
+<pre><code>\xcancel{a}</code></pre>
+<h3>
+<a class="anchor" href="#%E3%82%AD%E3%83%A3%E3%83%B3%E3%82%BB%E3%83%AB%E3%81%A8%E7%9F%A2%E5%8D%B0" aria-hidden="true"><span class="octicon octicon-link"></span></a>キャンセルと矢印</h3>
+<p>$\cancelto{A}{a}$</p>
+<pre><code>\cancelto{A}{a}</code></pre>
+<h3>
+<a class="anchor" href="#%E3%82%B5%E3%83%B3%E3%83%97%E3%83%AB-1" aria-hidden="true"><span class="octicon octicon-link"></span></a>サンプル</h3>
+<p>$\begin{eqnarray}
+    \frac{\cancel{2}}{\cancel{6}}=\frac{1}{3}
+  \end{eqnarray}$</p>
+<pre><code>\begin{eqnarray}
+  \frac{\cancel{2}}{\cancel{6}}=\frac{1}{3}
+\end{eqnarray}</code></pre>
+<p>$\begin{eqnarray}
+    \frac{1}{\cancel{3}} \times \frac{\cancelto{2}{6}}{5}
+  \end{eqnarray}$</p>
+<pre><code>\begin{eqnarray}
+  \frac{1}{\cancel{3}} \times \frac{\cancelto{2}{6}}{5}
+\end{eqnarray}</code></pre>
+
+<h2>
+<a class="anchor" href="#%E7%9F%A2%E5%8D%B0" aria-hidden="true"><span class="octicon octicon-link"></span></a>矢印</h2>
+<h3>
+<a class="anchor" href="#%E5%B7%A6%E7%9F%A2%E5%8D%B0" aria-hidden="true"><span class="octicon octicon-link"></span></a>左矢印</h3>
+<p>$\leftarrow$</p>
+<pre><code>\leftarrow</code></pre>
+<p>$\longleftarrow$</p>
+<pre><code>\longleftarrow</code></pre>
+<h3>
+<a class="anchor" href="#%E5%8F%B3%E7%9F%A2%E5%8D%B0" aria-hidden="true"><span class="octicon octicon-link"></span></a>右矢印</h3>
+<p>$\rightarrow$</p>
+<pre><code>\rightarrow</code></pre>
+<p>$\longrightarrow$</p>
+<pre><code>\longrightarrow</code></pre>
+<h3>
+<a class="anchor" href="#%E4%B8%8A%E7%9F%A2%E5%8D%B0" aria-hidden="true"><span class="octicon octicon-link"></span></a>上矢印</h3>
+<p>$\uparrow$</p>
+<pre><code>\uparrow</code></pre>
+<h3>
+<a class="anchor" href="#%E4%B8%8B%E7%9F%A2%E5%8D%B0" aria-hidden="true"><span class="octicon octicon-link"></span></a>下矢印</h3>
+<p>$\downarrow$</p>
+<pre><code>\downarrow</code></pre>
+<h3>
+<a class="anchor" href="#%E5%B7%A6%E5%8F%B3%E7%9F%A2%E5%8D%B0" aria-hidden="true"><span class="octicon octicon-link"></span></a>左右矢印</h3>
+<p>$\leftrightarrow$</p>
+<pre><code>\leftrightarrow</code></pre>
+<p>$\longleftrightarrow$</p>
+<pre><code>\longleftrightarrow</code></pre>
+<h3>
+<a class="anchor" href="#%E4%B8%8A%E4%B8%8B%E7%9F%A2%E5%8D%B0" aria-hidden="true"><span class="octicon octicon-link"></span></a>上下矢印</h3>
+<p>$\updownarrow$</p>
+<pre><code>\updownarrow</code></pre>
+<h3>
+<a class="anchor" href="#2%E9%87%8D%E5%B7%A6%E7%9F%A2%E5%8D%B0" aria-hidden="true"><span class="octicon octicon-link"></span></a>2重左矢印</h3>
+<p>$\Leftarrow$</p>
+<pre><code>\Leftarrow</code></pre>
+<p>$\Longleftarrow$</p>
+<pre><code>\Longleftarrow</code></pre>
+<h3>
+<a class="anchor" href="#2%E9%87%8D%E5%8F%B3%E7%9F%A2%E5%8D%B0" aria-hidden="true"><span class="octicon octicon-link"></span></a>2重右矢印</h3>
+<p>$\Rightarrow$</p>
+<pre><code>\Rightarrow</code></pre>
+<p>$\Longrightarrow$</p>
+<pre><code>\Longrightarrow</code></pre>
+<h3>
+<a class="anchor" href="#2%E9%87%8D%E4%B8%8A%E7%9F%A2%E5%8D%B0" aria-hidden="true"><span class="octicon octicon-link"></span></a>2重上矢印</h3>
+<p>$\Uparrow$</p>
+<pre><code>\Uparrow</code></pre>
+<h3>
+<a class="anchor" href="#2%E9%87%8D%E4%B8%8B%E7%9F%A2%E5%8D%B0" aria-hidden="true"><span class="octicon octicon-link"></span></a>2重下矢印</h3>
+<p>$\Downarrow$</p>
+<pre><code>\Downarrow</code></pre>
+<h3>
+<a class="anchor" href="#2%E9%87%8D%E5%B7%A6%E5%8F%B3%E7%9F%A2%E5%8D%B0" aria-hidden="true"><span class="octicon octicon-link"></span></a>2重左右矢印</h3>
+<p>$\Leftrightarrow$</p>
+<pre><code>\Leftrightarrow</code></pre>
+<p>$\Longleftrightarrow$</p>
+<pre><code>\Longleftrightarrow</code></pre>
+<h3>
+<a class="anchor" href="#2%E9%87%8D%E4%B8%8A%E4%B8%8B%E7%9F%A2%E5%8D%B0" aria-hidden="true"><span class="octicon octicon-link"></span></a>2重上下矢印</h3>
+<p>$\Updownarrow$</p>
+<pre><code>\Updownarrow</code></pre>
+<h3>
+<a class="anchor" href="#%E5%8F%B3%E4%B8%8A%E7%9F%A2%E5%8D%B0" aria-hidden="true"><span class="octicon octicon-link"></span></a>右上矢印</h3>
+<p>$\nearrow$</p>
+<pre><code>\nearrow</code></pre>
+<h3>
+<a class="anchor" href="#%E5%8F%B3%E4%B8%8B%E7%9F%A2%E5%8D%B0" aria-hidden="true"><span class="octicon octicon-link"></span></a>右下矢印</h3>
+<p>$\searrow$</p>
+<pre><code>\searrow</code></pre>
+<h3>
+<a class="anchor" href="#%E5%B7%A6%E4%B8%8A%E7%9F%A2%E5%8D%B0" aria-hidden="true"><span class="octicon octicon-link"></span></a>左上矢印</h3>
+<p>$\nwarrow$</p>
+<pre><code>\nwarrow</code></pre>
+<h3>
+<a class="anchor" href="#%E5%B7%A6%E4%B8%8B%E7%9F%A2%E5%8D%B0" aria-hidden="true"><span class="octicon octicon-link"></span></a>左下矢印</h3>
+<p>$\swarrow$</p>
+<pre><code>\swarrow</code></pre>
+<h3>
+<a class="anchor" href="#%E9%A0%AD%E3%81%AB%E7%9F%A2%E5%8D%B0" aria-hidden="true"><span class="octicon octicon-link"></span></a>頭に矢印</h3>
+<p>$\vec{ a }$</p>
+<pre><code>\vec{ a }</code></pre>
+<p>$\overrightarrow{ AB }$</p>
+<pre><code>\overrightarrow{ AB }</code></pre>
+<p>$\overleftarrow{ AB }$</p>
+<pre><code>\overleftarrow{ AB }</code></pre>
+
+<h2>
+<a class="anchor" href="#%E6%8B%AC%E5%BC%A7" aria-hidden="true"><span class="octicon octicon-link"></span></a>括弧</h2>
+<h3>
+<a class="anchor" href="#%E4%B8%B8%E6%8B%AC%E5%BC%A7" aria-hidden="true"><span class="octicon octicon-link"></span></a>丸括弧</h3>
+<p>$( x )$</p>
+<pre><code>( x )</code></pre>
+<h3>
+<a class="anchor" href="#%E8%A7%92%E6%8B%AC%E5%BC%A7" aria-hidden="true"><span class="octicon octicon-link"></span></a>角括弧</h3>
+<p>$[ x ]$</p>
+<pre><code>[ x ]</code></pre>
+<p>$\lbrack x \rbrack$</p>
+<pre><code>\lbrack x \rbrack</code></pre>
+<h3>
+<a class="anchor" href="#%E6%B3%A2%E6%8B%AC%E5%BC%A7" aria-hidden="true"><span class="octicon octicon-link"></span></a>波括弧</h3>
+<p>$\{ x \}$</p>
+<pre><code>\{ x \}</code></pre>
+<p>$\lbrace x \rbrace$</p>
+<pre><code>\lbrace x \rbrace</code></pre>
+<h3>
+<a class="anchor" href="#%E5%A4%A7%E3%81%8D%E3%81%84%E6%8B%AC%E5%BC%A7" aria-hidden="true"><span class="octicon octicon-link"></span></a>大きい括弧</h3>
+<p>$\left[ \dfrac{ 1 }{ 2 } \right]$</p>
+<pre><code>\left[ \dfrac{ 1 }{ 2 } \right]</code></pre>
+<h3>
+<a class="anchor" href="#%E4%B8%8A%E6%8B%AC%E5%BC%A7" aria-hidden="true"><span class="octicon octicon-link"></span></a>上括弧</h3>
+<p>$\overbrace{ x + y + z }$</p>
+<pre><code>\overbrace{ x + y + z }</code></pre>
+<p>$\overbrace{ a_1 + \cdots + a_n }^{ n }$</p>
+<pre><code>\overbrace{ a_1 + \cdots + a_n }^{ n }</code></pre>
+<h3>
+<a class="anchor" href="#%E4%B8%8B%E6%8B%AC%E5%BC%A7" aria-hidden="true"><span class="octicon octicon-link"></span></a>下括弧</h3>
+<p>$\underbrace{ x + y + z }$</p>
+<pre><code>\underbrace{ x + y + z }</code></pre>
+<p>$\underbrace{ a_1 + \cdots + a_n }_{ n }$</p>
+<pre><code>\underbrace{ a_1 + \cdots + a_n }_{ n }</code></pre>
+
+<h2>
+<a class="anchor" href="#%E7%82%B9" aria-hidden="true"><span class="octicon octicon-link"></span></a>点</h2>
+<h3>
+<a class="anchor" href="#%E7%82%B9%E4%B8%AD%E5%A4%AE" aria-hidden="true"><span class="octicon octicon-link"></span></a>点（中央）</h3>
+<p>$\cdot$</p>
+<pre><code>\cdot</code></pre>
+<h3>
+<a class="anchor" href="#%E8%A4%87%E6%95%B0%E3%81%AE%E7%82%B9%E4%B8%AD%E5%A4%AE%E6%A8%AA%E5%90%91%E3%81%8D" aria-hidden="true"><span class="octicon octicon-link"></span></a>複数の点（中央横向き）</h3>
+<p>$\cdots$</p>
+<pre><code>\cdots</code></pre>
+<h3>
+<a class="anchor" href="#%E8%A4%87%E6%95%B0%E3%81%AE%E7%82%B9%E4%B8%8B%E5%81%B4%E6%A8%AA%E5%90%91%E3%81%8D" aria-hidden="true"><span class="octicon octicon-link"></span></a>複数の点（下側横向き）</h3>
+<p>$\ldots$</p>
+<pre><code>\ldots</code></pre>
+<h3>
+<a class="anchor" href="#%E9%A0%AD%E3%81%AB%E7%82%B9" aria-hidden="true"><span class="octicon octicon-link"></span></a>頭に点</h3>
+<p>$\dot{ a }$</p>
+<pre><code>\dot{ a }</code></pre>
+
+<h2>
+<a class="anchor" href="#%E4%B8%89%E8%A7%92%E5%BD%A2-1" aria-hidden="true"><span class="octicon octicon-link"></span></a>三角形</h2>
+<h3>
+<a class="anchor" href="#%E4%B8%89%E8%A7%92%E5%BD%A2-2" aria-hidden="true"><span class="octicon octicon-link"></span></a>三角形</h3>
+<p>$\triangle$</p>
+<pre><code>\triangle</code></pre>
+
+<h2>
+<a class="anchor" href="#%E7%A9%BA%E7%99%BD" aria-hidden="true"><span class="octicon octicon-link"></span></a>空白</h2>
+<h3>
+<a class="anchor" href="#%E7%A9%BA%E7%99%BD-1" aria-hidden="true"><span class="octicon octicon-link"></span></a>空白</h3>
+<p>$aaa \ bbb$</p>
+<pre><code>aaa \ bbb</code></pre>
+<p>$aaa \quad bbb$</p>
+<pre><code>aaa \quad bbb</code></pre>
+<p>$aaa \qquad bbb$</p>
+<pre><code>aaa \qquad bbb</code></pre>
+<p>$aaa \hspace{ 10pt } bbb$</p>
+<pre><code>aaa \hspace{ 10pt } bbb</code></pre>
+<h3>
+<a class="anchor" href="#%E7%A9%BA%E7%99%BD%E3%82%92%E3%81%AA%E3%81%8F%E3%81%99" aria-hidden="true"><span class="octicon octicon-link"></span></a>空白をなくす</h3>
+<p>$aaa \! bbb$</p>
+<pre><code>aaa \! bbb</code></pre>
+<h3>
+<a class="anchor" href="#%E6%94%B9%E8%A1%8C" aria-hidden="true"><span class="octicon octicon-link"></span></a>改行</h3>
+<p>$\begin{eqnarray} 
+  aaa \\ bbb
+  \end{eqnarray}$</p>
+<pre><code>\begin{eqnarray} 
+  aaa \\ bbb
+\end{eqnarray}</code></pre>
+<p>$\begin{eqnarray} 
+  aaa \\[5pt] bbb
+  \end{eqnarray}$</p>
+<pre><code>\begin{eqnarray} 
+  aaa \\[5pt] bbb
+\end{eqnarray}</code></pre>
+<h3>
+<a class="anchor" href="#%E3%82%B5%E3%83%B3%E3%83%97%E3%83%AB-2" aria-hidden="true"><span class="octicon octicon-link"></span></a>サンプル</h3>
+<p>$\begin{eqnarray}
+  &amp; &amp; \frac{1}{2} +\frac{1}{3} +\frac{1}{6} \\[ 5pt ]
+  &amp;=&amp; \frac{3}{6} +\frac{2}{6} +\frac{1}{6} \\
+  &amp;=&amp; 1
+  \end{eqnarray}$</p>
+<pre><code>\begin{eqnarray}
+  &amp; &amp; \frac{1}{2} +\frac{1}{3} +\frac{1}{6} \\[ 5pt ]
+  &amp;=&amp; \frac{3}{6} +\frac{2}{6} +\frac{1}{6} \\
+  &amp;=&amp; 1
+\end{eqnarray}</code></pre>
+
+<h2>
+<a class="anchor" href="#%E6%96%87%E5%AD%97%E3%82%B5%E3%82%A4%E3%82%BA" aria-hidden="true"><span class="octicon octicon-link"></span></a>文字サイズ</h2>
+<h3>
+<a class="anchor" href="#%E6%A5%B5%E5%B0%8F%E3%82%B5%E3%82%A4%E3%82%BA" aria-hidden="true"><span class="octicon octicon-link"></span></a>極小サイズ</h3>
+<p>$\tiny{ abc ABC }$</p>
+<pre><code>\tiny{ abc ABC }</code></pre>
+<h3>
+<a class="anchor" href="#%E5%B0%8F%E3%81%95%E3%81%84%E3%82%B5%E3%82%A4%E3%82%BA" aria-hidden="true"><span class="octicon octicon-link"></span></a>小さいサイズ</h3>
+<p>$\scriptsize{ abc ABC }$</p>
+<pre><code>\scriptsize{ abc ABC }</code></pre>
+<h3>
+<a class="anchor" href="#%E5%B0%91%E3%81%97%E5%B0%8F%E3%81%95%E3%81%84%E3%82%B5%E3%82%A4%E3%82%BA" aria-hidden="true"><span class="octicon octicon-link"></span></a>少し小さいサイズ</h3>
+<p>$\small{ abc ABC }$</p>
+<pre><code>\small{ abc ABC }</code></pre>
+<h3>
+<a class="anchor" href="#%E3%83%8E%E3%83%BC%E3%83%9E%E3%83%AB%E3%82%B5%E3%82%A4%E3%82%BA" aria-hidden="true"><span class="octicon octicon-link"></span></a>ノーマルサイズ</h3>
+<p>$\normalsize{ abc ABC }$</p>
+<pre><code>\normalsize{ abc ABC }</code></pre>
+<h3>
+<a class="anchor" href="#%E5%A4%A7%E3%81%8D%E3%81%84%E3%82%B5%E3%82%A4%E3%82%BA" aria-hidden="true"><span class="octicon octicon-link"></span></a>大きいサイズ</h3>
+<p>$\large{ abc ABC }$</p>
+<pre><code>\large{ abc ABC }</code></pre>
+<h3>
+<a class="anchor" href="#%E3%81%95%E3%82%89%E3%81%AB%E5%A4%A7%E3%81%8D%E3%81%84%E3%82%B5%E3%82%A4%E3%82%BA" aria-hidden="true"><span class="octicon octicon-link"></span></a>さらに大きいサイズ</h3>
+<p>$\Large{ abc ABC }$</p>
+<pre><code>\Large{ abc ABC }</code></pre>
+<h3>
+<a class="anchor" href="#%E3%82%82%E3%81%A3%E3%81%A8%E5%A4%A7%E3%81%8D%E3%81%84%E3%82%B5%E3%82%A4%E3%82%BA" aria-hidden="true"><span class="octicon octicon-link"></span></a>もっと大きいサイズ</h3>
+<p>$\LARGE{ abc ABC }$</p>
+<pre><code>\LARGE{ abc ABC }</code></pre>
+<h3>
+<a class="anchor" href="#%E7%89%B9%E5%A4%A7%E3%82%B5%E3%82%A4%E3%82%BA" aria-hidden="true"><span class="octicon octicon-link"></span></a>特大サイズ</h3>
+<p>$\huge{ abc ABC }$</p>
+<pre><code>\huge{ abc ABC }</code></pre>
+<h3>
+<a class="anchor" href="#%E6%A5%B5%E5%A4%A7%E3%82%B5%E3%82%A4%E3%82%BA" aria-hidden="true"><span class="octicon octicon-link"></span></a>極大サイズ</h3>
+<p>$\Huge{ abc ABC }$</p>
+<pre><code>\Huge{ abc ABC }</code></pre>
+
+<h2>
+<a class="anchor" href="#%E3%83%95%E3%82%A9%E3%83%B3%E3%83%88" aria-hidden="true"><span class="octicon octicon-link"></span></a>フォント</h2>
+<h3>
+<a class="anchor" href="#%E3%83%AD%E3%83%BC%E3%83%9E%E3%83%B3%E4%BD%93" aria-hidden="true"><span class="octicon octicon-link"></span></a>ローマン体</h3>
+<p>$\mathrm{ ABC }$</p>
+<pre><code>\mathrm{ ABC }</code></pre>
+<h3>
+<a class="anchor" href="#%E3%82%BF%E3%82%A4%E3%83%97%E3%83%A9%E3%82%A4%E3%82%BF%E3%83%BC%E3%83%95%E3%82%A9%E3%83%B3%E3%83%88" aria-hidden="true"><span class="octicon octicon-link"></span></a>タイプライターフォント</h3>
+<p>$\mathtt{ ABC }$</p>
+<pre><code>\mathtt{ ABC }</code></pre>
+<h3>
+<a class="anchor" href="#%E3%82%B5%E3%83%B3%E3%82%BB%E3%83%AA%E3%83%95" aria-hidden="true"><span class="octicon octicon-link"></span></a>サンセリフ</h3>
+<p>$\mathsf{ ABC }$</p>
+<pre><code>\mathsf{ ABC }</code></pre>
+<h3>
+<a class="anchor" href="#%E3%82%AB%E3%83%AA%E3%82%B0%E3%83%A9%E3%83%95%E3%82%A3%E3%83%BC%E3%83%95%E3%82%A9%E3%83%B3%E3%83%88" aria-hidden="true"><span class="octicon octicon-link"></span></a>カリグラフィーフォント</h3>
+<p>$\mathcal{ ABC }$</p>
+<pre><code>\mathcal{ ABC }</code></pre>
+<h3>
+<a class="anchor" href="#%E5%A4%AA%E6%96%87%E5%AD%97" aria-hidden="true"><span class="octicon octicon-link"></span></a>太文字</h3>
+<p>$\mathbf{ ABC }$</p>
+<pre><code>\mathbf{ ABC }</code></pre>
+<h3>
+<a class="anchor" href="#%E3%82%A4%E3%82%BF%E3%83%AA%E3%83%83%E3%82%AF" aria-hidden="true"><span class="octicon octicon-link"></span></a>イタリック</h3>
+<p>$\mathit{ ABC }$</p>
+<pre><code>\mathit{ ABC }</code></pre>
+<h3>
+<a class="anchor" href="#%E4%B8%AD%E6%8A%9C%E3%81%8D%E6%96%87%E5%AD%97" aria-hidden="true"><span class="octicon octicon-link"></span></a>中抜き文字</h3>
+<p>$\mathbb{ ABC }$</p>
+<pre><code>\mathbb{ ABC }</code></pre>
+<h3>
+<a class="anchor" href="#%E3%82%B9%E3%82%AF%E3%83%AA%E3%83%97%E3%83%88%E3%83%95%E3%82%A9%E3%83%B3%E3%83%88" aria-hidden="true"><span class="octicon octicon-link"></span></a>スクリプトフォント</h3>
+<p>$\mathscr{ ABC }$</p>
+<pre><code>\mathscr{ ABC }</code></pre>
+<h3>
+<a class="anchor" href="#%E3%83%95%E3%83%A9%E3%82%AF%E3%83%88%E3%82%A5%E3%83%BC%E3%83%AB" aria-hidden="true"><span class="octicon octicon-link"></span></a>フラクトゥール</h3>
+<p>$\mathfrak{ ABC }$</p>
+<pre><code>\mathfrak{ ABC }</code></pre>
+
+<h2>
+<a class="anchor" href="#%E4%B8%8A%E4%BB%98%E3%81%8D%E4%B8%8B%E4%BB%98%E3%81%8D" aria-hidden="true"><span class="octicon octicon-link"></span></a>上付き・下付き</h2>
+<h3>
+<a class="anchor" href="#%E4%B8%8A%E4%BB%98%E3%81%8D%E6%96%87%E5%AD%97" aria-hidden="true"><span class="octicon octicon-link"></span></a>上付き文字</h3>
+<p>$a^{ xy }$</p>
+<pre><code>a^{ xy }</code></pre>
+<h3>
+<a class="anchor" href="#%E4%B8%8A%E4%BB%98%E3%81%8D%E6%96%87%E5%AD%97%E5%B7%A6" aria-hidden="true"><span class="octicon octicon-link"></span></a>上付き文字（左）</h3>
+<p>${}^{ xy } a$</p>
+<pre><code>{}^{ xy } a</code></pre>
+<h3>
+<a class="anchor" href="#%E4%B8%8B%E4%BB%98%E3%81%8D%E6%96%87%E5%AD%97" aria-hidden="true"><span class="octicon octicon-link"></span></a>下付き文字</h3>
+<p>$a_{ xy }$</p>
+<pre><code>a_{ xy }</code></pre>
+<h3>
+<a class="anchor" href="#%E4%B8%8B%E4%BB%98%E3%81%8D%E6%96%87%E5%AD%97%E5%B7%A6" aria-hidden="true"><span class="octicon octicon-link"></span></a>下付き文字（左）</h3>
+<p>${}_{ xy } a$</p>
+<pre><code>{}_{ xy } a</code></pre>
+<h3>
+<a class="anchor" href="#%E4%B8%8B%E4%BB%98%E3%81%8D%E3%82%B5%E3%83%B3%E3%83%97%E3%83%AB" aria-hidden="true"><span class="octicon octicon-link"></span></a>下付きサンプル</h3>
+<p>$\begin{eqnarray}
+    a_n^2 + a_{ n + 1 }^2 = a_{ 2n + 1 }
+  \end{eqnarray}$</p>
+<pre><code>\begin{eqnarray}
+  a_n^2 + a_{ n + 1 }^2 = a_{ 2n + 1 }
+\end{eqnarray}</code></pre>
+
+<h2>
+<a class="anchor" href="#%E3%82%AE%E3%83%AA%E3%82%B7%E3%83%A3%E6%96%87%E5%AD%97" aria-hidden="true"><span class="octicon octicon-link"></span></a>ギリシャ文字</h2>
+<h3>
+<a class="anchor" href="#%E3%82%A2%E3%83%AB%E3%83%95%E3%82%A1" aria-hidden="true"><span class="octicon octicon-link"></span></a>アルファ</h3>
+<p>$\alpha$</p>
+<pre><code>\alpha</code></pre>
+<h3>
+<a class="anchor" href="#%E3%83%99%E3%83%BC%E3%82%BF" aria-hidden="true"><span class="octicon octicon-link"></span></a>ベータ</h3>
+<p>$\beta$</p>
+<pre><code>\beta</code></pre>
+<h3>
+<a class="anchor" href="#%E3%82%AC%E3%83%B3%E3%83%9E" aria-hidden="true"><span class="octicon octicon-link"></span></a>ガンマ</h3>
+<p>$\gamma$</p>
+<pre><code>\gamma</code></pre>
+<h3>
+<a class="anchor" href="#%E3%83%87%E3%83%AB%E3%82%BF" aria-hidden="true"><span class="octicon octicon-link"></span></a>デルタ</h3>
+<p>$\delta$</p>
+<pre><code>\delta</code></pre>
+<h3>
+<a class="anchor" href="#%E3%83%91%E3%82%A4" aria-hidden="true"><span class="octicon octicon-link"></span></a>パイ</h3>
+<p>$\pi$</p>
+<pre><code>\pi</code></pre>
+
+<h2>
+<a class="anchor" href="#%E7%89%B9%E6%AE%8A%E6%96%87%E5%AD%97" aria-hidden="true"><span class="octicon octicon-link"></span></a>特殊文字</h2>
+<h3>
+<a class="anchor" href="#%E3%83%A6%E3%83%8B%E3%82%B3%E3%83%BC%E3%83%89" aria-hidden="true"><span class="octicon octicon-link"></span></a>ユニコード</h3>
+<p>$\unicode{x5F45}$</p>
+<pre><code>\unicode{x5F45}</code></pre>
+<p>$\begin{eqnarray}
+    \unicode{x5F45}\text{は、弓へんに剪。}
+  \end{eqnarray}$</p>
+<pre><code>\begin{eqnarray}
+  \unicode{x5F45}\text{は、弓へんに剪。}
+\end{eqnarray}</code></pre>
+<h3>
+<a class="anchor" href="#%E3%82%BB%E3%82%AF%E3%82%B7%E3%83%A7%E3%83%B3" aria-hidden="true"><span class="octicon octicon-link"></span></a>セクション</h3>
+<p>$\S$</p>
+<pre><code>\S</code></pre>
+<h3>
+<a class="anchor" href="#tex%E3%83%AD%E3%82%B4" aria-hidden="true"><span class="octicon octicon-link"></span></a>$\TeX$ロゴ</h3>
+<p>$\TeX$</p>
+<pre><code>\TeX</code></pre>
+<p>$\LaTeX$</p>
+<pre><code>\LaTeX</code></pre>
+
+<h2>
+<a class="anchor" href="#%E4%BD%BF%E7%94%A8%E4%BE%8B" aria-hidden="true"><span class="octicon octicon-link"></span></a>使用例</h2>
+<h3>
+<a class="anchor" href="#2%E6%AC%A1%E6%96%B9%E7%A8%8B%E5%BC%8F%E3%81%AE%E8%A7%A3%E3%81%AE%E5%85%AC%E5%BC%8F" aria-hidden="true"><span class="octicon octicon-link"></span></a>2次方程式の解の公式</h3>
+<div class="koushiki-box">
+  <div class="box-title">2次方程式の解の公式</div>
+  <p>
+    2次方程式 $ ax^2+bx+c=0 $ の解は、 $ b^2-4ac\geqq0 $ のとき<br>
+    \begin{equation*}
+      x=\frac{-b\pm\sqrt{b^2-4ac}}{2a}
+    \end{equation*}
+  </p>
+</div>
+
+<h3>
+<a class="anchor" href="#%E5%A2%97%E6%B8%9B%E8%A1%A8-2" aria-hidden="true"><span class="octicon octicon-link"></span></a>増減表</h3>
+<h4>htmlのtable + MathJax</h4>
+<table class="derivative-test-chart">
+  <tr>
+      <td>\(x\)</td>
+      <td>\(\cdots\)</td>
+      <td>\(-1\)</td>
+      <td>\(\cdots\)</td>
+      <td>\(1\)</td>
+      <td>\(\cdots\)</td>
+  </tr>
+  <tr>
+      <td>\(f'(x)\)</td>
+      <td>\(+\)</td>
+      <td>\(0\)</td>
+      <td>\(-\)</td>
+      <td>\(0\)</td>
+      <td>\(+\)</td>
+  </tr>
+  <tr>
+      <td>\(f(x)\)</td>
+      <td>\(\nearrow\)</td>
+      <td>\(e\)</td>
+      <td>\(\searrow\)</td>
+      <td>\(e\)</td>
+      <td>\(\nearrow\)</td>
+  </tr>
+</table>
+<h4>MathJaxのarrayだけ</h4>
+<p>
+\begin{array}{|c|c|c|c|c|c|}
+  \hline
+  x     &amp; \cdots &amp; -1 &amp; \cdots &amp; 1 &amp; \cdots \\ 
+  \hline
+  f’(x) &amp; + &amp; 0 &amp; – &amp; 0 &amp; + \\ 
+  \hline
+  f(x)  &amp; \nearrow &amp; e &amp; \searrow &amp; -e &amp; \nearrow \\
+  \hline
+\end{array}
+</p>
+
+<h3>
+<a class="anchor" href="#%E4%BB%96" aria-hidden="true"><span class="octicon octicon-link"></span></a>他</h3>
+<p><mark>アインシュタイン</mark>は $ E=mc^2 $ の公式を導きました。</p>
+<p>
+  \begin{eqnarray}
+    i\hbar\frac{\partial}{\partial t}\psi(x,t)=
+    \left(-\frac{\hbar^2}{2m}+V(x)\right)\psi(x,t)
+  \end{eqnarray}
+</p>
+
+<h2>
+<a class="anchor" href="#%E5%8F%82%E8%80%83" aria-hidden="true"><span class="octicon octicon-link"></span></a>参考</h2>
+<h3>
+<a class="anchor" href="#mathjax" aria-hidden="true"><span class="octicon octicon-link"></span></a>MathJax</h3>
+<h4>一例</h4>
+<p>使用例も載っているのでおすすめ。</p>
+<ul class="reference-list">
+  <li>
+<a href="https://www.tohoho-web.com/ex/mathjax.html" target="_blank">とほほのMathJax入門 - とほほのWWW入門</a>, 参照<time datetime="2024-04-27">2024-04-27</time>
+</li>
+  <li>
+<a href="https://easy-copy-mathjax.nakaken88.com/table/" target="_blank">表 | Easy Copy Mathjax</a>, 参照<time datetime="2024-04-28">2024-04-28</time>
+</li>
+</ul>
+
+        
+    </div>
+    
+    <div class="article-footer">
+        <div class="article-categories-tags">
+            <!-- カテゴリ -->
+            <div class="article-categories">
+                
+                
+                
+                
+                
+                <ol class="category-list link-list">
+                    
+                        
+                        
+                
+                        
+                            <li class="breadcrumb-item">
+                                <a href="/note/informatics/">
+                                    <i class="fas fa-folder"></i>情報
+                                </a>
+                            </li>
+                        
+                    
+                        
+                        
+                
+                        
+                            <li class="breadcrumb-item">
+                                <a href="/note/informatics/programming/">
+                                    <i class="fas fa-folder"></i>プログラミング
+                                </a>
+                            </li>
+                        
+                    
+                        
+                        
+                
+                        
+                    
+                </ol>
+            </div>
+            
+            <!-- タグ -->
+            <div class="article-tags">
+                <ul class="tag-list link-list">
+                
+                    <li><a href="/note/tags/latex"><i class="fa-solid fa-tag"></i>LaTeX</a></li>
+                
+                </ul>
+            </div>
+            
+        </div>
+    </div>
+
+</article>
+
+
+
+
+
+                    
+                </div>
+            </div>
+        </main>
+
+        <footer>
+    <div class="footer-content">
+        <!--
+<div class="social-links">
+    <ul>
+        <li><a href="https://github.com/" target="_blank" rel="noopener noreferrer"><i class="fab fa-github"></i>GitHub</a></li>
+        <li><a href="https://www.youtube.com/" target="_blank" rel="noopener noreferrer"><i class="fab fa-youtube"></i>YouTube</a></li>
+    </ul>
+</div>
+-->
+
+        <nav id="footer-menu" class="navigation-content">
+            <!-- _includes/navigation.html -->
+<ul class="navigation-list">
+    <li><a href="/note/">ホーム</a></li>
+    <li><a href="/note/about/">このサイトについて</a></li>
+    <li><a href="/note/tags/">カテゴリ＆タグ</a></li>
+</ul>
+        </nav>
+        
+        <p class="copyright">Copyright &copy; 2023 - 2024 <br class="copyright-break">みむねこのーと All rights reserved.</p>
+    </div>
+</footer>
+
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script src="/note/assets/js/navigation-menu.js"></script>
+<script src="/note/assets/js/copy-code.js"></script>
+</body>
+</html>
