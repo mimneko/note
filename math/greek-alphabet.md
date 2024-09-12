@@ -48,6 +48,9 @@ title: ギリシャ文字一覧
             white-space: nowrap;
             font-weight: bold;
         }
+        article table thead tr {
+            border-width: 1px;
+        }
     }
 </style>
 
