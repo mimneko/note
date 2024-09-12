@@ -9,14 +9,20 @@ algebra: 代数学
 geometry: 幾何学
 analysis: 解析学
 statistics: 統計学
+informatics: 情報
+info-1: 情報Ⅰ
+info-2: 情報Ⅱ
 design: デザイン
 color: 配色
 slide: スライドデザイン
 web: webデザイン
-equation: 公式
 education: 教育
 kanji: 漢字
 kanken: 漢字検定
 programming: プログラミング
 markdown: Markdown
 recommendation: おすすめ紹介
+library: 図書館情報学
+music-theory: 音楽理論
+
+equation: 公式
