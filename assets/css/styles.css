@@ -870,19 +870,6 @@ article table thead tr td {
 }
 
 /* -----------------------------------------
-    MathJax
------------------------------------------ */
-article mjx-container {
-    padding: 0 3px;
-    overflow-x: auto;
-    overflow-y: visible;
-}
-
-article mjx-container[jax="CHTML"][display="true"] {
-    padding: .7em 0;
-}
-
-/* -----------------------------------------
     強調
 ----------------------------------------- */
 article strong {

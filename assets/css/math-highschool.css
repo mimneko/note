@@ -1,19 +1,23 @@
 /* -----------------------------------------
   数式のスクロールバー
 ----------------------------------------- */
+/*
 .MathJax {
   padding-bottom: 5px;
-  /*overflow-x: auto;*/
   overflow-x: visible;
   overflow-y: hidden;
-}/*
+}
+*/
+/*
 .MathJax::-webkit-scrollbar-track {
   background-color: transparent;
-}*/
+}
+*/
 
 /* -----------------------------------------
   証明
 ----------------------------------------- */
+/*
 .shomei-box {
   margin: 0 .5rem;
   padding: 1px 1rem;
@@ -29,6 +33,20 @@
 }
 .shomei-box .shomei-qed {
   text-align: right;
+}
+*/
+
+/* -----------------------------------------
+    MathJax
+----------------------------------------- */
+article mjx-container {
+    padding: 0 3px;
+    overflow-x: auto;
+    overflow-y: visible;
+}
+
+article mjx-container[jax="CHTML"][display="true"] {
+    padding: .7em 0;
 }
 
 /* -----------------------------------------
