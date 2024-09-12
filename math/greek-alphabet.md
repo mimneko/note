@@ -25,31 +25,9 @@ title: ギリシャ文字一覧
 
     /* スマホ対応のCSS */
     @media (max-width: 768px) {
-        table, thead, tbody, th, td, tr {
-            display: block;
-        }
-        thead tr {
-            display: none; /* ヘッダーを非表示 */
-        }
-        tr {
-            margin-bottom: 15px;
-            border-bottom: 2px solid #ddd;
-        }
-        td {
-            text-align: left;
-            padding-left: 6em;
-            position: relative;
-        }
-        td:before {
-            content: attr(data-label); /* 対応するヘッダの名前を表示 */
-            position: absolute;
-            left: 10px;
-            width: calc(6em - 20px);
-            white-space: nowrap;
-            font-weight: bold;
-        }
-        article table thead tr {
-            border-width: 1px;
+        th[data-label="LaTeX"],
+        td[data-label="LaTeX"] {
+            display: none;
         }
     }
 </style>
@@ -57,13 +35,13 @@ title: ギリシャ文字一覧
 <table>
     <thead>
         <tr>
-            <th>名称</th>
-            <th>小文字</th>
-            <th> $\LaTeX$ </th>
-            <th>使用例</th>
-            <th>大文字</th>
-            <th> $\LaTeX$ </th>
-            <th>使用例</th>
+            <th data-label="名称">名称</th>
+            <th data-label="小文字">小文字</th>
+            <th data-label="LaTeX"> $\LaTeX$ </th>
+            <th data-label="使用例">使用例</th>
+            <th data-label="大文字">大文字</th>
+            <th data-label="LaTeX"> $\LaTeX$ </th>
+            <th data-label="使用例">使用例</th>
         </tr>
     </thead>
     <tbody>
