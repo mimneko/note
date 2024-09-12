@@ -1,5 +1,6 @@
 ---
 title: ギリシャ文字一覧
+date: 2024-09-12
 ---
 
 <style>
@@ -263,3 +264,7 @@ title: ギリシャ文字一覧
         </tr>
     </tbody>
 </table>
+
+## 参考
+- [とほほのMathJax入門 - とほほのWWW入門](https://www.tohoho-web.com/ex/mathjax.html#greek-characters), 2024-09-12
+- 改訂版　数学Ⅰ, 数研出版株式会社
