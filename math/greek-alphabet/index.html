@@ -178,6 +178,7 @@
         border: 1px solid black;
         padding: 8px;
         text-align: center;
+        min-height: 24px;
     }
     th {
         background-color: #f2f2f2;
@@ -187,6 +188,33 @@
     }
     .significant {
         background-color: rgb(193, 246, 255);
+    }
+
+    /* スマホ対応のCSS */
+    @media (max-width: 768px) {
+        table, thead, tbody, th, td, tr {
+            display: block;
+        }
+        thead tr {
+            display: none; /* ヘッダーを非表示 */
+        }
+        tr {
+            margin-bottom: 15px;
+            border-bottom: 2px solid #ddd;
+        }
+        td {
+            text-align: left;
+            padding-left: 6em;
+            position: relative;
+        }
+        td:before {
+            content: attr(data-label); /* 対応するヘッダの名前を表示 */
+            position: absolute;
+            left: 10px;
+            width: calc(6em - 20px);
+            white-space: nowrap;
+            font-weight: bold;
+        }
     }
 </style>
 
@@ -204,220 +232,220 @@
     </thead>
     <tbody>
         <tr>
-            <td>アルファ</td>
-            <td class="significant"> $\alpha$ </td>
-            <td>\alpha</td>
-            <td></td>
-            <td> $A$ </td>
-            <td>A</td>
-            <td></td>
+            <td data-label="名称">アルファ</td>
+            <td data-label="小文字" class="significant"> $\alpha$ </td>
+            <td data-label="LaTeX">\alpha</td>
+            <td data-label="使用例"></td>
+            <td data-label="大文字"> $A$ </td>
+            <td data-label="LaTeX">A</td>
+            <td data-label="使用例"></td>
         </tr>
         <tr>
-            <td>ベータ</td>
-            <td class="significant"> $\beta$ </td>
-            <td>\beta</td>
-            <td></td>
-            <td> $B$ </td>
-            <td>B</td>
-            <td></td>
+            <td data-label="名称">ベータ</td>
+            <td data-label="小文字" class="significant"> $\beta$ </td>
+            <td data-label="LaTeX">\beta</td>
+            <td data-label="使用例"></td>
+            <td data-label="大文字"> $B$ </td>
+            <td data-label="LaTeX">B</td>
+            <td data-label="使用例"></td>
         </tr>
         <tr>
-            <td>ガンマ</td>
-            <td class="significant"> $\gamma$ </td>
-            <td>\gamma</td>
-            <td></td>
-            <td> $\varGamma$ </td>
-            <td>\varGamma</td>
-            <td></td>
+            <td data-label="名称">ガンマ</td>
+            <td data-label="小文字" class="significant"> $\gamma$ </td>
+            <td data-label="LaTeX">\gamma</td>
+            <td data-label="使用例"></td>
+            <td data-label="大文字"> $\varGamma$ </td>
+            <td data-label="LaTeX">\varGamma</td>
+            <td data-label="使用例"></td>
         </tr>
         <tr>
-            <td>デルタ</td>
-            <td class="significant"> $\delta$ </td>
-            <td>\delta</td>
-            <td></td>
-            <td> $\varDelta$ </td>
-            <td>\varDelta</td>
-            <td></td>
+            <td data-label="名称">デルタ</td>
+            <td data-label="小文字" class="significant"> $\delta$ </td>
+            <td data-label="LaTeX">\delta</td>
+            <td data-label="使用例"></td>
+            <td data-label="大文字"> $\varDelta$ </td>
+            <td data-label="LaTeX">\varDelta</td>
+            <td data-label="使用例"></td>
         </tr>
         <tr>
-            <td>エプシロン</td>
-            <td> $\epsilon$ </td>
-            <td>\epsilon</td>
-            <td></td>
-            <td> $E$ </td>
-            <td>E</td>
-            <td></td>
+            <td data-label="名称">エプシロン</td>
+            <td data-label="小文字"> $\epsilon$ </td>
+            <td data-label="LaTeX">\epsilon</td>
+            <td data-label="使用例"></td>
+            <td data-label="大文字"> $E$ </td>
+            <td data-label="LaTeX">E</td>
+            <td data-label="使用例"></td>
         </tr>
         <tr>
-            <td>ゼータ</td>
-            <td> $\zeta$ </td>
-            <td>\zeta</td>
-            <td></td>
-            <td> $Z$ </td>
-            <td>Z</td>
-            <td></td>
+            <td data-label="名称">ゼータ</td>
+            <td data-label="小文字"> $\zeta$ </td>
+            <td data-label="LaTeX">\zeta</td>
+            <td data-label="使用例"></td>
+            <td data-label="大文字"> $Z$ </td>
+            <td data-label="LaTeX">Z</td>
+            <td data-label="使用例"></td>
         </tr>
         <tr>
-            <td>エータ</td>
-            <td> $\eta$ </td>
-            <td>\eta</td>
-            <td></td>
-            <td> $H$ </td>
-            <td>H</td>
-            <td></td>
+            <td data-label="名称">エータ</td>
+            <td data-label="小文字"> $\eta$ </td>
+            <td data-label="LaTeX">\eta</td>
+            <td data-label="使用例"></td>
+            <td data-label="大文字"> $H$ </td>
+            <td data-label="LaTeX">H</td>
+            <td data-label="使用例"></td>
         </tr>
         <tr>
-            <td>シータ</td>
-            <td class="significant"> $\theta$ </td>
-            <td>\theta</td>
-            <td>角度</td>
-            <td> $\varTheta$ </td>
-            <td>\varTheta</td>
-            <td></td>
+            <td data-label="名称">シータ</td>
+            <td data-label="小文字" class="significant"> $\theta$ </td>
+            <td data-label="LaTeX">\theta</td>
+            <td data-label="使用例">角度</td>
+            <td data-label="大文字"> $\varTheta$ </td>
+            <td data-label="LaTeX">\varTheta</td>
+            <td data-label="使用例"></td>
         </tr>
         <tr>
-            <td>イオタ</td>
-            <td> $\iota$ </td>
-            <td>\iota</td>
-            <td></td>
-            <td> $I$ </td>
-            <td>I</td>
-            <td></td>
+            <td data-label="名称">イオタ</td>
+            <td data-label="小文字"> $\iota$ </td>
+            <td data-label="LaTeX">\iota</td>
+            <td data-label="使用例"></td>
+            <td data-label="大文字"> $I$ </td>
+            <td data-label="LaTeX">I</td>
+            <td data-label="使用例"></td>
         </tr>
         <tr>
-            <td>カッパ</td>
-            <td> $\kappa$ </td>
-            <td>\kappa</td>
-            <td></td>
-            <td> $K$ </td>
-            <td>K</td>
-            <td></td>
+            <td data-label="名称">カッパ</td>
+            <td data-label="小文字"> $\kappa$ </td>
+            <td data-label="LaTeX">\kappa</td>
+            <td data-label="使用例"></td>
+            <td data-label="大文字"> $K$ </td>
+            <td data-label="LaTeX">K</td>
+            <td data-label="使用例"></td>
         </tr>
         <tr>
-            <td>ラムダ</td>
-            <td> $\lambda$ </td>
-            <td>\lambda</td>
-            <td></td>
-            <td> $\varLambda$ </td>
-            <td>\varLambda</td>
-            <td></td>
+            <td data-label="名称">ラムダ</td>
+            <td data-label="小文字"> $\lambda$ </td>
+            <td data-label="LaTeX">\lambda</td>
+            <td data-label="使用例"></td>
+            <td data-label="大文字"> $\varLambda$ </td>
+            <td data-label="LaTeX">\varLambda</td>
+            <td data-label="使用例"></td>
         </tr>
         <tr>
-            <td>ミュー</td>
-            <td class="significant"> $\mu$ </td>
-            <td>\mu</td>
-            <td>平均</td>
-            <td> $M$ </td>
-            <td>M</td>
-            <td></td>
+            <td data-label="名称">ミュー</td>
+            <td data-label="小文字" class="significant"> $\mu$ </td>
+            <td data-label="LaTeX">\mu</td>
+            <td data-label="使用例">平均</td>
+            <td data-label="大文字"> $M$ </td>
+            <td data-label="LaTeX">M</td>
+            <td data-label="使用例"></td>
         </tr>
         <tr>
-            <td>ニュー</td>
-            <td> $\nu$ </td>
-            <td>\nu</td>
-            <td></td>
-            <td> $N$ </td>
-            <td>N</td>
-            <td></td>
+            <td data-label="名称">ニュー</td>
+            <td data-label="小文字"> $\nu$ </td>
+            <td data-label="LaTeX">\nu</td>
+            <td data-label="使用例"></td>
+            <td data-label="大文字"> $N$ </td>
+            <td data-label="LaTeX">N</td>
+            <td data-label="使用例"></td>
         </tr>
         <tr>
-            <td>クシー</td>
-            <td> $\xi$ </td>
-            <td>\xi</td>
-            <td></td>
-            <td> $\varXi$ </td>
-            <td>\varXi</td>
-            <td></td>
+            <td data-label="名称">クシー</td>
+            <td data-label="小文字"> $\xi$ </td>
+            <td data-label="LaTeX">\xi</td>
+            <td data-label="使用例"></td>
+            <td data-label="大文字"> $\varXi$ </td>
+            <td data-label="LaTeX">\varXi</td>
+            <td data-label="使用例"></td>
         </tr>
         <tr>
-            <td>オミクロン</td>
-            <td> $\omicron$ </td>
-            <td>\omicron</td>
-            <td></td>
-            <td> $O$ </td>
-            <td>O</td>
-            <td></td>
+            <td data-label="名称">オミクロン</td>
+            <td data-label="小文字"> $o$ </td>
+            <td data-label="LaTeX">o</td>
+            <td data-label="使用例"></td>
+            <td data-label="大文字"> $O$ </td>
+            <td data-label="LaTeX">O</td>
+            <td data-label="使用例"></td>
         </tr>
         <tr>
-            <td>パイ</td>
-            <td class="significant"> $\pi$ </td>
-            <td>\pi</td>
-            <td>円周率</td>
-            <td> $\varPi$ </td>
-            <td>\varPi</td>
-            <td></td>
+            <td data-label="名称">パイ</td>
+            <td data-label="小文字" class="significant"> $\pi$ </td>
+            <td data-label="LaTeX">\pi</td>
+            <td data-label="使用例">円周率</td>
+            <td data-label="大文字"> $\varPi$ </td>
+            <td data-label="LaTeX">\varPi</td>
+            <td data-label="使用例"></td>
         </tr>
         <tr>
-            <td>ロー</td>
-            <td> $\rho$ </td>
-            <td>\rho</td>
-            <td></td>
-            <td> $P$ </td>
-            <td>P</td>
-            <td></td>
+            <td data-label="名称">ロー</td>
+            <td data-label="小文字"> $\rho$ </td>
+            <td data-label="LaTeX">\rho</td>
+            <td data-label="使用例"></td>
+            <td data-label="大文字"> $P$ </td>
+            <td data-label="LaTeX">P</td>
+            <td data-label="使用例"></td>
         </tr>
         <tr>
-            <td>シグマ</td>
-            <td class="significant"> $\sigma$ </td>
-            <td>\sigma</td>
-            <td>標準偏差</td>
-            <td class="significant"> $\varSigma$ </td>
-            <td>\varSigma</td>
-            <td>総和記号</td>
+            <td data-label="名称">シグマ</td>
+            <td data-label="小文字" class="significant"> $\sigma$ </td>
+            <td data-label="LaTeX">\sigma</td>
+            <td data-label="使用例">標準偏差</td>
+            <td data-label="大文字" class="significant"> $\varSigma$ </td>
+            <td data-label="LaTeX">\varSigma</td>
+            <td data-label="使用例">総和記号</td>
         </tr>
         <tr>
-            <td>タウ</td>
-            <td> $\tau$ </td>
-            <td>\tau</td>
-            <td></td>
-            <td> $T$ </td>
-            <td>T</td>
-            <td></td>
+            <td data-label="名称">タウ</td>
+            <td data-label="小文字"> $\tau$ </td>
+            <td data-label="LaTeX">\tau</td>
+            <td data-label="使用例"></td>
+            <td data-label="大文字"> $T$ </td>
+            <td data-label="LaTeX">T</td>
+            <td data-label="使用例"></td>
         </tr>
         <tr>
-            <td>ユプシロン</td>
-            <td> $\upsilon$ </td>
-            <td>\upsilon</td>
-            <td></td>
-            <td> $\varUpsilon$ </td>
-            <td>\varUpsilon</td>
-            <td></td>
+            <td data-label="名称">ユプシロン</td>
+            <td data-label="小文字"> $\upsilon$ </td>
+            <td data-label="LaTeX">\upsilon</td>
+            <td data-label="使用例"></td>
+            <td data-label="大文字"> $\varUpsilon$ </td>
+            <td data-label="LaTeX">\varUpsilon</td>
+            <td data-label="使用例"></td>
         </tr>
         <tr>
-            <td>ファイ</td>
-            <td> $\phi$ </td>
-            <td>\phi</td>
-            <td></td>
-            <td> $\varPhi$ </td>
-            <td>\varPhi</td>
-            <td></td>
+            <td data-label="名称">ファイ</td>
+            <td data-label="小文字"> $\phi$ </td>
+            <td data-label="LaTeX">\phi</td>
+            <td data-label="使用例"></td>
+            <td data-label="大文字"> $\varPhi$ </td>
+            <td data-label="LaTeX">\varPhi</td>
+            <td data-label="使用例"></td>
         </tr>
         <tr>
-            <td>カイ</td>
-            <td> $\chi$ </td>
-            <td>\chi</td>
-            <td></td>
-            <td> $X$ </td>
-            <td>X</td>
-            <td></td>
+            <td data-label="名称">カイ</td>
+            <td data-label="小文字"> $\chi$ </td>
+            <td data-label="LaTeX">\chi</td>
+            <td data-label="使用例"></td>
+            <td data-label="大文字"> $X$ </td>
+            <td data-label="LaTeX">X</td>
+            <td data-label="使用例"></td>
         </tr>
         <tr>
-            <td>プサイ</td>
-            <td> $\psi$ </td>
-            <td>\psi</td>
-            <td></td>
-            <td> $\varPsi$ </td>
-            <td>\varPsi</td>
-            <td></td>
+            <td data-label="名称">プサイ</td>
+            <td data-label="小文字"> $\psi$ </td>
+            <td data-label="LaTeX">\psi</td>
+            <td data-label="使用例"></td>
+            <td data-label="大文字"> $\varPsi$ </td>
+            <td data-label="LaTeX">\varPsi</td>
+            <td data-label="使用例"></td>
         </tr>
         <tr>
-            <td>オメガ</td>
-            <td class="significant"> $\omega$ </td>
-            <td>\omega</td>
-            <td>角速度</td>
-            <td> $\varOmega$ </td>
-            <td>\varOmega</td>
-            <td></td>
+            <td data-label="名称">オメガ</td>
+            <td data-label="小文字" class="significant"> $\omega$ </td>
+            <td data-label="LaTeX">\omega</td>
+            <td data-label="使用例">角速度</td>
+            <td data-label="大文字"> $\varOmega$ </td>
+            <td data-label="LaTeX">\varOmega</td>
+            <td data-label="使用例"></td>
         </tr>
     </tbody>
 </table>
