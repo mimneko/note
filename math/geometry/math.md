@@ -1,5 +1,5 @@
 ---
-title: 幾何学模様
+title: （仮）幾何学模様
 tags: [math-1]
 ---
 
