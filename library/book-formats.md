@@ -81,5 +81,5 @@ $$
 となる。
 
 ## 参考文献
-- https://www.daiichiinsatsu.co.jp/200_support/2313_booksize.html, 参照日2024-09-16
-- https://www.lowcost-print.com/column/【出版社別】新書サイズまとめ｜家にある新書を/, 参照日2024-09-16
+- [https://www.daiichiinsatsu.co.jp/200_support/2313_booksize.html](https://www.daiichiinsatsu.co.jp/200_support/2313_booksize.html), 参照日2024-09-16
+- [https://www.lowcost-print.com/column/【出版社別】新書サイズまとめ｜家にある新書を/](https://www.lowcost-print.com/column/【出版社別】新書サイズまとめ｜家にある新書を/), 参照日2024-09-16
