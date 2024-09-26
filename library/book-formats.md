@@ -17,18 +17,18 @@ date: 2024-09-16
 | 新書判     | 103 x 182      | 新書                        |
 
 ## ピクセル数の計算式
-解像度を $D\text{[dpi]}$ 、長さ（幅や高さ）を $L[mm]$ とすると、ピクセル数は $P[mm]$ である。
+解像度を$D \text{[dpi]}$、長さ（幅や高さ）を $L\text{[mm]}$ とすると、ピクセル数は $P\text{[mm]}$ である。
 
 $$ P = D \times \frac{L}{25.4} $$
 
-ここで、 $25.4$ [mm]とは $1$ [inch]である。
+ここで、 $25.4\text{[mm]} = 1\text{[inch]}$ を用いた。
 
 $D=350$ のとき、A5判の幅のピクセル数 $P_{A5,width}$ と高さのピクセル数 $P_{A5,height}$ は
 
 $$
 \begin{align}
-P_{A5,width} = 350 \times \frac{148}{25.4} =2039.37\cdots\fallingdotseq 2039\\
-P_{A5,height} = 350 \times \frac{210}{25.4} =2893.70\cdots\fallingdotseq 2894
+P_{A5,width} = 350 \times \frac{148}{25.4} =2039.37\cdots\fallingdotseq 2039\text{[mm]}\\
+P_{A5,height} = 350 \times \frac{210}{25.4} =2893.70\cdots\fallingdotseq 2894\text{[mm]}
 \end{align}
 $$
  
