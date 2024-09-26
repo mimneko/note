@@ -62,25 +62,24 @@ date: 2024-09-16
 </table>
 
 
-## ピクセル数の計算式
-解像度を$D\text{[dpi]}$、長さ（幅や高さ）を$L\text{[mm]}$とすると、ピクセル数$P\text{[mm]}$は以下の式で表せる。
+## 画素数の計算式
+長さ（幅や高さ）を$L\text{[mm]}$、解像度を$D\text{[dpi]}$とすると、画素数$P\text{[px]}$は以下の式で表せる。
 
-$$ P = D \times \frac{L}{25.4} $$
+$$ P = L \times \frac{D}{25.4} $$
 
 ここで、$25.4\text{[mm]} = 1\text{[inch]}$を用いた。
 
-例として$D=350$のとき、A5判の幅のピクセル数$P_{A5,width}$と高さのピクセル数$P_{A5,height}$は
+一般的に解像度は、画面表示用には$72\text{[dpi]}$、印刷物用には$350\text{[dpi]}$とされているので、例としてA5判の印刷物用の幅の画素数$P_{A5,width}$と高さの画素数$P_{A5,height}$は$D=350$を用いて、
 
 $$
 \begin{align}
-P_{A5,width} = 350 \times \frac{148}{25.4} =2039.37\cdots\fallingdotseq 2039\text{[mm]}\\
-P_{A5,height} = 350 \times \frac{210}{25.4} =2893.70\cdots\fallingdotseq 2894\text{[mm]}
+P_{A5,width} = 148 \times \frac{350}{25.4} =2039.37\cdots\fallingdotseq 2039\text{[px]}\\
+P_{A5,height} = 210 \times \frac{350}{25.4} =2893.70\cdots\fallingdotseq 2894\text{[px]}
 \end{align}
 $$
 
 となる。
 
-一般的に画面表示用には$72\text{[dpi]}$、印刷物用には$350\text{[dpi]}$とされている。
 ## 参考文献
 - [https://www.daiichiinsatsu.co.jp/200_support/2313_booksize.html](https://www.daiichiinsatsu.co.jp/200_support/2313_booksize.html), 参照日2024-09-16
 - [https://www.lowcost-print.com/column/【出版社別】新書サイズまとめ｜家にある新書を/](https://www.lowcost-print.com/column/【出版社別】新書サイズまとめ｜家にある新書を/), 参照日2024-09-16
