@@ -1211,13 +1211,14 @@ article summary {
 /* -----------------------------------------
     アコーディオンメニュー
 ----------------------------------------- */
-details {
+details:not([id]):not([class]) {
     border: 1px solid #ddd;
     border-radius: 5px;
     margin-bottom: 10px;
     overflow: hidden;
+    padding-bottom: 1em;
 }
-summary {
+details:not([id]):not([class]) summary {
     cursor: pointer;
     font-weight: bold;
     padding: 10px;
@@ -1226,11 +1227,12 @@ summary {
     list-style: none;
     position: relative;
     transition: background-color 0.3s ease;
+    margin-bottom: 1em;
 }
-summary::-webkit-details-marker {
+details:not([id]):not([class]) summary::-webkit-details-marker {
     display: none;
 }
-summary::before {
+details:not([id]):not([class]) summary::before {
     font-family: "Font Awesome 5 Free";
     content: "\f067";  /* プラスアイコン */
     font-weight: 900;
@@ -1240,17 +1242,14 @@ summary::before {
     transform: translateY(-50%);
     color: #555;  /* アイコンの色を少し暗く */
 }
-details[open] summary::before {
+details:not([id]):not([class])[open] summary::before {
     content: "\f068";  /* マイナスアイコン */
 }
-summary:hover {
+details:not([id]):not([class]) summary:hover {
     background-color: #f0f0f0;  /* ホバー時の背景色 */
 }
-summary:focus {
+details:not([id]):not([class]) summary:focus {
     outline: none;
     background-color: #e8e8e8;  /* フォーカス時の背景色 */
 }
-.details-content {
-    padding: 10px;
-    background-color: #fff;  /* コンテンツの背景を白に */
-}
+
