@@ -1211,13 +1211,13 @@ article summary {
 /* -----------------------------------------
     アコーディオンメニュー
 ----------------------------------------- */
-details:not([id]):not([class]) {
+:not(.folder-tree) details:not([id]):not([class]) {
     border: 1px solid #ddd;
     border-radius: 5px;
     margin-bottom: 10px;
     overflow: hidden;
 }
-details:not([id]):not([class]) summary {
+:not(.folder-tree) details:not([id]):not([class]) summary {
     cursor: pointer;
     font-weight: bold;
     padding: 10px;
@@ -1227,10 +1227,10 @@ details:not([id]):not([class]) summary {
     position: relative;
     transition: background-color 0.3s ease;
 }
-details:not([id]):not([class]) summary::-webkit-details-marker {
+:not(.folder-tree) details:not([id]):not([class]) summary::-webkit-details-marker {
     display: none;
 }
-details:not([id]):not([class]) summary::before {
+:not(.folder-tree) details:not([id]):not([class]) summary::before {
     font-family: "Font Awesome 5 Free";
     content: "\f067";  /* プラスアイコン */
     font-weight: 900;
@@ -1240,19 +1240,19 @@ details:not([id]):not([class]) summary::before {
     transform: translateY(-50%);
     color: #555;  /* アイコンの色を少し暗く */
 }
-details:not([id]):not([class])[open] {
+:not(.folder-tree) details:not([id]):not([class])[open] {
     padding-bottom: 1em;
 }
-details:not([id]):not([class])[open] summary　{
+:not(.folder-tree) details:not([id]):not([class])[open] summary　{
     margin-bottom: 1em;
 }
-details:not([id]):not([class])[open] summary::before {
+:not(.folder-tree) details:not([id]):not([class])[open] summary::before {
     content: "\f068";  /* マイナスアイコン */
 }
-details:not([id]):not([class]) summary:hover {
+:not(.folder-tree) details:not([id]):not([class]) summary:hover {
     background-color: #f0f0f0;  /* ホバー時の背景色 */
 }
-details:not([id]):not([class]) summary:focus {
+:not(.folder-tree) details:not([id]):not([class]) summary:focus {
     outline: none;
     background-color: #e8e8e8;  /* フォーカス時の背景色 */
 }
