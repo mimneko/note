@@ -1207,3 +1207,50 @@ article summary {
 .internal-blogcard .internal-blogcard-readmore i {
     margin-left: .2rem;
 }
+
+/* -----------------------------------------
+    アコーディオンメニュー
+----------------------------------------- */
+details {
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    margin-bottom: 10px;
+    overflow: hidden;
+}
+summary {
+    cursor: pointer;
+    font-weight: bold;
+    padding: 10px;
+    padding-left: 35px;
+    background-color: #f8f8f8;  /* より薄い背景色 */
+    list-style: none;
+    position: relative;
+    transition: background-color 0.3s ease;
+}
+summary::-webkit-details-marker {
+    display: none;
+}
+summary::before {
+    font-family: "Font Awesome 5 Free";
+    content: "\f067";  /* プラスアイコン */
+    font-weight: 900;
+    position: absolute;
+    left: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+    color: #555;  /* アイコンの色を少し暗く */
+}
+details[open] summary::before {
+    content: "\f068";  /* マイナスアイコン */
+}
+summary:hover {
+    background-color: #f0f0f0;  /* ホバー時の背景色 */
+}
+summary:focus {
+    outline: none;
+    background-color: #e8e8e8;  /* フォーカス時の背景色 */
+}
+.details-content {
+    padding: 10px;
+    background-color: #fff;  /* コンテンツの背景を白に */
+}
