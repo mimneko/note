@@ -1211,6 +1211,7 @@ article summary {
 /* -----------------------------------------
     アコーディオンメニュー
 ----------------------------------------- */
+/*
 :not(.folder-tree) details:not([id]):not([class]) {
     border: 1px solid #ddd;
     border-radius: 5px;
@@ -1222,7 +1223,7 @@ article summary {
     font-weight: bold;
     padding: 10px;
     padding-left: 35px;
-    background-color: #f8f8f8;  /* より薄い背景色 */
+    background-color: #f8f8f8;
     list-style: none;
     position: relative;
     transition: background-color 0.3s ease;
@@ -1232,13 +1233,13 @@ article summary {
 }
 :not(.folder-tree) details:not([id]):not([class]) summary::before {
     font-family: "Font Awesome 5 Free";
-    content: "\f067";  /* プラスアイコン */
+    content: "\f067";
     font-weight: 900;
     position: absolute;
     left: 10px;
     top: 50%;
     transform: translateY(-50%);
-    color: #555;  /* アイコンの色を少し暗く */
+    color: #555;
 }
 :not(.folder-tree) details:not([id]):not([class])[open] {
     padding-bottom: 1em;
@@ -1247,13 +1248,13 @@ article summary {
     margin-bottom: 1em;
 }
 :not(.folder-tree) details:not([id]):not([class])[open] summary::before {
-    content: "\f068";  /* マイナスアイコン */
+    content: "\f068";
 }
 :not(.folder-tree) details:not([id]):not([class]) summary:hover {
-    background-color: #f0f0f0;  /* ホバー時の背景色 */
+    background-color: #f0f0f0;
 }
 :not(.folder-tree) details:not([id]):not([class]) summary:focus {
     outline: none;
-    background-color: #e8e8e8;  /* フォーカス時の背景色 */
+    background-color: #e8e8e8;
 }
-
+*/
