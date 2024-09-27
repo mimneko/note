@@ -1216,7 +1216,6 @@ details:not([id]):not([class]) {
     border-radius: 5px;
     margin-bottom: 10px;
     overflow: hidden;
-    padding-bottom: 1em;
 }
 details:not([id]):not([class]) summary {
     cursor: pointer;
@@ -1227,7 +1226,6 @@ details:not([id]):not([class]) summary {
     list-style: none;
     position: relative;
     transition: background-color 0.3s ease;
-    margin-bottom: 1em;
 }
 details:not([id]):not([class]) summary::-webkit-details-marker {
     display: none;
@@ -1241,6 +1239,12 @@ details:not([id]):not([class]) summary::before {
     top: 50%;
     transform: translateY(-50%);
     color: #555;  /* アイコンの色を少し暗く */
+}
+details:not([id]):not([class])[open] {
+    padding-bottom: 1em;
+}
+details:not([id]):not([class])[open] summary　{
+    margin-bottom: 1em;
 }
 details:not([id]):not([class])[open] summary::before {
     content: "\f068";  /* マイナスアイコン */
