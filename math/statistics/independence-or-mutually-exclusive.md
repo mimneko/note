@@ -1,7 +1,7 @@
 ---
 title: 独立か排反か
 date: 2024-09-29
-tag: [math-a]
+tags: [math-a]
 ---
 
 ## 独立
