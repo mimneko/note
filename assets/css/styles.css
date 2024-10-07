@@ -4,12 +4,14 @@
 :root {
     /* 色 */
     --color-purewhite: #fff;
+    --color-purewhite-transparent: rgba(255,255,255,0.9);
     --color-porcelain: #f0f2f5;
     --color-gallery: #eee;
     --color-palegray: #d2d8dd;
     --color-gray: #808080;
     --color-black: #222;
     --color-pureblack: #000;
+    --color-black-transparent: rgba(34,34,34,0.9);
     
     --color-navyblue: #2c3e50;
     --color-skyblue: #3498db;
@@ -52,6 +54,7 @@
     --page-bg-color: var(--color-purewhite);
     --text-footer-color: var(--color-purewhite);
     --header-bg-color: var(--color-purewhite);
+    --header-bg-color-transparent: var(--color-purewhite-transparent);
     --article-bg-color: var(--color-purewhite);
     --footer-nav-separator-color: var(--color-purewhite);
     --tag-bg-color: var(--color-purewhite);
@@ -95,6 +98,7 @@
         --page-bg-color: var(--color-pureblack);/* changed */
         --text-footer-color: var(--color-purewhite);
         --header-bg-color: var(--color-black);/* changed */
+        --header-bg-color-transparent: var(--color-black-transparent);/* changed */
         --article-bg-color: var(--color-pureblack);/* changed */
         --footer-nav-separator-color: var(--color-purewhite);
         --tag-bg-color: var(--color-black);/* changed */
@@ -156,13 +160,19 @@ body {
     ヘッダー
 ----------------------------------------- */
 header {
-    position: fixed;
-    background-color: var(--header-bg-color);
+    background-color: var(--header-bg-color-transparent);
     color: var(--text-color);
     width: 100%;
     box-sizing: border-box;
     box-shadow: var(--shadow-bottom);
-    position: relative;
+    position: fixed;
+    z-index: 100;
+}
+
+@media (width <= 768px) {
+    header {
+        background-color: var(--header-bg-color);
+    }
 }
 
 @media print {
@@ -382,7 +392,6 @@ header .menu-toggle-input {
     position: absolute;
     top: 100%; /* ヘッダーの下に表示 */
     width: 100%;
-    background-color: var(--header-bg-color);
     display: none;
 }
 
@@ -399,6 +408,7 @@ header .menu-toggle-input {
     /*
     #header-menu {
         display: none;
+        background-color: var(--header-bg-color);
         box-shadow: var(--shadow-bottom);
         position: absolute;
         left: 0;
@@ -420,6 +430,7 @@ header .menu-toggle-input {
     */
     #header-menu {
         display: none;
+        background-color: var(--header-bg-color);
         box-shadow: var(--shadow-bottom);
         position: absolute;
         left: 0;
