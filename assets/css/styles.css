@@ -532,7 +532,7 @@ header .menu-toggle-input {
 main {
     width: 100%;
     max-width: 844px;
-    margin: 1rem auto;
+    margin: calc(2rem + 40px) auto;
     padding: 0;
     flex: 1;
 }
