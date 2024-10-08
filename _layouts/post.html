@@ -33,6 +33,83 @@ layout: default
     </div>
     
     <div class="article-footer">
+        {% assign all_pages = site.pages | where_exp: "each_page", "each_page.title != nil" %}
+        {% assign filtered_pages = all_pages | where_exp: "each_page", "each_page.url != page.url" %}
+        {% assign exclude_urls = '/, /404.html, /about/, /tags/, /robots.txt, /sitemap.xml, /feed.xml' | split: ', ' %}
+        {% assign filtered_pages = filtered_pages %}
+        {% for url in exclude_urls %}
+            {% assign filtered_pages = filtered_pages | where_exp: "page", "page.url != url" %}
+        {% endfor %}
+
+        {% assign page_count = filtered_pages | size %}
+        
+        {% if page_count > 3 %}
+            {% assign random_pages = filtered_pages | sample: 3 %}
+        {% else %}
+            {% assign random_pages = filtered_pages %}
+        {% endif %}
+        
+        <nav class="random-pages">
+            <h2>おすすめページ</h2>
+            {% for random_page in random_pages %}
+                {% include blogcard.html post=random_page %}
+            {% endfor %}
+        </nav>
+
+
+        {% assign current_page = page %}
+        {% assign current_series = page.series %}
+
+        {% if current_series %}
+            {% assign series_pages = site.pages | where: "series", current_series | sort: "series-num" %}
+            
+            {% for p in series_pages %}
+                {% if p.url == current_page.url %}
+                {% assign current_index = forloop.index0 %}
+                {% assign prev_index = current_index | minus: 1 %}
+                {% assign next_index = current_index | plus: 1 %}
+                
+                {% if prev_index >= 0 %}
+                    {% assign prev_page = series_pages[prev_index] %}
+                {% endif %}
+                
+                {% if next_index < series_pages.size %}
+                    {% assign next_page = series_pages[next_index] %}
+                {% endif %}
+                
+                {% break %}
+                {% endif %}
+            {% endfor %}
+            
+            <h2>{{ current_series }}の前後ページ</h2>
+            <nav class="series-navigation">
+                {% if prev_page %}
+                <div class="prev-page">
+                    前のページ: <a href="{{ prev_page.url | relative_url }}">{{ prev_page.title }}</a>
+                </div>
+                {% endif %}
+                
+                {% if next_page %}
+                <div class="next-page">
+                    次のページ: <a href="{{ next_page.url | relative_url }}">{{ next_page.title }}</a>
+                </div>
+                {% endif %}
+            </nav>
+
+            <h2>{{ current_series }}の全ページ</h2>
+            <ol>
+                {% for p in series_pages %}
+                <li>
+                    {% if p.url == current_page.url %}
+                    {{ p.title }} (現在のページ)
+                    {% else %}
+                    <a href="{{ p.url | relative_url }}">{{ p.title }}</a>
+                    {% endif %}
+                </li>
+                {% endfor %}
+            </ol>
+        {% endif %}
+
         <div class="article-categories-tags">
             <!-- カテゴリ -->
             <div class="article-categories">
