@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="{{ site.lang | default: 'ja' }}">
+<head>
+    {% include head-redirect.html %}
+    {% include head-common.html %}
+    {% include head-math.html %}
+    {% seo %}
+</head>
+
+<body>
+    <div class="page-container">
+
+        {% include header.html %}
+
+        <main>
+            <div class="main-content">
+                <div class="main-wrap">
+                    
+                    {{ content }}
+                    
+                </div>
+            </div>
+        </main>
+
+        {% include footer.html %}
+    </div>
+
+    {% include body-scripts.html %}
+</body>
+</html>

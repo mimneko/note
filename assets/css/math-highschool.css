@@ -1,0 +1,80 @@
+/* -----------------------------------------
+  数式のスクロールバー
+----------------------------------------- */
+/*
+.MathJax {
+  padding-bottom: 5px;
+  overflow-x: visible;
+  overflow-y: hidden;
+}
+*/
+/*
+.MathJax::-webkit-scrollbar-track {
+  background-color: transparent;
+}
+*/
+
+/* -----------------------------------------
+  証明
+----------------------------------------- */
+/*
+.shomei-box {
+  margin: 0 .5rem;
+  padding: 1px 1rem;
+  border-left: 2px dotted var(--color-main);
+  border-right: 2px dotted var(--color-main);
+}
+.shomei-box p {
+  padding: 0;
+  margin: 1rem 0;
+}
+.shomei-box .shomei-title {
+  font-weight: bold;
+}
+.shomei-box .shomei-qed {
+  text-align: right;
+}
+*/
+
+/* -----------------------------------------
+    MathJax
+----------------------------------------- */
+article mjx-container {
+    padding: 0 3px;
+    overflow-x: auto;
+    overflow-y: visible;
+}
+
+article mjx-container[jax="CHTML"][display="true"] {
+    padding: .7em 0;
+}
+
+/* -----------------------------------------
+  ボックス
+----------------------------------------- */
+.koushiki-box {
+  margin: 2em auto;
+  background: #d3edfb;
+  width: 90%;
+}
+
+@media (max-width: 600px) {
+  .koushiki-box {
+    width: 95%;
+  }
+}
+
+.koushiki-box .box-title {
+  font-size: 1.2em;
+  background: #54c3f1;
+  padding: .5em 1em .4em;
+  text-align: left;
+  color: #fff;
+  font-weight: bold;
+  letter-spacing: 0.05em;
+}
+
+.koushiki-box p {
+  padding: 15px 20px;
+  margin: 0;
+}

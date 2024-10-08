@@ -1,0 +1,27 @@
+---
+layout: default
+---
+
+<article>
+
+    <div class="article-header">
+        <h1 id="article-title">{{ site.data.slugs[page.tag] }}の記事一覧</h1>
+    </div>
+    
+    <div class="article-body">
+        
+        {% assign page_tag = page.tag %}
+        {% assign posts = site.pages | where_exp: "page", "page.tags contains page_tag" | sort: "date" | reverse %}
+        {% assign posts_count = posts | size %}
+        
+        <h2>記事<span class="article-count">{{ posts_count }}</span>件</h2>
+        {% if posts_count > 0 %}
+            {% for post in posts %}
+                {% include blogcard.html post=post %}
+            {% endfor %}
+        {% else %}
+            <p>該当する記事はありません。</p>
+        {% endif %}
+        
+    </div>
+</article>

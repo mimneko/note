@@ -1,0 +1,14 @@
+<nav class="internal-blogcard">
+    <a href="{{ post.url | relative_url }}">
+        <p class="internal-blogcard-title">{{ post.title | default: "無題" }}</p>
+        <!-- <p class="internal-blogcard-date">{{ post.date | date: "%Y-%m-%d" }}</p> -->
+        <p class="internal-blogcard-description">
+            {% assign description = post.description | default: post.content | strip_html | truncate: 150, "" %}
+            {{ description | default: "" }}
+        </p>
+        <p class="internal-blogcard-readmore">
+            <span class="internal-blogcard-readmore-title">続きを読む</span>
+            <i class="fa-solid fa-angles-right"></i>
+        </p>
+    </a>
+</nav>

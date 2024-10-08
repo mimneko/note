@@ -1,0 +1,64 @@
+<div class="folder-tree">
+    {% assign sorted_pages = site.pages | sort: 'url' %}
+    {% assign category_pages = sorted_pages | where_exp: "page", "page.category" %}
+    <ul>
+    {% for page1 in category_pages %}
+        {% assign depth1 = page1.url | replace: "/", " " | number_of_words %}
+        {% if depth1 == 1 %}
+            <li>
+                <details open>
+                    {% assign tag_name = tag[1] %}
+                    {% assign tag_slug = tag[0] %}
+                    
+                    {% assign page1_url_length = page1.url | size %}
+                    {% assign category1_count = 0 %}
+                    {% for post in sorted_pages %}
+                        {% unless post.category %}
+                            {% assign post1_url_prefix = post.url | slice: 0, page1_url_length %}
+                            {% if post1_url_prefix == page1.url %}
+                                {% assign category1_count = category1_count | plus: 1 %}
+                            {% endif %}
+                        {% endunless %}
+                    {% endfor %}
+                    
+                    <summary>
+                        <a href="{{ page1.url | relative_url }}">
+                            {{ site.data.slugs[page1.category] }} ({{ page1.category }}) 
+                        </a> <span class="article-count">{{ category1_count | default: 0 }}</span>件
+                    </summary>
+                    <ul>
+                    {% for page2 in category_pages %}
+                        {% assign depth2 = page2.url | replace: "/", " " | number_of_words %}
+                        {% if depth2 == 2 %}
+                            {% assign page2_url_prefix = page2.url | slice: 0, page1_url_length %}
+                            {% if page1.url == page2_url_prefix and page1.url != page2.url %}
+                                <li>
+                                    <details open>
+                                        {% assign page2_url_length = page2.url | size %}
+                                        {% assign category2_count = 0 %}
+                                        {% for post in sorted_pages %}
+                                            {% unless post.category %}
+                                                {% assign post2_url_prefix = post.url | slice: 0, page2_url_length %}
+                                                {% if post2_url_prefix == page2.url %}
+                                                    {% assign category2_count = category2_count | plus: 1 %}
+                                                {% endif %}
+                                            {% endunless %}
+                                        {% endfor %}
+
+                                        <summary>
+                                            <a href="{{ page2.url | relative_url }}">
+                                                {{ site.data.slugs[page2.category] }} ({{ page2.category }})
+                                            </a> <span class="article-count">{{ category2_count | default: 0 }}</span>件
+                                        </summary>
+                                    </details>
+                                </li>
+                            {% endif %}
+                        {% endif %}
+                    {% endfor %}
+                    </ul>
+                </details>
+            </li>
+        {% endif %}
+    {% endfor %}
+    </ul>
+</div>

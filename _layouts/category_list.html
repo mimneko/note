@@ -1,0 +1,68 @@
+---
+layout: default
+---
+
+{% include breadcrumbs.html %}
+
+<article>
+    
+    <div class="article-header">
+        <h1 id="article-title">{{ site.data.slugs[page.category] }}の記事一覧</h1>
+    </div>
+    
+    <div class="article-body">
+
+        <!-- サブカテゴリ -->
+        {% assign category_path = page.category %}
+        {% assign list_pages = site.pages | where_exp:"page", "page.path contains category_path" | where_exp:"page", "page.path != category_path" | where:"layout", "category_list" | sort: "date" | reverse %}
+
+        {% if list_pages %}
+            {% assign list_pages_size = list_pages | size %}
+            {% if list_pages_size > 1 %}
+                <details open>
+                    <summary>サブカテゴリ</summary>
+                    <ul>
+                        {% for post in list_pages %}
+                            {% unless page.url == post.url %}
+                            <li>
+                                <a href="{{ site.baseurl }}{{ post.url }}">{{ site.data.slugs[post.category] }}</a>
+                            </li>
+                            {% endunless %}
+                        {% endfor %}
+                    </ul>
+                </details>
+            {% endif %}
+        {% endif %}
+        
+        
+        <!-- 記事 -->
+        {% assign current_url = page.url %}
+        {% assign current_url_length = current_url | size %}
+        {% assign sorted_pages = site.pages | sort: 'date' | reverse %}
+        {% assign non_list_pages = site.pages | where_exp:"page", "page.layout != 'tag_list'" | where_exp: "page", "page.layout != 'category_list'" %}
+
+        {% assign article_count = 0 %}
+
+        {% for p in non_list_pages %}
+            {% assign page_url_prefix = p.url | slice: 0, current_url_length %}
+            {% if page_url_prefix == current_url and p.url != current_url %}
+            {% assign article_count = article_count | plus: 1 %}
+            {% endif %}
+        {% endfor %}
+
+        <details open>
+            <summary>記事<span class="article-count">{{ article_count }}</span>件</summary>
+            {% if article_count == 0 %}
+                <p>該当する記事はありません。</p>
+            {% else %}
+                {% for post in non_list_pages %}
+                    {% assign page_url_prefix = post.url | slice: 0, current_url_length %}
+                    {% if page_url_prefix == current_url and post.url != current_url %}
+                        {% include blogcard.html post=post %}
+                    {% endif %}
+                {% endfor %}
+            {% endif %}
+        </details>
+
+    </div>
+</article>

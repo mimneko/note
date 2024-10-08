@@ -1,0 +1,21 @@
+<ul>
+    {% assign tags = site.data.slugs %}
+    {% for tag in tags %}
+        {% assign tag_name = tag[1] %}
+        {% assign tag_slug = tag[0] %}
+        
+        <!-- 該当タグの記事をフィルタリング -->
+        {% assign tag_posts = site.pages | where_exp: "post", "post.tags contains tag_slug" %}
+        
+        <!-- 該当タグの記事数をカウント -->
+        {% assign post_count = tag_posts | size %}
+        
+        {% if post_count > 0 %}
+        <li>
+            <a href="{{ site.baseurl }}/tags/{{ tag_slug }}">
+                {{ tag_name }}
+            </a> <span class="article-count">{{ post_count }}</span>件
+        </li>
+        {% endif %}
+    {% endfor %}
+</ul>

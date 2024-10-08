@@ -1,0 +1,11 @@
+<footer>
+    <div class="footer-content">
+        {% include social-links.html %}
+
+        <nav id="footer-menu" class="navigation-content">
+            {% include navigation.html %}
+        </nav>
+        
+        <p class="copyright">Copyright &copy; 2023 - {{ "now" | date: "%Y" }} <br class="copyright-break">{{ site.title }} All rights reserved.</p>
+    </div>
+</footer>

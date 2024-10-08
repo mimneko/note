@@ -1,0 +1,47 @@
+{% assign url_parts = page.url | split: '/' %}
+{% assign url_parts = url_parts | compact %}
+{% assign url_parts_depth = url_parts | size %}
+{% assign url_parts_depth = url_parts_depth | minus:1 %}
+{% assign current_url = '/' %}
+<nav class="breadcrumb" aria-label="パンくずリスト">
+    <ol class="breadcrumb-list" itemscope itemtype="https://schema.org/BreadcrumbList">
+        <li class="breadcrumb-item" itemprop="itemListElement" itemscope
+        itemtype="https://schema.org/ListItem">
+            <a itemprop="item" href="{{ '/' | relative_url }}">
+                <i class="fas fa-home"></i>
+                <span itemprop="name">ホーム</span>
+            </a>
+            <meta itemprop="position" content="1" />
+        </li>
+        {% for i in (1..url_parts_depth) %}
+            {% assign current_slug =  url_parts[i] %}
+            {% assign current_url =  current_url | append: current_slug | append: '/' %}
+            {% assign i_plus_one = i | plus: 1 %}
+
+            {% if i != url_parts_depth %}
+                <li class="breadcrumb-item" itemprop="itemListElement" itemscope
+                itemtype="https://schema.org/ListItem">
+                    <a itemprop="item" href="{{ current_url | relative_url }}">
+                        <i class="fas fa-folder"></i>
+                        <span itemprop="name">{{ site.data.slugs[current_slug] }}</span>
+                    </a>
+                    <meta itemprop="position" content="{{ i_plus_one }}" />
+                </li>
+            {% else %}
+                <li class="breadcrumb-item active" aria-current="page" itemprop="itemListElement" itemscope
+                itemtype="https://schema.org/ListItem">
+                    <a itemprop="item" href="{{ current_url | relative_url }}">
+                    {% if page.category %}
+                        <i class="fas fa-folder"></i>
+                        <span itemprop="name">{{ site.data.slugs[current_slug] }}</span>
+                    {% else %}
+                        <i class="fas fa-file"></i>
+                        <span itemprop="name">{{ page.title | default: "無題"}}</span>
+                    {% endif %}
+                    </a>
+                    <meta itemprop="position" content="{{ i_plus_one }}" />
+                </li>
+            {% endif %}
+        {% endfor %}
+    </ol>
+</nav>

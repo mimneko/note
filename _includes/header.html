@@ -1,0 +1,27 @@
+<header>
+    <div class="header-content">
+        <!-- ヘッダーロゴ -->
+        <div class="site-logo">
+            <a href="{{ '/' | relative_url }}">
+                <img src="{{ '/assets/icons/mimneko-note-icon.png' | relative_url }}" alt="サイトアイコン" class="site-icon">
+                <span class="site-name">{{ site.title }}</span>
+            </a>
+        </div>
+        
+        <!-- ハンバーガーメニュー部分 -->
+        <div class="navigation-menu-container">
+        
+            <!-- ハンバーガーメニューの表示・非表示を切り替えるチェックボックス -->
+            <input id="menu-toggle" class="menu-toggle-input" type="checkbox">
+        
+            <!-- ハンバーガーアイコン -->
+            <label for="menu-toggle" id="hamburger-icon"><span></span></label>
+        
+            <!-- メニュー -->
+            <nav id="header-menu" class="navigation-content">
+                {% include navigation.html %}
+            </nav>
+    
+        </div>
+    </div>
+</header>
