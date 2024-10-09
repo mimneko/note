@@ -734,20 +734,22 @@ ol {
 .article-categories-tags .link-list {
     list-style-type: none;
     padding: 0;
-    font-size: 13px;
     display: flex;
     gap: 5px;
     flex-wrap: wrap;
 }
 
+.article-series,
 .article-categories-tags .link-list li {
     display: inline-block;
+    font-size: 13px;
 }
-
+.article-series i,
 .article-categories-tags .link-list li i {
     margin-right: 5px;
 }
 
+.article-series a,
 .article-categories-tags .link-list li a {
     padding: 5px 8px 5px 10px;
     border-radius: 6px;
@@ -758,6 +760,7 @@ ol {
     transition: all 0.3s ease;
 }
 
+.article-series a:hover,
 .article-categories-tags .link-list li a:hover {
     background-color: var(--bg-hover-color);
     color: var(--text-hover-color);
@@ -1298,6 +1301,7 @@ article summary {
 
 
 
+
 /* -----------------------------------------
     おすすめページ
 ----------------------------------------- */
@@ -1312,4 +1316,65 @@ article summary {
 ----------------------------------------- */
 mjx-container[jax="CHTML"][display="true"]{
     margin: 0!important;
+}
+
+/***********************************************************
+    前後記事.pager-post-navi
+***********************************************************/
+.pager-post-navi a .iconfont {
+    color: var(--text-gray);
+    padding: 13px;
+}
+
+.pager-post-navi .card-thumb img {
+    vertical-align: bottom;
+}
+
+.pager-post-navi a.prev-post {
+    padding-left: 0;
+}
+
+.pager-post-navi a.next-post {
+    padding-right: 0;
+}
+
+@media screen and (min-width: 601px) {
+    .pager-post-navi {
+        -webkit-box-orient: horizontal;
+        -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+        flex-direction: row;
+        -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+        justify-content: space-between;
+        -webkit-box-align: stretch;
+        -ms-flex-align: stretch;
+        align-items: stretch;
+        width: 100%;
+        padding: 3% 0;
+        margin: 40px 0 20px 0!important;
+    }
+
+    .pager-post-navi a.prev-post,
+    .pager-post-navi a.next-post {
+        position: relative;
+        width: 100%;
+        margin: 0;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .pager-post-navi {
+        border-top: 1px solid var(--cocoon-basic-border-color);
+        border-bottom: 1px solid var(--cocoon-basic-border-color);
+    }
+    
+    .pager-post-navi a.prev-post,
+    .pager-post-navi a.next-post {
+        border: none!important;
+    }
+}
+
+.pager-post-navi::after {
+    display: none;
 }
