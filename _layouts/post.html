@@ -33,30 +33,44 @@ layout: default
     </div>
     
     <div class="article-footer">
-        {% assign all_pages = site.pages | where_exp: "each_page", "each_page.title != nil" %}
-        {% assign filtered_pages = all_pages | where_exp: "each_page", "each_page.url != page.url" %}
-        {% assign exclude_urls = '/, /404.html, /about/, /tags/, /robots.txt, /sitemap.xml, /feed.xml' | split: ', ' %}
-        {% assign filtered_pages = filtered_pages %}
-        {% for url in exclude_urls %}
-            {% assign filtered_pages = filtered_pages | where_exp: "page", "page.url != url" %}
-        {% endfor %}
 
-        {% assign page_count = filtered_pages | size %}
+        <!-- カテゴリとタグ -->
+        <div class="article-categories-tags">
+            <!-- カテゴリ -->
+            <div class="article-categories">
+                {% assign url_parts = page.url | split: '/' %}
+                {% assign url_parts = url_parts | compact %}
+                {% assign url_parts_depth = url_parts | size %}
+                {% assign url_parts_depth = url_parts_depth | minus:1 %}
+                {% assign current_url = '/' %}
+                <ol class="category-list link-list">
+                    {% for i in (1..url_parts_depth) %}
+                        {% assign current_slug =  url_parts[i] %}
+                        {% assign current_url =  current_url | append: current_slug | append: '/' %}
+                
+                        {% if i != url_parts_depth %}
+                            <li class="breadcrumb-item">
+                                <a href="{{ current_url | relative_url }}">
+                                    <i class="fas fa-folder"></i>{{ site.data.slugs[current_slug] }}
+                                </a>
+                            </li>
+                        {% endif %}
+                    {% endfor %}
+                </ol>
+            </div>
+            {% if page.tags %}
+            <!-- タグ -->
+            <div class="article-tags">
+                <ul class="tag-list link-list">
+                {% for tag in page.tags %}
+                    <li><a href="{{ site.baseurl }}/tags/{{ tag }}"><i class="fa-solid fa-tag"></i>{{ site.data.slugs[tag] }}</a></li>
+                {% endfor %}
+                </ul>
+            </div>
+            {% endif %}
+        </div>
         
-        {% if page_count > 3 %}
-            {% assign random_pages = filtered_pages | sample: 3 %}
-        {% else %}
-            {% assign random_pages = filtered_pages %}
-        {% endif %}
-        
-        <nav class="random-pages">
-            <h2>おすすめページ</h2>
-            {% for random_page in random_pages %}
-                {% include blogcard.html post=random_page %}
-            {% endfor %}
-        </nav>
-
-
+        <!-- シリーズ -->
         {% assign current_page = page %}
         {% assign current_series = page.series %}
 
@@ -110,40 +124,30 @@ layout: default
             </ol>
         {% endif %}
 
-        <div class="article-categories-tags">
-            <!-- カテゴリ -->
-            <div class="article-categories">
-                {% assign url_parts = page.url | split: '/' %}
-                {% assign url_parts = url_parts | compact %}
-                {% assign url_parts_depth = url_parts | size %}
-                {% assign url_parts_depth = url_parts_depth | minus:1 %}
-                {% assign current_url = '/' %}
-                <ol class="category-list link-list">
-                    {% for i in (1..url_parts_depth) %}
-                        {% assign current_slug =  url_parts[i] %}
-                        {% assign current_url =  current_url | append: current_slug | append: '/' %}
-                
-                        {% if i != url_parts_depth %}
-                            <li class="breadcrumb-item">
-                                <a href="{{ current_url | relative_url }}">
-                                    <i class="fas fa-folder"></i>{{ site.data.slugs[current_slug] }}
-                                </a>
-                            </li>
-                        {% endif %}
-                    {% endfor %}
-                </ol>
-            </div>
-            {% if page.tags %}
-            <!-- タグ -->
-            <div class="article-tags">
-                <ul class="tag-list link-list">
-                {% for tag in page.tags %}
-                    <li><a href="{{ site.baseurl }}/tags/{{ tag }}"><i class="fa-solid fa-tag"></i>{{ site.data.slugs[tag] }}</a></li>
-                {% endfor %}
-                </ul>
-            </div>
-            {% endif %}
-        </div>
+        <!-- おすすめページ -->
+        {% assign all_pages = site.pages | where_exp: "each_page", "each_page.title != nil" %}
+        {% assign filtered_pages = all_pages | where_exp: "each_page", "each_page.url != page.url" %}
+        {% assign exclude_urls = '/, /404.html, /about/, /tags/, /robots.txt, /sitemap.xml, /feed.xml' | split: ', ' %}
+        {% assign filtered_pages = filtered_pages %}
+        {% for url in exclude_urls %}
+            {% assign filtered_pages = filtered_pages | where_exp: "page", "page.url != url" %}
+        {% endfor %}
+
+        {% assign page_count = filtered_pages | size %}
+        
+        {% if page_count > 3 %}
+            {% assign random_pages = filtered_pages | sample: 3 %}
+        {% else %}
+            {% assign random_pages = filtered_pages %}
+        {% endif %}
+        
+        <nav class="random-pages">
+            <h2>おすすめページ</h2>
+            {% for random_page in random_pages %}
+                {% include blogcard.html post=random_page %}
+            {% endfor %}
+        </nav>
+
     </div>
 
 </article>
