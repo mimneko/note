@@ -17,6 +17,11 @@ layout: default
             {% endif %}
             <span id="article-author"><i class="fas fa-user"></i><span>{{ page.author }}</span></span>
         </div>
+            
+        {% assign current_series = page.series %}
+        {% if current_series %}
+        <div class="article-series">{{ current_series }}</div>
+        {% endif %}
     </div>
 
     <div class="article-body">
@@ -141,7 +146,7 @@ layout: default
             {% assign random_pages = filtered_pages %}
         {% endif %}
         
-        <nav class="random-pages">
+        <nav class="recommended-pages">
             <h2>おすすめページ</h2>
             {% for random_page in random_pages %}
                 {% include blogcard.html post=random_page %}

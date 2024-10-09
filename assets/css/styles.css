@@ -563,6 +563,12 @@ main {
     }
 }
 
+@media print {
+    main {
+        margin: 0;
+    }
+}
+
 .article-body > :not(h1):not(h2):not(h3):not(h4):not(h5):not(h6):not(table) {
     margin-left: 1rem;
     margin-right: 1rem;
@@ -700,6 +706,22 @@ ol {
 
 .breadcrumb .breadcrumb-list li a:hover {
     color: var(--text-hover-color);
+}
+
+@media (width <= 768px) {
+    .breadcrumb .breadcrumb-list {
+        padding-bottom: 0;
+    }
+
+    .breadcrumb .breadcrumb-list li.breadcrumb-item.active {
+        display: none;
+    }
+}
+
+@media print {
+    .breadcrumb .breadcrumb-list li.breadcrumb-item.active {
+        display: inline;
+    }
 }
 
 /* -----------------------------------------
@@ -1270,3 +1292,24 @@ article summary {
     background-color: #e8e8e8;
 }
 */
+
+
+
+
+
+
+/* -----------------------------------------
+    おすすめページ
+----------------------------------------- */
+@media print {
+    .recommended-pages {
+        display: none;
+    }
+}
+
+/* -----------------------------------------
+    数式mjx
+----------------------------------------- */
+mjx-container[jax="CHTML"][display="true"]{
+    margin: 0!important;
+}

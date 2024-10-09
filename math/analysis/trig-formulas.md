@@ -72,3 +72,41 @@ tags: [math-a]
     \end{eqnarray}
   </p>
 </div>
+
+<div class="koushiki-box">
+  <div class="koushiki-title box-title">$180^\circ-\theta, 90^\circ\pm\theta$の三角比の公式（複号同順）</div>
+  <p class="koushiki-content">
+    \begin{eqnarray}
+    \sin(180^\circ-\theta) &=& \sin\theta \\
+    \cos(180^\circ-\theta) &=& -\cos\theta \\
+    \tan(180^\circ-\theta) &=& -\tan\theta \\
+    \sin(90^\circ\pm\theta) &=& \cos\theta \\
+    \cos(90^\circ\pm\theta) &=& \mp\sin\theta \\
+    \tan(90^\circ\pm\theta) &=& \mp\frac{1}{\tan\theta}
+    \end{eqnarray}
+  </p>
+</div>
+
+<div class="koushiki-box">
+  <div class="koushiki-title box-title">正弦定理</div>
+  <p class="koushiki-content">
+    三角形ABCにおいて、
+    \begin{equation}
+    \frac{a}{\sin A} = \frac{b}{\sin B} = \frac{c}{\sin C} = 2R
+    \end{equation}
+    ここで、a, b, cは各辺の長さ、A, B, Cは各角、Rは外接円の半径を表す。
+  </p>
+</div>
+
+<div class="koushiki-box">
+  <div class="koushiki-title box-title">余弦定理</div>
+  <p class="koushiki-content">
+    三角形ABCにおいて、
+    \begin{eqnarray}
+    a^2 &=& b^2 + c^2 - 2bc\cos A \\
+    b^2 &=& a^2 + c^2 - 2ac\cos B \\
+    c^2 &=& a^2 + b^2 - 2ab\cos C
+    \end{eqnarray}
+    ここで、a, b, cは各辺の長さ、A, B, Cは各角を表す。
+  </p>
+</div>
