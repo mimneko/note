@@ -1318,63 +1318,119 @@ mjx-container[jax="CHTML"][display="true"]{
     margin: 0!important;
 }
 
-/***********************************************************
-    前後記事.pager-post-navi
-***********************************************************/
-.pager-post-navi a .iconfont {
-    color: var(--text-gray);
-    padding: 13px;
+/* -----------------------------------------
+    シリーズ内前後記事
+----------------------------------------- */
+.adjacent-pages {
+    display: flex;
+    justify-content: space-between;
+    align-items: stretch;
+    height: 100px;
 }
 
-.pager-post-navi .card-thumb img {
-    vertical-align: bottom;
+.adjacent-page {
+    flex: 1;
+    position: relative;
 }
 
-.pager-post-navi a.prev-post {
-    padding-left: 0;
+.adjacent-page a {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    background-color: var(--tag-bg-color);
+    color: var(--text-color);
+    border-top: 1px solid var(--tag-border-color);
+    border-bottom: 1px solid var(--tag-border-color);
+    transition: all 0.3s ease;
 }
 
-.pager-post-navi a.next-post {
-    padding-right: 0;
+.prev-page a {
+    justify-content: flex-start;
 }
 
-@media screen and (min-width: 601px) {
-    .pager-post-navi {
-        -webkit-box-orient: horizontal;
-        -webkit-box-direction: normal;
-        -ms-flex-direction: row;
-        flex-direction: row;
-        -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-        justify-content: space-between;
-        -webkit-box-align: stretch;
-        -ms-flex-align: stretch;
-        align-items: stretch;
-        width: 100%;
-        padding: 3% 0;
-        margin: 40px 0 20px 0!important;
-    }
-
-    .pager-post-navi a.prev-post,
-    .pager-post-navi a.next-post {
-        position: relative;
-        width: 100%;
-        margin: 0;
-    }
+.next-page a {
+    justify-content: flex-end;
 }
 
-@media screen and (max-width: 600px) {
-    .pager-post-navi {
-        border-top: 1px solid var(--cocoon-basic-border-color);
-        border-bottom: 1px solid var(--cocoon-basic-border-color);
-    }
-    
-    .pager-post-navi a.prev-post,
-    .pager-post-navi a.next-post {
-        border: none!important;
-    }
+.nav-text {
+    max-width: 90%;
+    overflow: hidden;
+    display: -webkit-box;
+    line-clamp: 2;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    text-overflow: ellipsis;
 }
 
-.pager-post-navi::after {
-    display: none;
+.adjacent-page a:hover {
+    background-color: var(--bg-hover-color);
+    color: var(--text-hover-color);
+}
+
+.adjacent-page a::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    width: 50%;
+}
+
+.prev-page a::before {
+    left: 0;
+}
+
+.next-page a::before {
+    right: 0;
+}
+
+.prev-page i {
+    margin-right: 1rem;
+}
+
+.next-page i {
+    margin-left: 0.2rem;
+}
+
+/* -----------------------------------------
+    .article-footer-section
+----------------------------------------- */
+.article-footer-section .section-title {
+    font-size: 24px;          /* フォントサイズを調整 */
+    font-weight: bold;        /* 太字に設定 */
+    text-align: center;       /* 中央揃え */
+    position: relative;       /* 下線の位置を相対的に設定 */
+    margin-bottom: 25px;      /* 見出しの下に余白を追加 */
+}
+
+.article-footer-section .section-title::after {
+    content: "";              /* 下線を追加するための擬似要素 */
+    display: block;
+    width: 150px;             /* 下線の長さ */
+    height: 3px;              /* 下線の太さ */
+    background-color: var(--main-color);    /* 下線の色を赤に設定 */
+    margin: 0 auto;           /* 下線を中央揃え */
+    position: absolute;
+    bottom: -2px;            /* 見出しテキストの下に配置 */
+    left: 0;
+    right: 0;
+}
+
+.article-footer-section .section-title i {
+    margin-right: 0.3rem;
+}
+
+.article-footer-section .section-title a {
+    text-decoration: none;
+    color: var(--text-color);
+}
+
+.article-footer-section {
+    padding: 2rem 0;
 }

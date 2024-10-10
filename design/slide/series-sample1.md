@@ -1,8 +1,9 @@
 ---
-title: ダイヤモンド：地球が生んだ奇跡の宝石
+title: ダイヤモンド：地球が生んだ奇跡の宝石ダイヤモンド：地球が生んだ奇跡の宝石ダイヤモンド：地球が生んだ奇跡の宝石
 series: series-sample
 series-num: 1
 date: 2024-10-09
+tags: [math-1,math-a]
 ---
 
 ## はじめに

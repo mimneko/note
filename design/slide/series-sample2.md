@@ -3,6 +3,7 @@ title: ルビー：情熱の赤い宝石
 series: series-sample
 series-num: 2
 date: 2024-10-09
+tags: [math-1,math-a]
 ---
 
 ## はじめに

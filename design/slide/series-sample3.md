@@ -1,8 +1,9 @@
 ---
-title: エメラルド：神秘の緑の宝石
+title: エメラルド：神秘の緑の宝石エメラルド：神秘の緑の宝石エメラルド：神秘の緑の宝石エメラルド：神秘の緑の宝石
 series: series-sample
 series-num: 3
 date: 2024-10-09
+tags: [math-1,math-a]
 ---
 
 ## はじめに
