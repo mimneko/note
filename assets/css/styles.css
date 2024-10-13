@@ -1008,8 +1008,10 @@ article summary {
     フォルダツリー
 ----------------------------------------- */
 /* <!-- https://pote-chil.com/css-stock/ja/list --> */
-.folder-tree {
-    padding: 0 .5em 0 1.5em;
+@media (width > 768px) {
+    .folder-tree {
+        padding: 0 .5em 0 1.5em;
+    }
 }
 
 .folder-tree ul {
