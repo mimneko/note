@@ -1,0 +1,26 @@
+name: Run Ruby Script on Push
+
+on:
+  push:
+    branches:
+      - main  # mainブランチの変更時のみトリガー
+  pull_request:
+    branches:
+      - main  # プルリクエストが作成または更新されたときにもトリガー
+
+jobs:
+  run-ruby:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v2
+
+      - name: Set up Ruby
+        uses: ruby/setup-ruby@v1
+        with:
+          ruby-version: '3.1'  # 任意のRubyバージョンを指定
+
+      - name: Run Ruby Script
+        run: |
+          ruby path/to/your_script.rb  # 実行したいRubyスクリプトを指定
