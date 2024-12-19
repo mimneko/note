@@ -1,0 +1,441 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    
+
+    <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>
+    
+        日常生活での数学 - みむねこのーと
+    
+</title>
+<meta name="format-detection" content="telephone=no">
+<!-- ファビコン -->
+<link rel="apple-touch-icon" sizes="180x180" href="/note/assets/icons/apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="/note/assets/icons/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="/note/assets/icons/favicon-16x16.png">
+<link rel="manifest" href="/note/assets/icons/manifest.json">
+<link rel="mask-icon" href="/note/assets/icons/safari-pinned-tab.svg" color="#3498db">
+<meta name="msapplication-TileColor" content="#3498db">
+<meta name="theme-color" content="#3498db">
+<!-- css & js -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
+<link rel="preload" href="/note/assets/css/styles.css" as="style">
+<link rel="stylesheet" href="/note/assets/css/styles.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer">
+
+    <script>
+    MathJax = {
+        tex: {
+            inlineMath: [['$', '$'], ['\\(', '\\)']]
+        }
+    };
+</script>
+<script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+<link rel="preload" href="/note/assets/css/math-highschool.css" as="style">
+<link rel="stylesheet" href="/note/assets/css/math-highschool.css">
+
+    <!-- Begin Jekyll SEO tag v2.8.0 -->
+<title>日常生活での数学 | みむねこのーと</title>
+<meta name="generator" content="Jekyll v4.3.4" />
+<meta property="og:title" content="日常生活での数学" />
+<meta name="author" content="みむねこ" />
+<meta property="og:locale" content="ja_JP" />
+<meta name="description" content="この記事は、高校生に数学の魅力と実社会での活用例を伝えることを目的としています。数学は重要なスキルであり、代数学、幾何学、解析学、そして確率統計学の各分野が実際の例を通して示されています。例えば、代数学は暗号理論やコンピューターグラフィックスで、幾何学は建築設計やコンピュータビジョンで、解析学は物理学や気象予報で、確率統計学はデータサイエンスやビジネスでそれぞれの役割を果たしています。この記事を通して、高校生が数学に興味を持つきっかけを提供し、日常生活での応用に注目してもらうことを狙いとしています。" />
+<meta property="og:description" content="この記事は、高校生に数学の魅力と実社会での活用例を伝えることを目的としています。数学は重要なスキルであり、代数学、幾何学、解析学、そして確率統計学の各分野が実際の例を通して示されています。例えば、代数学は暗号理論やコンピューターグラフィックスで、幾何学は建築設計やコンピュータビジョンで、解析学は物理学や気象予報で、確率統計学はデータサイエンスやビジネスでそれぞれの役割を果たしています。この記事を通して、高校生が数学に興味を持つきっかけを提供し、日常生活での応用に注目してもらうことを狙いとしています。" />
+<link rel="canonical" href="https://mimneko.github.io/note/math/math-in-daily-life/" />
+<meta property="og:url" content="https://mimneko.github.io/note/math/math-in-daily-life/" />
+<meta property="og:site_name" content="みむねこのーと" />
+<meta property="og:image" content="https://mimneko.github.io/note/assets/img/sample-card.png" />
+<meta property="og:type" content="article" />
+<meta property="article:published_time" content="2024-08-10T00:00:00+00:00" />
+<meta name="twitter:card" content="summary_large_image" />
+<meta property="twitter:image" content="https://mimneko.github.io/note/assets/img/sample-card.png" />
+<meta property="twitter:title" content="日常生活での数学" />
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"BlogPosting","author":{"@type":"Person","name":"みむねこ"},"dateModified":"2024-12-19T00:00:00+00:00","datePublished":"2024-08-10T00:00:00+00:00","description":"この記事は、高校生に数学の魅力と実社会での活用例を伝えることを目的としています。数学は重要なスキルであり、代数学、幾何学、解析学、そして確率統計学の各分野が実際の例を通して示されています。例えば、代数学は暗号理論やコンピューターグラフィックスで、幾何学は建築設計やコンピュータビジョンで、解析学は物理学や気象予報で、確率統計学はデータサイエンスやビジネスでそれぞれの役割を果たしています。この記事を通して、高校生が数学に興味を持つきっかけを提供し、日常生活での応用に注目してもらうことを狙いとしています。","headline":"日常生活での数学","image":"https://mimneko.github.io/note/assets/img/sample-card.png","mainEntityOfPage":{"@type":"WebPage","@id":"https://mimneko.github.io/note/math/math-in-daily-life/"},"url":"https://mimneko.github.io/note/math/math-in-daily-life/"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+    <div class="page-container">
+
+        <header>
+    <div class="header-content">
+        <!-- ヘッダーロゴ -->
+        <div class="site-logo">
+            <a href="/note/">
+                <img src="/note/assets/icons/mimneko-note-icon.png" alt="サイトアイコン" class="site-icon">
+                <span class="site-name">みむねこのーと</span>
+            </a>
+        </div>
+        
+        <!-- ハンバーガーメニュー部分 -->
+        <div class="navigation-menu-container">
+        
+            <!-- ハンバーガーメニューの表示・非表示を切り替えるチェックボックス -->
+            <input id="menu-toggle" class="menu-toggle-input" type="checkbox">
+        
+            <!-- ハンバーガーアイコン -->
+            <label for="menu-toggle" id="hamburger-icon"><span></span></label>
+        
+            <!-- メニュー -->
+            <nav id="header-menu" class="navigation-content">
+                <!-- _includes/navigation.html -->
+<ul class="navigation-list">
+    <li><a href="/note/">ホーム</a></li>
+    <li><a href="/note/about/">このサイトについて</a></li>
+    <li><a href="/note/tags/">カテゴリ＆タグ</a></li>
+</ul>
+            </nav>
+    
+        </div>
+    </div>
+</header>
+
+
+        <main>
+            <div class="main-content">
+                <div class="main-wrap">
+                    
+                    
+
+
+
+
+<nav class="breadcrumb" aria-label="パンくずリスト">
+    <ol class="breadcrumb-list" itemscope itemtype="https://schema.org/BreadcrumbList">
+        <li class="breadcrumb-item" itemprop="itemListElement" itemscope
+        itemtype="https://schema.org/ListItem">
+            <a itemprop="item" href="/note/">
+                <i class="fas fa-home"></i>
+                <span itemprop="name">ホーム</span>
+            </a>
+            <meta itemprop="position" content="1" />
+        </li>
+        
+            
+            
+            
+
+            
+                <li class="breadcrumb-item" itemprop="itemListElement" itemscope
+                itemtype="https://schema.org/ListItem">
+                    <a itemprop="item" href="/note/math/">
+                        <i class="fas fa-folder"></i>
+                        <span itemprop="name">数学</span>
+                    </a>
+                    <meta itemprop="position" content="2" />
+                </li>
+            
+        
+            
+            
+            
+
+            
+                <li class="breadcrumb-item active" aria-current="page" itemprop="itemListElement" itemscope
+                itemtype="https://schema.org/ListItem">
+                    <a itemprop="item" href="/note/math/math-in-daily-life/">
+                    
+                        <i class="fas fa-file"></i>
+                        <span itemprop="name">日常生活での数学</span>
+                    
+                    </a>
+                    <meta itemprop="position" content="3" />
+                </li>
+            
+        
+    </ol>
+</nav>
+
+
+<article>
+
+    <div class="article-header">
+        <h1 id="article-title">日常生活での数学</h1>
+        <div id="article-meta">
+            
+            <span id="written-date"><i class="fas fa-pen"></i><span>2024-08-10</span></span>
+            
+            
+            <span id="updated-date"><i class="fas fa-sync-alt fa-flip-horizontal"></i><span>2024-12-19</span></span>
+            
+            <span id="article-author"><i class="fas fa-user"></i><span>みむねこ</span></span>
+        </div>
+        
+        <!-- シリーズ名 -->
+        
+        
+
+    </div>
+
+    <div class="article-body">
+        
+        
+        <div id="toc">
+            <p id="toc-title"><i class="fa-solid fa-list-ul fa-fw"></i>目次</p>
+            <ol id="toc-content" class="section-nav">
+<li class="toc-entry toc-h2"><a href="#代数学">代数学</a>
+<ol>
+<li class="toc-entry toc-h3"><a href="#暗号理論">暗号理論</a></li>
+<li class="toc-entry toc-h3"><a href="#コンピューターグラフィックス">コンピューターグラフィックス</a></li>
+<li class="toc-entry toc-h3"><a href="#経済モデル">経済モデル</a></li>
+</ol>
+</li>
+<li class="toc-entry toc-h2"><a href="#幾何学">幾何学</a>
+<ol>
+<li class="toc-entry toc-h3"><a href="#建築設計">建築設計</a></li>
+<li class="toc-entry toc-h3"><a href="#コンピュータビジョン">コンピュータビジョン</a></li>
+<li class="toc-entry toc-h3"><a href="#地理情報システム-gis">地理情報システム (GIS)</a></li>
+</ol>
+</li>
+<li class="toc-entry toc-h2"><a href="#解析学">解析学</a>
+<ol>
+<li class="toc-entry toc-h3"><a href="#物理学">物理学</a></li>
+<li class="toc-entry toc-h3"><a href="#気象予報">気象予報</a></li>
+<li class="toc-entry toc-h3"><a href="#経済学の最適化">経済学の最適化</a></li>
+</ol>
+</li>
+<li class="toc-entry toc-h2"><a href="#確率統計学">確率統計学</a>
+<ol>
+<li class="toc-entry toc-h3"><a href="#データサイエンスと機械学習">データサイエンスと機械学習</a></li>
+<li class="toc-entry toc-h3"><a href="#疫学">疫学</a></li>
+<li class="toc-entry toc-h3"><a href="#ビジネスとマーケティング">ビジネスとマーケティング</a></li>
+</ol>
+</li>
+</ol>
+        </div>
+        
+        
+        <p>数学はただの教科として学校で学ぶだけのものではありません。実は私たちの身の回りの様々な場面や未来の職業に直結する重要なスキルです。ここでは、数学の主要な分野である代数学、幾何学、解析学、そして確率統計学が、どのように実社会で役立っているのかを具体的な例とともに紹介します。</p>
+
+<h2 id="代数学">
+<a class="anchor" href="#%E4%BB%A3%E6%95%B0%E5%AD%A6" aria-hidden="true"><span class="octicon octicon-link"></span></a>代数学</h2>
+
+<h3 id="暗号理論">
+<a class="anchor" href="#%E6%9A%97%E5%8F%B7%E7%90%86%E8%AB%96" aria-hidden="true"><span class="octicon octicon-link"></span></a>暗号理論</h3>
+<p>代数学を用いた暗号理論は、データの安全な通信に欠かせません。RSA暗号はその代表例で、素因数分解の難しさに基づいてデータを守ります。</p>
+
+<h3 id="コンピューターグラフィックス">
+<a class="anchor" href="#%E3%82%B3%E3%83%B3%E3%83%94%E3%83%A5%E3%83%BC%E3%82%BF%E3%83%BC%E3%82%B0%E3%83%A9%E3%83%95%E3%82%A3%E3%83%83%E3%82%AF%E3%82%B9" aria-hidden="true"><span class="octicon octicon-link"></span></a>コンピューターグラフィックス</h3>
+<p>コンピューターグラフィックスでは線形代数が基本となっています。3Dモデリングやアニメーションの制作において、ベクトルや行列を使って形状や動きを表現します。</p>
+
+<h3 id="経済モデル">
+<a class="anchor" href="#%E7%B5%8C%E6%B8%88%E3%83%A2%E3%83%87%E3%83%AB" aria-hidden="true"><span class="octicon octicon-link"></span></a>経済モデル</h3>
+<p>経済学では代数学を用いて、需要と供給の関係を数式で表現し、最適な価格設定や生産量の決定に役立てています。</p>
+
+<h2 id="幾何学">
+<a class="anchor" href="#%E5%B9%BE%E4%BD%95%E5%AD%A6" aria-hidden="true"><span class="octicon octicon-link"></span></a>幾何学</h2>
+
+<h3 id="建築設計">
+<a class="anchor" href="#%E5%BB%BA%E7%AF%89%E8%A8%AD%E8%A8%88" aria-hidden="true"><span class="octicon octicon-link"></span></a>建築設計</h3>
+<p>建築設計には幾何学の知識が不可欠です。建物や橋の設計では、構造の安定性を確保するために幾何学的な原理、特に三角形の性質が用いられます。</p>
+
+<h3 id="コンピュータビジョン">
+<a class="anchor" href="#%E3%82%B3%E3%83%B3%E3%83%94%E3%83%A5%E3%83%BC%E3%82%BF%E3%83%93%E3%82%B8%E3%83%A7%E3%83%B3" aria-hidden="true"><span class="octicon octicon-link"></span></a>コンピュータビジョン</h3>
+<p>画像認識技術では、幾何学を用いて画像の形状やパターンを解析します。これはAIによる物体認識技術の基盤となっています。</p>
+
+<h3 id="地理情報システム-gis">
+<a class="anchor" href="#%E5%9C%B0%E7%90%86%E6%83%85%E5%A0%B1%E3%82%B7%E3%82%B9%E3%83%86%E3%83%A0-gis" aria-hidden="true"><span class="octicon octicon-link"></span></a>地理情報システム (GIS)</h3>
+<p>GISでは、地図と空間情報の解析に幾何学が使われ、様々な分野での空間分析に貢献しています。</p>
+
+<h2 id="解析学">
+<a class="anchor" href="#%E8%A7%A3%E6%9E%90%E5%AD%A6" aria-hidden="true"><span class="octicon octicon-link"></span></a>解析学</h2>
+
+<h3 id="物理学">
+<a class="anchor" href="#%E7%89%A9%E7%90%86%E5%AD%A6" aria-hidden="true"><span class="octicon octicon-link"></span></a>物理学</h3>
+<p>物理学では、微積分を使って運動、力、エネルギーの関係を数式で表し解析します。飛行機の設計や自動車の動力学解析などで応用されています。</p>
+
+<h3 id="気象予報">
+<a class="anchor" href="#%E6%B0%97%E8%B1%A1%E4%BA%88%E5%A0%B1" aria-hidden="true"><span class="octicon octicon-link"></span></a>気象予報</h3>
+<p>気象予報において、微分方程式を使ったモデルは重要です。天候の予測における解析学の役割は欠かせません。</p>
+
+<h3 id="経済学の最適化">
+<a class="anchor" href="#%E7%B5%8C%E6%B8%88%E5%AD%A6%E3%81%AE%E6%9C%80%E9%81%A9%E5%8C%96" aria-hidden="true"><span class="octicon octicon-link"></span></a>経済学の最適化</h3>
+<p>解析学は経済モデルの最適化においても重要です。利益を最大化するための最適な生産量や価格設定を導くのに使われています。</p>
+
+<h2 id="確率統計学">
+<a class="anchor" href="#%E7%A2%BA%E7%8E%87%E7%B5%B1%E8%A8%88%E5%AD%A6" aria-hidden="true"><span class="octicon octicon-link"></span></a>確率統計学</h2>
+
+<h3 id="データサイエンスと機械学習">
+<a class="anchor" href="#%E3%83%87%E3%83%BC%E3%82%BF%E3%82%B5%E3%82%A4%E3%82%A8%E3%83%B3%E3%82%B9%E3%81%A8%E6%A9%9F%E6%A2%B0%E5%AD%A6%E7%BF%92" aria-hidden="true"><span class="octicon octicon-link"></span></a>データサイエンスと機械学習</h3>
+<p>現代のデータサイエンスでは、確率と統計が不可欠です。大量のデータからパターンを見つけ出し、予測モデルを作成するために用いられます。</p>
+
+<h3 id="疫学">
+<a class="anchor" href="#%E7%96%AB%E5%AD%A6" aria-hidden="true"><span class="octicon octicon-link"></span></a>疫学</h3>
+<p>疫学研究では、病気の発生率の解析や公衆衛生施策の効果を評価するために確率統計学が用いられます。</p>
+
+<h3 id="ビジネスとマーケティング">
+<a class="anchor" href="#%E3%83%93%E3%82%B8%E3%83%8D%E3%82%B9%E3%81%A8%E3%83%9E%E3%83%BC%E3%82%B1%E3%83%86%E3%82%A3%E3%83%B3%E3%82%B0" aria-hidden="true"><span class="octicon octicon-link"></span></a>ビジネスとマーケティング</h3>
+<p>ビジネスの世界では、消費者行動の分析や販売戦略の策定に統計学が活用されています。マーケティングの最前線で、消費者のニーズを読み解く重要なツールとして機能しています。</p>
+
+<hr>
+
+<p>これらの例を通じて、高校生の皆さんには、数学が単なる理論ではなく、実社会で幅広く利用されていることを知ってもらいたいと思います。興味を持つきっかけとして、普段の生活の中で数学がどのように活躍しているかに注目してみてください。そして、実際に関連するプロジェクトや問題解決に挑戦してみるのも良い方法です。</p>
+
+        
+    </div>
+    
+    <div class="article-footer">
+
+        <!-- カテゴリとタグ -->
+        <div class="article-categories-tags">
+            <!-- カテゴリ -->
+            <div class="article-categories">
+                
+                
+                
+                
+                
+                <ol class="category-list link-list">
+                    
+                        
+                        
+                
+                        
+                            <li class="breadcrumb-item">
+                                <a href="/note/math/">
+                                    <i class="fas fa-folder"></i>数学
+                                </a>
+                            </li>
+                        
+                    
+                        
+                        
+                
+                        
+                    
+                </ol>
+            </div>
+            
+        </div>
+        
+        <!-- シリーズ -->
+        
+        
+
+        
+
+        <!-- おすすめページ -->
+        
+        
+        
+        
+        
+
+        
+        
+        
+        
+        <section class="article-footer-section">
+            <div class="section-title"><i class="fa-solid fa-star"></i>おすすめページ</div>
+            <nav class="recommended-pages">
+                
+                    
+<nav class="internal-blogcard">
+    <a href="/note/math/greek-alphabets/">
+        <p class="internal-blogcard-title">ギリシャ文字一覧</p>
+        <!-- <p class="internal-blogcard-date">2024-09-12</p> -->
+        <p class="internal-blogcard-description">
+            
+            ギリシャ文字の一覧です。各文字と、高校数学における用途を記載しています。
+        </p>
+        <p class="internal-blogcard-readmore">
+            <span class="internal-blogcard-readmore-title">続きを読む</span>
+            <i class="fa-solid fa-angles-right"></i>
+        </p>
+    </a>
+</nav>
+                
+                    
+<nav class="internal-blogcard">
+    <a href="/note/math/algebra/indeterminate-equation/">
+        <p class="internal-blogcard-title">不定方程式の解き方</p>
+        <!-- <p class="internal-blogcard-date">2024-05-08</p> -->
+        <p class="internal-blogcard-description">
+            
+            方程式 $2x+3y-5z=1 \cdots$&#9312; について、次の各問いに答えよ。ただし、問１、問３は答えのみ解答用紙に記入せよ。
+
+問１ $z=0$ のとき、方程式&#9312;をみたす整数 $x,y$ の組を１組求めよ。
+方程式&#9312;に $z=0$ を代入すると、 $2x+3y
+        </p>
+        <p class="internal-blogcard-readmore">
+            <span class="internal-blogcard-readmore-title">続きを読む</span>
+            <i class="fa-solid fa-angles-right"></i>
+        </p>
+    </a>
+</nav>
+                
+                    
+<nav class="internal-blogcard">
+    <a href="/note/design/slide/series-sample1/">
+        <p class="internal-blogcard-title">ダイヤモンド：地球が生んだ奇跡の宝石ダイヤモンド：地球が生んだ奇跡の宝石ダイヤモンド：地球が生んだ奇跡の宝石</p>
+        <!-- <p class="internal-blogcard-date">2024-10-09</p> -->
+        <p class="internal-blogcard-description">
+            
+            ## はじめに
+
+ダイヤモンドは、その輝きと希少性から、古来より人々を魅了してきた宝石です。本記事では、ダイヤモンドの特徴、形成過程、そして文化的な意義について探ります。
+
+## ダイヤモンドの特徴
+
+1. **硬度**：モース硬度計で10を記録する、地球上で最も硬い天然物質です。
+2. **光の屈
+        </p>
+        <p class="internal-blogcard-readmore">
+            <span class="internal-blogcard-readmore-title">続きを読む</span>
+            <i class="fa-solid fa-angles-right"></i>
+        </p>
+    </a>
+</nav>
+                
+            </nav>
+        </section>
+
+    </div>
+
+</article>
+
+
+
+
+
+                    
+                </div>
+            </div>
+        </main>
+
+        <footer>
+    <div class="footer-content">
+        <!--
+<div class="social-links">
+    <ul>
+        <li><a href="https://github.com/" target="_blank" rel="noopener noreferrer"><i class="fab fa-github"></i>GitHub</a></li>
+        <li><a href="https://www.youtube.com/" target="_blank" rel="noopener noreferrer"><i class="fab fa-youtube"></i>YouTube</a></li>
+    </ul>
+</div>
+-->
+
+        <nav id="footer-menu" class="navigation-content">
+            <!-- _includes/navigation.html -->
+<ul class="navigation-list">
+    <li><a href="/note/">ホーム</a></li>
+    <li><a href="/note/about/">このサイトについて</a></li>
+    <li><a href="/note/tags/">カテゴリ＆タグ</a></li>
+</ul>
+        </nav>
+        
+        <p class="copyright">Copyright &copy; 2023 - 2024 <br class="copyright-break">みむねこのーと All rights reserved.</p>
+    </div>
+</footer>
+
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script src="/note/assets/js/navigation-menu.js"></script>
+<script src="/note/assets/js/copy-code.js"></script>
+</body>
+</html>
