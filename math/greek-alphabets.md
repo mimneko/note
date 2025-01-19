@@ -85,7 +85,7 @@ description: ギリシャ文字の一覧です。各文字と、高校数学に�
             <td data-label="使用例"></td>
         </tr>
         <tr>
-            <td data-label="名称">エプシロン</td>
+            <td data-label="名称">イプシロン</td>
             <td data-label="小文字"> $\epsilon$ </td>
             <td data-label="LaTeX"><code>\epsilon</code></td>
             <td data-label="使用例"></td>
@@ -103,7 +103,7 @@ description: ギリシャ文字の一覧です。各文字と、高校数学に�
             <td data-label="使用例"></td>
         </tr>
         <tr>
-            <td data-label="名称">エータ</td>
+            <td data-label="名称">イータ</td>
             <td data-label="小文字"> $\eta$ </td>
             <td data-label="LaTeX"><code>\eta</code></td>
             <td data-label="使用例"></td>
@@ -166,7 +166,7 @@ description: ギリシャ文字の一覧です。各文字と、高校数学に�
             <td data-label="使用例"></td>
         </tr>
         <tr>
-            <td data-label="名称">クシー</td>
+            <td data-label="名称">クサイ</td>
             <td data-label="小文字"> $\xi$ </td>
             <td data-label="LaTeX"><code>\xi</code></td>
             <td data-label="使用例"></td>
