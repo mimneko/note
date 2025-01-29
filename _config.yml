@@ -14,7 +14,7 @@ plugins:
   - jekyll-minifier
   - jekyll-remote-theme
 
-remote_theme: mimneko/Kiss-Jekyll
+#remote_theme: mimneko/Kiss-Jekyll
 
 #timezone: Asia/Tokyo
 
