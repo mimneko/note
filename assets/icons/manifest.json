@@ -1,6 +1,6 @@
 {
-    "name": "\u307f\u3080\u306d\u3053\u306e\u30fc\u3068",
-    "short_name": "\u307f\u3080\u306d\u3053\u306e\u30fc\u3068",
+    "name": "みむねこのーと",
+    "short_name": "みむねこのーと",
     "icons": [
         {
             "src": "/android-chrome-192x192.png",
@@ -13,7 +13,7 @@
             "type": "image/png"
         }
     ],
-    "theme_color": "#2c3e50;",
-    "background_color": "#2c3e50;",
+    "theme_color": "#2c3e50",
+    "background_color": "#2c3e50",
     "display": "standalone"
 }
