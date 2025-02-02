@@ -1,3 +1,9 @@
+
+---
+title: 色形式変換アプリ
+date: 2024-10-04
+layout: empty
+---
 <!DOCTYPE html>
 <html lang="ja">
 <head>
@@ -5,6 +11,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>色形式変換アプリ</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    
     <style>
         :root {
             --primary-color: #273747;
@@ -57,11 +64,15 @@
             margin-bottom: 1rem;
         }
         input[type="text"], input[type="number"] {
-            width: 5rem;
+            width: 5.5rem;
             padding: 0.5rem;
             border: 1px solid var(--border-color);
             border-radius: 5px;
             font-size: 1rem;
+            text-align: right;
+        }
+        input[type="number"] {
+            width: 4rem;
         }
         input[type="range"] {
             width: 100%;
@@ -133,6 +144,10 @@
             <button id="toggleCase"><i class="fas fa-text-height"></i></button>
             <button id="copyHex"><i class="fa-solid fa-clipboard"></i></button>
         </div>
+        <div style="margin-top: 1.5rem;">
+            <label>カラーピッカー：</label>
+            <input type="color" id="colorPicker" name="pickedColor">
+        </div>
         <div class="panes">
             <div class="pane">
                 <h3><div class="current-values" id="rgbValues"></div></h3>
@@ -165,14 +180,13 @@
                     <input type="range" id="sSlider" min="0" max="100">
                 </div>
                 <div class="input-group">
-                    <label>V:</label>
+                    <label>L:</label>
                     <input type="number" id="vInput" min="0" max="100">
                     <input type="range" id="vSlider" min="0" max="100">
                 </div>
             </div>
         </div>
     </div>
-
     <script>
         const colorSample = document.getElementById('colorSample');
         const hexInput = document.getElementById('hexInput');
@@ -192,6 +206,14 @@
         const vSlider = document.getElementById('vSlider');
         const rgbValues = document.getElementById('rgbValues');
         const hsvValues = document.getElementById('hsvValues');
+        const colorPicker = document.getElementById('colorPicker');
+
+        function initializeColorPicker() {
+            const initialColor = rgbToHex(217, 236, 239); // #colorSampleの初期RGB値
+            colorPicker.value = initialColor;
+            hexInput.value = initialColor;
+            updateColor(); // 他の要素も更新
+        }
 
         function updateColor() {
             const r = parseInt(rInput.value);
@@ -199,6 +221,7 @@
             const b = parseInt(bInput.value);
             colorSample.style.backgroundColor = `rgb(${r},${g},${b})`;
             hexInput.value = rgbToHex(r, g, b);
+            colorPicker.value = hexInput.value; // Update the color picker when RGB values change
             const hsv = rgbToHsv(r, g, b);
             hInput.value = hsv.h;
             sInput.value = hsv.s;
@@ -214,6 +237,7 @@
                 rInput.value = rgb.r;
                 gInput.value = rgb.g;
                 bInput.value = rgb.b;
+                colorPicker.value = hex; // Update the color picker when hex value changes
                 updateColor();
             }
         }
@@ -226,6 +250,7 @@
             rInput.value = rgb.r;
             gInput.value = rgb.g;
             bInput.value = rgb.b;
+            colorPicker.value = rgbToHex(rgb.r, rgb.g, rgb.b); // Update the color picker when HSV values change
             updateColor();
         }
 
@@ -240,7 +265,13 @@
 
         function updateCurrentValues() {
             rgbValues.textContent = `RGB(${rInput.value}, ${gInput.value}, ${bInput.value})`;
-            hsvValues.textContent = `HSV(${hInput.value}, ${sInput.value}, ${vInput.value})`;
+            hsvValues.textContent = `HSL(${hInput.value}, ${sInput.value}, ${vInput.value})`;
+        }
+
+        function updateFromPicker() {
+            const hex = colorPicker.value;
+            hexInput.value = hex;
+            updateFromHex();
         }
 
         function rgbToHex(r, g, b) {
@@ -300,6 +331,8 @@
             };
         }
 
+        document.addEventListener('DOMContentLoaded', initializeColorPicker);
+
         rInput.addEventListener('input', updateColor);
         gInput.addEventListener('input', updateColor);
         bInput.addEventListener('input', updateColor);
@@ -307,6 +340,7 @@
         hInput.addEventListener('input', updateFromHsv);
         sInput.addEventListener('input', updateFromHsv);
         vInput.addEventListener('input', updateFromHsv);
+        colorPicker.addEventListener('input', updateFromPicker);
         rSlider.addEventListener('input', () => { rInput.value = rSlider.value; updateColor(); });
         gSlider.addEventListener('input', () => { gInput.value = gSlider.value; updateColor(); });
         bSlider.addEventListener('input', () => { bInput.value = bSlider.value; updateColor(); });
@@ -340,7 +374,7 @@
     <!-- Toastr JS -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/toastr.min.js"></script>
-    
+
     <script>
         // Toastr options
         toastr.options = {
@@ -363,4 +397,3 @@
     </script>
 </body>
 </html>
-
